@@ -4,4 +4,14 @@ date: 2017-07-12 14:29:00 Z
 Key: 
 ---
 
-Đây là một bài viết bằng **_Tiếng Việt!_**
+Như các bạn thấy, tui đang viết post này bằng ***tiếng Việt***
+
+{{hightlight c\+\+ linenos}}
+
+void setup(){
+
+int n; cin >> n;
+
+}
+
+{{ hightlight }}
