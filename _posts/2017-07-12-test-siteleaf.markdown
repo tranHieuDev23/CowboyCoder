@@ -8,10 +8,10 @@ Như các bạn thấy, tui đang viết post này bằng ***tiếng Việt***
 
 {{hightlight c\+\+ linenos}}
 
-void setup(){
+`void setup(){`
 
-int n; cin >> n;
+`int n; cin >> n;`
 
-}
+`}`
 
 {{ hightlight }}
