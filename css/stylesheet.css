@@ -1,6 +1,12 @@
 ---
 ---
 
+/* Apply border-box to the whole webpage */
+* {
+    box-sizing: border-box;
+}
+
+/* Styling for jumbotron */
 .jumbotron {
     background-image: url("{{ site.url }}/img/stock_image.jpg");
     background-repeat: no-repeat;
@@ -13,6 +19,7 @@
     color: #ffc40d;
 }
 
+/* Styling for navbar */
 .navbar-default {
     background: black;
     margin-bottom: 0;
@@ -41,8 +48,29 @@
     color: black;
 }
 
+/* Styling for sidebar */
+.aside-section {
+    margin-bottom: 30px;
+}
+
+.aside-label {
+    border-bottom: 4px solid #ffc40d;
+    margin-bottom: 12px;
+}
+
+.aside-label-text {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background-color: #ffc40d;
+    padding: 4px 12px 4px 12px;
+}
+
 #search {
     font-family: 'Open Sans', sans-serif;
+}
+
+.caret {
+    float: right;
 }
 
 #search:focus, button:active:focus, button:focus {   
@@ -51,6 +79,11 @@
     outline: 0 none !important;
 }
 
+.list-group-item {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Styling for content */
 p {
     font-family: 'Open Sans', sans-serif;
 }
