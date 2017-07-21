@@ -35,11 +35,13 @@
 
         <!-- Content -->
         <div class="row">
-            <div class="col-sm-9" />
-                {% include lorem-ipsum.html %}
+            <div class="col-md-8"> 
+                {{ content }}
             </div>
-        <div class="col-sm-3">
-            <p>Temp</p>
+                
+            <div class="col-md-4">
+                {% include page-sdk.html %}
+            </div>
         </div>
     </div>
     </div>
