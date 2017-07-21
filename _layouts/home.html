@@ -19,6 +19,10 @@
     <!-- Facebook SDK -->
     {% include facebook-sdk.html %}
 
+    <!-- Navbar -->
+    {% include navbar.html %}
+    <!-- Navbar -->
+
     <!-- Jumbotron -->
     <div class="jumbotron">
         <div class="container">
@@ -28,17 +32,16 @@
     </div>
     <!-- Jumbotron -->
 
+
+
     <div class="container">
-        <!-- Navbar -->
-        {% include navbar.html %}
-        <!-- Navbar -->
 
         <!-- Content -->
         <div class="row">
-            <div class="col-md-8"> 
+            <div class="col-md-8">
                 {{ content }}
             </div>
-                
+
             <div class="col-md-4">
                 {% include page-sdk.html %}
             </div>
