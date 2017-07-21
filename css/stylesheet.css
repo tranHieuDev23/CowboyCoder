@@ -1,0 +1,55 @@
+---
+---
+
+.jumbotron {
+    background-image: url("{{ site.url }}/img/stock_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 38%; 
+}
+
+.jumbotron .container {
+    font-family: 'Oswald', sans-serif;
+    color: #ffc40d;
+}
+
+.navbar-default {
+    background: black;
+}
+
+.navbar-header {
+    background: #ffc40d;
+}
+
+.navbar-toggle.x span.icon-bar, .navbar-toggle.x.collapsed span.icon-bar {
+    background-color: #ffc40d;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle .collapsed {
+    background: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Oswald', sans-serif;
+    color: #ffc40d;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+#search {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#search:focus, button:active:focus, button:focus {   
+    border-color: #ffc40d !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 196, 13, 0.8) !important;
+    outline: 0 none !important;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
