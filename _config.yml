@@ -28,6 +28,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll/tagging
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -63,3 +64,7 @@ defaults:
       type: "posts"
     values:
       categories: programming web
+
+# tagging plugin
+tag_page_layout: home
+tag_page_dir: tags

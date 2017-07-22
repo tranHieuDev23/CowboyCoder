@@ -1,6 +1,6 @@
 ---
 ---
-.tag_cloud_item, .tag_cloud_item:visited, .tag_cloud_item:focus, .tag_cloud_item:visited:focus {
+.tag-cloud-item a, .tag-cloud-item a:visited, .tag-cloud-item a:focus, .tag-cloud-item a:visited:focus {
     display: inline-block;
     font-family: "Open Sans", sans-serif;
     color: black;
@@ -12,7 +12,7 @@
     transition: all 0.2s ease;
 }
 
-.tag_cloud_item:hover, .tag_cloud_item:active, .tag_cloud_item:visited:hover, .tag_cloud_item:visited:active {
+.tag-cloud-item a:hover, .tag-cloud-item a:active, .tag-cloud-item a:visited:hover, .tag-cloud-item a:visited:active {
     color: #ffc40d;
     background: black;
     border-color: black;
