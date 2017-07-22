@@ -48,7 +48,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      excerpt_separator: <!-- excerpt-end -->
       permalink: /:categories/:title
+      thumbnail: "default-thumbnail.jpg"
   -
     scope:
       path: "_posts/algorithm/basic"

@@ -83,6 +83,16 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
 /* Styling for content */
 .content-title {
     font-family: "Oswald", sans-serif;
