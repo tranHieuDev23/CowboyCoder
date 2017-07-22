@@ -1,0 +1,4 @@
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+    <a href="#" class="tag_cloud_item">{{ tag | first }}</a>
+{% endfor %}

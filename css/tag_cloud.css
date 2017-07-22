@@ -1,0 +1,20 @@
+---
+---
+.tag_cloud_item, .tag_cloud_item:visited, .tag_cloud_item:focus, .tag_cloud_item:visited:focus {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    background: #ffc40d;
+    border-color: #ffc40d;
+    transition: all 0.2s ease;
+}
+
+.tag_cloud_item:hover, .tag_cloud_item:active, .tag_cloud_item:visited:hover, .tag_cloud_item:visited:active {
+    color: #ffc40d;
+    background: black;
+    border-color: black;
+    text-decoration: none;
+}
