@@ -84,6 +84,10 @@
 }
 
 /* Styling for content */
+.content-title {
+    font-family: "Oswald", sans-serif;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
 }

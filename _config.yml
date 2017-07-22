@@ -47,5 +47,5 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "home"
+      layout: "post"
       permalink: /:categories/:title
