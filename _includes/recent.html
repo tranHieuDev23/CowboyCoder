@@ -6,7 +6,7 @@
         <div class="caption">
             <a class="aside-recent-title" href="{{ post.url }}">{{ post.title }}</a>        
             <div class="aside-recent-date">{{ post.date | date_to_string }}</div>
-            <div class="aside-recent-excerpt">{{ post.excerpt | truncatewords: 50 }}</div>
+            <div class="aside-recent-excerpt">{{ post.excerpt | truncatewords: 30 }}</div>
         </div>
     </div>
 {% endfor %}

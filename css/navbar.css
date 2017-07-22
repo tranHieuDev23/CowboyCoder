@@ -1,0 +1,30 @@
+---
+---
+/* Styling for navbar */
+.navbar-default {
+    background: black;
+    margin-bottom: 0;
+}
+
+.navbar-header {
+    background: #ffc40d;
+}
+
+.navbar-toggle.x span.icon-bar, .navbar-toggle.x.collapsed span.icon-bar {
+    background-color: #ffc40d;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle .collapsed {
+    background: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Oswald', sans-serif;
+    color: #ffc40d;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}

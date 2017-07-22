@@ -1,0 +1,46 @@
+---
+---
+/* Styling for sidebar */
+.aside-section {
+    margin-bottom: 30px;
+}
+
+.aside-label {
+    border-bottom: 4px solid #ffc40d;
+    margin-bottom: 12px;
+}
+
+.aside-label-text {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background-color: #ffc40d;
+    padding: 4px 12px 4px 12px;
+}
+
+#search {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.caret {
+    float: right;
+}
+
+#search:focus, button:active:focus, button:focus {   
+    border-color: #ffc40d !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 196, 13, 0.8) !important;
+    outline: 0 none !important;
+}
+
+.list-group-item {
+    font-family: "Open Sans", sans-serif;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
