@@ -49,3 +49,15 @@ defaults:
     values:
       layout: "post"
       permalink: /:categories/:title
+  -
+    scope:
+      path: "_posts/algorithm/basic"
+      type: "posts"
+    values:
+      categories: algorithm basic
+  -
+    scope:
+      path: "_posts/programming/web"
+      type: "posts"
+    values:
+      categories: programming web

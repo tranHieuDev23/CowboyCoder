@@ -39,6 +39,7 @@
         <!-- Content -->
         <div class="row">
             <div class="col-sm-8">
+                {% include breadcrumb.html %}
                 <h1 class="content-title">{{ page.title }}</h1>
                 <p class="content-author">Đăng bởi {{ page.author }} lúc {{ page.date | date_to_string }}</p>
                 <hr/>

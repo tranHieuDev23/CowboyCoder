@@ -1,0 +1,32 @@
+algorithm:
+  title: "Giải thuật"
+programming:
+  title: "Lập trình"
+exercises:
+  title: "Bài tập"
+misc:
+  title: "Tản mạn"
+basic:
+  title: "Cơ bản"
+data-structure:
+  title: "Cấu trúc dữ liệu"
+dp:
+  title: "Quy hoạch động"
+string:
+  title: "String"
+graph:
+  title: "Đồ thị"
+math:
+  title: "Toán học"
+geometry:
+  title: "Hình học"
+other:
+  title: "Kĩ năng khác"
+c_cpp:
+  title: "C/C++"
+pascal:
+  title: "Pascal"
+java:
+  title: "Java"
+web:
+  title: "Web"
