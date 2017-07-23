@@ -10,9 +10,9 @@
 
 <a href="{{ '/' | absolute_url }}">Home</a>
 {% for category in categories %}
-    <span class="prompt">></span>
+    <span class="glyphicon glyphicon-menu-right"></span>
     {% assign route = route | append: '/' | append: category %}
     <a href="{{ route | absolute_url }}">{{ site.data.breadcrumb[category].title }}</a> 
 {% endfor %}
-<span class="prompt">></span>
+<span class="glyphicon glyphicon-menu-right"></span>
 <a href="#">{{ page.title }}</a>
