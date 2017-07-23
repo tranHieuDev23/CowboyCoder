@@ -1,11 +1,13 @@
 <footer>
     <div class="container">
-        <h2 "footer-contact-us">Contact us</h2> 
+        <h2 id="footer-contact-us">Contact us</h2> 
         <p>{% include social-icon-button.html class="fa-facebook" href="https://www.facebook.com/cowboycoding"
         color="white" background="#3b5998" %} 
         {% include social-icon-button.html class="fa-github" href="https://github.com/cowboycodervn"
-        color="white" background="#333" %} <p/>
-        <p>&copy; 2017 Cowboy Coder</p>
-        <p>Hosted by GitHub Page. Powered by Jekyll.</p>
+        color="white" background="#333" %}
+        {% include social-icon-button.html class="fa-envelope" href="mailto:cowboycodervn@gmail.com"
+        color="white" background="red" %} <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
     </div>
 </footer>

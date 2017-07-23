@@ -12,6 +12,10 @@ footer .container {
     margin-bottom: 0 !important;
 }
 
-#contact-us {
+#footer-contact-us {
     font-family: "Oswald", sans-serif;
 }
+
+ .footer-paragraph {
+     font-family: "Open Sans", sans-serif;
+ }
