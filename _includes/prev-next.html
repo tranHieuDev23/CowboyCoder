@@ -1,0 +1,16 @@
+<div class="prev-next">
+    <hr />
+    <ul class="pager">
+        {% if page.previous %}
+        <li class="previous">
+            <a href="{{ page.previous.url }}"><span class="glyphicon glyphicon-menu-left"></span> {{page.previous.title }}</a>
+        </li>
+        {% endif %} 
+        {% if page.next %}
+        <li class="next">
+            <a href="{{ page.next.url }}">{{ page.next.title }} <span class="glyphicon glyphicon-menu-right"></span></a>
+        </li>
+        {% endif %}
+    </ul>
+    <hr />
+</div>
