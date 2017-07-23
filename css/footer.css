@@ -1,0 +1,17 @@
+---
+---
+/* Styling for footer */
+footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+footer .container {
+    margin-bottom: 0 !important;
+}
+
+#contact-us {
+    font-family: "Oswald", sans-serif;
+}
