@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     min-height: 48px;
     justify-content: center;
+    margin: 15px 0 15px 0;
 }
 
 .prev-next-item {
@@ -19,15 +20,11 @@
 }
 
 .prev-next-item.previous {
-    color: black;
-    text-align: center;
-    height: 100%;
+    text-align: left;
 }
 
 .prev-next-item.next {
-    color: white;
-    text-align: center;
-    height: 100%;
+    text-align: right;
 }
 
 .prev-next-link, .prev-next-link:hover, .prev-next-link:active, .prev-next-link:visited,

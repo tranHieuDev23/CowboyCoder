@@ -1,12 +1,12 @@
 <div class="prev-next">
-    {% if page.previous %}
-        <div class="prev-next-item previous">
+    <div class="prev-next-item previous">
+        {% if page.previous %}
             <a href="{{ page.previous.url }}" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> {{page.previous.title }}</a>
-        </div>
-    {% endif %} 
-    {% if page.next %}
-        <div class="prev-next-item next">
+        {% endif %} 
+    </div>
+    <div class="prev-next-item next">    
+        {% if page.next %}
             <a href="{{ page.next.url }}" class="prev-next-link">{{ page.next.title }} <span class="glyphicon glyphicon-menu-right"></span></a>
-        </div>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>
