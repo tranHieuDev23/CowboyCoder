@@ -1,19 +1,21 @@
 ---
 ---
-.tag-list-item, .tag-list-item:visited, .tag-list-item:focus, .tag-list-item:visited:focus {
+/* Styling for tag list */
+
+/* Price tag icon drawing */
+.tag-list-item {
     display: inline-block;
     font-family: "Open Sans", sans-serif;
     color: black;
-    text-decoration: none;
-    height: 30px;
+    line-height: 24px;
+    height: 24px;
     background: #ffc40d;
     border-color: #ffc40d;
-    transition: all 0.2s ease;
-    line-height: 30px;
+    transition: all 0.05s ease;
     padding-right: 8px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-left: 18px;
+    margin-left: 15px;
     margin-bottom: 3px;
 }
 
@@ -24,10 +26,11 @@
     height: 0;
     position: relative;
     top: 0;
-    left: -15px;
-    border-width: 15px 15px 15px 0;
+    left: -12px;
+    border-width: 12px 12px 12px 0;
     border-style: solid;
     border-color: transparent #ffc40d transparent transparent;
+    transition: all 0.05s ease;
 }
 
 .tag-list-item::after {
@@ -38,8 +41,13 @@
     background: white;
     border-radius: 2px;
     position: relative;
-    top: 13px;
-    left: -15px;
+    top: 10px;
+    left: -12px;
+}
+
+/* States styling */
+.tag-list-item:visited, .tag-list-item:focus, .tag-list-item:visited:focus {
+    text-decoration: none;
 }
 
 .tag-list-item:hover, .tag-list-item:active, .tag-list-item:visited:hover, .tag-list-item:visited:active {
@@ -47,4 +55,8 @@
     background: black;
     border-color: black;
     text-decoration: none;
+}
+
+.tag-list-item:hover::before {
+    border-color: transparent black transparent transparent;
 }
