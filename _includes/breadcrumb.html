@@ -1,18 +1,20 @@
-{% assign categories = page.categories %}
-{% assign filename_without_extension = categories | last | split:"." | first %}
-{% if categories contains "_posts" or filename_without_extension == "index" %}
-    {% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
-    {% comment %} OR pages are index.* i.e.: like /docs/python/index.md or index.html {% endcomment %}
-    {% assign categories = categories | pop %}
-{% endif %}
+<div class="breadcrumb">
+    {% assign categories = page.categories %}
+    {% assign filename_without_extension = categories | last | split:"." | first %}
+    {% if categories contains "_posts" or filename_without_extension == "index" %}
+        {% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
+        {% comment %} OR pages are index.* i.e.: like /docs/python/index.md or index.html {% endcomment %}
+        {% assign categories = categories | pop %}
+    {% endif %}
 
-{% assign route="" %}
+    {% assign route="" %}
 
-<a href="{{ '/' | absolute_url }}">Home</a>
-{% for category in categories %}
+    <a class="breadcrumb-home" href="{{ '/' | absolute_url }}">Home</a>
+    {% for category in categories %}
+        <span class="glyphicon glyphicon-menu-right"></span>
+        {% assign route = route | append: '/' | append: category %}
+        <a class="breadcrumb-category" href="{{ route | absolute_url }}">{{ site.data.breadcrumb[category].title }}</a> 
+    {% endfor %}
     <span class="glyphicon glyphicon-menu-right"></span>
-    {% assign route = route | append: '/' | append: category %}
-    <a href="{{ route | absolute_url }}">{{ site.data.breadcrumb[category].title }}</a> 
-{% endfor %}
-<span class="glyphicon glyphicon-menu-right"></span>
-<a href="#">{{ page.title }}</a>
+    <a class="breadcrumb-post" href="#">{{ page.title }}</a>
+</div>
