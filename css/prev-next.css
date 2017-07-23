@@ -1,0 +1,37 @@
+---
+---
+/* Styling for prev-next.html */
+.prev-next {
+    background-color: white;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 48px;
+    justify-content: center;
+}
+
+.prev-next-item {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    margin: auto;
+}
+
+.prev-next-item.previous {
+    color: black;
+    text-align: center;
+    height: 100%;
+}
+
+.prev-next-item.next {
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+.prev-next-link, .prev-next-link:hover, .prev-next-link:active, .prev-next-link:visited,
+.prev-next-link:visited:hover, .prev-next-link:active:hover {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+}
