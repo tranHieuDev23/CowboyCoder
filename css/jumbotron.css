@@ -2,7 +2,7 @@
 ---
 /* Styling for jumbotron */
 .jumbotron {
-    background-image: url("{{ site.url }}/img/stock_image.jpg");
+    background-image: url("/img/stock_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 38%; 
