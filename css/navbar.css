@@ -1,6 +1,10 @@
 ---
 ---
 /* Styling for navbar */
+nav {
+    border-width: 0 !important;
+}
+
 .navbar-default {
     background: black;
     margin-bottom: 0;
