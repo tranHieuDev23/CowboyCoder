@@ -7,13 +7,11 @@
         {% assign categories = categories | pop %}
     {% endif %}
 
-    {% assign route="" %}
-
     <a class="breadcrumb-home" href="{{ '/' | absolute_url }}">Home</a>
     {% for category in categories %}
         <span class="glyphicon glyphicon-menu-right"></span>
-        {% assign route = route | append: '/' | append: category %}
-        <a class="breadcrumb-category" href="{{ route | absolute_url }}">{{ site.data.breadcrumb[category].title }}</a> 
+        {% assign route = "/categories/" | append: category %}
+        <a class="breadcrumb-category" href="{{ route | absolute_url }}">{{ site.data.categories-data[category].title }}</a> 
     {% endfor %}
     <span class="glyphicon glyphicon-menu-right"></span>
     <a class="breadcrumb-post" href="#">{{ page.title }}</a>

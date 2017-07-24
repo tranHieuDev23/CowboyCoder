@@ -65,6 +65,16 @@ defaults:
     values:
       categories: programming web
 
-# tagging plugin
-tag_page_layout: home
-tag_page_dir: tags
+jekyll-archives:
+  enabled:
+    - month
+    - categories
+    - tags
+  layouts: 
+    month: "archive"
+    tag: "archive"
+    category: "archive-categories"
+  permalinks:
+    month: "/:year/:month/"
+    category: "/categories/:name/"
+    tag: "/tags/:name/"
