@@ -17,16 +17,6 @@
     padding: 4px 12px 4px 12px;
 }
 
-#search {
-    font-family: 'Open Sans', sans-serif;
-}
-
-#search:focus, button:active:focus, button:focus {   
-    border-color: #ffc40d !important;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 196, 13, 0.8) !important;
-    outline: 0 none !important;
-}
-
 .list-group-item {
     font-family: "Open Sans", sans-serif;
 }
