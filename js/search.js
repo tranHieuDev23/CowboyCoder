@@ -6,13 +6,13 @@ function displaySearchResults(results, store) {
 
     for (var i = 0; i < results.length; i++) {  // Iterate over the results
       var item = store[results[i].ref];
-      appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+      appendString += '<li class="search-results-item"><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
       appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
     }
 
     searchResults.innerHTML = appendString;
   } else {
-    searchResults.innerHTML = '<li>No results found</li>';
+    searchResults.innerHTML = '<li><p>No results found</p></li>';
   }
 }
 
@@ -41,6 +41,7 @@ if (searchTerm) {
     this.field('title', { boost: 10 });
     this.field('author');
     this.field('category');
+    this.field('tag');
     this.field('content');
 
     for (var key in window.store) { // Add the data to lunr
@@ -49,6 +50,7 @@ if (searchTerm) {
         'title': window.store[key].title,
         'author': window.store[key].author,
         'category': window.store[key].category,
+        'category': window.store[key].tag,
         'content': window.store[key].content
       });
     }

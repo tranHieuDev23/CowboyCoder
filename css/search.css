@@ -1,0 +1,16 @@
+---
+---
+/* Styling for search result */
+
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results-item > a {
+    font-family: "Oswald", sans-serif;
+}
+
+.search-results-item > p {
+    font-family: "Open Sans", sans-serif;
+}
