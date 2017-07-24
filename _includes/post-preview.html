@@ -1,0 +1,12 @@
+<div class="post-preview">
+    <div class="thumbnail">
+        <a class="aside-recent-title" href="{{ post.url }}">
+                <img src="/img/{{ post.thumbnail }}"/>
+            </a>
+        <div class="caption">
+            <a class="aside-recent-title" href="{{ post.url }}">{{ post.title }}</a>
+            <div class="aside-recent-date">{{ post.date | date_to_string }}</div>
+            <div class="aside-recent-excerpt">{{ post.excerpt | truncatewords: include.words }}</div>
+        </div>
+    </div>
+</div>

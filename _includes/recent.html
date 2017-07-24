@@ -1,14 +1,5 @@
 <div class="recent">
     {% for post in site.posts limit:5 %}
-        <div class="thumbnail">
-            <a class="aside-recent-title" href="{{ post.url }}">
-                <img src="/img/{{ post.thumbnail }}"/>
-            </a>
-            <div class="caption">
-                <a class="aside-recent-title" href="{{ post.url }}">{{ post.title }}</a>        
-                <div class="aside-recent-date">{{ post.date | date_to_string }}</div>
-                <div class="aside-recent-excerpt">{{ post.excerpt | truncatewords: 30 }}</div>
-            </div>
-        </div>
+        {% include post-preview.html words="30" %}
     {% endfor %}
 </div>
