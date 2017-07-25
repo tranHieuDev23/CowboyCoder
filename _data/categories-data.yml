@@ -1,5 +1,14 @@
 algorithm:
   title: "Giải thuật"
+  subcategories:
+    - basic
+    - data-structure
+    - dp
+    - string
+    - graph
+    - math
+    - geometry
+    - other
 programming:
   title: "Lập trình"
 exercises:

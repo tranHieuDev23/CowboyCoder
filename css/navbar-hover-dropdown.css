@@ -1,0 +1,35 @@
+---
+---
+/* Styling for navbar-hover-dropdown */
+.dropdown.open .navbar-button {
+    background: #ffc40d !important;
+    color: black !important;
+}
+
+.dropdown-content-item {
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        display: block !important;
+    }
+
+    .dropdown-content-item {
+        line-height: 20px !important;
+        padding: 5px 15px 5px 25px !important;
+        color: #ffc40d !important;
+    }
+
+    .dropdown-content-item:hover {
+        color: black !important;
+        background: #ffc40d !important;
+    }
+}

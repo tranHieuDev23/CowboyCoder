@@ -2,20 +2,20 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="{{ site.url }}">Cowboy Coder</a>
         <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </button>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
         <div class="container-fluid">
 
             <ul class="nav navbar-nav">
-                <li><a href="/categories/algorithm">Giải thuật</a></li>
-                <li><a href="/categories/programming">Lập trình</a></li>
-                <li><a href="/categories/exercises">Bài tập</a></li>
-                <li><a href="/categories/misc">Tản mạn</a></li>
+                <li class="dropdown">{% include navbar-hover-dropdown.html category="algorithm" %}</li>
+                <li class="dropdown">{% include navbar-hover-dropdown.html category="programming" %}</li>
+                <li class="dropdown">{% include navbar-hover-dropdown.html category="exercises" %}</li>
+                <li class="dropdown">{% include navbar-hover-dropdown.html category="misc" %}</li>
                 <li><a href="/about">About us</a></li>
             </ul>
             
