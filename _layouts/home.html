@@ -12,9 +12,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
-    
-    {% include styling.html %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> {% include styling.html %}
 </head>
 
 <body>
@@ -27,12 +25,7 @@
     <!-- Navbar -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Cowboy Coder</h1>
-            <h2>To code like a Cowboy!</h2>
-        </div>
-    </div>
+    {% include Jumbotron.html %}
     <!-- Jumbotron -->
 
 
@@ -42,11 +35,22 @@
         <!-- Content -->
         <div class="row">
             <div class="col-sm-8">
-                {{ content }}
+                {% include recent.html %}
             </div>
 
             <div class="col-sm-4">
-                {% include sidebar.html %}
+                <aside>
+                    <div class="aside-section">
+                        {% include search-box.html %}
+                    </div>
+
+                    <div class="aside-section">
+                        {% include label.html string="Follow us on Facebook!" %}
+
+                        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true" data-tabs="timeline"></div>
+                    </div>
+                </aside>
             </div>
         </div>
     </div>
