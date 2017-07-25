@@ -1,0 +1,44 @@
+<div class="archive-content">
+    {% assign title = site.data.categories-data[page.title].title %}
+    {% assign header = "Bài viết thuộc chuyên mục " | append: title %}
+    {% if title == nil %}
+        {% assign title = page.title %}
+        {% assign header = "Bài viết gắn tag " | append: title %}
+    {% endif %}
+    <h1 class="archive-content-title">{{ header }}</h1>
+    
+    {% for post in paginator.posts %}
+        {% include post-preview.html words="50" %}
+    {% endfor %}
+
+    <ul class="pagination">
+        {% if paginator.page > 2 %}
+            <li>
+                <a href="{{ paginator.first_page_path }}"><span class="fa fa-angle-double-left"/></a>
+            </li>
+        {% endif %}
+        {% if paginator.previous_page %}
+            <li>
+                <a href="{{ paginator.previous_page_path }}"><span class="fa fa-angle-left"/></a>
+            </li>
+        {% endif %}
+        {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+        <li {% if paginator.page == trail.num %} class="active" {% endif %}>
+            <a href="{{ trail.path | prepend: site.baseurl }}">{{ trail.num }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+        {% if paginator.next_page %}
+            <li>
+                <a href="{{ paginator.next_page_path }}"><span class="fa fa-angle-right"/></a>
+            </li>
+        {% endif %}
+        {% assign lim = paginator.last_page | minus: 1 %}
+        {% if paginator.page < lim %}
+            <li>
+                <a href="{{ paginator.last_page_path }}"><span class="fa fa-angle-double-right"/></a>
+            </li>
+        {% endif %}
+    </ul>
+</div>

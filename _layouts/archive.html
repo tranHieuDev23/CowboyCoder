@@ -5,7 +5,11 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/d96de7908c.js"></script>
     <!-- Home Page Title -->
-    <title>Cowboy Coder</title>
+    {% assign title = site.data.categories-data[page.title].title %}
+    {% if title == nil %}
+        {% assign title = page.title %}
+    {% endif %}
+    <title>{{ title }}</title>
     <!-- Mobile first -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
@@ -14,7 +18,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     
-    {% include styling.html %}
+    {% include styling.html %}    
+    <link rel="stylesheet" href="{{ site.url }}/css/archive-content.css" type="text/css" />
 </head>
 
 <body>
@@ -38,11 +43,10 @@
 
 
     <div class="container">
-
         <!-- Content -->
         <div class="row">
             <div class="col-sm-8">
-                
+                {% include archive-content.html %}
             </div>
 
             <div class="col-sm-4">
