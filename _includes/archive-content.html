@@ -8,7 +8,7 @@
     <h1 class="archive-content-title">{{ header }}</h1>
     
     {% for post in paginator.posts %}
-        {% include post-preview.html words="50" %}
+        {% include post-preview.html post=post words="50" %}
     {% endfor %}
 
     <ul class="pagination">

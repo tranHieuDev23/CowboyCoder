@@ -1,5 +1,5 @@
 <div class="recent">
     {% for post in site.posts limit:5 %}
-        {% include post-preview.html words="30" %}
+        {% include post-preview.html post=post words="30" %}
     {% endfor %}
 </div>

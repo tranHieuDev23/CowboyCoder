@@ -7,7 +7,7 @@
 
         {% assign post = site.categories[category] | first %}
         {% if post != nil %}
-            {% include post-preview.html words="30" %}
+            {% include post-preview.html post=post words="30" %}
         {% endif %}
 
         {% assign remain = site.categories[category] | pop %}
@@ -15,7 +15,7 @@
             <div class="row">
                 {% for post in remain limit: 3 %}
                     <div class="col-sm-4">
-                        {% include post-preview.html words="30" %}
+                        {% include post-preview.html post=post words="30" %}
                     </div>
                 {% endfor %}
             </div>
