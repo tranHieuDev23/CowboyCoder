@@ -2,11 +2,11 @@
 ---
 /* Styling for post preview box */
 
-.post-preview-header {
+.post-preview-small-header {
   position: relative;
 }
 
-.post-preview-foreground {
+.post-preview-small-foreground {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -18,46 +18,48 @@
   display: none;
 }
 
-.post-preview-metadata {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 14px 20px 12px 20px;
-  width: 90%;
-  max-height: 100%;
-  overflow: hidden;
+.post-preview-small-metadata {
+  padding: 0px 20px 0 20px;
   background: white;
 }
 
-.post-preview-title {
+.post-preview-small-title {
   font-family: "Oswald", sans-serif;
   font-size: 1.5em;
 }
 
-.post-preview-subtitle {
+.post-preview-small-subtitle {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-.post-preview-body {
+.post-preview-small-body {
   width: 90%;
-  padding: 14px 20px 12px 20px;
+  padding: 0px 20px 5px 20px;
 }
 
-.post-preview-text {
+.post-preview-small-text {
   font-family: "Open Sans", sans-serif;
 }
 
 @media (max-width: 767px) {
-  .post-preview-foreground {
+  .post-preview-small-foreground {
     display: block;
   }
 
-  .post-preview-metadata {
+  .post-preview-small-metadata {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 14px 20px 12px 20px;
+    width: 90%;
+    max-height: 100%;
+    overflow: hidden;
     background: transparent;
   }
 
-  .post-preview-body {
+  .post-preview-small-body {
     width: 100%;
+    padding: 14px 20px 12px 20px;
   }
 }

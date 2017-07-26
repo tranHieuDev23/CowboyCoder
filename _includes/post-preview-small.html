@@ -1,0 +1,15 @@
+<div class="post-preview-small panel panel-default">
+    <div class="post-preview-small-header">
+        <img class="post-preview-small-img" src="/img/{{ include.post.thumbnail }}" width="100%" height="auto"/>
+        <div class="post-preview-small-foreground"></div>
+        <div class="post-preview-small-metadata">
+            <a href="{{ include.post.url }}">
+                <h4 class="post-preview-small-title">{{ include.post.title }}</h4>
+            </a>
+            <h5 class="post-preview-small-subtitle">{{ include.post.date | date_to_string }}</h5>
+        </div>
+    </div>
+    <div class="post-preview-small-body">
+        <span class="post-preview-small-text">{{ include.post.excerpt | truncatewords: include.words }}</span>
+    </div>
+</div>
