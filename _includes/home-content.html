@@ -14,7 +14,7 @@
         {% if remain != nil %}
             <div class="row">
                 {% for post in remain limit: 3 %}
-                    <div class="col-md-4">
+                    <div class="col-md-4 subpost">
                         {% include post-preview-small.html post=post words="30" %}
                     </div>
                 {% endfor %}
