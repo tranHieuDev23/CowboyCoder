@@ -1,6 +1,6 @@
 {% assign title = site.data.categories-data[include.category].title %}
 {% assign subcategories = site.data.categories-data[include.category].subcategories %}
-<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/{{ include.category }}" data-animations="fadeIn none none none">{{ title }}</a>
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/{{ include.category }}" data-animations="none none none none">{{ title }}</a>
 {% if subcategories %}
     <ul class="dropdown-menu">
         {% for item in subcategories %}
