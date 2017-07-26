@@ -62,4 +62,8 @@
     width: 100%;
     padding: 14px 20px 12px 20px;
   }
+
+  .post-preview-small-title, .post-preview-small-subtitle {
+    color: #ffc40d;
+  }
 }

@@ -60,4 +60,8 @@
   .post-preview-body {
     width: 100%;
   }
+
+  .post-preview-title, .post-preview-subtitle {
+    color: #ffc40d;
+  }
 }
