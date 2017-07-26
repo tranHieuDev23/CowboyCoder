@@ -12,7 +12,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> {% include styling.html %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> 
+    {% include styling.html %}
+    <link href="/css/home-content.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -35,22 +37,11 @@
         <!-- Content -->
         <div class="row">
             <div class="col-sm-8">
-                {% include recent.html %}
+                {% include home-content.html %}
             </div>
 
             <div class="col-sm-4">
-                <aside>
-                    <div class="aside-section">
-                        {% include search-box.html %}
-                    </div>
-
-                    <div class="aside-section">
-                        {% include label.html string="Follow us on Facebook!" %}
-
-                        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
-                            data-hide-cover="false" data-show-facepile="true"></div>
-                    </div>
-                </aside>
+                {% include sidebar.html %}
             </div>
         </div>
     </div>

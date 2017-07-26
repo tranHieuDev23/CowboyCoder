@@ -1,0 +1,24 @@
+<div class="home-cotent">
+    {% for category in site.data.site-data.root-categories %}
+        {% assign title = site.data.categories-data[category].title %}
+        <div class="home-content-header">
+            {% include label.html string=title %}
+        </div>
+
+        {% assign post = site.categories[category] | first %}
+        {% if post != nil %}
+            {% include post-preview.html words="30" %}
+        {% endif %}
+
+        {% assign remain = site.categories[category] | pop %}
+        {% if remain != nil %}
+            <div class="row">
+                {% for post in remain limit: 3 %}
+                    <div class="col-sm-4">
+                        {% include post-preview.html words="30" %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

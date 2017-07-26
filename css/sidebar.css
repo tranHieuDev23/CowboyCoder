@@ -5,18 +5,6 @@
     margin-bottom: 30px;
 }
 
-.aside-label {
-    border-bottom: 4px solid #ffc40d;
-    margin-bottom: 12px;
-}
-
-.aside-label-text {
-    font-family: 'Oswald', sans-serif;
-    color: black;
-    background-color: #ffc40d;
-    padding: 4px 12px 4px 12px;
-}
-
 .list-group-item {
     font-family: "Open Sans", sans-serif;
 }

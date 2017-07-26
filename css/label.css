@@ -1,0 +1,13 @@
+---
+---
+/* Styling for label */
+.label-custom {
+    margin-bottom: 12px;
+}
+
+.label-custom-text {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background-color: #ffc40d;
+    padding: 4px 12px 4px 12px;
+}
