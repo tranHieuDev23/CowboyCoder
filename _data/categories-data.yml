@@ -11,6 +11,10 @@ algorithm:
     - other
 programming:
   title: "Lập trình"
+  subcategories:
+    - c_cpp
+    - java
+    - web
 exercises:
   title: "Bài tập"
 misc:
@@ -33,8 +37,6 @@ other:
   title: "Kĩ năng khác"
 c_cpp:
   title: "C/C++"
-pascal:
-  title: "Pascal"
 java:
   title: "Java"
 web:
