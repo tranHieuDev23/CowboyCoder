@@ -55,16 +55,76 @@ defaults:
       thumbnail: "default-thumbnail.jpg"
   -
     scope:
+      path: "_posts/algorithm/data-structure"
+      type: "posts"
+    values:
+      categories: algorithm data-structure
+  -
+    scope:
       path: "_posts/algorithm/basic"
       type: "posts"
     values:
       categories: algorithm basic
   -
     scope:
+      path: "_posts/algorithm/dp"
+      type: "posts"
+    values:
+      categories: algorithm dp
+  -
+    scope:
+      path: "_posts/algorithm/graph"
+      type: "posts"
+    values:
+      categories: algorithm graph
+  -
+    scope:
+      path: "_posts/algorithm/math"
+      type: "posts"
+    values:
+      categories: algorithm math
+  -
+    scope:
+      path: "_posts/algorithm/other"
+      type: "posts"
+    values:
+      categories: algorithm other
+  -
+    scope:
+      path: "_posts/algorithm/string"
+      type: "posts"
+    values:
+      categories: algorithm string
+  -
+    scope:
+      path: "_posts/programming/c_cpp"
+      type: "posts"
+    values:
+      categories: programming c_cpp
+  -
+    scope:
+      path: "_posts/programming/java"
+      type: "posts"
+    values:
+      categories: programming java
+  -
+    scope:
       path: "_posts/programming/web"
       type: "posts"
     values:
       categories: programming web
+  -
+    scope:
+      path: "_posts/exercises"
+      type: "posts"
+    values:
+      categories: exercises
+  -
+    scope:
+      path: "_posts/misc"
+      type: "posts"
+    values:
+      categories: misc
 
 pagination:
   enabled: true
