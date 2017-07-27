@@ -41,8 +41,7 @@
             <div class="col-sm-9">
                 {% include breadcrumb.html %}
                 <h1 class="content-title">{{ page.title }}</h1>
-                <p class="content-author">Đăng bởi {{ page.author }} lúc {{ page.date | date_to_string }}</p>
-                <hr/>
+                <h2 class="content-author">Đăng bởi {{ page.author }} lúc {{ page.date | date_to_string }}</h2>
                 <div class="content">
                     {{ content }}
                     {% include prev-next.html %}

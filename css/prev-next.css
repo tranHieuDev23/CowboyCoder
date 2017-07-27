@@ -19,12 +19,12 @@
     margin: auto;
 }
 
-.prev-next-item.previous {
-    text-align: left;
+.prev-next-item.previous > a{
+    margin: auto auto auto 0;
 }
 
-.prev-next-item.next {
-    text-align: right;
+.prev-next-item.next > a{
+    margin: auto 0 auto auto;
 }
 
 .prev-next-link, .prev-next-link:hover, .prev-next-link:active, .prev-next-link:visited,

@@ -9,8 +9,20 @@
 /* Styling for content */
 .content-title {
     font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 7px;
 }
 
-p {
+.content-author {
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
