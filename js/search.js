@@ -12,7 +12,7 @@ function displaySearchResults(results, store) {
 
     searchResults.innerHTML = appendString;
   } else {
-    searchResults.innerHTML = '<li><p>No results found</p></li>';
+    searchResults.innerHTML = '<li class="search-results-empty"><p>No results found</p></li>';
   }
 }
 

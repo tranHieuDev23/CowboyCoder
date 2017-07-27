@@ -24,3 +24,8 @@
 .search-results-item > p {
     font-family: "Open Sans", sans-serif;
 }
+
+.search-results-empty {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+}
