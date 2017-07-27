@@ -9,14 +9,14 @@
     flex-wrap: wrap;
     min-height: 48px;
     justify-content: center;
-    margin: 15px 0 15px 0;
+    margin: 26px 0 20px 0;
 }
 
 .prev-next-item {
     list-style-type: none;
     display: flex;
     flex: 1;
-    margin: auto;
+    margin: 12px 0px;
 }
 
 .prev-next-item.previous > a{
@@ -30,5 +30,7 @@
 .prev-next-link, .prev-next-link:hover, .prev-next-link:active, .prev-next-link:visited,
 .prev-next-link:visited:hover, .prev-next-link:active:hover {
     font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
     text-decoration: none;
 }

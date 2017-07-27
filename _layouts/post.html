@@ -17,6 +17,7 @@
     {% include styling.html %}        
     <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
     <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
 </head>
 
 <body>
@@ -44,10 +45,14 @@
                 <h2 class="content-author">Đăng bởi {{ page.author }} lúc {{ page.date | date_to_string }}</h2>
                 <div class="content">
                     {{ content }}
-                    {% include prev-next.html %}
-                    {% include tag-list.html %}
-                    <div class="fb-comments" data-numposts="5" data-width="100%"></div>
                 </div>
+
+                {% include tag-list.html %}
+
+                {% include share-box.html %}
+
+                {% include prev-next.html %}
+                <div class="fb-comments" data-numposts="5" data-width="100%"></div>
             </div>
 
             <div class="col-sm-3">

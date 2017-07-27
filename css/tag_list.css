@@ -1,6 +1,9 @@
 ---
 ---
 /* Styling for tag list */
+.tag-list {
+    margin-bottom: 16px;
+}
 
 /* Price tag icon drawing */
 .tag-list-item {
