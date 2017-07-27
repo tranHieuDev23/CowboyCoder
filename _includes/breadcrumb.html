@@ -9,10 +9,10 @@
 
     <a class="breadcrumb-home" href="{{ '/' | absolute_url }}">Home</a>
     {% for category in categories %}
-        <span class="glyphicon glyphicon-menu-right"></span>
+        <span class="fa fa-angle-right"></span>
         {% assign route = "/categories/" | append: category %}
         <a class="breadcrumb-category" href="{{ route | absolute_url }}">{{ site.data.categories-data[category].title }}</a> 
     {% endfor %}
-    <span class="glyphicon glyphicon-menu-right"></span>
+    <span class="fa fa-angle-right"></span>
     <a class="breadcrumb-post" href="#">{{ page.title }}</a>
 </div>
