@@ -27,10 +27,8 @@
     margin: auto 0 auto auto;
 }
 
-.prev-next-link, .prev-next-link:hover, .prev-next-link:active, .prev-next-link:visited,
-.prev-next-link:visited:hover, .prev-next-link:active:hover {
+.prev-next-link {
     font-family: "Oswald", sans-serif;
     font-size: 18px;
     line-height: 27px;
-    text-decoration: none;
 }

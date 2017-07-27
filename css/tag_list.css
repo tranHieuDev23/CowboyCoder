@@ -47,15 +47,10 @@
 }
 
 /* States styling */
-.tag-list-item:visited, .tag-list-item:focus, .tag-list-item:visited:focus {
-    text-decoration: none;
-}
-
 .tag-list-item:hover, .tag-list-item:active, .tag-list-item:visited:hover, .tag-list-item:visited:active {
     color: #ffc40d;
     background: black;
     border-color: black;
-    text-decoration: none;
 }
 
 .tag-list-item:hover::before {
