@@ -28,7 +28,6 @@ github_username:  tranHieuDev23
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll/tagging
   - jekyll-paginate-v2
 
 # Exclude from processing.
