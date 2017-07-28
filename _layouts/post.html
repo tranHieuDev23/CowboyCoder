@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
 
     <!-- SEO -->
-    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 150 , '...' }}"
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 150 , '...' }}"/>
+    <meta name="thumbnail" content="{{ site.url }}{{ page.thumbnail }}"/>
 </head>
 
 <body>
