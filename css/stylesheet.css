@@ -50,3 +50,8 @@ a:hover, a:active, a:visited {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+.content > img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
