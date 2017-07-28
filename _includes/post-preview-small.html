@@ -1,7 +1,7 @@
 <div class="post-preview-small panel panel-default">
     <div class="post-preview-small-header">
         <a href="{{ include.post.url }}">
-            <img class="post-preview-small-img" src="/img/{{ include.post.thumbnail }}" width="100%" height="auto"/>
+            <img class="post-preview-small-img" src="{{ include.post.thumbnail }}" width="100%" height="auto"/>
         </a>
         <div class="post-preview-small-foreground"></div>
         <div class="post-preview-small-metadata">
@@ -12,6 +12,6 @@
         </div>
     </div>
     <div class="post-preview-small-body">
-        <span class="post-preview-small-text">{{ include.post.excerpt | truncatewords: include.words }}</span>
+        <span class="post-preview-small-text">{{ include.post.excerpt | strip_html | truncatewords: include.words }}</span>
     </div>
 </div>

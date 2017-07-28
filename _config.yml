@@ -51,7 +51,7 @@ defaults:
       layout: "post"
       excerpt_separator: <!-- excerpt-end -->
       permalink: /:categories/:title
-      thumbnail: "default-thumbnail.jpg"
+      thumbnail: "/img/default-thumbnail.jpg"
   -
     scope:
       path: "_posts/algorithm/data-structure"

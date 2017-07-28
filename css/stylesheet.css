@@ -13,8 +13,8 @@ a:hover, a:active, a:visited {
 /* Styling for content */
 .content-title {
     font-family: "Oswald", sans-serif;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 42px;
+    line-height: 46px;
     margin-bottom: 7px;
 }
 
@@ -26,8 +26,27 @@ a:hover, a:active, a:visited {
 }
 
 .content {
+    margin-bottom: 36px;
+}
+
+.content > p {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    margin-bottom: 36px;
+}
+
+.content > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content > h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
 }

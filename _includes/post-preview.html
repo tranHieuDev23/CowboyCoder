@@ -1,7 +1,7 @@
 <div class="post-preview panel panel-default">
     <div class="post-preview-header">
         <a href="{{ include.post.url }}">
-            <img class="post-preview-img" src="/img/{{ include.post.thumbnail }}" width="100%" height="auto"/>
+            <img class="post-preview-img" src="{{ include.post.thumbnail }}" width="100%" height="auto"/>
         </a>
         <div class="post-preview-foreground"></div>
         <div class="post-preview-metadata">
@@ -12,6 +12,6 @@
         </div>
     </div>
     <div class="post-preview-body">
-        <span class="post-preview-text">{{ include.post.excerpt | truncatewords: include.words }}</span>
+        <span class="post-preview-text">{{ include.post.excerpt | strip_html | truncatewords: include.words }}</span>
     </div>
 </div>

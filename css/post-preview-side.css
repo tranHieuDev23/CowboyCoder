@@ -34,8 +34,7 @@
 }
 
 .post-preview-side-body {
-  width: 90%;
-  padding: 0px 20px 5px 20px;
+  padding: 0px 20px 12px 20px;
 }
 
 .post-preview-side-text {
@@ -59,7 +58,6 @@
   }
 
   .post-preview-side-body {
-    width: 100%;
     padding: 14px 20px 12px 20px;
   }
 

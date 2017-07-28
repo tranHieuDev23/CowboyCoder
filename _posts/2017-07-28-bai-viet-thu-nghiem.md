@@ -2,10 +2,10 @@
 layout: post
 title: Bài viết thử nghiệm
 date: 2017-07-28T07:21:33.550Z
-thumbnail: /img/uploads/pexels-photo-360591.jpeg
+thumbnail: "/img/uploads/pexels-photo-360591.jpeg"
 tags:
-  - '"test"'
-  - '"netlify"'
+  - 'test'
+  - 'netlify'
 ---
 # Đây là một bài viết thử nghiệm
 
