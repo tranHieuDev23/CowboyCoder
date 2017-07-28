@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Bài viết thử nghiệm
 date: 2017-07-28T07:21:33.550Z
 thumbnail: /img/uploads/pexels-photo-360591.jpeg
