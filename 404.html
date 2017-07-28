@@ -1,24 +1,49 @@
 ---
-layout: default
 ---
+<!doctype html>
+<html>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<head>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Home Page Title -->
+    <title>Cowboy Coder</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> 
+    {% include styling.html %}
+    <link href="/css/404.css" rel="stylesheet" type="text/css"/>
+</head>
 
-<div class="container">
-  <h1>404</h1>
+<body>
+    <!-- Navbar -->
+    {% include navbar.html %}
+    <!-- Navbar -->
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <!-- Jumbotron -->
+    {% include jumbotron.html %}
+    <!-- Jumbotron -->
+
+    <div class="container page-404-box">
+      <h1 class="page-404-message">404 Error :(</h1>
+      <h2 class="page-404-message">Trang bạn đang tìm kiếm không tồn tại.</h2>
+    </div>
+
+    {% include footer.html %}
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+</body>
+
+</html>

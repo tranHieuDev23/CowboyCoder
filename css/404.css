@@ -1,0 +1,12 @@
+---
+---
+/* Styling for 404 page */
+.page-404-box {
+    padding: 50px;
+    text-align: center;
+}
+
+.page-404-message {
+    font-family: "Oswald", sans-serif;
+    margin: 10px auto;
+}
