@@ -1,6 +1,8 @@
 <div class="post-preview-small panel panel-default">
     <div class="post-preview-small-header">
-        <img class="post-preview-small-img" src="/img/{{ include.post.thumbnail }}" width="100%" height="auto"/>
+        <a href="{{ include.post.url }}">
+            <img class="post-preview-small-img" src="/img/{{ include.post.thumbnail }}" width="100%" height="auto"/>
+        </a>
         <div class="post-preview-small-foreground"></div>
         <div class="post-preview-small-metadata">
             <a href="{{ include.post.url }}">
