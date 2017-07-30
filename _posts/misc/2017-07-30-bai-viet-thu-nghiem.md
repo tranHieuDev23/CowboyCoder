@@ -26,7 +26,9 @@ Việc phê duyệt bài viết và đăng bài viết sẽ diễn ra ở giao d
 
 1. Syntax Highlighting (tô màu code)
 
-Để tô màu code, thêm dòng “highlight \[tên ngôn ngữ\]” bên trong “{% %}” ở đầu đoạn code và thêm “endhighlight” bên trong “{% %}” ở cuối đoạn code. Ví dụ về việc tô màu code":
+Để tô màu code, thêm dòng “highlight \[tên ngôn ngữ\]” bên trong ngoặc đặc biệt (sẽ không viết ở đây vì sẽ sinh lỗi) ở đầu đoạn code và thêm “endhighlight” bên trong ngoặc ở cuối đoạn code. Ví dụ về việc tô màu code":
+
+![Syntax Highlighting](/img/uploads/Capture.PNG)
 
 {% highlight c\+\+ %}
 
