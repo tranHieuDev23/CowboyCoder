@@ -10,8 +10,8 @@
             {% include post-preview.html post=post words="30" %}
         {% endif %}
 
-        {% assign remain = site.categories[category] | pop %}
-        {% if remain != nil %}
+        {% if site.categories[category] | size > 1 %}
+        {% assign remain = site.categories[category] | shift %}
             <div class="row">
                 {% for post in remain limit: 2 %}
                     <div class="col-md-6 subpost">
