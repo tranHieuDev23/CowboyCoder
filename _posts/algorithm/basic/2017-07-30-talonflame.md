@@ -8,7 +8,7 @@ tags:
 ---
 # talonflame
 
-**itsjustwinds**Sun Jul 30 2017 22:56:47 GMT\+0700 (SE Asia Standard Time)![](blob:http://cowboycoder.tech/b381d636-bdf5-4209-937a-8443296f8e46)
+**itsjustwinds**
 
 ![null](/img/uploads/16.png)
 
