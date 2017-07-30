@@ -34,13 +34,14 @@ Việc phê duyệt bài viết và đăng bài viết sẽ diễn ra ở giao d
 
 #include <stdio.h>
 
-int main()
+using namespace std;
 
+int main()
 {
 
-cout << "Hello World!";
+  cout << "Hello World!";
 
-return 0;
+  return 0;
 
 }
 
