@@ -30,7 +30,7 @@ Việc phê duyệt bài viết và đăng bài viết sẽ diễn ra ở giao d
 
 ![Syntax Highlighting](/img/uploads/Capture.PNG)
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 
 \#include <stdio.h>
 
@@ -49,3 +49,4 @@ return 0;
 Chú ý sẽ có 1 số kí tự bị ẩn đi do quy tắc của Markdown. Đoạn này hãy tìm các kí tự HTML thay thế bằng Google :)).
 
 Còn 1 vài cái nữa nhưng sẽ nói sau.
+
