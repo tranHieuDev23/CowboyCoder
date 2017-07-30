@@ -16,23 +16,24 @@ moveset
 
 * outspeed attacker
 
-brave bird
+ +brave bird
 
-roost
+ +roost
 
-sword dance
+ +sword dance
 
-Flare Blitz
+ +Flare Blitz
 
 * bulky
 
-brave bird/Acrobatics
+ +brave bird/Acrobatics
 
-root
+ +root
 
-sword dance/Bulk Up
+ +sword dance/Bulk Up
 
-will-o-wisp
+ +will-o-wisp
 
 end <3
+
 
