@@ -49,6 +49,12 @@ int main()
 
 Chú ý sẽ có 1 số kí tự bị ẩn đi do quy tắc của Markdown. Đoạn này hãy tìm các kí tự HTML thay thế bằng Google :)).
 
+# 3. Ký hiệu Toán với MathJax
+
+Ví dụ: Thuật toán có độ phức tạp \\( log2(n) \\)
+
 Còn 1 vài cái nữa nhưng sẽ nói sau.
+
+
 
 
