@@ -10,7 +10,7 @@ tags:
 ---
 # Link bài tập gốc (tiếng Anh)
 
-http://www.spoj.com/problems/QTREE/
+[http://www.spoj.com/problems/QTREE/](http://www.spoj.com/problems/QTREE/)
 
 # Đề bài (tiếng Việt):
 
@@ -36,8 +36,8 @@ Với mỗi truy vấn "QUERY", in ra một số nguyên là kết quả của t
 
 # Solution
 
-http://simizer.com/1EY
+[http://simizer.com/1EY](http://simizer.com/1EY)
 
 # Code mẫu
 
-http://simizer.com/1II
+[http://simizer.com/1II](http://simizer.com/1II)
