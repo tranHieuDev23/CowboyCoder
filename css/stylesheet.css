@@ -48,7 +48,7 @@ a:hover, a:active, a:visited {
     margin-bottom: 10px;
 }
 
-.content > p > img {
+.content > p > img, .content > img {
     display: block;
     max-width: 90%;
     margin: 10px auto;
