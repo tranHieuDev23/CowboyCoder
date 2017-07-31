@@ -1,12 +1,13 @@
 ---
 title: '[SPOJ] QTREE'
 author: Admin Tổng quản
-date: 2017-07-31T01:23:25.163Z
+date: 2017-07-31T09:04:14.037Z
 thumbnail: /img/uploads/spoj.jpg
 tags:
   - spoj
   - tree
   - hld
+  - data-structure
 ---
 # Link bài tập gốc (tiếng Anh)
 
@@ -41,4 +42,5 @@ Với mỗi truy vấn "QUERY", in ra một số nguyên là kết quả của t
 # Code mẫu
 
 [http://simizer.com/1II](http://simizer.com/1II)
+
 
