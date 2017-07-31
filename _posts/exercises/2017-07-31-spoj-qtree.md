@@ -1,0 +1,45 @@
+---
+title: '[SPOJ] QTREE'
+author: Admin Tổng quản
+date: 2017-07-31T01:23:25.163Z
+thumbnail: /img/uploads/spoj.jpg
+tags:
+  - spoj
+  - tree
+  - hld
+---
+Link bài tập gốc (tiếng Anh)
+
+http://www.spoj.com/problems/QTREE/
+
+Đề bài (tiếng Việt):
+
+Bạn được cho một đồ thị dạng cây có N đỉnh và N - 1 cạnh được đánh số bắt đầu từ 1. Bạn được yêu cầu thực hiện các truy vấn sau:
+
+- CHANGE i ti : đổi trọng số của cạnh thứ i thành ti
+
+- QUERY a b : tìm trọng số lớn nhất trong các cạnh trên đường đi từ a tới b
+
+Input
+
+Dòng đầu tiên là một số nguyên t thể hiện số test case (t <= 20). Với mỗi test case:
+
+- Dòng đầu tiên là một số nguyên N (N <= 10000), N - 1 dòng tiếp theo, mỗi dòng chứa 3 số nguyên a, b, c thể hiện cạnh nối giữa 2 đỉnh a, b có trọng số c (c <= 1000000)
+
+- Các dòng tiếp theo chứa các truy vấn "CHANGE i ti" và "QUERY a b"
+
+Test case kết thúc khi xuất hiện truy vấn "DONE".
+
+Có 1 dòng trống giữa các test case.
+
+Output
+
+Với mỗi truy vấn "QUERY", in ra một số nguyên là kết quả của truy vấn đó.
+
+Solution
+
+http://simizer.com/1EY
+
+Code mẫu
+
+http://simizer.com/1II
