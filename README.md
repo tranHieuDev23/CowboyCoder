@@ -1,2 +1,2 @@
 # CowboyCoder
-Mã nguồn của trang web Cowboy Coder do ba thằng tập tành làm web quản lý
+Mã nguồn của trang web Cowboy Coder. Chỉnh sửa bằng Netlify CMS.
