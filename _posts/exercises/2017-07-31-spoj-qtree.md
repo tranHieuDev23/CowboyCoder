@@ -41,3 +41,4 @@ Với mỗi truy vấn "QUERY", in ra một số nguyên là kết quả của t
 # Code mẫu
 
 [http://simizer.com/1II](http://simizer.com/1II)
+
