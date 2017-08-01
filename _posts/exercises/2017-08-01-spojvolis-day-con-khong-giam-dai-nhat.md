@@ -20,8 +20,21 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 * 0 ≤ a\[i\] ≤ 10^9.
 * Trong 30% số test, D = 0.
 
-................................................................
+## Example
 
+```
+Input:
+
+4 1
+
+6 4 3 2
+
+Output:
+
+3
+
+Giải thích: Có thể biến đổi dãy thành 6 3 3 3.
+```
 
 
 ## Hướng dẫn
@@ -31,6 +44,7 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 ## CODE
 
 [http://simizer.com/ROJ](http://simizer.com/RJl)
+
 
 
 
