@@ -37,7 +37,9 @@ M dòng tiếp theo: Mỗi dòng có dạng:
 
 Gồm 1 số dòng tương ứng với các câu trả lời của sherry cho câu hỏi của bố
 
-# Solution: @@
+# Solution: 
+
+[http://simizer.com/VxY](http://simizer.com/VxY)
 
 # Code mẫu:
 
