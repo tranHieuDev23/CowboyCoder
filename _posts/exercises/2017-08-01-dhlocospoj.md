@@ -1,10 +1,11 @@
 ---
-title: '[SPOJ] DHLOCO'
+title: '[SPOJ] DHLOCO - Trò chơi lò cò'
 author: Joker
 date: 2017-08-01T03:58:48.899Z
 thumbnail: /img/uploads/spoj.png
 tags:
-  - spoj matrix
+  - spoj
+  - matrix
 ---
 # Link gốc:
 
@@ -24,6 +25,12 @@ Cho n và M, gọi K là số cách đi chuyển đúng khác nhau để đi 
 * Có 40% số test ứng với 40% số điểm có n ≤ 10^6;
 * Có 40% số test còn lại ứng với 40% số điểm có n ≤ 10^15.
 
+# Ví dụ:
+## Input:
+``` 5 100 ```
+## Output:
+```13```
+
 # Solution:
 
 Tham khảo tại : [http://simizer.com/QW1](http://simizer.com/QW1)
@@ -31,4 +38,5 @@ Tham khảo tại : [http://simizer.com/QW1](http://simizer.com/QW1)
 # Code:
 
 Tham khảo tại: [http://ideone.com/9nPYf7](http://simizer.com/QP0)
+
 
