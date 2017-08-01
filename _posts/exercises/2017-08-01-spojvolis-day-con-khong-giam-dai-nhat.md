@@ -41,9 +41,10 @@ Giải thích: Có thể biến đổi dãy thành 6 3 3 3.
 
 [http://simizer.com/RJl](http://simizer.com/RJl)
 
-## CODE
+## Code
 
 [http://simizer.com/ROJ](http://simizer.com/RJl)
+
 
 
 
