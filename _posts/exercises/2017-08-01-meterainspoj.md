@@ -54,7 +54,8 @@ Tham khảo tại: [http://simizer.com/SOh](http://simizer.com/SOh)
 
 ## **Code mẫu:**
 
-Tham khảo tại: [http://ideone.com/LbNCGa](http://simizer.com/OCo)
+Tham khảo tại: [http://simizer.com/OCo](http://simizer.com/OCo)
+
 
 
 
