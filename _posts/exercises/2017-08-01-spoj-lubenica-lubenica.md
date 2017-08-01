@@ -7,14 +7,14 @@ tags:
   - data-structure
   - heavy-light-decomposition
 ---
-# Link Bài Tập Gốc ( Tiếng Anh ) :http://www.spoj.com/problems/LUBENICA
+# Link Bài Tập Gốc ( Tiếng Anh ) :[http://www.spoj.com/problems/LUBENICA](http://www.spoj.com/problems/LUBENICA)
 
 # Đề Bài ( Tiếng Việt ) 
 Mạng lưới giao thông ở 1 nước bao gồm N thành phố \(đánh số từ 1 đến N\) và N-1 đường nối các thành phố với nhau. Có một đường đi duy nhất giữa mỗi cặp thành phố. Mỗi con đường có một độ dài xác định.
 
 Viết chương trình, với mỗi K cặp thành phố cho trước, tìm độ dài của con đường ngắn nhất và dài nhất trên đường đi giữa 2 thành phố này.
 
-### Dữ liệu
+## Dữ liệu
 
 Dòng đầu tiên chứa số nguyên N, 2 ≤ N ≤ 100 000.
 
@@ -24,11 +24,11 @@ Dòng tiếp theo chứa số nguyên K, 1 ≤ K ≤ 100 000.
 
 Mỗi dòng trong số K dòng tiếp theo chứa 2 số nguyên D và E - chỉ số của 2 thành phố cần truy vấn.
 
-### Kết quả
+## Kết quả
 
 Mỗi dòng trong số K dòng chứa 2 số nguyên - độ dài của con đường ngắn nhất và dài nhất trên đường nối giữa 2 thành phố tương ứng.
 
-### Ví dụ
+## Ví dụ
 
 ```
 Dữ liệu:
@@ -51,7 +51,7 @@ Kết quả:
 50 100
 ```
 
-**Giải thích Ví dụ:** 
+## Giải thích Ví dụ: 
 
 ![undefined](/img/uploads/graph.png)
 
@@ -61,9 +61,10 @@ Kết quả:
 
 - Truy vấn 3: Từ đỉnh 1 đến đỉnh 2 đi qua gồm các cạnh: 1-3, 3-2. Các cạnh này có trọng số tối thiểu là 50 (1-3) trọng số tối đa là 100 (3-2)
 
-# Solution : http://simizer.com/T0f 
+# Solution : [http://simizer.com/T0f](http://simizer.com/T0f) 
 
-# Code Mẫu : http://simizer.com/T82
+# Code Mẫu : [http://simizer.com/T82](http://simizer.com/T82)
+
 
 
 
