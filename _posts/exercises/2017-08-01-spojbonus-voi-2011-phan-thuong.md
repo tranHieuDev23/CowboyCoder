@@ -43,7 +43,8 @@ Ghi ra một số nguyên duy nhất là tổng giá trị lớn nhất của c�
 # Solution
 [http://simizer.com/Q22](http://simizer.com/Q22)
 # Code mẫu
-[http://simizer.com\/PiD](http://simizer.com/PiD)
+[http://simizer.com/PiD](http://simizer.com/PiD)
+
 
 
 
