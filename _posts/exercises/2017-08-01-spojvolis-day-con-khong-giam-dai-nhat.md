@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ]VOLIS-Dãy con không giảm dài nhất'
+title: '[SPOJ] VOLIS - Dãy con không giảm dài nhất'
 author: itsjustwinds
 date: 2017-08-01T05:03:51.591Z
 thumbnail: /img/uploads/18425040_1827501440903469_7828776711500337584_n.jpg
@@ -24,3 +24,4 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 
 #CODE# 
 http://simizer.com/ROJ
+
