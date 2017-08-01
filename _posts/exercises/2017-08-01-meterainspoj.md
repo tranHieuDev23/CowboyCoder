@@ -19,9 +19,12 @@ Phú ông nhận được thông tin về một trận mưa thiên thạch sắp
 - Dòng đầu tiên là số nguyên n \(3 &lt;= n &lt;= 5000\) là số đỉnh của đa giác lồi mô tả cánh đồng của Phú ông.
 - Mỗi dòng trong n dòng tiếp theo chứa cặp tọa độ của một đỉnh của đa giác lồi.- Dòng tiếp theo là số nguyên m \(2 &lt;= m &lt;= 5000\) - số thiên thạch rơi xuống.
 - Mỗi dòng trong số m dòng cuối cùng chứa 2 số là tọa độ điểm rơi của một thiên thạch.Các tọa độ là các số nguyên có trị tuyệt đối không quá 10^6.
+### Output
 
-# Ví dụ:
-## Input:
+Ghi ra m dòng, mỗi dòng tương ứng với 1 điểm rơi của thiên thạch. Ghi "YES" nếu điểm rơi của thiên thạch nằm trong cánh đồng và ghi "NO" nếu trái lại.
+
+## Ví dụ:
+#### Input:
 ```
 4
 2 4
@@ -35,7 +38,7 @@ Phú ông nhận được thông tin về một trận mưa thiên thạch sắp
 6 7
 ```
 
-##Output:
+#### Output:
 
 ``` 
 NO
@@ -44,19 +47,13 @@ YES
 YES
 ```
 
-
-### Output
-
-Ghi ra m dòng, mỗi dòng tương ứng với 1 điểm rơi của thiên thạch. Ghi "YES" nếu điểm rơi của thiên thạch nằm trong cánh đồng và ghi "NO" nếu trái lại.
-
-
-
 ## **Sol**:
 Tham khảo tại: [http://simizer.com/OLO](http://simizer.com/OLO)
 
 ## **Code mẫu:**
 
 Tham khảo tại: [http://ideone.com/LbNCGa](http://simizer.com/OCo)
+
 
 
 
