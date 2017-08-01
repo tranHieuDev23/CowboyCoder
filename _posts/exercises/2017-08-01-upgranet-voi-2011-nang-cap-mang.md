@@ -1,5 +1,5 @@
 ---
-title: UPGRANET - VOI 2011 Nâng cấp mạng
+title: '[SPOJ] UPGRANET - VOI 2011 Nâng cấp mạng'
 author: Joker
 date: 2017-08-01T07:17:18.265Z
 thumbnail: /img/uploads/upgrade.jpg
@@ -53,8 +53,9 @@ Ghi ra một số nguyên duy nhất là tổng chi phí nâng cấp theo phươ
 ```
 
 ## Solution:
-Tham khảo tại: 
+Tham khảo tại: [http://simizer.com/a5N](http://simizer.com/a5N)
 
 ## Code:
 Tham khảo tại: [http://simizer.com/SoC](http://simizer.com/SoC)
+
 
