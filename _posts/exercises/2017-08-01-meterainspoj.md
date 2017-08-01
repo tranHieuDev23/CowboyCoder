@@ -2,7 +2,7 @@
 title: '[SPOJ] METERAIN - Mưa thiên thạch'
 author: Joker
 date: 2017-08-01T00:28:08.412Z
-thumbnail: /img/uploads/spoj.png
+thumbnail: /img/uploads/images.jpg
 tags:
   - spoj convex
 ---
@@ -25,10 +25,11 @@ Ghi ra m dòng, mỗi dòng tương ứng với 1 điểm rơi của thiên th�
 
 
 
-## **Sol:**
-Tham khảo tại : [http://simizer.com/OLO](http://simizer.com/OLO)
+## **Sol**:
+Tham khảo tại: [http://simizer.com/OLO](http://simizer.com/OLO)
 
 ## **Code mẫu:**
 
 Tham khảo tại: [http://ideone.com/LbNCGa](http://simizer.com/OCo)
+
 
