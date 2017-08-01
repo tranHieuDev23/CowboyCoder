@@ -25,9 +25,9 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 **Hướng dẫn**  
 http://simizer.com/RJl
 
-
-**CODE** 
+**CODE**  
 http://simizer.com/ROJ
+
 
 
 
