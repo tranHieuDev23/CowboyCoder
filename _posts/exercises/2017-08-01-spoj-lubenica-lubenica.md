@@ -61,9 +61,10 @@ Kết quả:
 
 - Truy vấn 3: Từ đỉnh 1 đến đỉnh 2 đi qua gồm các cạnh: 1-3, 3-2. Các cạnh này có trọng số tối thiểu là 50 (1-3) trọng số tối đa là 100 (3-2)
 
-# Solution : 
+# Solution : http://simizer.com/T0f 
 
-# Code Mẫu : 
+# Code Mẫu : http://simizer.com/T82
+
 
 
 
