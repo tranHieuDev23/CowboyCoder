@@ -8,11 +8,11 @@ tags:
 ---
 link đề : http://vn.spoj.com/problems/VOLIS/
 
-## tóm tắt: 
+**tóm tắt:** 
 cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên cộng hoặc trừ đi một số **d** cho trước. nhiệm vụ của ta là tìm dãy con không giảm dài nhất có thể tạo thành sau khi thay đổi tùy ý.
 
 
-#Giới Hạn# 
+**Giới Hạn**
 * 0 &lt; N ≤ 1000.
 * 0 ≤ D ≤ 10^9.
 * 0 ≤ a\[i\] ≤ 10^9.
@@ -22,11 +22,12 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 
 
 
-#Hướng dẫn#  
+**Hướng dẫn**  
 http://simizer.com/RJl
 
 
-#CODE# 
+**CODE** 
 http://simizer.com/ROJ
+
 
 
