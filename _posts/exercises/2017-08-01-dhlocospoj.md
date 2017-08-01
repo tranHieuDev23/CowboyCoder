@@ -27,9 +27,13 @@ Cho n và M, gọi K là số cách đi chuyển đúng khác nhau để đi 
 
 # Ví dụ:
 ## Input:
-``` 5 100 ```
+``` 
+5 100 
+```
 ## Output:
-```13```
+```
+13
+```
 
 # Solution:
 
@@ -38,6 +42,7 @@ Tham khảo tại : [http://simizer.com/SPF](http://simizer.com/SPF)
 # Code:
 
 Tham khảo tại: [http://ideone.com/9nPYf7](http://simizer.com/QP0)
+
 
 
 
