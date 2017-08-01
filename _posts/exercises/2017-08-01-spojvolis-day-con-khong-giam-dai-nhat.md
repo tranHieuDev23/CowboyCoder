@@ -11,7 +11,7 @@ tags:
 
 ## tóm tắt:
 
-cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên cộng hoặc trừ đi một số **d** cho trước. nhiệm vụ của ta là tìm dãy con không giảm dài nhất có thể tạo thành sau khi thay đổi tùy ý.
+cho 1 dãy **a1 ,a2 ,..., an**; với 1 số trong dãy, ta có thể tự nhiên cộng hoặc trừ đi một số **d** cho trước. nhiệm vụ của ta là tìm dãy con không giảm dài nhất có thể tạo thành sau khi thay đổi tùy ý.
 
 
 ## Giới Hạn
@@ -44,6 +44,7 @@ Giải thích: Có thể biến đổi dãy thành 6 3 3 3.
 ## CODE
 
 [http://simizer.com/ROJ](http://simizer.com/RJl)
+
 
 
 
