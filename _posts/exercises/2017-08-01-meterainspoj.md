@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] METERAIN'
+title: '[SPOJ] METERAIN - Mưa thiên thạch'
 author: Joker
 date: 2017-08-01T00:28:08.412Z
 thumbnail: /img/uploads/spoj.png
@@ -31,3 +31,4 @@ Tham khảo tại : [http://simizer.com/OLO](http://simizer.com/OLO)
 ## **Code mẫu:**
 
 Tham khảo tại: [http://ideone.com/LbNCGa](http://simizer.com/OCo)
+
