@@ -4,7 +4,8 @@ author: Joker
 date: 2017-08-01T00:28:08.412Z
 thumbnail: /img/uploads/images.jpg
 tags:
-  - spoj convex
+  - spoj
+  - convex
 ---
 ## **Link bài gốc: **
 
@@ -22,12 +23,26 @@ Phú ông nhận được thông tin về một trận mưa thiên thạch sắp
 # Ví dụ:
 ## Input:
 ```
-5 100 
+4
+2 4
+8 4
+6 8
+4 6
+4
+3 5
+4 7
+5 5
+6 7
 ```
 
-## Output:
+##Output:
 
-``` 13 ```
+``` 
+NO
+NO
+YES 
+YES
+```
 
 
 ### Output
@@ -42,6 +57,7 @@ Tham khảo tại: [http://simizer.com/OLO](http://simizer.com/OLO)
 ## **Code mẫu:**
 
 Tham khảo tại: [http://ideone.com/LbNCGa](http://simizer.com/OCo)
+
 
 
 
