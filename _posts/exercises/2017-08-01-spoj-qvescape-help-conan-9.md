@@ -9,7 +9,7 @@ tags:
   - shortest paths
   - math
 ---
-# Link gốc 
+# Link gốc
 
 [http://vn.spoj.com/problems/QVESCAPE/](http://vn.spoj.com/problems/QVESCAPE/)
 
@@ -45,10 +45,12 @@ Output chứa 1 số nguyên, số con đường nhỏ nhất mà anh Quang Vũ 
 
 Nếu không thoát ra, anh Vũ sẽ bị tử ẹo tại hang động này, hy vọng các bạn sẽ giúp anh Vũ thoát khỏi hang.
 
-**P/S: **50% số test có N<=10^5
+\*\*P/S: \*\*50% số test có N<=10^5
 
-# Solution : đang viết @@
+# Solution : 
 
-# Code mẫu : 
+[http://simizer.com/T7S](http://simizer.com/T7S)
+
+# Code mẫu :
 
 [http://simizer.com/Snm](http://simizer.com/Snm)
