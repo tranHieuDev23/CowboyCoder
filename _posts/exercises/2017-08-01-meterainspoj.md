@@ -2,7 +2,7 @@
 title: '[SPOJ] METERAIN - Mưa thiên thạch'
 author: Joker
 date: 2017-08-01T00:28:08.412Z
-thumbnail: /img/uploads/images.jpg
+thumbnail: /img/uploads/METERAIN-images.jpg
 tags:
   - spoj
   - convex

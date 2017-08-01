@@ -2,7 +2,7 @@
 title: '[SPOJ] BONUS - VOI 2011 Phần thưởng'
 author: Nicky.Rio
 date: 2017-08-01T03:15:48.090Z
-thumbnail: /img/uploads/BONUS.jpg
+thumbnail: /img/uploads/BONUS-BONUS.jpg
 tags:
   - spoj
   - dp
