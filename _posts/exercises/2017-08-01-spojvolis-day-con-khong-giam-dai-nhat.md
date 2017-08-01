@@ -19,9 +19,14 @@ cho 1 dãy **a1,a2,...,an**; với 1 số trong dãy, ta có thể tự nhiên c
 * Trong 30% số test, D = 0.
 
 ................................................................
-#Hướng dẫn#
- http://simizer.com/RJl
+
+
+
+#Hướng dẫn#  
+http://simizer.com/RJl
+
 
 #CODE# 
 http://simizer.com/ROJ
+
 
