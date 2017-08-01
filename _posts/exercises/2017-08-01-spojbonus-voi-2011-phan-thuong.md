@@ -4,8 +4,8 @@ author: Nicky.Rio
 date: 2017-08-01T03:15:48.090Z
 thumbnail: /img/uploads/BONUS.jpg
 tags:
-  - SPOJ
-  - DP
+  - spoj
+  - dp
 ---
 # Link gốc:
 [http://vn.spoj.com/problems/BONUS/](http://vn.spoj.com/problems/BONUS/)
@@ -43,7 +43,8 @@ Ghi ra một số nguyên duy nhất là tổng giá trị lớn nhất của c�
 # Solution
 [http://simizer.com/Q22](http://simizer.com/Q22)
 # Code mẫu
-[http:\/\/simizer.com\/PiD](http://simizer.com/PiD)
+[http://simizer.com\/PiD](http://simizer.com/PiD)
+
 
 
 
