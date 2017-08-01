@@ -19,7 +19,7 @@ Tuấn là người chiến thắng trong một cuộc thi “tìm hiểu kiến
 
 ## Dữ liệu:
 
-* Dòng thứ nhất chứa hai sô nguyên dương n, k \(n &lt;= 1000, n\/3 &lt;= k &lt;= n\).
+* Dòng thứ nhất chứa hai sô nguyên dương n, k \(n &lt;= 1000, n/3 &lt;= k &lt;= n\).
 * Dòng thứ i trong số n dòng tiếp theo chứa n số nguyên dương, số thứ j là a\[i,j\] \(a\[i,j\] &lt;= 1000\)
 
 ## Kết quả:
@@ -44,6 +44,7 @@ Ghi ra một số nguyên duy nhất là tổng giá trị lớn nhất của c�
 [http://simizer.com/Q22](http://simizer.com/Q22)
 # Code mẫu
 [http://simizer.com\/PiD](http://simizer.com/PiD)
+
 
 
 
