@@ -33,10 +33,11 @@ Cho n và M, gọi K là số cách đi chuyển đúng khác nhau để đi 
 
 # Solution:
 
-Tham khảo tại : [http://simizer.com/QW1](http://simizer.com/QW1)
+Tham khảo tại : [http://simizer.com/SPF](http://simizer.com/SPF)
 
 # Code:
 
 Tham khảo tại: [http://ideone.com/9nPYf7](http://simizer.com/QP0)
+
 
 
