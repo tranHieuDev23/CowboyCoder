@@ -5,7 +5,8 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/d96de7908c.js"></script>
     <!-- Home Page Title -->
-    {% assign title = site.data.categories-data[page.title].title %}
+    {% assign category = page.title | split: '-' | first | strip %}
+    {% assign title = site.data.categories-data[category].title %}
     {% if title == nil %}
         {% assign title = page.title %}
     {% endif %}

@@ -1,5 +1,6 @@
 <div class="archive-content">
-    {% assign title = site.data.categories-data[page.title].title %}
+    {% assign category = page.title | split: '-' | first | strip %}
+    {% assign title = site.data.categories-data[category].title %}
     {% assign header = "Bài viết thuộc chuyên mục " | append: title %}
     {% if title == nil %}
         {% assign title = page.title %}
