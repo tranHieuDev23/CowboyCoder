@@ -2,12 +2,12 @@
 title: '[SPOJ] XUCXAC - Xúc xắc'
 author: itsjustwinds
 date: 2017-08-01T07:03:33.298Z
-thumbnail: /img/uploads/14495229_842897895845907_3380219879390540881_n.png
+thumbnail: /img/uploads/XUCXAC - image.jpg
 tags:
   - graph
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/XUCXAC/](http://vn.spoj.com/problems/XUCXAC/)
+# Đề: [http://vn.spoj.com/problems/XUCXAC/](http://vn.spoj.com/problems/XUCXAC/)
 
 Một mặt bàn nằm ngang được chia làm lưới ô vuông, trong mỗi ô có ghi một số tự nhiên.
 
@@ -15,21 +15,21 @@ Cho 1 con xúc xắc nằm vừa vặn trên một ô của lưới. Mỗi mặt
 
 Hãy tìm cách lăn từ một ô đến một ô khác trên mặt bàn để đạt chi phí nhỏ nhất.
 
-### Dữ liệu
+## Dữ liệu
 
 * Dòng đầu ghi 2 số M, N lần lượt là số dòng và số cột của lưới ô trên mặt bàn.
 * M dòng sau, mỗi dòng ghi N số nguyên không quá 100 là số ghi trên các ô lưới của mặt bàn. Các dòng được liệt kê theo thứ tự từ xa đến gần, các số trên mỗi dòng liệt kê từ trái sang phải.
 * Dòng cuối ghi 2 cặp số lần lượt là tọa độ \(dòng, cột\) của ô bắt đầu và ô kết thúc.
 
-### Kết quả
+## Kết quả
 
 Ghi ra một số duy nhất là chi phí nhỏ nhất tìm được.
 
-### Giới hạn
+## Giới hạn
 
 1 ≤ M,N ≤ 50.
 
-### Ví dụ
+## Ví dụ
 
 ```
 Dữ liệu
@@ -43,9 +43,10 @@ Kết quả
 52
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://simizer.com/Sm7](http://simizer.com/Sm7)
 
-## Code
+# Code
 [http://simizer.com/Smx](http://simizer.com/Smx)
+
