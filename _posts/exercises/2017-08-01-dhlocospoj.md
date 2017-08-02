@@ -41,7 +41,8 @@ Tham khảo tại : [http://simizer.com/SPF](http://simizer.com/SPF)
 
 # Code:
 
-Tham khảo tại: [http://ideone.com/9nPYf7](http://simizer.com/QP0)
+Tham khảo tại: [http://simizer.com/QP0](http://simizer.com/QP0)
+
 
 
 
