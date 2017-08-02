@@ -56,6 +56,32 @@ Giới hạn:
 
 -       Time limit: 5s
 
+```
+input
+5 1 2 0 0 2 0 0
+
+output
+4
+
+```
+
+```
+input
+4 4 0 1 1 0 1 1
+
+output
+6
+
+```
+
+```
+input
+10 20 4 76 2 6 2 43
+
+output
+12
+
+```
 ## Hướng dẫn:
 [http://simizer.com/okX](http://simizer.com/okX)
 
@@ -64,3 +90,4 @@ Giới hạn:
 ## Code
 
 [http://simizer.com/olO](http://simizer.com/olO)
+
