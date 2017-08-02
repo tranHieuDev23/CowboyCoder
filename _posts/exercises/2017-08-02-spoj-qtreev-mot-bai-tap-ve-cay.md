@@ -2,7 +2,7 @@
 title: '[SPOJ] QTREEV - Một bài tập về cây'
 author: itsjustwinds
 date: 2017-08-02T04:27:54.880Z
-thumbnail: /img/uploads/29968180855_7e7e8c48a9_o.jpg
+thumbnail: /img/uploads/QTREEV-GRAPH.jpg
 tags:
   - dp
   - tree
@@ -46,3 +46,4 @@ Output:
 ## Code
 
 [http://simizer.com/pL2](http://simizer.com/pL2)
+
