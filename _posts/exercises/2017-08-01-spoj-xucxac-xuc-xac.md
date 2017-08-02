@@ -44,9 +44,9 @@ Kết quả
 ```
 
 # Hướng dẫn
-
-[http://simizer.com/Sm7](http://simizer.com/Sm7)
+[http://simizer.com/tJI](http://simizer.com/tJI)
 
 # Code
 [http://simizer.com/Smx](http://simizer.com/Smx)
+
 
