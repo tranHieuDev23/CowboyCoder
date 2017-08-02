@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] LQDRACE - Race(IOI 2011)'
+title: '[SPOJ] LQDRACE - Race (IOI 2011)'
 author: Nguyễn Minh Quân
 date: 2017-08-02T09:18:47.272Z
 thumbnail: /img/uploads/LQBRACE.jpg
@@ -47,3 +47,4 @@ Bạn hãy cho biết số lượng đường cao tốc nhỏ nhất trên vòng
 # Code mẫu:
 
 [Here](http://simizer.com/t0W)
+
