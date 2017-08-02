@@ -43,8 +43,9 @@ Output:
 
 **WARNING!!!** suy nghĩ kĩ trước khi đọc code
 
-##CODE
+## CODE
 
  [http://simizer.com/ubX](http://simizer.com/ubX)
+
 
 
