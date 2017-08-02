@@ -21,41 +21,41 @@ Lưu ý:
 
 Để giảm kích thước của input, bảng sẽ được tô màu theo quy tắc sau:
 
-*       Ban đầu bảng chỉ chứa các ô vuông màu trắng
+* Ban đầu bảng chỉ chứa các ô vuông màu trắng
 
-*       Sinh 2 dãy số X và Y độ dài m theo quy tắc
+* Sinh 2 dãy số X và Y độ dài m theo quy tắc
 
-*  X\[0\] = x0 mod N, Y\[0\] = y0 mod N
+* X\[0\] = x0 mod N, Y\[0\] = y0 mod N
 
 * X\[i\] = \(X\[i – 1\] \* a + b\) mod N, Y\[i\] = \(Y\[i – 1\] \* c + d\) mod N với 1 &lt;= i &lt; m
 
 trong đó x0, y0, a, b, c, d, m là các số được cho trước, và P mod Q kí hiệu là phần dư của phép chia P cho Q
 
-*       Tô đen các ô có tọa độ \(X\[0\],Y\[0\]\), \(X\[1\],Y\[1\]\),…, \(X\[m – 1\],Y\[m – 1\]\). \(Tọa độ của bảng được đánh số từ 0 đến N – 1 theo thứ tự từ trái qua phải, và từ trên xuống dưới\)
+* Tô đen các ô có tọa độ \(X\[0\],Y\[0\]\), \(X\[1\],Y\[1\]\),…, \(X\[m – 1\],Y\[m – 1\]\). \(Tọa độ của bảng được đánh số từ 0 đến N – 1 theo thứ tự từ trái qua phải, và từ trên xuống dưới\)
 
 
 
 Input:
 
-*       1 dòng duy nhất gồm 8 số nguyên N,m,x0,a,b,y0,c,d như mô tả trong đề bài
+* 1 dòng duy nhất gồm 8 số nguyên N,m,x0,a,b,y0,c,d như mô tả trong đề bài
 
 
 
 Output:
 
-*       1 dòng duy nhất ghi ra số lượng hình chữ nhật hoàn hảo thu được
+* 1 dòng duy nhất ghi ra số lượng hình chữ nhật hoàn hảo thu được
 
 
 
 Giới hạn:
 
-*       0 &lt; N &lt;= 2000
+* 0 &lt; N &lt;= 2000
 
-*       1 &lt;= m &lt;= 4000000
+* 1 &lt;= m &lt;= 4000000
 
-*       0 &lt;= a, b, c, d, x0, y0 &lt;= 2000
+* 0 &lt;= a, b, c, d, x0, y0 &lt;= 2000
 
-*       Time limit: 5s
+* Time limit: 5s
 
 ```
 input
@@ -91,6 +91,7 @@ output
 ## Code
 
 [http://simizer.com/olO](http://simizer.com/olO)
+
 
 
 
