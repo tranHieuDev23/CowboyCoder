@@ -24,13 +24,13 @@ Hỏi có bao nhiêu cách khác nhau để N cô bò sắp thành thứ tự 'h
 
 ## Input
 
-\* Dòng 1: Hai số N và K cách nhau bởi khoảng trắng.
+* Dòng 1: Hai số N và K cách nhau bởi khoảng trắng.
 
-\* Dòng 2..N\+1: Dòng i\+1 chứa một số nguyên duy nhất là số seri của cô bò thứ i: S_i
+* Dòng 2..N\+1: Dòng i\+1 chứa một số nguyên duy nhất là số seri của cô bò thứ i: S_i
 
 ## Output
 
-\* Dòng 1: Một số nguyên duy nhất là số cách để N cô bò sắp thành thứ tự 'hỗn loạn'. Kết quả đảm bảo nằm trong phạm vi kiểu số nguyên 64-bit.
+* Dòng 1: Một số nguyên duy nhất là số cách để N cô bò sắp thành thứ tự 'hỗn loạn'. Kết quả đảm bảo nằm trong phạm vi kiểu số nguyên 64-bit.
 
 # Solution
 
@@ -39,4 +39,5 @@ Hỏi có bao nhiêu cách khác nhau để N cô bò sắp thành thứ tự 'h
 # Code mẫu
 
 [http://simizer.com/n8t](http://simizer.com/n8t)
+
 
