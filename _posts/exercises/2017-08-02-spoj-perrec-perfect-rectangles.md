@@ -5,6 +5,7 @@ date: 2017-08-02T03:40:55.682Z
 thumbnail: /img/uploads/talonflame_by_kaitlynclinkscales-d6i9tza.png
 tags:
   - data structure
+  - spoj
 ---
 ## Đề:[http://vn.spoj.com/problems/PERREC/](http://vn.spoj.com/problems/PERREC/)
 
@@ -90,4 +91,5 @@ output
 ## Code
 
 [http://simizer.com/olO](http://simizer.com/olO)
+
 
