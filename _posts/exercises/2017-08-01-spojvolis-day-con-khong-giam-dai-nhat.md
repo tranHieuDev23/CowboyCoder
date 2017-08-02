@@ -39,11 +39,12 @@ Giải thích: Có thể biến đổi dãy thành 6 3 3 3.
 
 # Hướng dẫn
 
-[http://simizer.com/RJl](http://simizer.com/RJl)
+[http://simizer.com/szz](http://simizer.com/szz)
 
 # Code
 
 [http://simizer.com/ROJ](http://simizer.com/RJl)
+
 
 
 
