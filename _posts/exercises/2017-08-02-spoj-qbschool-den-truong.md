@@ -1,3 +1,13 @@
+---
+title: '[SPOJ] QBSCHOOL - Đến trường'
+author: rknguyen
+date: 2017-08-02T14:36:15.968Z
+thumbnail: /img/uploads/14356685_1161310190602946_8901270260116619264_n_1485.jpg
+tags:
+  - spoj
+  - dijkstra
+  - dp
+---
 # Link đề gốc:
 
 [http://vn.spoj.com/problems/QBSCHOOL/](http://vn.spoj.com/problems/QBSCHOOL/)
