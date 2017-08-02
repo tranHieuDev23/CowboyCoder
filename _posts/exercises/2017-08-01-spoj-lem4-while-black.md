@@ -5,7 +5,7 @@ date: 2017-08-01T10:16:40.782Z
 thumbnail: /img/uploads/LEM4.jpeg
 tags:
   - spoj
-  - data structure
+  - data-structure
 ---
 # Link bài gốc:
 
@@ -44,3 +44,4 @@ Gồm 1 số dòng tương ứng với các câu trả lời của sherry cho c�
 # Code mẫu:
 
 [http://simizer.com/Vha](http://simizer.com/Vha)
+
