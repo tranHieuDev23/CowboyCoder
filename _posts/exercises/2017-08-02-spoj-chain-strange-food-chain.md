@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] - CHAIN - Strange Food Chain'
+title: '[SPOJ] CHAIN - Strange Food Chain'
 author: houtaru
 date: 2017-08-02T11:48:46.237Z
 thumbnail: '/img/uploads/[spoj] - chain.jpg'
@@ -32,3 +32,4 @@ Gồm t dòng, mỗi dòng là số thông tin bị sai.
 
 # Solution : [http://simizer.com/vNo](http://simizer.com/vNo) 
 #Code : [http://simizer.com/vYb](http://simizer.com/vYb)
+
