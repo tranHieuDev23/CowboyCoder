@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] - PBCDEM - Đếm dãy'
+title: '[SPOJ] PBCDEM - Đếm dãy'
 author: houtaru
 date: 2017-08-02T05:37:06.149Z
 thumbnail: '/img/uploads/[spoj] - pbcdem.jpg'
@@ -29,3 +29,4 @@ Ghi ra số cách.
 Solution : [http://simizer.com/q8H](http://simizer.com/q8H)
 
 Code : [http://simizer.com/q9D](http://simizer.com/q9D)
+
