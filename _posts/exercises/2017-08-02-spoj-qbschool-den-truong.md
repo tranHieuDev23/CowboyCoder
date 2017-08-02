@@ -14,7 +14,7 @@ tags:
 
 # Đề bài:
 
-Ngày 27\/11 tới là ngày tổ chức thi học kỳ I ở trường ĐH BK. Là sinh viên năm thứ nhất, Hiếu không muốn vì đi muộn mà gặp trục trặc ở phòng thi nên đã chuẩn bị khá kỹ càng. Chỉ còn lại một công việc khá gay go là Hiếu không biết đi đường nào tới trường là nhanh nhất.
+Ngày 27/11 tới là ngày tổ chức thi học kỳ I ở trường ĐH BK. Là sinh viên năm thứ nhất, Hiếu không muốn vì đi muộn mà gặp trục trặc ở phòng thi nên đã chuẩn bị khá kỹ càng. Chỉ còn lại một công việc khá gay go là Hiếu không biết đi đường nào tới trường là nhanh nhất.
 
 Thường ngày Hiếu không quan tâm tới vấn đề này lắm cho nên bây giờ Hiếu không biết phải làm sao cả. Bản đồ thành phố là gồm có N nút giao thông và M con đường nối các nút giao thông này. Có 2 loại con đường là đường 1 chiều và đường 2 chiều. Độ dài của mỗi con đường là một số nguyên dương.
 
@@ -33,7 +33,7 @@ Ghi hai số là độ dài đường đi ngắn nhấn và số lượng đư�
 
 ## Ví dụ:
 
-##Input:
+## Input:
 
 ```
 3 2
@@ -52,4 +52,5 @@ Tham khảo tại: [http://simizer.com/yzz](http://simizer.com/yzz)
 
 # Code:
 Tham khảo tại: [http://simizer.com/z3L](http://simizer.com/z3L)
+
 
