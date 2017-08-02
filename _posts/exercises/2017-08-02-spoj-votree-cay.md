@@ -4,6 +4,7 @@ author: La Hoàng Phong
 date: 2017-08-02T12:13:13.216Z
 thumbnail: /img/uploads/VOTREE_Image.jpg
 tags:
+  - spoj
   - data-structure
 ---
 # Link Bài Gốc : [http://vn.spoj.com/problems/VOTREE/](http://vn.spoj.com/problems/VOTREE/)
@@ -65,3 +66,4 @@ Tham khảo tại : [http://simizer.com/w59](http://simizer.com/w59)
 # Code:
 
 Tham khảo tại : [http://simizer.com/w8B](http://simizer.com/w8B)
+
