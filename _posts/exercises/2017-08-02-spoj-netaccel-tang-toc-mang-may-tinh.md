@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] - NETACCEL - Tăng tốc mạng máy tính'
+title: '[SPOJ] NETACCEL - Tăng tốc mạng máy tính'
 author: houtaru
 date: 2017-08-02T06:12:16.899Z
 thumbnail: /img/uploads/netaccel.jpg
@@ -31,3 +31,4 @@ In ra 1 số duy nhất là tốc độ kết nối nhanh nhất có thể sau k
 # Solution : [http://simizer.com/qKV](http://simizer.com/qKV)
  
 # Code : [http://simizer.com/qJk](http://simizer.com/qJk)
+
