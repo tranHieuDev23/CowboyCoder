@@ -74,13 +74,14 @@ output
 
 ```
 ## Hướng dẫn:
-[http://simizer.com/okX](http://simizer.com/okX)
+[http://simizer.com/tLj](http://simizer.com/tLj)
 
 !!!!!Waring !!!!! suy nghĩ trước khi đọc code
 
 ## Code
 
 [http://simizer.com/olO](http://simizer.com/olO)
+
 
 
 
