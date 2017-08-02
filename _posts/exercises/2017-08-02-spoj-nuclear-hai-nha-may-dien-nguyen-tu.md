@@ -13,7 +13,7 @@ tags:
 
 Hai nhà máy điện nguyên tử sẽ được xây dựng tại Byteland trong tương lai gần. Nhà máy điện thứ nhất có bán kính nguy hiểm là R1 và nhà máy điện thứ hai có bán kính nguy hiểm là R2. Để tránh bị nhiễm phóng xạ, tất cả các hộ gia đình cách nhà máy thứ nhất <= R1 km hoặc cách nhà máy thứ hai <= R2 km sẽ phải chuyển chỗ ở.Hai nhà máy sẽ được xây dựng cũng như các hộ gia đình đều nằm trên mặt phẳng với hệ tọa độ Descartes vuông góc , trong đó khoảng cách giữa hai điểm (x1,y1) và (x2,y2) được tính theo công thức:
 
-                                   sqrt(sqr(x1-x2)+sqr(y1-y2))
+$$ sqrt{ (x1 - x2) ^ 2 + (y1 - y2) ^ 2 } $$
 
 Có q đề án xây dựng, mỗi đề án đều phải cho biết bán kính nguy hiểm của mỗi nhà máy là một cặp giá trị . Nhiệm vụ của bạn là xác định số lượng gia đình phải chuyển chỗ ở ứng với mỗi đề án nếu đề án đó được thực thi.
 
@@ -77,6 +77,7 @@ Tham khảo tại: [http://simizer.com/nhx](http://simizer.com/nhx)
 
 ## Code: 
 Tham khảo tại: [http://simizer.com/npX](http://simizer.com/npX)
+
 
 
 
