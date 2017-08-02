@@ -18,19 +18,19 @@ Giá vé máy bay từ đất nước i đến đất nước j là Cij\( dĩ nh
 
 Bạn hãy giúp Sherry tìm 1 hành trình đi qua tất cả các nước, mỗi nước đúng 1 lần sao cho chi phí là bé nhất nhé.
 
-#### Input:
+## Input:
 
 Dòng 1: N \(5 &lt; N &lt; 16\).
 
 Dòng thứ i trong N dòng tiếp theo: Gồm N số nguyên, số thứ j là Cij\(0 &lt; Cij&lt; 10001\).
 
-#### Output:
+## Output:
 
 Gồm 1 dòng duy nhất ghi chi phí bé nhất tìm được.
 
-#Ví dụ:
+# Ví dụ:
 
-#### Input:
+## Input:
 ```
 6
 0 1 2 1 3 4 
@@ -41,7 +41,7 @@ Gồm 1 dòng duy nhất ghi chi phí bé nhất tìm được.
 5 4 3 3 1 0 
 ```
 
-#### Output:
+## Output:
 
 ```
 8
@@ -53,4 +53,5 @@ Tham khảo tại:[http://simizer.com/o2c](http://simizer.com/o2c)
 
 # Code:
 Tham khảo tại: [http://simizer.com/o00](http://simizer.com/o00)
+
 
