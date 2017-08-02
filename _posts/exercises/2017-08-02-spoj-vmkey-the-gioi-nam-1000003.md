@@ -21,7 +21,7 @@ Do dân số thế giới đã tăng vượt mốc 10001000, những dãy số �
 
 Thời gian để bạn bấm số điện thoại bằng tổng thời gian di chuyển của ngón tay bạn giữa các phím số liên tiếp trong dãy số. Thời gian này đúng bằng khoảng cách Manhattan giữa 2 phím số: Nếu phím số **A** ở dòng **i**, cột **j**, và phím số **B** ở dòng **u**, cột **v**, thì khoảng cách Manhattan giữa 2 phím số được tính theo công thức:
 
-$$ dist(A, B) = |i - u| \+ |j - v| $$
+$$ dist(A, B) = |i - u| + |j - v| $$
 
 Chẳng hạn, bạn muốn gọi số 357468, nếu sử dụng bàn phím cổ điển:
 
@@ -72,4 +72,5 @@ Gồm 1 dòng duy nhất ghi thời gian nhỏ nhất để bạn bấm dãy s�
 # Code mẫu
 
 [http://simizer.com/wpZ](http://simizer.com/wpZ)
+
 
