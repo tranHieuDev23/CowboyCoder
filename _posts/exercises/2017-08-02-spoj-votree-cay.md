@@ -60,8 +60,8 @@ Với mỗi truy vấn, in ra 1 dòng duy nhất là đáp số của truy vấn
 
 # Solution:
 
-Tham khảo tại : http://simizer.com/w59
+Tham khảo tại : [http://simizer.com/w59](http://simizer.com/w59)
 
 # Code:
 
-Tham khảo tại : http://simizer.com/w8B
+Tham khảo tại : [http://simizer.com/w8B](http://simizer.com/w8B)
