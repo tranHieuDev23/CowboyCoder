@@ -40,13 +40,14 @@ Output:
 
 ## Hướng dẫn
 
-[http://simizer.com/pJk](http://simizer.com/pJk)
+[http://simizer.com/tPS](http://simizer.com/tPS)
 
 **Warning** !!!!!! suy nghĩ trước khi đọc code
 
 ## Code
 
 [http://simizer.com/pL2](http://simizer.com/pL2)
+
 
 
 
