@@ -2,7 +2,7 @@
 title: '[SPOJ] WEATHER - Điều kiện thời tiết'
 author: Joker
 date: 2017-08-02T07:59:11.365Z
-thumbnail: /img/uploads/tải xuống.png
+thumbnail: '/img/uploads/[spoj]weather.png'
 tags:
   - spoj
   - graph
@@ -55,6 +55,7 @@ Tham khảo tại: [http://simizer.com/s2r](http://simizer.com/s2r)
 
 # Code;
 Tham khảo tại: [http://simizer.com/rrG](http://simizer.com/rrG)
+
 
 
 
