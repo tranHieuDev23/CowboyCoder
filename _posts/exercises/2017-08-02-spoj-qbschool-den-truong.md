@@ -18,11 +18,11 @@ Ngày 27/11 tới là ngày tổ chức thi học kỳ I ở trường ĐH BK. L
 
 Thường ngày Hiếu không quan tâm tới vấn đề này lắm cho nên bây giờ Hiếu không biết phải làm sao cả. Bản đồ thành phố là gồm có N nút giao thông và M con đường nối các nút giao thông này. Có 2 loại con đường là đường 1 chiều và đường 2 chiều. Độ dài của mỗi con đường là một số nguyên dương.
 
-Nhà Hiếu ở nút giao thông 1 còn trường ĐH BK ở nút giao thông N. Vì một lộ trình đường đi từ nhà Hiếu tới trường có thể gặp nhiều yếu tố khác như là gặp nhiều đèn đỏ , đi qua công trường xây dựng, ... phải giảm tốc độ cho nên Hiếu muốn biết là có tất cả bao nhiêu lộ trình ngắn nhất đi từ nhà tới trường. Bạn hãy lập trình giúp Hiếu giải quyết bài toán khó này.
+Nhà Hiếu ở nút giao thông 1 còn trường ĐH BK ở nút giao thông N. Vì một lộ trình đường đi từ nhà Hiếu tới trường có thể gặp nhiều yếu tố khác như là gặp nhiều đèn đỏ, đi qua công trường xây dựng, ... phải giảm tốc độ cho nên Hiếu muốn biết là có tất cả bao nhiêu lộ trình ngắn nhất đi từ nhà tới trường. Bạn hãy lập trình giúp Hiếu giải quyết bài toán khó này.
 
 ## Dữ liệu:
 
-* Dòng đầu tiên chứa số nguyên N và M \(1 ≤ N ≤ 5100, 1 ≤ M ≤ 20000)
+* Dòng đầu tiên chứa số nguyên N và M \(1 ≤ N ≤ 5100, 1 ≤ M ≤ 20000\)
 * M dòng tiếp theo, mỗi dòng chứa 4 số nguyên dương K, U, V, L. Trong đó:
 * K = 1 có nghĩa là có đường đi một chiều từ U đến V với độ dài L.
 * K = 2 có nghìa là có đường đi hai chiều giữa U và V với độ dài L.
@@ -52,5 +52,6 @@ Tham khảo tại: [http://simizer.com/yzz](http://simizer.com/yzz)
 
 # Code:
 Tham khảo tại: [http://simizer.com/z3L](http://simizer.com/z3L)
+
 
 
