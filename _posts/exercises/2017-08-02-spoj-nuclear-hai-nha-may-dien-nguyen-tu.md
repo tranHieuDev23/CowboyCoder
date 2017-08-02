@@ -71,12 +71,13 @@ Ghi ra q dòng, dòng thứ j ghi một số nguyên duy nhất là số hộ gi
 ### Hình ảnh cho ví dụ:
 ![undefined](/img/uploads/[spoj]NUCLEAR-example.jpg)
 
-## Solution:
+## Solution: 
 
 Tham khảo tại: [http://simizer.com/nhx](http://simizer.com/nhx)
 
 ## Code: 
 Tham khảo tại: [http://simizer.com/npX](http://simizer.com/npX)
+
 
 
 
