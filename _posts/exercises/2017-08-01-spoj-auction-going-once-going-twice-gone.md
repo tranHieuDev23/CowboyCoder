@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] - AUCTION - Going Once, Going Twice, Gone!'
+title: '[SPOJ] AUCTION - Going Once, Going Twice, Gone!'
 author: houtaru
 date: 2017-08-01T14:22:29.835Z
 thumbnail: /img/uploads/AUCTION - image.jpg
@@ -26,7 +26,13 @@ Hãy giúp nông dân John tính xem đặt mức giá nhỏ nhất là bao nhi�
 ## Kết quả
 * Dòng 1: 2 số nguyên cách nhau bởi dấu cách: giá bán của John và số tiền mà John thu được.
 
-# Solution : http://simizer.com/aQi
-# Code : http://simizer.com/aLy
+# Solution: 
+
+<http://simizer.com/aQi>
+
+# Code: 
+
+<http://simizer.com/aLy>
+
 
 
