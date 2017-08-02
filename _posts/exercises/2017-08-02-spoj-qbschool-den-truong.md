@@ -20,27 +20,28 @@ Thường ngày Hiếu không quan tâm tới vấn đề này lắm cho nên b�
 
 Nhà Hiếu ở nút giao thông 1 còn trường ĐH BK ở nút giao thông N. Vì một lộ trình đường đi từ nhà Hiếu tới trường có thể gặp nhiều yếu tố khác như là gặp nhiều đèn đỏ , đi qua công trường xây dựng, ... phải giảm tốc độ cho nên Hiếu muốn biết là có tất cả bao nhiêu lộ trình ngắn nhất đi từ nhà tới trường. Bạn hãy lập trình giúp Hiếu giải quyết bài toán khó này.
 
-### Dữ liệu:
+## Dữ liệu:
 
 * Dòng đầu tiên chứa số nguyên N và M \(1 ≤ N ≤ 5100, 1 ≤ M ≤ 20000)
 * M dòng tiếp theo, mỗi dòng chứa 4 số nguyên dương K, U, V, L. Trong đó:
 * K = 1 có nghĩa là có đường đi một chiều từ U đến V với độ dài L.
 * K = 2 có nghìa là có đường đi hai chiều giữa U và V với độ dài L.
 
-### Kết quả:
+## Kết quả:
 
 Ghi hai số là độ dài đường đi ngắn nhấn và số lượng đường đi ngắn nhất. Biết rằng số lượng đường đi ngắn nhất không vượt quá phạm vì int64 trong pascal hay long long trong C++.
 
-### Ví dụ:
+## Ví dụ:
 
-#### Input:
+##Input:
+
 ```
 3 2
 1 1 2 3
 2 2 3 1
 ```
 
-#### Output:
+## Output:
 ```
 4 1
 ```
@@ -51,3 +52,4 @@ Tham khảo tại: [http://simizer.com/yzz](http://simizer.com/yzz)
 
 # Code:
 Tham khảo tại: [http://simizer.com/z3L](http://simizer.com/z3L)
+
