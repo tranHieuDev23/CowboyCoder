@@ -7,6 +7,8 @@ tags:
   - math
   - spoj
 ---
+(Trả lại Đảo vì solution quá khó hiểu)
+
 # Đề: [http://vn.spoj.com/problems/BINARY/](http://vn.spoj.com/problems/BINARY/)
 
 Cho số nguyên không âm N \(N &lt; 2^31\). Hãy xác định xem trong phạm vi từ 0 tới N có bao nhiêu số mà trong dạng biểu diễn nhị phân của nó có đúng K chữ số 0 có nghĩa.
@@ -16,15 +18,15 @@ Ví dụ: N = 18, K = 3 có 3 số:
 * 17 = 10001
 * 18 = 10010
 
-### Input
+## Input
 
 Gồm một số dòng, mỗi chứa hai số nguyên N và K cách nhau một dấu cách.
 
-### Output
+## Output
 
 Ứng với mỗi bộ N, K ở Input đưa ra số lượng tìm được.
 
-### Example
+## Example
 
 ```
 Input:
@@ -43,9 +45,10 @@ Output:
 
 **WARNING!!!** suy nghĩ kĩ trước khi đọc code
 
-## CODE
+## Code
 
- [http://simizer.com/ubX](http://simizer.com/ubX)
+[http://simizer.com/ubX](http://simizer.com/ubX)
+
 
 
 
