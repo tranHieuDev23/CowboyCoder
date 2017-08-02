@@ -53,7 +53,7 @@ Kết quả:
 
 ## Giải thích Ví dụ: 
 
-![undefined](/img/uploads/graph.png)
+![undefined](/img/uploads/LUBENICA-graph.png)
 
 - Truy vấn 1 : Từ đỉnh 2 đến đỉnh 4 đi qua gồm các cạnh: 2-3, 3-4. Các cạnh này có trọng số tối thiểu là 100 (2-3) trọng số tối đa là 200 (3-4)
 
