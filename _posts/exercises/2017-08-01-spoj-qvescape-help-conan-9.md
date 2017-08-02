@@ -2,11 +2,11 @@
 title: '[SPOJ] QVESCAPE - Help Conan 9 !'
 author: Nguyễn Minh Quân
 date: 2017-08-01T07:11:48.879Z
-thumbnail: /img/uploads/conan.png
+thumbnail: /img/uploads/CONAN-Image.jpg
 tags:
   - spoj
   - graphs
-  - shortest paths
+  - shortest-paths
   - math
 ---
 # Link gốc
@@ -45,7 +45,7 @@ Output chứa 1 số nguyên, số con đường nhỏ nhất mà anh Quang Vũ 
 
 Nếu không thoát ra, anh Vũ sẽ bị tử ẹo tại hang động này, hy vọng các bạn sẽ giúp anh Vũ thoát khỏi hang.
 
-\*\*P/S: \*\*50% số test có N<=10^5
+P/S: 50% số test có N<=10^5
 
 # Solution : 
 
@@ -54,3 +54,4 @@ Nếu không thoát ra, anh Vũ sẽ bị tử ẹo tại hang động này, hy 
 # Code mẫu :
 
 [http://simizer.com/Snm](http://simizer.com/Snm)
+
