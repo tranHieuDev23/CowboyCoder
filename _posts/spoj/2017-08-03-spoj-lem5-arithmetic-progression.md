@@ -7,7 +7,8 @@ tags:
   - brute-force
   - spoj
 ---
-# Đề:[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
+# Đề: 
+[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
 
 Cho 1 dãy gồm N số nguyên Ai. Một cấp số cộng là 1 dãy con B của dãy A thoả mãn: B[i]= B[i-1]+ D \( D là công sai & 1 &lt;= D &lt;= 100 \)
 
@@ -64,5 +65,6 @@ Output:
 ## Code
 
 [http://dataurbia.com/Zr](http://dataurbia.com/Zr)
+
 
 
