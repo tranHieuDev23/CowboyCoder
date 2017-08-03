@@ -7,7 +7,7 @@ tags:
   - brute-force
   - spoj
 ---
-## Đề:[http://vn.spoj.com/problems/VMSUBSTR/](http://vn.spoj.com/problems/VMSUBSTR/)
+# Đề: [http://vn.spoj.com/problems/VMSUBSTR/](http://vn.spoj.com/problems/VMSUBSTR/)
 
 Sau một năm học cày cuốc vất vả; Hè này Huy quyết định mời các bạn về quê chơi. Huy sẽ dẫn các bạn đi leo núi, ngắm cảnh... và sẽ mở một buổi chiêu đãi các bạn tài nhà mình. "Nhà rộng và đẹp lắm, có cả một vườn cây ăn trái sum xuê !" - Huy giới thiệu về ngôi nhà của mình.
 
@@ -65,11 +65,12 @@ Output:
 * Với trường hợp 'b', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'b';
 * Với trường hợp 'ab', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'aba';
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://dataurbia.com/yd](http://dataurbia.com/yd)
 
-## Code
+# Code
 
 [http://dataurbia.com/10E](http://dataurbia.com/10E)
+
 
