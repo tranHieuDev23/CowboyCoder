@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] MINROAD - VOI 2014 - Con duong Tung Truc'
+title: '[SPOJ] MINROAD - VOI 2014 - Con đường Tùng Trúc'
 author: Joker
 date: 2017-08-03T00:42:25.146Z
 thumbnail: '/img/uploads/[spoj]minroad.jpg'
@@ -58,5 +58,6 @@ Tham khảo tại: [http://simizer.com/18oC](http://simizer.com/18oC)
 # Code:
 
 Tham khảo tại: [http://simizer.com/18jF](http://simizer.com/18jF)
+
 
 
