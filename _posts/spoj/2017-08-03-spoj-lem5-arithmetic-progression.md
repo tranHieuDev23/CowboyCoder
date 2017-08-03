@@ -7,24 +7,23 @@ tags:
   - brute-force
   - spoj
 ---
-# Đề: 
-[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
+# Đề:[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
 
 Cho 1 dãy gồm N số nguyên Ai. Một cấp số cộng là 1 dãy con B của dãy A thoả mãn: B[i]= B[i-1]+ D \( D là công sai & 1 &lt;= D &lt;= 100 \)
 
 Yêu cầu: Bạn hãy tìm 1 cấp số cộng dài nhất
 
-### Input
+## Input
 
 Dòng 1: N \( 1 &lt;= N &lt;= 10^5\)
 
 N dòng tiếp theo: dòng thứ i là số nguyên Ai\( \|Ai\| &lt;= 10^9\)
 
-### Output
+## Output
 
 Gồm 1 dòng duy nhất là số phần tử của cấp số cộng dài nhất tìm được
 
-### Example
+## Example
 
 ```
 
@@ -65,6 +64,7 @@ Output:
 ## Code
 
 [http://dataurbia.com/Zr](http://dataurbia.com/Zr)
+
 
 
 
