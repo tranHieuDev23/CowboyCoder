@@ -15,9 +15,9 @@ Yêu cầu: Bạn hãy tìm 1 cấp số cộng dài nhất
 
 ### Input
 
-Dòng 1: N \( 1 &lt;= N &lt;= 105\)
+Dòng 1: N \( 1 &lt;= N &lt;= 10^5\)
 
-N dòng tiếp theo: dòng thứ i là số nguyên Ai\( \|Ai\| &lt;= 109\)
+N dòng tiếp theo: dòng thứ i là số nguyên Ai\( \|Ai\| &lt;= 10^9\)
 
 ### Output
 
@@ -64,3 +64,4 @@ Output:
 ## Code
 
 [http://dataurbia.com/Zr](http://dataurbia.com/Zr)
+
