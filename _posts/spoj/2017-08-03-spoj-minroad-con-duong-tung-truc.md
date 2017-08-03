@@ -18,7 +18,7 @@ tags:
 
 Cho a, b và vị trí của n cây. Hãy tìm đoạn đường có độ dài ngắn nhất mà dọc theo đoạn đường đó có ít nhất a cây tùng và b cây trúc.
 
-### Input
+## Input
 
 * Dòng đầu chứa 3 số nguyên dương n, a, b \(a + b &lt;= n\)
 * Dòng thứ i trong n dòng tiếp theo mỗi dòng chứa hai số nguyên dương d\_i \(d\_i &lt;= 10^9\) trong đó d\_i là khoảng cách của cây tính từ vị trí bắt đầu của con đường, k\_i = 1 nếu cây thứ i là cây tùng, k\_i = 2 nếu là cây trúc.
@@ -55,6 +55,7 @@ Tham khảo tại: [http://simizer.com/18oC](http://simizer.com/18oC)
 # Code: 
 
 Tham khảo tại: [http://simizer.com/18jF](http://simizer.com/18jF)
+
 
 
 
