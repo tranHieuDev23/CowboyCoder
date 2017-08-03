@@ -21,7 +21,8 @@ Do biết rõ kỹ năng lập trình của từng bạn, thầy HUNGNT có th�
 
 Để tránh việc phải đọc một lượng dữ liệu quá lớn, dãy 𝐴 sẽ được cho bởi ba số nguyên dương 𝑝, 𝑞, 𝑚, trong đó mỗi phần tử 𝑎𝑖 được xác định theo công thức: 
 
-                          𝑎𝑖 = (𝑝 ∗ 𝑖) mod 𝑚 + 𝑞 (∀𝑖: 1 ≤ 𝑖 ≤ 𝑛)
+𝑎𝑖 = (𝑝 ∗ 𝑖) mod 𝑚 + 𝑞 (∀𝑖: 1 ≤ 𝑖 ≤ 𝑛)
+
 ## Dữ liệu: 
 * Dòng 1 chứa hai số nguyên dương 𝑛, Δ (𝑛 ≤ 5.10^6; Δ ≤ 10^9)
 * Dòng 2 chứa ba số nguyên dương 𝑝, 𝑞, 𝑚 xác định dãy 𝐴 (𝑝, 𝑞, 𝑚 ≤ 10^9)
@@ -64,3 +65,4 @@ Học sinh 1: 15 + 3 = 18
 [http://dataurbia.com/3Td](http://dataurbia.com/3Td)
 # Code mẫu
 [http://dataurbia.com/3KF](http://dataurbia.com/3KF)
+
