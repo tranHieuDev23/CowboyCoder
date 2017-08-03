@@ -37,13 +37,14 @@ Output:
 9
 ```
 
-## Solution:
+# Solution:
 
 Tham khảo tại: [http://dataurbia.com/3OO](http://dataurbia.com/3OO)
 
-## Code:
+# Code:
 
 Tham khảo tại: [http://dataurbia.com/3PP](http://dataurbia.com/3PP)
+
 
 
 
