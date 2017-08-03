@@ -7,7 +7,7 @@ tags:
   - brute-force
   - spoj
 ---
-# Đề:[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
+# Đề: [http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
 
 Cho 1 dãy gồm N số nguyên Ai. Một cấp số cộng là 1 dãy con B của dãy A thoả mãn: B[i]= B[i-1]+ D \( D là công sai & 1 &lt;= D &lt;= 100 \)
 
@@ -26,44 +26,33 @@ Gồm 1 dòng duy nhất là số phần tử của cấp số cộng dài nhấ
 ## Example
 
 ```
-
 Input:
 
 10 
-
 1
-
 10
-
 3
-
 20
-
 5
-
 30
-
 7
-
 9
-
 40
-
 11
 
 Output:
 
 6
-
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://dataurbia.com/ZI](http://dataurbia.com/ZI)
 
-## Code
+# Code
 
 [http://dataurbia.com/Zr](http://dataurbia.com/Zr)
+
 
 
 
