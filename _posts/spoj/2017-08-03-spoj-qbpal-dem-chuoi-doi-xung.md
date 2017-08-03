@@ -13,16 +13,16 @@ Ví dụ từ IOICAMP, khi xóa đi các chữ cái C,A,M,P, thì còn lại IOI
 
 Bờm cảm thấy thú vị, và cậu tiếp tục thử xóa các ký tự khác, kết quả là có thêm nhiều từ đối xứng nữa: II, I, O, C… Nhưng nếu với một từ dài, cứ thử từng cách xóa như vậy thì thật mất thời gian. Bạn hãy viết chương trình giúp Bờm tính số cách xóa sao cho từ thu được đối xứng. Hai cách xóa chỉ khác nhau bởi thứ tự xóa các ký tự thì coi như trùng nhau.
 
-### Input
+## Input
 
 Một dòng duy nhất là từ cần tính số cách xóa, từ này chỉ chứa các chữ cái in hoa A, B, .., Z. \( Độ dài từ không quá 120 \)
 
-### Output
+## Output
 
 Một số duy nhất là số cách xóa.
 
 
-#Ví dụ
+# Ví dụ
 
 ```
 Input:
@@ -37,12 +37,13 @@ Output:
 9
 ```
 
-##Solution:
+## Solution:
 
 Tham khảo tại: [http://dataurbia.com/3OO](http://dataurbia.com/3OO)
 
-##Code:
+## Code:
 
 Tham khảo tại: [http://dataurbia.com/3PP](http://dataurbia.com/3PP)
+
 
 
