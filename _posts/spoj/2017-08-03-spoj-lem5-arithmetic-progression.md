@@ -2,12 +2,12 @@
 title: '[SPOJ] LEM5 - ARITHMETIC PROGRESSION'
 author: itsjustwinds
 date: 2017-08-03T10:28:28.351Z
-thumbnail: /img/uploads/Chelsea.(Akame.ga.Kill!).full.1983566.jpg
+thumbnail: /img/uploads/lem5_graph.gif
 tags:
   - brute-force
   - spoj
 ---
-# Đề:http://vn.spoj.com/problems/LEM5/
+# Đề:[http://vn.spoj.com/problems/LEM5/](http://vn.spoj.com/problems/LEM5/)
 
 Cho 1 dãy gồm N số nguyên Ai. Một cấp số cộng là 1 dãy con B của dãy A thoả mãn: B[i]= B[i-1]+ D \( D là công sai & 1 &lt;= D &lt;= 100 \)
 
@@ -64,4 +64,5 @@ Output:
 ## Code
 
 [http://dataurbia.com/Zr](http://dataurbia.com/Zr)
+
 
