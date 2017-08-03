@@ -5,8 +5,11 @@ date: 2017-08-03T13:28:41.171Z
 thumbnail: '/img/uploads/[SPOJ]qbpal.png'
 tags:
   - spoj
-  - ''
+  - string
+  - palindrome
 ---
+# Link bài gốc: <http://vn.spoj.com/problems/QBPAL/>
+
 Trong một buổi học viết chữ, Bờm phát hiện trong một số từ khi bỏ đi một số ký tự thì đọc ngược hay đọc xuôi đều giống nhau.
 
 Ví dụ từ IOICAMP, khi xóa đi các chữ cái C,A,M,P, thì còn lại IOI là một từ đối xứng.
@@ -44,6 +47,7 @@ Tham khảo tại: [http://dataurbia.com/3OO](http://dataurbia.com/3OO)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/3PP](http://dataurbia.com/3PP)
+
 
 
 
