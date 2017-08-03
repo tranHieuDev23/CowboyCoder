@@ -1,43 +1,6 @@
-algorithm:
-  title: "Giải thuật"
-  subcategories:
-    - basic
-    - data-structure
-    - dp
-    - string
-    - graph
-    - math
-    - geometry
-    - other
-programming:
-  title: "Lập trình"
-  subcategories:
-    - c_cpp
-    - java
-    - web
-exercises:
-  title: "Bài tập"
-misc:
-  title: "Tản mạn"
-basic:
-  title: "Cơ bản"
-data-structure:
-  title: "Cấu trúc dữ liệu"
-dp:
-  title: "Quy hoạch động"
-string:
-  title: "String"
-graph:
-  title: "Đồ thị"
-math:
-  title: "Toán học"
-geometry:
-  title: "Hình học"
-other:
-  title: "Kĩ năng khác"
-c_cpp:
-  title: "C/C++"
-java:
-  title: "Java"
-web:
-  title: "Web"
+spoj:
+  title: "SPOJ"
+codeforces:
+  title: "Codeforces"
+article:
+  title: "Bài viết"

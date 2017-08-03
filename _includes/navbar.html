@@ -12,10 +12,9 @@
         <div class="container-fluid">
 
             <ul class="nav navbar-nav">
-                <li class="dropdown">{% include navbar-hover-dropdown.html category="algorithm" %}</li>
-                <li class="dropdown">{% include navbar-hover-dropdown.html category="programming" %}</li>
-                <li class="dropdown">{% include navbar-hover-dropdown.html category="exercises" %}</li>
-                <li class="dropdown">{% include navbar-hover-dropdown.html category="misc" %}</li>
+                {% for item in site.data.site-data.root-categories %}
+                    <li class="dropdown">{% include navbar-hover-dropdown.html category=item %}</li>
+                {% endfor %}
                 <li><a href="/about">About us</a></li>
             </ul>
             
