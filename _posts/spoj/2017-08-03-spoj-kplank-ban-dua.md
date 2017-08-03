@@ -8,7 +8,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-http://vn.spoj.com/problems/KPLANK/
+[http://vn.spoj.com/problems/KPLANK/](http://vn.spoj.com/problems/KPLANK/)
 
 # Đề bài:
 
@@ -50,8 +50,9 @@ Một số nguyên duy nhất là độ dài cạnh của tấm biển lớn nh�
 ``` 
 # Solution:
 
-Tham khảo tại: http://simizer.com/191D
+Tham khảo tại: [http://simizer.com/191D](http://simizer.com/191D)
 
 #Code:
 
-Tham khảo tại: http://simizer.com/18vT
+Tham khảo tại: [http://simizer.com/18vT](http://simizer.com/18vT)
+
