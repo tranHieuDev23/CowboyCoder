@@ -2,7 +2,7 @@
 title: '[SPOJ] VMSUBSTR - Vườn cây của ba'
 author: itsjustwinds
 date: 2017-08-03T11:14:45.805Z
-thumbnail: /img/uploads/HdflKBM.png
+thumbnail: /img/uploads/VMSUBSTR-graph.jpg
 tags:
   - brute-force
   - spoj
@@ -17,31 +17,31 @@ Vì muốn đãi các bạn thật nhiều trái cây, nên Huy sẽ tận dụn
 
 Bạn tính xem Huy sẽ phân công ít nhất bao nhiêu nhân công để thực hiện kế hoạch chiêu đãi trái cây của mình? Biết rằng mỗi nhân công sẽ hái hết tất cả trái cây ở các khu đất mình được phân vào.
 
-### Input
+## Input
 
 * Dòng 1: Gồm 1 số nguyên dương duy nhất: L - số khu đất trong khu vườn.
 * Dòng 2: Chứa xâu S gồm đúng L chữ cái Latin \(in thường hoặc hoa\), miêu tả khu vườn của Huy. Mỗi chữ cái cho biết loại cây được trồng ở khu đất tương ứng
 * Dòng 3: Q - số trường hợp mà bạn phải xứ lý.
 * Q dòng tiếp, mỗi dòng mô tả một trường hợp và gồm các chữ cái Latin \(in thường hoặc hoa\). Mỗi chữ đại diện cho một loại cây được phép sử dụng.
 
-### Output
+## Output
 
 * Với mỗi trường hợp, ghi ra 1 dòng duy nhất là số nhân công ít nhất cần nhờ đến.
 
-### Chấm điểm
+## Chấm điểm
 
 * Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với % test mà bạn giải đúng.
 * Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.
 * Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.
 
-### Giới hạn
+## Giới hạn
 
 * L ≤ 1,000,000;
 * Q ≤ 100,000;
 * Số ký tự trong mỗi query không quá 52. Trong mỗi query, các ký tự không lặp lại
 * Trong 50% số test, L ≤ 1000, Q ≤ 1000;
 
-### Example
+## Example
 
 ```
 Input:
@@ -59,7 +59,7 @@ Output:
 
 ```
 
-### Giải thích
+## Giải thích
 
 * Với trường hợp 'ac', Huy chỉ hái những cây loại 'a' và 'c'. Nên Huy cần nhờ ít nhất 3 nhân công lo 3 phần 'a', 'aca', 'a';
 * Với trường hợp 'b', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'b';
@@ -72,3 +72,4 @@ Output:
 ## Code
 
 [http://dataurbia.com/10E](http://dataurbia.com/10E)
+
