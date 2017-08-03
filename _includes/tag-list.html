@@ -1,5 +1,5 @@
 <div class="tag-list">
     {% for tag in page.tags %}
-        <a class="tag-list-item" href="/tags/{{ tag }}">{{ tag }}</a>
+        <a class="tag-list-item" href="/tags/{{ tag }}">{{ tag | downcase }}</a>
     {% endfor %}
 </div>

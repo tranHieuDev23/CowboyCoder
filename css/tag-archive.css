@@ -1,0 +1,12 @@
+---
+---
+/* Styling for tag archive content */
+.tag-content-title {
+    font-family: "Oswald", sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.tag-list {
+    margin-bottom: 20px;
+}
