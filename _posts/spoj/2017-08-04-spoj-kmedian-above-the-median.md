@@ -35,7 +35,6 @@ Please help FJ count the number of different contiguous subsequences of his cows
 **Input**
 ```
 4 6 10 5 6 2 
-
 ```
 **Output**
 ```
@@ -50,3 +49,4 @@ Có 10 dãy con liên tiếp, nhưng chỉ có 7 dãy con thõa mãn có trung v
 [http://dataurbia.com/R2F](http://dataurbia.com/R2F)
 # Code mẫu
 [http://dataurbia.com/Ql0](http://dataurbia.com/Ql0)
+
