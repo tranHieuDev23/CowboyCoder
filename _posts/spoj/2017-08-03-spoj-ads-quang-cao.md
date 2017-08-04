@@ -9,7 +9,7 @@ tags:
 ---
 ## Link đề gốc
 
-http://vn.spoj.com/problems/ADS/
+<http://vn.spoj.com/problems/ADS/>
 
 # Đề bài:
 
@@ -65,4 +65,5 @@ Tham khảo tại:[http://dataurbia.com/32f](http://dataurbia.com/32f)
 
 
 (Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11)
+
 
