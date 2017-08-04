@@ -2,7 +2,7 @@
 title: '[SPOJ] VMRR - RR'
 author: itsjustwinds
 date: 2017-08-04T14:59:55.898Z
-thumbnail: /img/uploads/HdflKBM.png
+thumbnail: /img/uploads/VMRR-graph.jpg
 tags:
   - spoj
 ---
@@ -64,3 +64,4 @@ Output 2:
 ## Code
 
 [http://dataurbia.com/R5Q](http://dataurbia.com/R5Q)
+
