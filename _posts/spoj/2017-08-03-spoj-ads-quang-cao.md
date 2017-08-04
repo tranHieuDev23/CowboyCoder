@@ -7,11 +7,11 @@ tags:
   - spoj
   - dfs
 ---
-##Link đề gốc
+## Link đề gốc
 
 http://vn.spoj.com/problems/ADS/
 
-#Đề bài:
+# Đề bài:
 
 Nhân dịp Tết sắp đến công ty Jelly-for-Kids quyết định tăng cường việc quảng bá sản phẩm đến người tiêu dùng. Vì thế giám đốc marketing, ông Fruit-Jelly muốn gửi đi số lượng nhân viên tối đa có thể, làm nhiệm vụ tiếp thị tại đại lý trong thành phố
 
@@ -27,17 +27,17 @@ Hành trình phân công cho mỗi nhân viên phải có ít nhất một đo�
 
 Mỗi nhân viên chỉ di chuyển trên hành trình mà anh ta được phân công. Hãy tính số lượng nhân viên tối đa mà ông Fruit-Jelly có thể xếp việc, và hành trình cụ thể mà mỗi người được xếp.
 
-Input
+# Input
 
 Dòng đầu là 2 số tự nhiên N và M (N<=2000) (M<=5000)
 
 Trong M dòng tiếp theo, mỗi dòng ghi 2 số nguyên mô tả một đoạn đường, mỗi đoạn đường được mô tả bởi chỉ số của 2 đại lý mà nó nối.
 
-Output
+# Output
 
 Dòng đầu tiên ghi Q là số lượng nhân viên tối đa tìm được
-
-#Ví dụ:
+ 
+# Ví dụ:
 
 ```
 Input:
@@ -55,12 +55,14 @@ Output:
 2
 ```
 
-##Solution:
+## Solution:
 
 Tham khảo tại: [http://dataurbia.com/2uq](http://dataurbia.com/2uq)
 
-##Code:
+## Code:
 
 Tham khảo tại:[http://dataurbia.com/32f](http://dataurbia.com/32f)
 
+
 (Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11)
+
