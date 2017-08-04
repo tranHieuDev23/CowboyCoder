@@ -32,7 +32,7 @@ Trong một số dòng tiếp theo, mỗi dòng ghi 3 số nguyên u, v và c v�
 Gồm 1 dòng duy nhất là tổng chi phí nhỏ nhất để xây dựng hệ thống đường.
 
 
-## Ví dụ:
+# Ví dụ:
 
 ### Input:
 ```
@@ -61,3 +61,4 @@ Tham khảo tại:[http://dataurbia.com/PUB](http://dataurbia.com/PUB)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/PQd](http://dataurbia.com/PQd)
+
