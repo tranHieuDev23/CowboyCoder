@@ -53,3 +53,10 @@ a:hover, a:active, a:visited {
     max-width: 90%;
     margin: 10px auto;
 }
+
+.img-responsive-16by9 {
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}

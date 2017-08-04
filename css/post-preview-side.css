@@ -18,6 +18,10 @@
   display: none;
 }
 
+.post-preview-side-img {
+  width: 100%;
+}
+
 .post-preview-side-metadata {
   padding: 0px 20px 0 20px;
   background: white;

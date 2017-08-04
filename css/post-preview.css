@@ -18,6 +18,10 @@
   display: none;
 }
 
+.post-preview-img {
+  width: 100%;
+}
+
 .post-preview-metadata {
   position: absolute;
   bottom: 0;

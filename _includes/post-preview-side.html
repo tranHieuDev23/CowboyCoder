@@ -1,7 +1,9 @@
 <div class="post-preview-side panel panel-default">
     <div class="post-preview-side-header">
         <a href="{{ include.post.url }}">
-            <img class="post-preview-side-img" src="{{ include.post.thumbnail }}" width="100%" height="auto"/>
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="{{ include.post.thumbnail }}"/>
+            </div>
         </a>
         <div class="post-preview-side-foreground"></div>
         <div class="post-preview-side-metadata">

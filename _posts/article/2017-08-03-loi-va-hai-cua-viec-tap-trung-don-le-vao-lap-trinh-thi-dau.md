@@ -2,7 +2,7 @@
 title: Lợi và hại của việc tập trung đơn lẻ vào Lập trình thi đấu
 author: Admin Tổng Quản
 date: 2017-08-03T09:11:35.618Z
-thumbnail: /img/uploads/Lợi và hại của việc tập trung đơn lẻ vào Lập trình thi đấu.jpg
+thumbnail: /img/uploads/Loi va hai cua viec tap trung don le vao Lap trinh thi dau.jpg
 tags:
   - programming
   - competitive-programming
@@ -43,7 +43,7 @@ Mấy cái lợi thế hả:
 
 # Bài học rút ra là gì?
 
-![undefined](/img/uploads/Lợi và hại của việc tập trung đơn lẻ vào Lập trình thi đấu - ending.jpg)
+![undefined](/img/uploads/Loi va hai cua viec tap trung don le vao Lap trinh thi dau - ending.jpg)
 
 Giống như mẹ của bạn thường hay nói “Mày học suốt là tù người đấy” (nếu mẹ bạn có nói như thế), cái gì cũng có lợi và hại của nó cả. Lập trình thi đấu là một công cụ hiệu quả để bạn có thể rèn luyện kĩ năng lập trình của mình, nhưng bạn cũng không nên tập trung thái quá vào nó - trừ khi bạn đang chuẩn bị cho một kì thi lập trình quan trọng. Tự tìm hiểu, mày mò về những ứng dụng thực tế của lập trình sẽ giúp bạn có được một nền tảng cân bằng hơn, thích nghi dễ dàng hơn với sự thay đổi của công nghệ. :))
 

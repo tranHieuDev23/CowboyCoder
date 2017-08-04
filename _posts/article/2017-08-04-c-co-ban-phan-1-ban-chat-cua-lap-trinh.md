@@ -2,7 +2,7 @@
 title: '[C++ Cơ bản] Phần 1: Bản chất của lập trình'
 author: Admin Tổng Quản
 date: 2017-08-04T06:38:22.100Z
-thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
+thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
   - cpp-cơ-bản
   - programming
@@ -24,7 +24,7 @@ lý. Chúng ta sử dụng mã nhị phân (binary code) 0 và 1 để mã hóa 
 bật và tắt đó - mỗi tập hợp 8 bit 0 - 1 sẽ tương ứng với 8 transistor và bằng 1
 byte.
 
-![null](/img/uploads/cpp-cơ-bản-1-1.jpg)
+![null](/img/uploads/cpp-co-ban-1-1.jpg)
 
 Tất nhiên, vấn đề nảy sinh là chúng ta không thể viết hết chỗ
 binary code bằng sức trâu được. Và đây lý do tại sao các ngôn ngữ lập trình ra
@@ -65,7 +65,7 @@ hai chuẩn ngôn ngữ trên.
 
 # Tại sao chúng ta có nhiều ngôn ngữ lập trình đến thế?
 
-![undefined](/img/uploads/cpp-cơ-bản-1-2.jpg)
+![undefined](/img/uploads/cpp-co-ban-1-2.jpg)
 
 Lý do đầu tiên, đó là do mỗi ngôn ngữ có điểm mạnh và điểm yếu
 của nó. Ruby và Javascript thích hợp cho việc phát triển website. Java và C\+\+
@@ -108,7 +108,7 @@ Visual Studio của Microsoft, IntelliJ IDEA hay PyCharm của JetBrains, vv…
 Trong series bài
 viết này, chúng ta sử dụng Code::Blocks IDE để viết chương trình C\+\+.
 
-![undefined](/img/uploads/cpp-cơ-bản-1-3.jpg)
+![undefined](/img/uploads/cpp-co-ban-1-3.jpg)
 
 # Làm sao để chạy các chương trình được viết ra?
 

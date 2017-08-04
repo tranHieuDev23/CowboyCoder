@@ -2,7 +2,7 @@
 title: '[C++ Cơ bản] Phần 0: Giới thiệu series bài viết'
 author: Admin Tổng Quản
 date: 2017-08-04T06:12:08.833Z
-thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
+thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
   - cpp-cơ-bản
   - programming
