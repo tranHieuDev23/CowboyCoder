@@ -6,7 +6,7 @@ thumbnail: /img/uploads/MIXUP2.jpg
 tags:
   - spoj
   - dp
-  - bitmasks
+  - bitmask
 ---
 # Link đề gốc
 
@@ -39,5 +39,6 @@ Hỏi có bao nhiêu cách khác nhau để N cô bò sắp thành thứ tự 'h
 # Code mẫu
 
 [http://simizer.com/n8t](http://simizer.com/n8t)
+
 
 
