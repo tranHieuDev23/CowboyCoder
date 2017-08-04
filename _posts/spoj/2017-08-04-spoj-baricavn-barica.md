@@ -27,9 +27,10 @@ Barica thu được một đơn vị năng lượng với mỗi con ruồi mà n
 
 # Solution :
    
-   [Here](http://dataurbia.com/Ppq)
+   [Here](http://dataurbia.com/Pso)
 
 # Code :
 
    [Here](http://dataurbia.com/PTm)
+
 
