@@ -9,7 +9,7 @@ tags:
 ---
 Cho một bài toán đơn giản sau: Tính giá trị của \\( (3 * 10 ^ 9) * (3 * 10 ^ 9) \\), lấy mod \\( 10 ^ 9 \\). Ta có thể nhanh chóng tính ra kết quả của phép toán này bằng việc mod cả hai giá trị cho \\( 10 ^ 9 \\), rồi sau đó nhân chúng lại với nhau và mod lại thêm lần nữa.
 
-Nhưng nếu giá trị lấy mod là \\( 10 ^ 18 \\) thì sao? Khi đó phép nhân của hai thừa số sẽ vượt quá khả năng biểu diễn của kiểu số nguyên 64 bit, phép toán sẽ sai hoàn toàn. Phương pháp nhân Ấn Độ sẽ được dùng để giải quyết những trường hợp như vậy.
+Nhưng nếu giá trị lấy mod là \\( 10^18 \\) thì sao? Khi đó phép nhân của hai thừa số sẽ vượt quá khả năng biểu diễn của kiểu số nguyên 64 bit, phép toán sẽ sai hoàn toàn. Phương pháp nhân Ấn Độ sẽ được dùng để giải quyết những trường hợp như vậy.
 
 # Phép nhân Ấn Độ
 
@@ -43,7 +43,7 @@ Do sau mỗi lần gọi hàm ```nhan```, giá trị của b bị giảm đi m�
 
 Bằng việc sửa đổi code, phương pháp này có thể được áp dụng để giải một bài toán tương tự, đó là tìm số mũ cực lớn của một số cho trước.
 
-Để tính $ a ^ b $ ta sẽ tính
+Để tính \\( a ^ b \\) ta sẽ tính
 
 * \\( a ^ \frac{b}{2} * a ^ \frac{b}{2} \\) nếu b chẵn
 * \\( a ^ \frac{b}{2} * a ^ \frac{b}{2} * a \\) nếu b lẻ 
@@ -62,8 +62,3 @@ long long mu(long long a,long long b)
 {% endhighlight %}
 
 Độ phức tạp của thuật toán này cũng chỉ là \\( O(log2(b)) \\). Chú ý nếu lấy số mod lớn thì phải áp dụng nhân Ấn Độ thay vì phép nhân thông thường, độ phức tạp sẽ trở thành \\( O(log2(b) ^ 2) \\).
-
-
-
-
-
