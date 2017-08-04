@@ -7,16 +7,16 @@ tags:
   - algorithm
   - math
 ---
-Cho một bài toán đơn giản sau: Tính giá trị của \\( (3 * 10 ^ 9) * (3 * 10 ^ 9) \\), lấy mod \\( 10 ^ 9 \\). Ta có thể nhanh chóng tính ra kết quả của phép toán này bằng việc mod cả hai giá trị cho \[10 ^ 9\], rồi sau đó nhân chúng lại với nhau và mod lại thêm lần nữa.
+Cho một bài toán đơn giản sau: Tính giá trị của \\( (3 * 10 ^ 9) * (3 * 10 ^ 9) \\), lấy mod \\( 10 ^ 9 \\). Ta có thể nhanh chóng tính ra kết quả của phép toán này bằng việc mod cả hai giá trị cho \\( 10 ^ 9 \\), rồi sau đó nhân chúng lại với nhau và mod lại thêm lần nữa.
 
-Nhưng nếu giá trị lấy mod là $ 10 ^ 18 $ thì sao? Khi đó phép nhân của hai thừa số sẽ vượt quá khả năng biểu diễn của kiểu số nguyên 64 bit, phép toán sẽ sai hoàn toàn. Phương pháp nhân Ấn Độ sẽ được dùng để giải quyết những trường hợp như vậy.
+Nhưng nếu giá trị lấy mod là \\( 10 ^ 18 \\) thì sao? Khi đó phép nhân của hai thừa số sẽ vượt quá khả năng biểu diễn của kiểu số nguyên 64 bit, phép toán sẽ sai hoàn toàn. Phương pháp nhân Ấn Độ sẽ được dùng để giải quyết những trường hợp như vậy.
 
 # Phép nhân Ấn Độ
 
-Thuật toán đơn giản như sau: để tính $ a * b $ ta sẽ tính
+Thuật toán đơn giản như sau: để tính \\( a * b \\) ta sẽ tính
 
-* $ a * \frac{b}{2} + a * \frac{b}{2} $ nếu b chẵn
-* $ a * \frac{b}{2} + a * \frac{b}{2} + a $ nếu b lẻ 
+* \\( a * \frac{b}{2} + a * \frac{b}{2} \\) nếu b chẵn
+* \\( a * \frac{b}{2} + a * \frac{b}{2} + a \\) nếu b lẻ 
 
 Có rất nhiều cách code. Dưới đây là một cách viết đệ quy:
 
@@ -33,11 +33,11 @@ long long nhan(long long a,long long b)
 } 
 {% endhighlight %}
 
-Khi đó, để tính giá trị $ a * b $ ta chỉ cần gọi hàm ```nhan(a, b)```.
+Khi đó, để tính giá trị \\( a * b \\) ta chỉ cần gọi hàm ```nhan(a, b)```.
 
 ## Đánh giá độ phức tạp
 
-Do sau mỗi lần gọi hàm ```nhan```, giá trị của b bị giảm đi một nửa, nên thuật toán chỉ mất thời gian $ O(log2(b)) $.
+Do sau mỗi lần gọi hàm ```nhan```, giá trị của b bị giảm đi một nửa, nên thuật toán chỉ mất thời gian \\( O(log2(b)) \\).
 
 # Phép tính lũy thừa
 
@@ -45,8 +45,8 @@ Bằng việc sửa đổi code, phương pháp này có thể được áp dụ
 
 Để tính $ a ^ b $ ta sẽ tính
 
-* $ a ^ \frac{b}{2} * a ^ \frac{b}{2} $ nếu b chẵn
-* $ a ^ \frac{b}{2} * a ^ \frac{b}{2} * a $ nếu b lẻ 
+* \\( a ^ \frac{b}{2} * a ^ \frac{b}{2} \\) nếu b chẵn
+* \\( a ^ \frac{b}{2} * a ^ \frac{b}{2} * a \\) nếu b lẻ 
 
 {% highlight c++ %}
 //C++
@@ -61,7 +61,8 @@ long long mu(long long a,long long b)
 } 
 {% endhighlight %}
 
-Độ phức tạp của thuật toán này cũng chỉ là $ O(log2(b)) $. Chú ý nếu lấy số mod lớn thì phải áp dụng nhân Ấn Độ thay vì phép nhân thông thường, độ phức tạp sẽ trở thành $ O(log2(b) ^ 2) $.
+Độ phức tạp của thuật toán này cũng chỉ là \\( O(log2(b)) \\). Chú ý nếu lấy số mod lớn thì phải áp dụng nhân Ấn Độ thay vì phép nhân thông thường, độ phức tạp sẽ trở thành \\( O(log2(b) ^ 2) \\).
+
 
 
 
