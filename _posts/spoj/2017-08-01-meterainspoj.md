@@ -5,7 +5,7 @@ date: 2017-08-01T00:28:08.412Z
 thumbnail: /img/uploads/METERAIN-images.jpg
 tags:
   - spoj
-  - convex
+  - convex-hull
 ---
 # Link bài gốc:
 
@@ -56,6 +56,7 @@ Tham khảo tại: [http://simizer.com/SOh](http://simizer.com/SOh)
 # **Code mẫu:**
 
 Tham khảo tại: [http://simizer.com/OCo](http://simizer.com/OCo)
+
 
 
 
