@@ -7,7 +7,7 @@ tags:
   - spoj
   - dfs
 ---
-## Link đề gốc
+# Link đề gốc
 
 <http://vn.spoj.com/problems/ADS/>
 
@@ -55,15 +55,16 @@ Output:
 2
 ```
 
-## Solution:
+# Solution:
 
 Tham khảo tại: [http://dataurbia.com/2uq](http://dataurbia.com/2uq)
 
-## Code:
+# Code:
 
 Tham khảo tại:[http://dataurbia.com/32f](http://dataurbia.com/32f)
 
 
 (Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11)
+
 
 
