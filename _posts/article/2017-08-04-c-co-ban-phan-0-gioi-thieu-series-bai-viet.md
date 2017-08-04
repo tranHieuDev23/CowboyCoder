@@ -13,7 +13,7 @@ không được sử dụng Pascal rồi, phải làm sao đây??”*
 *“Đăng ký nhập học Công
 nghệ thông tin rồi, nhưng không biết tí gì về lập trình cả, phải làm sao đây??”*
 
-Thì tiếp thu cái mới chứ sao. 
+Thì tiếp thu cái mới chứ sao.
 
 Đó là bản chất của ngành Công nghệ thông tin rồi - công nghệ
 luôn thay đổi và bạn phải liên tục đón nhận cái mới để không trở nên lỗi thời.
@@ -36,4 +36,4 @@ Tuy tác giả bài viết đã cố gắng hết sức, song vẫn có thể c�
 nhiều thiếu sót, hy vọng sẽ nhận được sự đóng góp của bạn đọc để các bài viết của
 mình trở nên chất lượng và hữu dụng hơn cho mọi người. :)
 
-*Series bài viết có tham khảo nội dung từ trang <tutorialspoint.com> và Wikipedia.*
+* Series bài viết có tham khảo nội dung từ trang <tutorialspoint.com> và Wikipedia. *
