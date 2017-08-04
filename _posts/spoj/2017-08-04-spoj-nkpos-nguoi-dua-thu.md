@@ -5,7 +5,7 @@ date: 2017-08-04T08:45:42.619Z
 thumbnail: /img/uploads/NKPOS.jpg
 tags:
   - spoj
-  - graphs
+  - graph
 ---
 
 # Link đề gốc: [http://vn.spoj.com/problems/NKPOS/](http://vn.spoj.com/problems/NKPOS/)
@@ -36,6 +36,7 @@ Yêu cầu: Viết chương trình xác định một hành trình đi qua mỗi
 # Code mẫu
 
 [Here](http://dataurbia.com/KRi)
+
 
 
 
