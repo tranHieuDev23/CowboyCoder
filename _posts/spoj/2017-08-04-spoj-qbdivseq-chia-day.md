@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj]QBDIVSEQ.png'
 tags:
   - spoj
 ---
-## Link đề gốc:
+# Link đề gốc:
 
 http://vn.spoj.com/problems/QBDIVSEQ/
 
@@ -18,13 +18,13 @@ Một cách chia dãy A thành các dãy con "được chấp nhận" nếu các
 
 Yêu cầu: Bạn hãy chia dãy con ban đầu thành ít dãy con nhất mà vẫn "được chấp nhận".
 
-### Input
+## Input
 
 Dòng đầu tiên ghi số N là số phần tử của dãy A. \( N ≤ 105\)
 
 N dòng tiếp theo ghi N số tự nhiên là các phần tử của dãy A. \( Ai≤ 109\)
 
-### Output
+## Output
 
 Ghi một duy nhất là số lượng dãy con ít nhất thỏa mãn.
 
@@ -45,14 +45,12 @@ Output:
 
 ```
 
-## Solution:
+# Solution:
 
 Tham khảo tại: [http://dataurbia.com/RDH](http://dataurbia.com/RDH)
 
-## Code:
+# Code:
 
 Tham khảo tại: [http://dataurbia.com/RF0](http://dataurbia.com/RF0)
 
 Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11
-
-
