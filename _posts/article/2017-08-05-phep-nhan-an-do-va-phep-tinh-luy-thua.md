@@ -7,7 +7,7 @@ tags:
   - algorithm
   - math
 ---
-Cho một bài toán đơn giản sau: Tính giá trị của $ (3 * 10 ^ 9) * (3 * 10 ^ 9) $, lấy mod $ 10 ^ 9 $. Ta có thể nhanh chóng tính ra kết quả của phép toán này bằng việc mod cả hai giá trị cho \[10 ^ 9\], rồi sau đó nhân chúng lại với nhau và mod lại thêm lần nữa.
+Cho một bài toán đơn giản sau: Tính giá trị của \\( (3 * 10 ^ 9) * (3 * 10 ^ 9) \\), lấy mod \\( 10 ^ 9 \\). Ta có thể nhanh chóng tính ra kết quả của phép toán này bằng việc mod cả hai giá trị cho \[10 ^ 9\], rồi sau đó nhân chúng lại với nhau và mod lại thêm lần nữa.
 
 Nhưng nếu giá trị lấy mod là $ 10 ^ 18 $ thì sao? Khi đó phép nhân của hai thừa số sẽ vượt quá khả năng biểu diễn của kiểu số nguyên 64 bit, phép toán sẽ sai hoàn toàn. Phương pháp nhân Ấn Độ sẽ được dùng để giải quyết những trường hợp như vậy.
 
@@ -62,6 +62,7 @@ long long mu(long long a,long long b)
 {% endhighlight %}
 
 Độ phức tạp của thuật toán này cũng chỉ là $ O(log2(b)) $. Chú ý nếu lấy số mod lớn thì phải áp dụng nhân Ấn Độ thay vì phép nhân thông thường, độ phức tạp sẽ trở thành $ O(log2(b) ^ 2) $.
+
 
 
 
