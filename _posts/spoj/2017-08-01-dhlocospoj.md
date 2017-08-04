@@ -5,7 +5,7 @@ date: 2017-08-01T03:58:48.899Z
 thumbnail: /img/uploads/DHLOCO-image.jpg
 tags:
   - spoj
-  - matrix
+  - matrix-multiplication
 ---
 # Link gốc:
 
@@ -42,6 +42,7 @@ Tham khảo tại : [http://simizer.com/SPF](http://simizer.com/SPF)
 # Code:
 
 Tham khảo tại: [http://simizer.com/QP0](http://simizer.com/QP0)
+
 
 
 
