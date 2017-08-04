@@ -75,7 +75,8 @@ Thời gian nhỏ nhất cần tìm theo yêu cầu đề bài.
 17
 ```
 
-#Solution
+# Solution
 [http://dataurbia.com/Pgu](http://dataurbia.com/Pgu)
 # Code mẫu
 [http://dataurbia.com/PEA](http://dataurbia.com/PEA)
+
