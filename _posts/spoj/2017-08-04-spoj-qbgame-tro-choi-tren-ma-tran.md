@@ -17,19 +17,19 @@ Ngày nay các nhà khoa học đã nghĩ ra 1 trò chơi trên ma trận rất 
 
 Bạn có 1 ma trận A kích thước 8 x N trên đó gồm các số nguyên là điểm của các ô đó. Người ta sẽ yêu cầu bạn chọn 1 tập khác rỗng các ô trên ma trận này sau đó tính tổng điểm trên những ô này. Trong những ô được chọn không có hai ô nào kề cạnh. IQ của người chơi sẽ tỉ lệ thuận với số điểm nhận được. Sherry tham gia trò chơi và đạt kết quả khá tốt.Và bây giờ Sherry muốn biết tổng điểm lớn nhất nhận được trong trò chơi này là bao nhiêu. Bạn hãy giúp sherry nhé !!!
 
-### Input
+## Input
 
 Dòng 1 là số nguyên N \( 1 &lt;= N &lt;= 10000 \)
 
 8 dòng tiếp theo: Mỗi dòng gồm n số nguyên. Số nguyên ở hàng i, cột j là Aij\( \|Aij\| &lt;= 108\)
 
-### Output
+## Output
 
 Gồm 1 dòng duy nhất là số điểm lớn nhất tìm được.
 
 # Ví dụ:
 
-### Input:
+## Input:
 
 ```
 2
@@ -43,7 +43,7 @@ Gồm 1 dòng duy nhất là số điểm lớn nhất tìm được.
 1 -55
 ```
 
-### Output
+## Output
 
 ```
 279
@@ -56,6 +56,7 @@ Tham khảo tại: [http://dataurbia.com/KVD](http://dataurbia.com/KVD)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/KQQ](http://dataurbia.com/KQQ)
+
 
 
 
