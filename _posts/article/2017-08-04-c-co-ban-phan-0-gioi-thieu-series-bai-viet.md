@@ -36,5 +36,6 @@ Tuy tác giả bài viết đã cố gắng hết sức, song vẫn có thể c�
 nhiều thiếu sót, hy vọng sẽ nhận được sự đóng góp của bạn đọc để các bài viết của
 mình trở nên chất lượng và hữu dụng hơn cho mọi người. :)
 
-*Series bài viết có tham khảo nội dung từ trang <tutorialspoint.com> và Wikipedia.*
+*Series bài viết có tham khảo nội dung từ trang [tutorialspoint.com](https://tutorialspoint.com) và Wikipedia.*
+
 
