@@ -5,8 +5,8 @@ date: 2017-08-01T14:49:50.997Z
 thumbnail: '/img/uploads/[SPOJ] - KDIFF.jpg'
 tags:
   - spoj
-  - dequeue
-  - data-structures
+  - deque
+  - data-structure
 ---
 # Link bài gốc: 
 
@@ -39,4 +39,5 @@ Các số trong dữ liệu vào đều là số nguyên không âm không quá 
 # Code: 
 
 <http://simizer.com/c2j>
+
 
