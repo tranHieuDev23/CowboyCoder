@@ -34,15 +34,15 @@ binary code bằng sức trâu được. Và đây lý do tại sao các ngôn n
 
 Đây là ví dụ cho một đoạn code C\+\+
 
-{% highlight c\+\+ %}
-\#include <iostream>
+{% highlight c++ %}
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-cout << "Hello World!";
-return 0;
+    cout << "Hello World!";
+    return 0;
 }
 {% endhighlight %}
 
@@ -150,3 +150,4 @@ bởi các tính năng của trình thông dịch.
 
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
+
