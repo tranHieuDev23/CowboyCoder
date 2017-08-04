@@ -6,10 +6,10 @@ thumbnail: '/img/uploads/[spoj]cond.jpg'
 tags:
   - spoj
 ---
-##Link đề gốc: 
+## Link đề gốc: 
 [http://vn.spoj.com/problems/COND/](http://vn.spoj.com/problems/COND/)
 
-#Đề bài:
+# Đề bài:
 
 Xét một tập N đối tượng có thể so sánh được \(2&lt;=n&lt;=10\). Giữa 2 đối tượng a và b có thể tồn tại 1 trong 3 quan hệ phân loại:
 
@@ -29,7 +29,7 @@ Gồm nhiều số n. Mỗi số trên 1 dòng. Kết thúc file là -1.
 
 Với mỗi n, đưa ra số lượng quan hệ phân loại tìm được, mỗi số trên 1 dòng \(không có dòng trống\).
 
-#Ví dụ
+# Ví dụ
 
 ```
 Input:
@@ -44,13 +44,14 @@ Output:
 13
 ```
 
-##Solution: 
+## Solution: 
 
 Tham khảo tại: [http://dataurbia.com/GBa](http://dataurbia.com/GBa)
 
-##Code: 
+## Code: 
 
 Tham khảo tại: [http://dataurbia.com/G5t](http://dataurbia.com/G5t)
 
 (Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11)
+
 
