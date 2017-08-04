@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj] - c11cal.jpg'
 tags:
   - spoj
   - matrix-multiplication
-  - data-structures
+  - data-structure
 ---
 # Link đề bài: 
 
@@ -31,4 +31,5 @@ Ghi ra kết quả ứng với mỗi bộ test
 # Code: 
 
 <http://simizer.com/eKw>
+
 
