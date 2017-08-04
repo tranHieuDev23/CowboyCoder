@@ -5,8 +5,8 @@ date: 2017-08-01T07:11:48.879Z
 thumbnail: /img/uploads/CONAN-Image.jpg
 tags:
   - spoj
-  - graphs
-  - shortest-paths
+  - graph
+  - shortest-path
   - math
 ---
 # Link gốc
@@ -54,4 +54,5 @@ P/S: 50% số test có N<=10^5
 # Code mẫu :
 
 [http://simizer.com/Snm](http://simizer.com/Snm)
+
 
