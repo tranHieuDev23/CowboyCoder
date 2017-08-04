@@ -27,7 +27,7 @@ Dòng 1 là số nguyên N \( 1 &lt;= N &lt;= 10000 \)
 
 Gồm 1 dòng duy nhất là số điểm lớn nhất tìm được.
 
-## Ví dụ:
+# Ví dụ:
 
 ### Input:
 
@@ -41,7 +41,6 @@ Gồm 1 dòng duy nhất là số điểm lớn nhất tìm được.
 -10 -23
 99 46
 1 -55
-
 ```
 
 ### Output
@@ -57,6 +56,7 @@ Tham khảo tại: [http://dataurbia.com/KVD](http://dataurbia.com/KVD)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/KQQ](http://dataurbia.com/KQQ)
+
 
 
 
