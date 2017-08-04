@@ -19,9 +19,9 @@ $$ G=(V, E) $$
 
 Trong đó:
 
-* \\( V \\) là tập các đỉnh của đồ thị. Đặt \\( \abs{V} = n \\) (số đỉnh).
+* \\( V \\) là tập các đỉnh của đồ thị. Đặt \\( | V | = n \\) (số đỉnh).
 
-* \\( E \\) là tập các cạnh của đồ thị. Đặt \\( \abs{E} = m \\) (số cạnh).
+* \\( E \\) là tập các cạnh của đồ thị. Đặt \\( | E | = m \\) (số cạnh).
 
 ## Đỉnh:
 
@@ -140,4 +140,5 @@ Với mỗi đỉnh của đồ thị, ta lưu một danh sách các đỉnh k�
 * Với phương pháp này, việc duyệt tất cả các đỉnh kề với đỉnh u vô cùng dễ dàng.
 2. Nhược điểm:
 * Khi cần kiểm tra hai đỉnh u,v có kề nhau hay không, ta không thể kiểm tra nhanh trong \\( O(1) \\) như cách lưu bằng ma trận kề, mặc dù tùy theo cách lưu danh sách cạnh mà ta có thể kiểm tra trong \\( O(logn) \\) hoặc ít hơn.
+
 
