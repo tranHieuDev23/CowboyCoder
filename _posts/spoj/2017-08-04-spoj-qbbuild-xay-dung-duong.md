@@ -19,7 +19,7 @@ Vua Peace chọn ra 4 thành phố đặc biệt để làm trung tâm kinh tế
 
 Bạn được biết chi phí ước tính để xây dựng một số con đường và bạn hãy chọn một số con đường để xây dựng để theo đúng ý nhà vua biết rằng luôn tồn tại ít nhất một phương án xây dựng đường sao cho 4 thành phố đặc biệt liên thông.
 
-### Input
+## Input
 
 Dòng đầu tiên ghi số nguyên dương N là số lượng các thành phố.\( 1 ≤ N ≤ 100 \)
 
@@ -27,14 +27,14 @@ Dòng thứ hai ghi 4 số nguyên là số hiệu của 4 thành phố đặc b
 
 Trong một số dòng tiếp theo, mỗi dòng ghi 3 số nguyên u, v và c với ý nghĩa muốn xây dựng một con đường hai chiều nối trực tiếp giữa 2 thành phố u và v thì chi phí là c. \( 1 ≤ c ≤ 5000 \)
 
-### Output
+## Output
 
 Gồm 1 dòng duy nhất là tổng chi phí nhỏ nhất để xây dựng hệ thống đường.
 
 
 # Ví dụ:
 
-### Input:
+## Input:
 ```
 5
 2 3 4 1
@@ -44,12 +44,10 @@ Gồm 1 dòng duy nhất là tổng chi phí nhỏ nhất để xây dựng hệ
 1 4 1
 4 3 3
 3 2 2
-
 ```
 
 
-### Output:
-
+## Output:
 ```
 5
 ```
@@ -61,4 +59,3 @@ Tham khảo tại:[http://dataurbia.com/PUB](http://dataurbia.com/PUB)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/PQd](http://dataurbia.com/PQd)
-
