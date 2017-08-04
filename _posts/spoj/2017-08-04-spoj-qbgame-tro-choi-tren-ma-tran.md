@@ -7,7 +7,11 @@ tags:
   - spoj
   - bitmask
 ---
-# Link bài gốc:
+# Link bài gốc: 
+[http://vn.spoj.com/problems/QBGAME/](http://vn.spoj.com/problems/QBGAME/)
+
+# Đề bài:
+
 
 Ngày nay các nhà khoa học đã nghĩ ra 1 trò chơi trên ma trận rất thú vị. Thông qua đó có thể đo IQ một cách khá hiệu quả. Trò chơi được mô tả như sau:
 
@@ -53,6 +57,7 @@ Tham khảo tại: [http://dataurbia.com/KVD](http://dataurbia.com/KVD)
 # Code:
 
 Tham khảo tại: [http://dataurbia.com/KQQ](http://dataurbia.com/KQQ)
+
 
 
 
