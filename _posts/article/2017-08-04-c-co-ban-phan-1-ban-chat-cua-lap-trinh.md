@@ -65,7 +65,7 @@ hai chuẩn ngôn ngữ trên.
 
 # Tại sao chúng ta có nhiều ngôn ngữ lập trình đến thế?
 
-![http://geekologist.co/wp-content/uploads/2015/04/Prog-languages.png](file:///C:/Users/alway/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)
+![undefined](/img/uploads/cpp-cơ-bản-1-2.jpg)
 
 Lý do đầu tiên, đó là do mỗi ngôn ngữ có điểm mạnh và điểm yếu
 của nó. Ruby và Javascript thích hợp cho việc phát triển website. Java và C\+\+
@@ -108,7 +108,7 @@ Visual Studio của Microsoft, IntelliJ IDEA hay PyCharm của JetBrains, vv…
 Trong series bài
 viết này, chúng ta sử dụng Code::Blocks IDE để viết chương trình C\+\+.
 
-![http://wiki.codeblocks.org/images/c/c7/Cb_splash.png](file:///C:/Users/alway/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![undefined](/img/uploads/cpp-cơ-bản-1-3.jpg)
 
 # Làm sao để chạy các chương trình được viết ra?
 
@@ -150,4 +150,5 @@ bởi các tính năng của trình thông dịch.
 
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
+
 
