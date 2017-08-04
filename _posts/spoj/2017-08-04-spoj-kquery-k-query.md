@@ -4,7 +4,7 @@ author: La Hoàng Phong
 date: 2017-08-04T08:16:33.632Z
 thumbnail: /img/uploads/KQUERY_Image.jpg
 tags:
-  - data-structur
+  - data-structure
 ---
 # Link đề bài gốc : [http://www.spoj.com/problems/KQUERY/](http://www.spoj.com/problems/KQUERY/)
 # Đề bài :
@@ -46,3 +46,4 @@ Kết quả
 Tham khảo tại : [http://dataurbia.com/2pH](http://dataurbia.com/2pH)
 # Code :
 Tham khảo tại : [http://dataurbia.com/2sa](http://dataurbia.com/2sa)
+
