@@ -142,13 +142,10 @@ xử lý trực tiếp bởi CPU của thiết bị để thực hiện các hà
 Dịch
 từ ngôn ngữ máy sang binary code.
 
-Điều này giải
-thích tại sao các ngôn ngữ biên dịch như C\+\+ thường chạy nhanh hơn so với thông
-dịch như Java - chương trình C\+\+ chỉ được dịch một lần thay vì liên tục trong
-lúc chạy. Tuy nhiên trong thực tế, khoảng cách về tốc độ này có thể được lấp đầy
-bởi các tính năng của trình thông dịch.
+Điều thú vị của quá trình này là nó đảm bảo rằng **công việc lập trình sẽ không bao giờ biến mất, ngay kể cả khi chúng ta có những trí tuệ nhân tạo có khả năng viết thuật toán tốt hơn con người**. Ngay kể cả khi điều đó xảy ra, mọi thứ cũng chỉ giống như khi chúng ta di chuyển từ ngôn ngữ bậc thấp lên ngôn ngữ bậc cao - con người vẫn sẽ là tác nhân giải thích và quyết định chức năng của phần mềm, dù cho là bằng ngôn ngữ lập trình hay bằng ngôn ngữ con người đi chăng nữa.
 
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
+
 
 
