@@ -4,11 +4,12 @@ author: G
 date: 2017-08-04T10:14:47.540Z
 thumbnail: /img/uploads/mat-phang-toa-do-de-cac-oxy.jpg
 tags:
-  - Sorting
+  - spoj
+  - sorting
 ---
-# Link đề gốc : http://vn.spoj.com/problems/BARICAVN
+# Link đề gốc: <http://vn.spoj.com/problems/BARICAVN>
 
-# Đề bài : 
+# Đề bài: 
 * Barica là một con cóc không bình thường. Barica sống trong một cái ao, nơi có N lá sen bềnh bồng trên mặt nước. Những lá sen được đánh số từ 1 đến N. Nhìn từ trên xuống, mỗi lá sen đc xem như một điểm trên hệ trục tọa độ Oxy. Barica có thể nhảy từ lá sen có tọa độ (x1;y1) đến tọa độ (x2,y2) nếu:
  - x2 &gt; x1 và y1 = y2 hoặc
  - y2 &gt; y1 và x1 = x2
@@ -32,5 +33,3 @@ Barica thu được một đơn vị năng lượng với mỗi con ruồi mà n
 # Code :
 
    [Here](http://dataurbia.com/PTm)
-
-
