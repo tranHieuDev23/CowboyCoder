@@ -15,6 +15,7 @@ Cho 1 dãy N phần tử (1 <= N <= 10^4). Đếm số dãy con tăng độ dài
 # Input :
 - Dòng đầu gồm 2 số n, k
 - N dòng tiếp theo gồm số của dãy.
+
 # Output :
 - Gồm 1 dòng là kết quả của bài toán.
 
@@ -33,3 +34,4 @@ Output:
 
 # Solution : [http://dataurbia.com/f8E](http://dataurbia.com/f8E)
 # Code : [http://dataurbia.com/f8q](http://dataurbia.com/f8q)
+
