@@ -70,8 +70,8 @@ void bfs(int u) // u là đỉnh xuất phát
 Khi áp dụng, tùy theo yêu cầu xử lí đồ thị mà người lập trình cần sửa đổi cho phù hợp.
 
 # Phân tích thuật toán:
-* Không gian: Nếu V là tập hợp của đồ thị và |V| là số đỉnh của đồ thị thì không gian cần dùng của thuật toán là 2|V| ô nhớ.
-* Thời gian: Nếu V và E là tập hợp các đỉnh và cung của đồ thị, thì thời gian thực thi của thuật toán là O(|E|+|V|) vì trong trường hợp xấu nhất, mỗi đỉnh và cung của đồ thị được thăm đúng một lần. O(|E|+|V|) nằm trong khoảng từ O(|V|) đến O(|V|^2), tùy theo số cung của đồ thị.
+* Không gian: Nếu V là tập hợp của đồ thị và \|V\| là số đỉnh của đồ thị thì không gian cần dùng của thuật toán là 2\|V\| ô nhớ.
+* Thời gian: Nếu V và E là tập hợp các đỉnh và cung của đồ thị, thì thời gian thực thi của thuật toán là O(\|E\| \+ \|V\|) vì trong trường hợp xấu nhất, mỗi đỉnh và cung của đồ thị được thăm đúng một lần. O(\|E\| \+ \|V\|) nằm trong khoảng từ O(\|V\|) đến O(\|V\|^2), tùy theo số cung của đồ thị.
 
 # Hệ quả:
 Sau khi BFS để tìm đường đi từ một đỉnh u tới tất cả các đỉnh v khác trong đồ thị, nếu ta gọi pre[v] là nút dẫn tới đỉnh v trong quá trình bfs với mọi v là một đỉnh thuộc đồ thị, ta sẽ có được đường đi từ
@@ -83,3 +83,4 @@ pre[pre[pre[v]]] -----> v
 u -----> v
 
 là ngắn nhất.
+
