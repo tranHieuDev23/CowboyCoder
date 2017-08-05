@@ -1,7 +1,7 @@
 ---
 title: >-
-  [Lý thuyết đồ thị cơ bản] Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First
-  Search (BFS)
+  [Lý thuyết đồ thị cơ bản] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị -
+  Breadth-First Search (BFS)
 author: Phương Nguyễn
 date: 2017-08-05T17:19:14.455Z
 thumbnail: /img/uploads/Lý thuyết đồ thị cơ bản - cover.jpg
@@ -87,5 +87,6 @@ pre[pre[pre[v]]] -----> v
 u -----> v
 
 là ngắn nhất.
+
 
 
