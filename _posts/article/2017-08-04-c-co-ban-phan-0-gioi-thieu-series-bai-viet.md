@@ -38,6 +38,4 @@ mình trở nên chất lượng và hữu dụng hơn cho mọi người. :)
 
 *Series bài viết có tham khảo nội dung từ trang [tutorialspoint.com](https://tutorialspoint.com) và Wikipedia.*
 
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 1: Bản chất của lập trình](http://cowboycoder.tech/article/c-co-ban-phan-1-ban-chat-cua-lap-trinh)*
