@@ -4,7 +4,7 @@ author: Admin Tổng Quản
 date: 2017-08-04T06:12:08.833Z
 thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
-  - basic-cpp
+  - cpp-cơ-bản
   - programming
 ---
 *“Từ IOI 2019 là sẽ
@@ -37,6 +37,7 @@ nhiều thiếu sót, hy vọng sẽ nhận được sự đóng góp của bạ
 mình trở nên chất lượng và hữu dụng hơn cho mọi người. :)
 
 *Series bài viết có tham khảo nội dung từ trang [tutorialspoint.com](https://tutorialspoint.com) và Wikipedia.*
+
 
 
 
