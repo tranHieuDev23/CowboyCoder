@@ -149,5 +149,4 @@ từ ngôn ngữ máy sang binary code.
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
 
-*
-Phần sau: [\[C++ Cơ bản\] Phần 2: Giới thiệu về C++](http://cowboycoder.tech/article/c-co-ban-phan-2-gioi-thieu-ve-c)*
+*Phần sau: [\[C++ Cơ bản\] Phần 2: Giới thiệu về C++](http://cowboycoder.tech/article/c-co-ban-phan-2-gioi-thieu-ve-c)*
