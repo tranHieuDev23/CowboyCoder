@@ -4,7 +4,7 @@ author: Admin Tổng Quản
 date: 2017-08-04T06:38:22.100Z
 thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
+  - basic-cpp
   - programming
 ---
 Trước khi bắt đầu vào nội dung chính của series, mình muốn
@@ -146,6 +146,7 @@ từ ngôn ngữ máy sang binary code.
 
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
+
 
 
 
