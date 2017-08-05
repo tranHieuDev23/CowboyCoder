@@ -2,7 +2,7 @@
 title: '[SPOJ] NETACCEL - Tăng tốc mạng máy tính'
 author: houtaru
 date: 2017-08-03T14:24:34.979Z
-thumbnail: /img/uploads/wallhaven-54661.jpg
+thumbnail: '/img/uploads/[spoj]-netaccel-graph.jpg'
 tags:
   - spoj
   - dijkstra
@@ -31,4 +31,5 @@ In ra 1 số duy nhất là tốc độ kết nối nhanh nhất có thể sau k
 # Solution : [http://simizer.com/qKV](http://simizer.com/qKV)
  
 # Code : [http://simizer.com/qJk](http://simizer.com/qJk)
+
 
