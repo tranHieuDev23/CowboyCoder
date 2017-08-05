@@ -11,6 +11,8 @@ tags:
 
 ***C\+\+ là một ngôn ngữ lập trình định kiểu tĩnh, biên dịch, đa chức năng, đa hình và phân biệt chữ thường - chữ hoa, hỗ trợ lập trình thủ tục, lập trình hướng đối tượng và dữ liệu trừu tượng.***
 
+![undefined](/img/uploads/cpp-cơ-bản-2-1.jpg)
+
 Hãy cùng giải thích từng phần một của định nghĩa trên:
 
 * Ngôn ngữ lập trình định kiểu tĩnh: là ngôn ngữ lập trình xác định tất cả các kiểu dữ liệu trong mã nguồn vào thời điểm dịch. Nếu xảy ra sai sót về kiểu dữ liệu (ví dụ: gán giá trị là 1 xâu kí tự - string cho một biến kiểu số nguyên) thì bộ dịch sẽ báo lỗi và chương trình sẽ không được dịch. C\+\+ là ngôn ngữ lập trình định kiểu tĩnh, trong khi một số ngôn ngữ khác như Javascript là ngôn ngữ định kiểu động - các biến trong chương trình có thể có bất cứ kiểu dữ liệu nào.
@@ -28,7 +30,7 @@ C\+\+ được phát triển bởi Bjarne Stroustrup từ năm 1979 tại Bell L
 
 C\+\+ là một tập hợp cha của C, và bất cứ chương trinh C hợp lệ nào cũng là chương trình C\+\+ hợp lệ.
 
-#Các thư viện chuẩn
+# Các thư viện chuẩn
 
 Ngôn ngữ C\+\+ tiêu chuẩn bao gồm 3 phần:
 
@@ -53,3 +55,4 @@ C\+\+ cũng được sử dụng rộng rãi để giảng dạy và nghiên c�
 Bất cứ ai đã sử dụng các thiết bị Macintosh của Apple hoặc PC chạy Windows đều đã gián tiếp sử dụng C\+\+, vì giao diện người dùng chính của các hệ điều hành này đều được viết bằng C\+\+.
 
 C\+\+ được đánh giá là ngôn ngữ lập trình phổ biến thứ 4, theo [đánh giá của spectrum.ieee.org](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages).
+
