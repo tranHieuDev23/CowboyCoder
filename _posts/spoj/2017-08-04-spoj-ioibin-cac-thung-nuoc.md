@@ -31,7 +31,8 @@ Với mỗi yêu cầu dạng X Y 2 (với Z = 2) bạn cần ghi ra số 0 ho�
 
 [http://dataurbia.com/OqS](http://dataurbia.com/OqS)
 
-#Code: 
+# Code: 
 
 [http://dataurbia.com/PBz](http://dataurbia.com/PBz)
+
 
