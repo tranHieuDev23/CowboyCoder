@@ -7,6 +7,8 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
+*Phần trước: [\[C++ Cơ bản\] Phần 0: Giới thiệu series bài viết](http://cowboycoder.tech/article/c-co-ban-phan-0-gioi-thieu-series-bai-viet)*
+
 Trước khi bắt đầu vào nội dung chính của series, mình muốn
 nói qua một chút về bản chất của công việc lập trình, hay cụ thể hơn là *Làm thế nào mà máy tính của bạn hiểu được
 chương trình của bạn*.
@@ -147,7 +149,4 @@ từ ngôn ngữ máy sang binary code.
 *Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
 và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
 
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 2: Giới thiệu về C++](http://cowboycoder.tech/article/c-co-ban-phan-2-gioi-thieu-ve-c)*
