@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề bài : [http://vn.spoj.com/problems/INTEGER7/](http://vn.spoj.com/problems/INTEGER7/)
 
-## Đề bài :
+# Đề bài :
 Tìm hai số nguyên không âm x1 và x2 thỏa mãn a1 * x1 + b1 = a2 * x2 + b2 và x1 + x2 là nhỏ nhất. Biết rằng luôn tồn tại số x1, x2 thỏa mãn.
 
 ## Input
@@ -22,4 +22,5 @@ Ghi ra 2 số x1, x2 thỏa mãn yêu cầu đề bài.
 # Solution : [http://dataurbia.com/iKQ](http://dataurbia.com/iKQ)
 
 # Code : [http://dataurbia.com/iJF](http://dataurbia.com/iJF)
+
 
