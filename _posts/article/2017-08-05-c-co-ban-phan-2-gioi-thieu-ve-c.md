@@ -4,7 +4,7 @@ author: Admin Tổng Quản
 date: 2017-08-05T09:52:29.738Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - c++-cơ-bản
+  - basic-cpp
   - programming
 ---
 Định nghĩa C\+\+ của trang [tutorialspoint.com](http://www.tutorialspoint.com/) là:
@@ -55,4 +55,5 @@ C\+\+ cũng được sử dụng rộng rãi để giảng dạy và nghiên c�
 Bất cứ ai đã sử dụng các thiết bị Macintosh của Apple hoặc PC chạy Windows đều đã gián tiếp sử dụng C\+\+, vì giao diện người dùng chính của các hệ điều hành này đều được viết bằng C\+\+.
 
 C\+\+ được đánh giá là ngôn ngữ lập trình phổ biến thứ 4, theo [đánh giá của spectrum.ieee.org](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages).
+
 
