@@ -2,7 +2,7 @@
 title: '[SPOJ] CHAIN - Strange Food Chain'
 author: houtaru
 date: 2017-08-03T14:22:37.298Z
-thumbnail: /img/uploads/590fee0ed8510.jpg
+thumbnail: '/img/uploads/[spoj]-chain.graph.jpg'
 tags:
   - spoj
   - dsu
@@ -31,4 +31,5 @@ Các thông tin có thể đúng hoặc sai. Thông tin bị sai khi là 1 trong
 Gồm t dòng, mỗi dòng là số thông tin bị sai.
 
 # Solution : [http://simizer.com/vNo](http://simizer.com/vNo) 
-#Code : [http://simizer.com/vYb](http://simizer.com/vYb)
+# Code : [http://simizer.com/vYb](http://simizer.com/vYb)
+
