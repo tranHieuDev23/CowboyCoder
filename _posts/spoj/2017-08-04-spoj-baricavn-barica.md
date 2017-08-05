@@ -2,7 +2,7 @@
 title: '[SPOJ] BARICAVN - BARICA '
 author: G
 date: 2017-08-04T10:14:47.540Z
-thumbnail: /img/uploads/mat-phang-toa-do-de-cac-oxy.jpg
+thumbnail: /img/uploads/BARICAVN.jpg
 tags:
   - spoj
   - sorting
@@ -33,3 +33,4 @@ Barica thu được một đơn vị năng lượng với mỗi con ruồi mà n
 # Code :
 
    [Here](http://dataurbia.com/PTm)
+
