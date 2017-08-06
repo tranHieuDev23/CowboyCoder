@@ -5,6 +5,7 @@ date: 2017-08-06T00:53:38.621Z
 thumbnail: '/img/uploads/[spoj]LQDGONME.jpg'
 tags:
   - spoj
+  - dp
 ---
 ## Link đề gốc:
 
@@ -50,6 +51,7 @@ Tham khảo tại: [http://dataurbia.com/zd4](http://dataurbia.com/zd4)
 ##Code: 
 
 Tham khảo tại: [http://dataurbia.com/yUI](http://dataurbia.com/yUI)
+
 
 
 
