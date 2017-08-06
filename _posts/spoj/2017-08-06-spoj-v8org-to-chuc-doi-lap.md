@@ -43,7 +43,6 @@ Có thể bắt giữ 4 phần tử 6, 2, 7 và 8.
 
 # Solution
 Tham Khảo Tại : [http://dataurbia.com/12iA](http://dataurbia.com/12iA)
-[http://dataurbia.com/12iA](http://dataurbia.com/12iA){:target="_blank"}
 # Code 
 Tham Khảo Tại : [http://dataurbia.com/12YN](http://dataurbia.com/12YN)
 
