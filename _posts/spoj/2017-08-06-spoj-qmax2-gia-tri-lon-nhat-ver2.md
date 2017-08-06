@@ -13,7 +13,11 @@ Giống bài QMAX ([http://vn.spoj.com/problems/QMAX/](http://vn.spoj.com/proble
 
 ## Input
 
-- n: số phần tử của dãy \(n &lt;= 50000\).- m: số lượng biến đổi và câu hỏi \(m &lt;= 100000\).+\) biến đổi có dạng: 0 x y value+\) câu hỏi có dạng : 1 x y.
+- n: số phần tử của dãy \(n &lt;= 50000\).- m: số lượng biến đổi và câu hỏi \(m &lt;= 100000\).
+
+   +\) biến đổi có dạng: 0 x y value
+   
+   +\) câu hỏi có dạng : 1 x y.
 
 ## Output
 
@@ -36,5 +40,6 @@ Output:
 Tham Khảo Tại : [http://dataurbia.com/10AY](http://dataurbia.com/10AY)
 # Code : 
 Tham Khảo Tại : [http://dataurbia.com/104N](http://dataurbia.com/104N)
+
 
 
