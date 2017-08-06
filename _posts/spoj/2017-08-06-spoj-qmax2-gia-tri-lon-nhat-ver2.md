@@ -4,6 +4,7 @@ author: La Hoàng Phong
 date: 2017-08-06T04:49:07.828Z
 thumbnail: /img/uploads/QMAX2_Image.png
 tags:
+  - spoj
   - data-structure
 ---
 # Link bài gốc : [http://vn.spoj.com/problems/QMAX2/](http://vn.spoj.com/problems/QMAX2/)
@@ -40,6 +41,7 @@ Output:
 Tham Khảo Tại : [http://dataurbia.com/10AY](http://dataurbia.com/10AY)
 # Code : 
 Tham Khảo Tại : [http://dataurbia.com/104N](http://dataurbia.com/104N)
+
 
 
 
