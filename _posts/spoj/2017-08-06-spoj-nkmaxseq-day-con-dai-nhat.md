@@ -2,7 +2,7 @@
 title: '[SPOJ] NKMAXSEQ - Dãy con dài nhất'
 author: CVHvn
 date: 2017-08-05T22:21:01.120Z
-thumbnail: '/img/uploads/[SPOJ]NKMAXSEQ-graph.png'
+thumbnail: '/img/uploads/[SPOJ]NKMAXSEQ-graph.jpg'
 tags:
   - SPOJ
   - data-structure
@@ -28,5 +28,6 @@ Trong tất cả các test: 1 ≤ n ≤ 50000; |ai| ≤ 20000; |p| ≤ 10^9. Có
 # Soltution: [http://dataurbia.com/uFR](http://dataurbia.com/uFR)
 
 # Code: [http://dataurbia.com/tax](http://dataurbia.com/tax)
+
 
 
