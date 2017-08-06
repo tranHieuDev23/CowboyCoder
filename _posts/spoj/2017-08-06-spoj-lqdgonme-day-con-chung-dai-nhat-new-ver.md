@@ -45,10 +45,11 @@ Dãy con chung dài nhất là 1,4,2
 
 ##Solution:
 
-Tham khảo tại: 
+Tham khảo tại: [http://dataurbia.com/zd4](http://dataurbia.com/zd4)
 
 ##Code: 
 
 Tham khảo tại: [http://dataurbia.com/yUI](http://dataurbia.com/yUI)
+
 
 
