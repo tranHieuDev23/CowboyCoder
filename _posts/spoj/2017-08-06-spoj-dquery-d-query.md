@@ -38,6 +38,7 @@ Output
 ```
 
 # Solution
-Tham Khảo Tại : [http://adf.ly/1niymV](http://adf.ly/1niymV)
+Tham Khảo Tại : [http://dataurbia.com/12ZO](http://dataurbia.com/12ZO)
 # Code 
-Tham Khảo Tại : [http://adf.ly/1niyX8](http://adf.ly/1niyX8)
+Tham Khảo Tại : [http://dataurbia.com/12Yx](http://dataurbia.com/12Yx)
+
