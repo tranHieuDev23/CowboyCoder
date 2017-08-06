@@ -4,6 +4,7 @@ author: La Hoàng Phong
 date: 2017-08-06T03:43:58.753Z
 thumbnail: /img/uploads/HEAP1_Image.jpg
 tags:
+  - spoj
   - data-structure
   - heap
 ---
@@ -38,4 +39,5 @@ Output:
 Tham Khảo Tại : [http://dataurbia.com/zVX](http://dataurbia.com/zVX)
 # Code
 Tham Khảo Tại : [http://dataurbia.com/zUR](http://dataurbia.com/zUR)
+
 
