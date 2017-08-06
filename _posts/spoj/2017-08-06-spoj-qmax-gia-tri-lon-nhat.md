@@ -4,6 +4,7 @@ author: La Hoàng Phong
 date: 2017-08-06T04:31:51.249Z
 thumbnail: /img/uploads/QMAX_Image.jpg
 tags:
+  - spoj
   - data-structure
 ---
 # Link bài gốc : [http://vn.spoj.com/problems/QMAX/](http://vn.spoj.com/problems/QMAX/)
@@ -49,3 +50,4 @@ Output:
 Tham Khảo Tại : [http://dataurbia.com/zzQ](http://dataurbia.com/zzQ)
 # Code 
 Tham Khảo Tại : [http://dataurbia.com/zrZ](http://dataurbia.com/zrZ)
+
