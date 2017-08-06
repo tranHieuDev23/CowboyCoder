@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-## Link đề gốc:
+# Link đề gốc:
 
 [http://vn.spoj.com/problems/LQDGONME/](http://vn.spoj.com/problems/LQDGONME/)
 
@@ -17,13 +17,13 @@ Cho m dãy là hoán vị của n số tự nhiên đầu tiên
 
 Tìm độ dài dãy con chung dài nhất của m dãy đó
 
-### Input
+## Input
 
 Dòng đầu chứa số hai số nguyên n và m \(1≤n≤1000,1≤m≤10\)
 
 M dòng sau mỗi dòng chứa n số nguyên là dãy hoán vị của n số tự nhiên đầu tiên
 
-### Output
+## Output
 
 Đưa là độ dài lớn nhất của dãy con chung
 
@@ -44,14 +44,10 @@ Output:
 Dãy con chung dài nhất là 1,4,2
 ```
 
-##Solution:
+# Solution:
 
 Tham khảo tại: [http://dataurbia.com/zd4](http://dataurbia.com/zd4)
 
-##Code: 
+# Code: 
 
 Tham khảo tại: [http://dataurbia.com/yUI](http://dataurbia.com/yUI)
-
-
-
-
