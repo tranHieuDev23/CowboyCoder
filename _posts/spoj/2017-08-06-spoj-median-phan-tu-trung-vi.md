@@ -57,6 +57,10 @@ Các dãy con là (3, 4, 5), ..., (10, 11, 12).
 Các trung vị là 4, 5, ..., 11.
 ```
 
+# Chú ý:
+
+Muốn hiểu được code trước hết các bạn cần phải nắm rõ được về set. Những kiến thức cơ bản về set các bạn hãy đọc trước trên VNOI : [http://vnoi.info/library/56/4958/](http://vnoi.info/library/56/4958/)
+
 ## Solution:
 
 Tham khảo tại: [http://dataurbia.com/18Wu](http://dataurbia.com/18Wu)
@@ -66,4 +70,5 @@ Tham khảo tại: [http://dataurbia.com/18Wu](http://dataurbia.com/18Wu)
 Tham khảo tại: [http://dataurbia.com/18YJ](http://dataurbia.com/18YJ)
 
 Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11
+
 
