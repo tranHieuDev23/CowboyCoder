@@ -7,11 +7,11 @@ tags:
   - spoj
   - implementation
 ---
-## Link đề gốc:
+# Link đề gốc:
 
 http://vn.spoj.com/problems/MEDIAN/
 
-## Đề bài:
+# Đề bài:
 
 Cho một dãy số a1, a2, ..., an được sinh ngẫu nhiên như sau:
 
@@ -22,11 +22,11 @@ Với mul, add, seed là các số cho trước.
 
 Cho một số k ≤ n. Dãy đã cho có n-k+1 dãy con độ dài k. Hãy tính tổng tất cả các phần tử trung vị \(phần tử nhỏ thứ \(k+1\)\/2\) của n-k+1 dãy con này\).
 
-### Dữ liệu
+## Dữ liệu
 
 Dòng đầu tiên chứa số test \(không quá 30\). Mỗi dòng tiếp theo chứa 5 số nguyên seed, mul, add, N, K. \(0 ≤ seed, mul, add ≤ 65535, 1 ≤ N ≤ 250000, 1 ≤ K ≤ 5000, K ≤ N\)
 
-### Kết quả
+## Kết quả
 
 Với mỗi test in ra số hiệu test \(theo mẫu\) cùng với tổng các trung vị tìm được.
 
@@ -61,15 +61,12 @@ Các trung vị là 4, 5, ..., 11.
 
 Muốn hiểu được code bài này trước hết các bạn cần phải nắm rõ được về set. Những kiến thức cơ bản về set các bạn hãy đọc trước trên VNOI : [http://vnoi.info/library/56/4958/](http://vnoi.info/library/56/4958/)
 
-## Solution:
+# Solution:
 
 Tham khảo tại: [http://dataurbia.com/18Wu](http://dataurbia.com/18Wu)
 
-## Code:
+# Code:
 
 Tham khảo tại: [http://dataurbia.com/18YJ](http://dataurbia.com/18YJ)
 
 Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11
-
-
-
