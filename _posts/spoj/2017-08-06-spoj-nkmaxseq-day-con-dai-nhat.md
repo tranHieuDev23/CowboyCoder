@@ -8,7 +8,7 @@ tags:
   - data-structure
   - Dp
 ---
-# Link đề bài: [http://vn.spoj.com/submit/NKMAXSEQ/id=16914468](http://vn.spoj.com/submit/NKMAXSEQ/id=16914468)
+# Link đề bài: [http://vn.spoj.com/problems/NKMAXSEQ/](http://vn.spoj.com/problems/NKMAXSEQ/)
 
 # Đề bài:
 Cho dãy số nguyên a1, a2, …, an.
@@ -28,4 +28,5 @@ Trong tất cả các test: 1 ≤ n ≤ 50000; |ai| ≤ 20000; |p| ≤ 10^9. Có
 # Soltution: [http://dataurbia.com/uFR](http://dataurbia.com/uFR)
 
 # Code: [http://dataurbia.com/tax](http://dataurbia.com/tax)
+
 
