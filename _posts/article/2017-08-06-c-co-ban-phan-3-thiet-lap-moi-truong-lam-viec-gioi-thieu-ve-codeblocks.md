@@ -88,3 +88,4 @@ Tại sao ta phải biết 3 nút này? Bạn sẽ nhanh chóng nhận ra quá t
 
 Tới đây là kết thúc phần chuẩn bị cho series bài viết. Ở bài viết tiếp theo, chúng ta sẽ tới nội dung chính của series – ngôn ngữ C++!
 
+*Phần sau: [\[C++ Cơ bản\] Phần 4: Cú pháp C++ cơ bản](http://cowboycoder.tech/article/c-co-ban-phan-4-cu-phap-c-co-ban)*
