@@ -2,7 +2,7 @@
 title: '[SPOJ] AMSSEQ - Dãy số'
 author: G
 date: 2017-08-07T14:54:58.034Z
-thumbnail: /img/uploads/numbers.jpg
+thumbnail: /img/uploads/AMSSEQ.jpg
 tags:
   - dp
   - qhd
@@ -28,14 +28,16 @@ Giới hạn:
 * K ≤ 10.
 * Trong 20% số test có N ≤ 10
 
-##Ví dụ
+## Ví dụ
 
 ```
 Input:
 5 
-2-2 3 -6 -4 5
+2 -2 3 -6 -4 5
+
 Output:
 4
+
 Giải thích:
 - Ta có thể đi theo thứ tự 0 -> 2 -> 4 -> 5. Số điểm đạt được là 0 + 3 - 4 + 5 = 4.
 ```
@@ -45,7 +47,3 @@ Giải thích:
 
 # Code :
 [Here](http://ideone.com/PqORE8)
-
-
-
-
