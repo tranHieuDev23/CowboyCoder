@@ -13,6 +13,8 @@ Một chương trình C++ cơ bản có thể có cấu trúc giống như một
 * Lớp (class): Class là định nghĩa của đối tượng. Một class sẽ được định nghĩa danh sách những tính chất và phương thức mà các đối tượng trong class đó sở hữu. Ví dụ: Cả loài chó nói chung sẽ có những tính chất như trên, trong khi con Milu nhà bạn sẽ có giá trị đặc biệt cho từng tính chất.
 * Phương thức: Phương thức là những hành vi được định nghĩa của một đối tượng. Phương thức là nơi mà các biến được thay đổi, đối tượng giao tiếp với nhau, vân vân… Ví dụ: Khi một con chó sủa, biến “Cơ vòm họng” có nó sẽ co bóp để tạo âm thanh, đối tượng “Âm thanh” sẽ được tạo ra, và hàng xóm sẽ được kích hoạt phương thức “Cau có”.
 * Biến cá thể: Mỗi đội tượng sẽ có một số biến cá thể, định nghĩa các giá trị tính chất của nó.
+
+![undefined](/img/uploads/cpp-cơ-bản-4-1.jpg)
  
 # Cấu trúc chương trình C++
 
@@ -34,8 +36,8 @@ int main()
 * ```using namespace std;```: Dòng lệnh này khai báo sử dụng không gian tên std. Chúng ta tạm thời chưa cần quan tâm ở đây. 
 * ```int main()```: Hàm ```main()``` là nơi chương trình C++ được triển khai. Hàm này trả lại một giá trị kiểu số nguyên (```int```) thông báo chương trình có được kết thúc một cách hợp lệ hay không.
 * Ngoặc nhọn là đánh dấu phần nội dung của hàm ```main()```.
-* ```cout << "Hello world!" << endl;```: Dòng lệnh này yêu cầu chương trình in ra xâu ký tự ```Hello world!`` cùng với việc xuống dòng.
-* ```return 0;```: Báo hiệu kết thúc hàm main(), trả về giá trị 0 (chương trình kết thúc hợp lệ, không có gì bất thường).
+* ```cout << "Hello world!" << endl;```: Dòng lệnh này yêu cầu chương trình in ra xâu ký tự ```Hello world!``` cùng với việc xuống dòng.
+* ```return 0;```: Báo hiệu kết thúc hàm ```main()```, trả về giá trị 0 (chương trình kết thúc hợp lệ, không có gì bất thường).
 
 # Dấu chấm phẩy và khối lệnh ngoặc nhọn
 
@@ -82,6 +84,8 @@ Các đối tượng trong C++ như biến, chương trình con, vân vân… đ
 
 **Chú ý:** Đừng lo ngại về số lượng từ khóa của C++! Mặc dù trông chúng có thể nhiều, nhưng các IDE hiện đại đều được tích hợp chức năng gợi ý từ. Bạn sẽ rất dễ dàng nhận ra được tên biến bạn định đặt có trùng với từ khóa nào không. Các bộ dịch cũng sẽ tự động báo lỗi khi dịch phải chương trình đặt tên biến có từ khóa.
 
+![undefined](/img/uploads/cpp-cơ-bản-2-1.jpg)
+
 # Khoảng trắng
 
 Các kí hiệu không nhìn thấy được như dấu cách, kí tự xuống dòng, tab và các đoạn comment được gọi chung là khoảng trắng. Các khoảng trắng có tác dụng phân biệt các đối tượng trong một câu lệnh với nhau. Ví dụ khi khai báo hàm ```int main()```, khoảng trắng (dấu cách) là cần thiết. Trong các trường hợp khác, ví dụ như câu lệnh
@@ -119,3 +123,4 @@ Trình dịch C++ sẽ bỏ qua tất cả các đoạn code được comment, v
 Comment còn có một tác dụng khác, đó là tạm thời tắt một đoạn code đi nhằm mục đích sửa chữa - debug.
 
 CodeBlocks hỗ trợ tổ hợp phím Ctrl + Shift + C để bỏ dòng code hiện tại, hoặc các dòng code được bôi đen, vào trong comment, cùng với Ctrl + Shift + X để bỏ dòng code ra khỏi comment.
+
