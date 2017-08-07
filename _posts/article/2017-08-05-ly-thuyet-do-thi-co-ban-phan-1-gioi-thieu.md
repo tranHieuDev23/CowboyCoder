@@ -23,6 +23,8 @@ Trong đó:
 
 * \\( E \\) là tập các cạnh của đồ thị. Đặt \\( \mid E \mid = m \\) (số cạnh).
 
+![undefined](/img/uploads/ly-thuyet-do-thi-co-ban-1-1.jpg)
+
 ## Đỉnh:
 
 Đỉnh biểu diễn các đối tượng trong đồ thị, thường được đánh dấu bằng các số hoặc kí hiệu bằng các chữ cái in thường u,v,...
@@ -141,5 +143,4 @@ Với mỗi đỉnh của đồ thị, ta lưu một danh sách các đỉnh k�
 2. Nhược điểm:
 * Khi cần kiểm tra hai đỉnh u,v có kề nhau hay không, ta không thể kiểm tra nhanh trong \\( O(1) \\) như cách lưu bằng ma trận kề, mặc dù tùy theo cách lưu danh sách cạnh mà ta có thể kiểm tra trong \\( O(logn) \\) hoặc ít hơn.
 
-
-
+*Phần sau: [\[Lý thuyết đồ thị cơ bản\] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First Search \(BFS\)](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-tim-kiem-theo-chieu-rong-tren-do-thi-breadth-first-search-bfs)*
