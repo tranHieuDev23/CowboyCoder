@@ -74,7 +74,7 @@ và
 
 đều là các đoạn code hợp lệ.
 
-#Cách đặt tên trong C++
+# Cách đặt tên trong C++
 
 Các đối tượng trong C++ như biến, chương trình con, vân vân… đều cần có tên. C++ có một số quy tắc đặt tên như sau:
 
@@ -123,4 +123,5 @@ Trình dịch C++ sẽ bỏ qua tất cả các đoạn code được comment, v
 Comment còn có một tác dụng khác, đó là tạm thời tắt một đoạn code đi nhằm mục đích sửa chữa - debug.
 
 CodeBlocks hỗ trợ tổ hợp phím Ctrl + Shift + C để bỏ dòng code hiện tại, hoặc các dòng code được bôi đen, vào trong comment, cùng với Ctrl + Shift + X để bỏ dòng code ra khỏi comment.
+
 
