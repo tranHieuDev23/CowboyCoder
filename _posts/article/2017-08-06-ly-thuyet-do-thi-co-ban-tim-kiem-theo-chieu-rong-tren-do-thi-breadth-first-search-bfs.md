@@ -9,7 +9,7 @@ tags:
   - lý-thuyết-đồ-thị-cơ-bản
   - graph
 ---
-Phần trước: [\[Lý thuyết đồ thị cơ bản\] Phần 1: Giới thiệu](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-1-gioi-thieu)
+*Phần trước: [\[Lý thuyết đồ thị cơ bản\] Phần 1: Giới thiệu](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-1-gioi-thieu)*
 
 Lấy một bài toán đơn giản: ta có một trạng thái của khối rubik 3 * 3. 
 
@@ -88,5 +88,4 @@ u -----> v
 
 là ngắn nhất.
 
-
-
+*Phần sau: [\[Lý thuyết đồ thị cơ bản\] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search \(DFS\)](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-3-tim-kiem-theo-chieu-sau-tren-do-thi-depth-first-search-dfs)*
