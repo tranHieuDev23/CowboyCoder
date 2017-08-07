@@ -64,7 +64,6 @@ void dfs(int u)
 O\(\|V\| + \|E\|\) tương đương BFS
 
 * DFS được gọi đúng 1 lần ứng với mỗi đỉnh.
-
 * Mỗi cạnh được duyệt qua 1 lần với đồ thị có hướng. Nếu là đồ thị vô hướng thì mỗi cạnh được duyệt qua 2 lần.
 
 # Ứng dụng
@@ -72,11 +71,8 @@ O\(\|V\| + \|E\|\) tương đương BFS
 DFS được ứng dụng rất nhiều. Ví dụ như...
 
 * Xác định các thành phần liên thông của đồ thị
-
 * Sắp xếp tô-pô cho đồ thị
-
 * Xác định các thành phần liên thông mạnh của đồ thị có hướng
-
 * Kiểm tra một đồ thị có phải là đồ thị phẳng hay không
 
 **Chú ý:** Với code đệ quy bằng ngôn ngữ C++, do C++ giới hạn bộ nhớ một chương trình con được phép sử dụng, đôi khi số lượng đỉnh lớn một chút sẽ làm bạn bị tràn lượng bộ nhớ đó, cần phải áp dụng cài đặt khử đệ quy để tránh trường hợp này. Tuy nhiên trong các cuộc thi lập trình thi đấu (và trong lập trình thực tế), bạn ít khi gặp phải trường hợp này. Cài đặt khử đệ quy cũng khó và dễ sai hơn so với đệ quy, nên cũng không đáng phải liều mạng tới mức đó.
@@ -86,4 +82,5 @@ DFS được ứng dụng rất nhiều. Ví dụ như...
 [ADS (SPOJ\)](http://vn.spoj.com/problems/ADS/). Lời giải xem tại [đây](http://cowboycoder.tech/spoj/spoj-ads-quang-cao).
 
 [PWALK (SPOJ\)](http://vn.spoj.com/problems/PWALK/)
+
 
