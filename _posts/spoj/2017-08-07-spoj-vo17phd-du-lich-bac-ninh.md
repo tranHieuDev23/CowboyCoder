@@ -48,7 +48,7 @@ Nếu không tồn tại đường đi từ khu phố 1 tới khu phố N, in ra
 
 ## Example
 
-**Input **
+**Input**
 ```
 8
 2 1 1 1 100 1 1 2
@@ -73,4 +73,5 @@ Nếu không tồn tại đường đi từ khu phố 1 tới khu phố N, in ra
 [http://viahold.com/AuH](http://viahold.com/AuH)
 # Code mẫu
 [http://viahold.com/AcA](http://viahold.com/AcA)
+
 
