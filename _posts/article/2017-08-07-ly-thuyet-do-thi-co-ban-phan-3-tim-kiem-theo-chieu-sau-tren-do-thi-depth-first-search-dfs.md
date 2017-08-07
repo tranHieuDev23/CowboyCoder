@@ -46,30 +46,22 @@ Tùy theo những gì bạn cần làm trên đồ thị mà bạn có thể đi
 
 {% highlight c++ %}
 vector g[maxn]; // vector lưu các đỉnh kề với các đỉnh
-
 int dd[maxn]; // mảng đánh dấu
 
 void dfs(int u)
-
 {
-
     dd[u]=1; // đánh dấu đỉnh u đã đi qua
-
     for(int i = 0; i < g[u].size(); ++ i) // với mỗi đỉnh v kề với u
-
     {
-
         int v = g[u][i];
-
         if(dd[v] == 0) dfs(v); // nếu v chưa đánh dấu, tới thăm đỉnh u
-
     }
 }
 {% endhighlight %}
 
 # Độ phức tạp
 
-O\(\|V\| + \|E\| \) tương đương BFS
+O\(\|V\| + \|E\|\) tương đương BFS
 
 * DFS được gọi đúng 1 lần ứng với mỗi đỉnh.
 
@@ -91,6 +83,7 @@ DFS được ứng dụng rất nhiều. Ví dụ như...
 
 # Một số bài tập vận dụng 
 
-[http:\/\/vn.spoj.com\/problems\/ADS\/](http://vn.spoj.com/problems/ADS/)
+[ADS (SPOJ\)](http://vn.spoj.com/problems/ADS/). Lời giải xem tại [đây](http://cowboycoder.tech/spoj/spoj-ads-quang-cao).
 
-[http:\/\/vn.spoj.com\/problems\/PWALK\/](http://vn.spoj.com/problems/PWALK/)
+[PWALK (SPOJ\)](http://vn.spoj.com/problems/PWALK/)
+
