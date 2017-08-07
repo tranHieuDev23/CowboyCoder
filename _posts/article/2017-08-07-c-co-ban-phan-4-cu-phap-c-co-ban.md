@@ -82,6 +82,7 @@ Các đối tượng trong C++ như biến, chương trình con, vân vân… đ
 
 * Tên phải được bắt đầu bằng chữ cái tiếng anh (từ a tới z hoặc từ A tới Z), hoặc một dấu gạch dưới "_", có thể được nối tiếp bởi các chữ cái, dấu gạch dưới hoặc các số.
 * Tên không được chứa các dấu câu, kí tự đặc biệt như @, %, $.
+* Tên có sự phân biệt chữ hoa - chữ thường. Ví dụ, ```number``` và ```Number``` là hai tên gọi khác nhau trong một chương trình C++.
 * Tên không được trùng với các từ khóa đã được C++ sử dụng. Danh sách các từ khóa có thể được tìm thấy ở <http://en.cppreference.com/w/cpp/keyword.>
 
 **Chú ý:** Đừng lo ngại về số lượng từ khóa của C++! Mặc dù trông chúng có thể nhiều, nhưng các IDE hiện đại đều được tích hợp chức năng gợi ý từ. Bạn sẽ rất dễ dàng nhận ra được tên biến bạn định đặt có trùng với từ khóa nào không. Các bộ dịch cũng sẽ tự động báo lỗi khi dịch phải chương trình đặt tên biến có từ khóa.
@@ -125,6 +126,7 @@ Trình dịch C++ sẽ bỏ qua tất cả các đoạn code được comment, v
 Comment còn có một tác dụng khác, đó là tạm thời tắt một đoạn code đi nhằm mục đích sửa chữa - debug.
 
 CodeBlocks hỗ trợ tổ hợp phím Ctrl + Shift + C để bỏ dòng code hiện tại, hoặc các dòng code được bôi đen, vào trong comment, cùng với Ctrl + Shift + X để bỏ dòng code ra khỏi comment.
+
 
 
 
