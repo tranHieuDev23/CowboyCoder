@@ -11,10 +11,10 @@ tags:
 
 Một chương trình C++ cơ bản có cấu trúc giống như một tập hợp các đối tượng lập trình, giao tiếp với nhau bằng việc kích hoạt các phương thức giữa chúng. Cụ thể hơn thì:
 
-* Đối tượng (object): Một đối tượng sẽ có các tính chất và phương thức. Ví dụ: một con chó thì có tính chất như màu lông, tuổi, tên, giống chó; có các phương thức như sủa, ăn, tiêu hóa thức ăn.
-* Lớp (class): Class là định nghĩa của đối tượng. Một class sẽ được định nghĩa danh sách những tính chất và phương thức mà các đối tượng trong class đó sở hữu. Ví dụ: Cả loài chó nói chung sẽ có những tính chất như trên, trong khi con Milu nhà bạn sẽ có giá trị đặc biệt cho từng tính chất.
-* Phương thức: Phương thức là những hành vi được định nghĩa của một đối tượng. Phương thức là nơi mà các biến được thay đổi, đối tượng giao tiếp với nhau, vân vân… Ví dụ: Khi một con chó sủa, biến “Cơ vòm họng” có nó sẽ co bóp để tạo âm thanh, đối tượng “Âm thanh” sẽ được tạo ra, và hàng xóm sẽ được kích hoạt phương thức “Cau có”.
-* Biến cá thể: Mỗi đội tượng sẽ có một số biến cá thể, định nghĩa các giá trị tính chất của nó.
+* **Đối tượng (object):** Một đối tượng sẽ có các tính chất và phương thức. Ví dụ: một con chó thì có tính chất như màu lông, tuổi, tên, giống chó; có các phương thức như sủa, ăn, tiêu hóa thức ăn.
+* **Lớp (class):** Class là định nghĩa của đối tượng. Một class sẽ được định nghĩa danh sách những tính chất và phương thức mà các đối tượng trong class đó sở hữu. Ví dụ: Cả loài chó nói chung sẽ có những tính chất như trên, trong khi con Milu nhà bạn sẽ có giá trị đặc biệt cho từng tính chất.
+* **Phương thức:** Phương thức là những hành vi được định nghĩa của một đối tượng. Phương thức là nơi mà các biến được thay đổi, đối tượng giao tiếp với nhau, vân vân… Ví dụ: Khi một con chó sủa, biến “Cơ vòm họng” có nó sẽ co bóp để tạo âm thanh, đối tượng “Âm thanh” sẽ được tạo ra, và hàng xóm sẽ được kích hoạt phương thức “Cau có”.
+* **Biến cá thể:** Mỗi đội tượng sẽ có một số biến cá thể, định nghĩa các giá trị tính chất của nó.
 
 ![undefined](/img/uploads/cpp-cơ-bản-4-1.jpg)
  
@@ -125,6 +125,7 @@ Trình dịch C++ sẽ bỏ qua tất cả các đoạn code được comment, v
 Comment còn có một tác dụng khác, đó là tạm thời tắt một đoạn code đi nhằm mục đích sửa chữa - debug.
 
 CodeBlocks hỗ trợ tổ hợp phím Ctrl + Shift + C để bỏ dòng code hiện tại, hoặc các dòng code được bôi đen, vào trong comment, cùng với Ctrl + Shift + X để bỏ dòng code ra khỏi comment.
+
 
 
 
