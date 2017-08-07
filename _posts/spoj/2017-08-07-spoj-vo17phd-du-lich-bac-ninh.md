@@ -47,6 +47,7 @@ Nếu không tồn tại đường đi từ khu phố 1 tới khu phố N, in ra
 - Trong 40% số test còn lại, không có ràng buộc gì thêm.
 
 ## Example
+
 **Input **
 ```
 8
@@ -72,3 +73,4 @@ Nếu không tồn tại đường đi từ khu phố 1 tới khu phố N, in ra
 [http://viahold.com/AuH](http://viahold.com/AuH)
 # Code mẫu
 [http://viahold.com/AcA](http://viahold.com/AcA)
+
