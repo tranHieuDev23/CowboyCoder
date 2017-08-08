@@ -22,31 +22,31 @@ C++ là ngôn ngữ đặt kiểu dữ liệu tĩnh (statically typed), có ngh�
 </tr>
 <tr>
     <td><b>Boolean</b><br/>Kiểu dữ liệu đúng sai (true/false)</td>
-    <td>bool</td>
+    <td><code class="highlighter-rouge">bool</code></td>
 </tr>
 <tr>
     <td><b>Character</b><br/>Kiểu kí tự</td>
-    <td>char</td>
+    <td><code class="highlighter-rouge">char</code></td>
 </tr>
 <tr>
     <td><b>Integer</b><br/>Kiểu số nguyên</td>
-    <td>int</td>
+    <td><code class="highlighter-rouge">int</code></td>
 </tr>
 <tr>
     <td><b>Floating point</b><br/>Kiểu số thực</td>
-    <td>float</td>
+    <td><code class="highlighter-rouge">float</code></td>
 </tr>
 <tr>
     <td><b>Double floating point</b><br/>Kiểu số thực, với khoảng biểu diễn và độ chính xác cao hơn</td>
-    <td>double</td>
+    <td><code class="highlighter-rouge">double</code></td>
 </tr>
 <tr>
     <td><b>Valueless</b><br/>Không trả giá trị gì về cả. Kiểu dữ liệu này thường thấy khi ta muốn tạo ra một chương trình con - một hàm chỉ thực hiện thao tác trên các đối tượng, mà không trả lại gì cả.</td>
-    <td>void</td>
+    <td><code class="highlighter-rouge">void</code></td>
 </tr>
 <tr>
     <td><b>Wide character</b><br/>Kiểu kí tự, với khoảng biểu diễn rộng hơn</td>
-    <td>wchar_t</td>
+    <td><code class="highlighter-rouge">wchar_t</code></td>
 </tr>
 </table>
 
@@ -189,6 +189,7 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 {% highlight c++ %}
 ULL x = 1000;
 {% endhighlight %}
+
 
 
 
