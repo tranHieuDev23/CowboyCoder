@@ -22,7 +22,7 @@ C++ là ngôn ngữ đặt kiểu dữ liệu tĩnh (statically typed), có ngh�
 </tr>
 <tr>
     <td>Boolean<br/>Kiểu dữ liệu đúng sai (true/false)</td>
-    <td>```bool```</td>
+    <td>bool</td>
 </tr>
 <tr>
     <td>Character<br/>Kiểu kí tự</td>
@@ -65,19 +65,19 @@ Một số kiểu dữ liệu nguyên thủy còn có thể được tùy chỉn
 
 Thật ra là không. Đúng, khoảng giá trị của các biến là hằng số, nhưng ta không cần phải nhớ một cách máy móc. Lấy ví dụ như kiểu ```int```:
  
-Như chúng ta đã biết, các dữ liệu trong  máy tính được lưu trữ bằng dãy bit nhị phân 0 - 1. 8 bit nhị phân thì bằng 1 byte. Cứ \( 2 ^ {10} \) (1024) byte thì bằng 1 kB, \( 2 ^ {10} \) kB thì bằng 1 MB, vân vân… ```int``` là kiểu dữ liệu số nguyên 4 byte, vậy nên nó sẽ được biểu diễn bằng 32 bit.
+Như chúng ta đã biết, các dữ liệu trong  máy tính được lưu trữ bằng dãy bit nhị phân 0 - 1. 8 bit nhị phân thì bằng 1 byte. Cứ \\( 2 ^ {10} \\) (1024) byte thì bằng 1 kB, \\( 2 ^ {10} \\) kB thì bằng 1 MB, vân vân… ```int``` là kiểu dữ liệu số nguyên 4 byte, vậy nên nó sẽ được biểu diễn bằng 32 bit.
 
-Nếu biểu diễn số nguyên bằng cả 32 bit thì sẽ không thể biểu diễn số âm được. Vậy người ta quy ước bit đầu tiên của giá trị int sẽ mang giá trị \( - 2 ^ {31} \), thay vì \( 2 ^ {31} \) như bình thường. Ví dụ: 
+Nếu biểu diễn số nguyên bằng cả 32 bit thì sẽ không thể biểu diễn số âm được. Vậy người ta quy ước bit đầu tiên của giá trị int sẽ mang giá trị \\( - 2 ^ {31} \\), thay vì \\( 2 ^ {31} \\) như bình thường. Ví dụ: 
 
 •	Số 7 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 0000 0111 (3 bit 1 ở cuối, tổng bằng 7)
 •	Số 100 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 ‭0110 0100‬‬‬
-•	Số -1 sẽ được biểu diễn là ‭1111111111111111111111111111111111111111111111111111111111111111‬ (tất cả đều là số 1, giá trị bằng \( - 2 ^ {31} + 2 ^ {30} + 2 ^ {29} + 2 ^ {28} + ...\))‬‬
+•	Số -1 sẽ được biểu diễn là ‭1111111111111111111111111111111111111111111111111111111111111111‬ (tất cả đều là số 1, giá trị bằng \\( - 2 ^ {31} + 2 ^ {30} + 2 ^ {29} + 2 ^ {28} + ...\\))‬‬
 
-Vậy khoảng giá trị của ```int``` là từ \( - 2 ^ {31} \) tới \( 2 ^ {31} - 1 \). 
+Vậy khoảng giá trị của ```int``` là từ \\( - 2 ^ {31} \\) tới \\( 2 ^ {31} - 1 \\). 
 
-```short``` có kích cỡ bằng một nửa ```int```, vậy nó sẽ chiếm 2 byte, khoảng giá trị là \( - 2 ^ {15} \) tới \( 2 ^ {15} - 1 \).
+```short``` có kích cỡ bằng một nửa ```int```, vậy nó sẽ chiếm 2 byte, khoảng giá trị là \\( - 2 ^ {15} \\) tới \\( 2 ^ {15} - 1 \\).
 
-```long``` có kích cỡ bằng gấp đôi ```int```, vậy nó sẽ chiếm 8 byte, khoảng giá trị là \( - 2 ^ {63} \) tới \( - 2 ^ {63} - 1 \).
+```long``` có kích cỡ bằng gấp đôi ```int```, vậy nó sẽ chiếm 8 byte, khoảng giá trị là \\( - 2 ^ {63} \\) tới \\( - 2 ^ {63} - 1 \\).
 
 Khi các biến dạng số được gắn thêm ```unsigned```, chúng sẽ không biểu diễn số âm nữa, do đó tất cả các bit của chúng đều sẽ được dùng để biểu diễn số nhị phân – việc tính toán khoảng của chúng cũng đơn giản như vậy.
 
@@ -189,3 +189,4 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 {% highlight c++ %}
 ULL x = 1000;
 {% endhighlight %}
+
