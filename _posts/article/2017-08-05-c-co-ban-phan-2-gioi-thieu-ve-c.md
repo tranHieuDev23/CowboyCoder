@@ -59,3 +59,5 @@ C\+\+ cũng được sử dụng rộng rãi để giảng dạy và nghiên c�
 Bất cứ ai đã sử dụng các thiết bị Macintosh của Apple hoặc PC chạy Windows đều đã gián tiếp sử dụng C\+\+, vì giao diện người dùng chính của các hệ điều hành này đều được viết bằng C\+\+.
 
 C\+\+ được đánh giá là ngôn ngữ lập trình phổ biến thứ 4, theo [đánh giá của spectrum.ieee.org](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages).
+
+*Phần sau: [\[C++ Cơ bản\] Phần 3: Thiết lập môi trường làm việc - Giới thiệu về Code::Blocks](http://cowboycoder.tech/article/c-co-ban-phan-3-thiet-lap-moi-truong-lam-viec-gioi-thieu-ve-codeblocks)*
