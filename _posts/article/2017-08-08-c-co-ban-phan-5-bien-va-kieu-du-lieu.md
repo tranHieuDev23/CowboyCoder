@@ -15,7 +15,7 @@ C++ là ngôn ngữ đặt kiểu dữ liệu tĩnh (statically typed), có ngh�
 
 # Các kiểu dữ liệu nguyên thủy
 
-<table class="table table_striped">
+<table class="table table-striped">
 <tr>
     <th>Kiểu dữ liệu</th>
     <th>Từ khóa</th>
@@ -189,6 +189,7 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 {% highlight c++ %}
 ULL x = 1000;
 {% endhighlight %}
+
 
 
 
