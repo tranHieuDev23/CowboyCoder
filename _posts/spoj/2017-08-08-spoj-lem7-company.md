@@ -17,13 +17,9 @@ Ví Dụ: Nếu 1 phòng có 2 lãnh đạo và 3 nhân viên thì hiệu quả 
 Một công ty muốn có hiệu quả bằng 1 số nguyên dương E cho trước. Hãy tìm cách tổ chức công ty sao cho các điều kiện sau được thoả mãn:
 
 1. Công ty có ít nhất 1 phòng
-
 2. Hiệu quả của công ty đúng bằng E
-
 3. Số N là tổng số người trong công ty nhỏ nhất có thể được
-
 4. Nếu có nhiều phương án tổng số người đúng bằng N tìm phương án có tổng số lãnh đạo S là nhỏ nhất
-
 5. Nếu có nhiều phương án với N và S nhỏ nhất tìm phương án có số phòng K là ít nhất
 
 ## Input
@@ -34,7 +30,6 @@ Gồm 1 dòng duy nhất: E \(1 &lt;= E &lt;= 10000\)
 
 Gồm 1 dòng ghi 3 số nguyên: N, S, K
 
-
 # Solution
 
 [Here](http://viahold.com/X2z)
@@ -42,5 +37,3 @@ Gồm 1 dòng ghi 3 số nguyên: N, S, K
 # Code mẫu 
 
 [Here](http://viahold.com/X43)
-
-
