@@ -18,10 +18,16 @@ Hai ống nước được nối liên tiếp với nhau cho phép lươ�
 quá thông lượng nhỏ nhất của hai ống. Một ống có thông lượng 5 nối với 
 ống có thông lượng 3 sẽ tương đương với một ống có thông lượng 3.:
 
+```
+
   +---5---+---3---+    ->    +---3---+
+
+```
 
 Còn hai ống nối song song cho phép thông lượng nước là tổng thông lượng 
 của từng ống. 
+
+```
 
     +---5---+
 
@@ -29,13 +35,19 @@ của từng ống.
 
     +---3---+
 
+```
+
 Còn một ống mà không nối với chuồng bò nào hay ống nào khác có thể bỏ đi: 
+
+```
 
     +---5---+
 
  ---+               ->    +---3---+
 
     +---3---+--
+
+```
 
 Sử dụng cách thức trên, cho bản đồ đường ống, xác định lượng nước có thể
 truyền từ nguồn (A) cho tới chuồng (Z).
@@ -120,4 +132,5 @@ Ví dụ:
 ## Code
 
 [http://viahold.com/Nnh](http://viahold.com/Nnh)
+
 
