@@ -127,9 +127,4 @@ Comment còn có một tác dụng khác, đó là tạm thời tắt một đo�
 
 CodeBlocks hỗ trợ tổ hợp phím Ctrl + Shift + C để bỏ dòng code hiện tại, hoặc các dòng code được bôi đen, vào trong comment, cùng với Ctrl + Shift + X để bỏ dòng code ra khỏi comment.
 
-
-
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 5: Biến và kiểu dữ liệu](http://cowboycoder.tech/article/c-co-ban-phan-5-bien-va-kieu-du-lieu)*
