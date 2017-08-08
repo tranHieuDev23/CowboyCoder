@@ -50,6 +50,7 @@ Kết qủa
 
 ## Code
 
-Dinitz: [http://ideone.com/DGrZT7](http://ideone.com/DGrZT7)
+Dinitz(N^2*M): [http://ideone.com/DGrZT7](http://ideone.com/DGrZT7)
 
-E.K: [http://ideone.com/JNxZ0h](http://ideone.com/JNxZ0h)
+E.K(N*M^2): [http://ideone.com/JNxZ0h](http://ideone.com/JNxZ0h)
+
