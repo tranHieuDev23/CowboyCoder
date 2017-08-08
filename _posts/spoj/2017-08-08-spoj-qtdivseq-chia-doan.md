@@ -15,32 +15,30 @@ tags:
 
 Cho dãy A gồm n số nguyên A1, A2,… , Anvà số nguyên dương k. Hỏi có bao nhiêu cách chia dãy A thành k đoạn liên tiếp có tổng bằng nhau \(mỗi đoạn có ít nhất 1 phần tử\) ?
 
-### Input
+## Input
 
-- Dòng đầu : hai số nguyên dương n và k, cách nhau một khoảng trắng
+* Dòng đầu : hai số nguyên dương n và k, cách nhau một khoảng trắng
+* Dòng hai : n số nguyên A1, A2,… , An, mỗi số cách nhau một khoảng trắng
 
-- Dòng hai : n số nguyên A1, A2,… , An, mỗi số cách nhau một khoảng trắng
+## Output
 
-### Output
+* Số nguyên S là số cách chia thỏa yêu cầu đề bài. Do kết quả có thể rất lớn, bạn chỉ cần in ra S mod 1000000007 \(109+ 7\)
 
-- Số nguyên S là số cách chia thỏa yêu cầu đề bài. Do kết quả có thể rất lớn, bạn chỉ cần in ra S mod 1000000007 \(109+ 7\)
+## Giới hạn :
 
-### Giới hạn :
-
-- 1 ≤ k ≤ n ≤ 106
-
-- \|Ai\| ≤ 109\(1 ≤ i ≤ n\)
+* 1 ≤ k ≤ n ≤ 106
+* \|Ai\| ≤ 109\(1 ≤ i ≤ n\)
 
 # Ví dụ:
 
-### Input:
+## Input:
 
 ```
 8 3
 -2 6 -1 3 -2 4 5 -1
 ```
 
-### Output:
+## Output:
 
 ```
 2
@@ -53,6 +51,7 @@ Tham khảo tại: [http://viahold.com/ROl](http://viahold.com/ROl)
 # Code:
 
 Tham khảo tại: [http://viahold.com/S0J](http://viahold.com/S0J)
+
 
 
 
