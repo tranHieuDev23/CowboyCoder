@@ -7,7 +7,7 @@ tags:
   - max-flow
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/NKFLOW/](http://vn.spoj.com/problems/NKFLOW/)
+# Đề: [http://vn.spoj.com/problems/NKFLOW/](http://vn.spoj.com/problems/NKFLOW/)
 
 Trong lý thuyết đồ thị, mạng luồng là một đồ thị có hướng, trong đó mỗi cạnh có một độ thông qua và một giá trị luồng. Lượng luồng trên mỗi cạnh không được vượt quá độ thông qua của cạnh đó. Lượng luồng đi vào một đỉnh phải bằng lượng luồng đi ra khỏi nó, trừ khi đó là đỉnh nguồn \(có nhiều lượng luồng đi ra hơn\), hay đỉnh đích \(có nhiều lượng luồng đi vào hơn\). Mạng luồng có thể dùng để mô hình hóa hệ thống đường giao thông, dòng chảy của chất lỏng trong ống, dòng điện trong mạch, hay bất kỳ các bài toán nào tương tự khi có sự di chuyển trong một mạng các nút.
 
@@ -44,13 +44,14 @@ Kết qủa
 9
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/Nbk](http://viahold.com/Nbk)
 
-## Code
+# Code
 
 Dinitz(N^2*M): [http://ideone.com/DGrZT7](http://ideone.com/DGrZT7)
 
 E.K(N*M^2): [http://ideone.com/JNxZ0h](http://ideone.com/JNxZ0h)
+
 
