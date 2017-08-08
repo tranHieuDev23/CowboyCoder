@@ -67,7 +67,7 @@ Thật ra là không. Đúng, khoảng giá trị của các biến là hằng s
  
 Như chúng ta đã biết, các dữ liệu trong  máy tính được lưu trữ bằng dãy bit nhị phân 0 - 1. 8 bit nhị phân thì bằng 1 byte. Cứ \\( 2 ^ {10} \\) (1024) byte thì bằng 1 kB, \\( 2 ^ {10} \\) kB thì bằng 1 MB, vân vân… ```int``` là kiểu dữ liệu số nguyên 4 byte, vậy nên nó sẽ được biểu diễn bằng 32 bit.
 
-Nếu biểu diễn số nguyên bằng cả 32 bit thì sẽ không thể biểu diễn số âm được. Vậy người ta quy ước bit đầu tiên của giá trị int sẽ mang giá trị \\( - 2 ^ {31} \\), thay vì \\( 2 ^ {31} \\) như bình thường. Ví dụ: 
+Nếu biểu diễn số nguyên bằng cả 32 bit thì sẽ không thể biểu diễn số âm được. Vậy người ta quy ước bit đầu tiên của giá trị ```int``` sẽ mang giá trị \\( - 2 ^ {31} \\), thay vì \\( 2 ^ {31} \\) như bình thường. Ví dụ: 
 
 * Số 7 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 0000 0111 (3 bit 1 ở cuối, tổng bằng 7)
 * Số 100 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 ‭0110 0100‬‬‬
@@ -189,6 +189,7 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 {% highlight c++ %}
 ULL x = 1000;
 {% endhighlight %}
+
 
 
 
