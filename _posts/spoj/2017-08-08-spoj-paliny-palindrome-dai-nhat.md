@@ -8,7 +8,7 @@ tags:
   - string
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/PALINY/](http://vn.spoj.com/problems/PALINY/)
+# Đề: [http://vn.spoj.com/problems/PALINY/](http://vn.spoj.com/problems/PALINY/)
 
 Cho xâu S. Tìm xâu đối xứng dài nhất gồm các kí tự liên tiếp trong S
 
@@ -31,14 +31,12 @@ abacd
 
 Output:
 3
-
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/NCj](http://viahold.com/NCj)
 
-## Code
+# Code
 
 [http://viahold.com/NHI](http://viahold.com/NHI)
-
