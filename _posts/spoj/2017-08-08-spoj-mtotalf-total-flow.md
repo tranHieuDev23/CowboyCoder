@@ -7,7 +7,7 @@ tags:
   - max-flow
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/MTOTALF/](http://vn.spoj.com/problems/MTOTALF/)
+# Đề: [http://vn.spoj.com/problems/MTOTALF/](http://vn.spoj.com/problems/MTOTALF/)
 
 Để quản lý nước cho đàn bò, FJ  đã vẽ bản đồ đường ống gồm N (1<=N<=700) 
 ống trong trang trại mà nối bể nước với các chuồng. FJ thấy rằng các 
@@ -97,7 +97,7 @@ Mọi dữ liệu cần tính đều có thể suy luận theo các quy
 Tên nút phân biệt chữ cái hoa và thường ('A' <> 'a').
 
 
-## INPUT
+## Input
 
 ```
 * Dòng 1: Số nguyên N
@@ -117,7 +117,7 @@ B Z 6
 
 ```
 
-### OUTPUT
+## Output
 
 ```
 * Dòng 1: Lượng nước lớn nhất có thể truyền từ nguồn A tới chuồng Z.
@@ -125,12 +125,14 @@ B Z 6
 Ví dụ:  
 3
 ```
-## Hướng dẫn: 
+
+# Hướng dẫn: 
 
 [http://viahold.com/Nn8](http://viahold.com/Nn8)
 
-## Code
+# Code
 
 [http://viahold.com/Nnh](http://viahold.com/Nnh)
+
 
 
