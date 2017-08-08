@@ -24,13 +24,17 @@ Còn hai ống nối song song cho phép thông lượng nước là tô�
 của từng ống. 
 
     +---5---+
+
  ---+       +---    ->    +---8---+
+
     +---3---+
 
 Còn một ống mà không nối với chuồng bò nào hay ống nào khác có thể bỏ đi: 
 
     +---5---+
+
  ---+               ->    +---3---+
+
     +---3---+--
 
 Sử dụng cách thức trên, cho bản đồ đường ống, xác định lượng nước có thể
@@ -39,21 +43,27 @@ truyền từ nguồn (A) cho tới chuồng (Z).
 Xét ví dụ sau:
 
                  +-----------6-----------+
+
         A+---3---+B                      +Z
+
                  +---3---+---5---+---4---+
                          C       D
 
 Ống BC và CD có thể gộp lại được:
 
                  +-----------6-----------+
+
         A+---3---+B                      +Z
+
                  +-----3-----+-----4-----+
                              D
 
 Sau đó gộp BD và DZ  :
 
                  +-----------6-----------+
+
         A+---3---+B                      +Z
+
                  +-----------3-----------+
 
 Gộp hai nhánh nối B và Z:
@@ -110,3 +120,4 @@ Ví dụ:
 ## Code
 
 [http://viahold.com/Nnh](http://viahold.com/Nnh)
+
