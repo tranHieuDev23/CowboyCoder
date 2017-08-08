@@ -31,7 +31,8 @@ Cho dãy A gồm n số nguyên A1, A2,… , Anvà số nguyên dương k. Hỏi
 # Input:
 
 ```
-8 3-2 6 -1 3 -2 4 5 -1
+8 3
+-2 6 -1 3 -2 4 5 -1
 ```
 
 # Output:
@@ -47,4 +48,5 @@ Tham khảo tại: [http://viahold.com/ROl](http://viahold.com/ROl)
 # Code:
 
 Tham khảo tại: [http://viahold.com/RLC](http://viahold.com/RLC)
+
 
