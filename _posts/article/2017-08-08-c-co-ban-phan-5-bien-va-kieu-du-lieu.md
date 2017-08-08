@@ -77,7 +77,7 @@ Vậy khoảng giá trị của ```int``` là từ \\( - 2 ^ {31} \\) tới \\( 
 
 ```short``` có kích cỡ bằng một nửa ```int```, vậy nó sẽ chiếm 2 byte, khoảng giá trị là \\( - 2 ^ {15} \\) tới \\( 2 ^ {15} - 1 \\).
 
-```long``` có kích cỡ bằng gấp đôi ```int```, vậy nó sẽ chiếm 8 byte, khoảng giá trị là \\( - 2 ^ {63} \\) tới \\( - 2 ^ {63} - 1 \\).
+```long``` có kích cỡ bằng gấp đôi ```int```, vậy nó sẽ chiếm 8 byte, khoảng giá trị là \\( - 2 ^ {63} \\) tới \\( 2 ^ {63} - 1 \\).
 
 Khi các biến dạng số được gắn thêm ```unsigned```, chúng sẽ không biểu diễn số âm nữa, do đó tất cả các bit của chúng đều sẽ được dùng để biểu diễn số nhị phân – việc tính toán khoảng của chúng cũng đơn giản như vậy.
 
@@ -189,6 +189,7 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 {% highlight c++ %}
 ULL x = 1000;
 {% endhighlight %}
+
 
 
 
