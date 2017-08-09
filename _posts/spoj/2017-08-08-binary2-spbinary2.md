@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề gốc : http://vn.spoj.com/problems/BINARY2/ .
+# Link đề gốc : <http://vn.spoj.com/problems/BINARY2/>.
 
 # Đề bài :
 Đề bài tương tựSPBINARY, nhưng giới hạn lớn hơn
@@ -39,3 +39,4 @@ Output:
 
 # Code :
 [Here](http://viahold.com/YZS)
+
