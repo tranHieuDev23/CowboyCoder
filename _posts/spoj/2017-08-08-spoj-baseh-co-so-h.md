@@ -12,8 +12,8 @@ tags:
 Cho một dãy số a\[1\],a\[2\],a\[3\],...,a\[n\] và hai số K,H được xác định như sau:
 
 * a\[1\]=1.
-* Nếu K chẵn thì a\[K\] = H \* a\[K \/ 2\].
-* Nếu K lẻ thì a\[K\] = H \* a\[\(K - 1\) \/ 2\] + 1.
+* Nếu K chẵn thì a\[K\] = H \* a\[K / 2\].
+* Nếu K lẻ thì a\[K\] = H \* a\[\(K - 1\) / 2\] + 1.
 
 Các bạn hãy lập trình tính số thứ K của dãy viết trong hệ cơ số H.
 
@@ -45,4 +45,5 @@ Output
 
 # Code :
 [Here](http://viahold.com/YKY)
+
 
