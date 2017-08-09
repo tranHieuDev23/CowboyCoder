@@ -17,7 +17,7 @@ Nếu đồ thị biểu diễn một mạng lưới giao thông, thì người 
 
 Trong lý thuyết đồ thị, bài toán đường đi ngắn nhất giữa hai đỉnh cho trước là bài toán tìm một đường đi giữa chúng sao cho tổng các trọng số của các cạnh tạo nên đường đi đó là nhỏ nhất. Định nghĩa một cách hình thức, cho trước một đồ thị có trọng số \\( G = (V, E, w) \\) (nghĩa là một tập đỉnh V, một tập cạnh E, và một hàm trọng số có giá trị thực w : E → R), cho trước một đỉnh u thuộc V, tìm một đường đi P từ u tới một đỉnh v thuộc V sao cho:
 
-$$ \\sum_{p \\in P}{w\(p\)} $$
+$$ \\sum_{p \\in P}w\(p\) $$
 
 nhỏ nhất trong tất cả các đường đi từ u tới v. Bài toán đường đi ngắn nhất giữa mọi cặp đỉnh là một bài toán tương tự, trong đó ta phải tìm các đường đi ngắn nhất cho mọi cặp đỉnh u và v.
 
@@ -101,4 +101,5 @@ Thuật toán Dijkstra bình thường sẽ có độ phức tạp là \\( O(n^2
 * [NETACCEL](http://vn.spoj.com/problems/NETACCEL/). Lời giải tại [đây](http://cowboycoder.tech/spoj/spoj-netaccel-tang-toc-mang-may-tinh).
 * [VDANGER](http://vn.spoj.com/problems/VDANGER/).
 * [BESTSPOT](http://vn.spoj.com/problems/BESTSPOT/).
+
 
