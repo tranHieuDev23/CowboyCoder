@@ -41,6 +41,8 @@ Trong trường hợp đồ thị \\( G = (V, E, w) \\) có trọng số trên c
 
 Ta có mảng kc\[u\] là khoảng cách ngắn nhất từ đỉnh s tới đỉnh u trên đồ thị. Ban đầu kc\[s\] = 0, các giá trị khác bằng dương vô cực. Ta sẽ lấy đỉnh u có kc\[u\] nhỏ nhất vào thời điểm hiện tại, và sử dụng khoảng cách của nó để cập nhật khoảng cách ngắn nhất của các đỉnh xung quanh. Với một đỉnh u bất kì, vì nó được cập nhật bởi các đường đi ngắn nhất của các đỉnh xung quanh nó, nên bản thân đường đi của nó cũng là ngắn nhất.
 
+![undefined](/img/uploads/ly-thuyet-do-thi-co-ban-4-1.gif)
+
 ## Dữ liệu:
 * Đồ thị được biểu diễn bằng danh sách kề với một mảng vector g\[maxn\] với g\[u\] lưu các đỉnh kề của u kèm theo trọng số
 * Mảng kc dùng để lưu trữ độ dài đường đi ngắn nhất từ đỉnh nguồn s đến đỉnh u. 
@@ -99,3 +101,4 @@ Thuật toán Dijkstra bình thường sẽ có độ phức tạp là \\( O(n^2
 * [NETACCEL](http://vn.spoj.com/problems/NETACCEL/). Lời giải tại [đây](http://cowboycoder.tech/spoj/spoj-netaccel-tang-toc-mang-may-tinh).
 * [VDANGER](http://vn.spoj.com/problems/VDANGER/).
 * [BESTSPOT](http://vn.spoj.com/problems/BESTSPOT/).
+
