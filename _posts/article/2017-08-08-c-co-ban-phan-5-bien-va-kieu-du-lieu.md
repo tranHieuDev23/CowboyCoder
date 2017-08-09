@@ -190,11 +190,4 @@ Khi đó ta có thể khai báo các biến kiểu ```unsigned long long int``` 
 ULL x = 1000;
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
