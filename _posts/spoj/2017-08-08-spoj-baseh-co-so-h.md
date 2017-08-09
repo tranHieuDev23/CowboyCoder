@@ -4,7 +4,8 @@ author: G
 date: 2017-08-08T15:21:17.839Z
 thumbnail: '/img/uploads/[spoj]baseh.jpg'
 tags:
-  - impletion
+  - spoj
+  - implementation
 ---
 # Link đề bài : [http://vn.spoj.com/problems/BASEH/](http://vn.spoj.com/problems/BASEH/).
 
@@ -45,5 +46,6 @@ Output
 
 # Code :
 [Here](http://viahold.com/YKY)
+
 
 
