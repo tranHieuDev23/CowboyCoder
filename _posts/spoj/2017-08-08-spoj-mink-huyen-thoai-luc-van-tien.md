@@ -5,11 +5,12 @@ date: 2017-08-08T09:25:39.042Z
 thumbnail: '/img/uploads/[spoj]mink.jpg'
 tags:
   - spoj
+  - data-structure
   - stack
 ---
-## Link đề gốc:
+# Link đề gốc:
 
-http://vn.spoj.com/problems/MINK/
+<http://vn.spoj.com/problems/MINK/>
 
 # Đề bài:
 
@@ -29,13 +30,13 @@ Phương án N-k+1 : Vân Tiên phải đấu với vị N-k+1 -&gt; vị N \) .
 
 \( 1 &lt;= N &lt;= 17000 , chỉ số APM của 1 giám khảo &gt;= 1 và &lt;= 2 * 10^9 , 1 &lt;= K &lt;= N \) .
 
-### Input
+## Input
 
 Dòng 1 : số T là số test .Tiếp theo là T bộ test , mỗi bộ test có format như sau :Dòng 1 : N k
 
 Dòng 2 : N số nguyên dương A\[1\] , … A\[N\] .
 
-### Output
+## Output
 
 Kết quả mỗi test ghi ra trên dòng , dòng thứ i gồm N-k+1 số , số thứ j tương ứng là chỉ số APM của vị giám khảo yếu nhất trong phương án j .
 
@@ -48,7 +49,6 @@ Input:
 3 2 4 1
 3 3
 1 2 3
-
 ```
 
 
@@ -58,16 +58,12 @@ Output:
 1
 ```
 
-## Solution:
+# Solution:
 
 Tham khảo tại:[http://viahold.com/SaT](http://viahold.com/SaT)
 
-## Code:
+# Code:
 
 Tham khảo tại: [http://viahold.com/SZm](http://viahold.com/SZm)
 
 Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11
-
-
-
-
