@@ -17,10 +17,13 @@ Xác định độ dài lớn nhất L của chuỗi đặc trưng chung của h
 
 ## Dữ liệu vào:
 
-*  Dòng đầu ghi lần lượt các số hạng của chuỗi nu thứ nhất. 
-*  Dòng tiếp theo ghi lần lượt các số hạng của chuỗi nu thứ hai.
-*  Tất cả các số hạng của hai chuỗi đều nguyên dương và không vượt quá 10^19.
-*  Độ dài của mỗi chuỗi nu đều không vượt quá 1000.
+- Dòng đầu ghi lần lượt các số hạng của chuỗi nu thứ nhất. 
+
+- Dòng tiếp theo ghi lần lượt các số hạng của chuỗi nu thứ hai.
+
+- Tất cả các số hạng của hai chuỗi đều nguyên dương và không vượt quá 10^19.
+
+-  Độ dài của mỗi chuỗi nu đều không vượt quá 1000.
 
 ## Kết quả:
 
@@ -53,6 +56,7 @@ Ghi ra  duy nhất một số nguyên L tìm được. 
 
 # Code :
 [Here](http://viahold.com/Yud)
+
 
 
 
