@@ -1,29 +1,30 @@
 ---
-title: BINARY2 - SPBINARY2
+title: '[SPOJ] BINARY2 - SPBINARY2'
 author: G
 date: 2017-08-08T15:32:30.024Z
 thumbnail: '/img/uploads/[spoj] binary2.jpg'
 tags:
+  - spoj
   - dp
 ---
-## Link đề gốc : http://vn.spoj.com/problems/BINARY2/ .
+# Link đề gốc : http://vn.spoj.com/problems/BINARY2/ .
 
-## Đề bài :
+# Đề bài :
 Đề bài tương tựSPBINARY, nhưng giới hạn lớn hơn
 
 Cho 2 số n và k \( 2&lt;=k &lt;= n &lt;= 10^6\)
 
 Hãy đếm xem có bao nhiêu xâu nhị phân độ dài n mà không có quá k số 0 hoặc k số 1 nào liên tiếp nhau.
 
-# Input
+## Input
 
 Gồm 1 dòng duy nhất là 2 số n và k.
 
-# Output
+## Output
 
 Gồm 1 dòng duy nhất là số dãy nhị phân thoả mãn \(module 10^9\).
 
-#Example
+## Example
 
 ```
 Input:
@@ -33,11 +34,8 @@ Output:
 6
 ```
 
-## Solution :
+# Solution :
 [Here](http://viahold.com/YWF)
 
-## Code :
+# Code :
 [Here](http://viahold.com/YZS)
-
-
-
