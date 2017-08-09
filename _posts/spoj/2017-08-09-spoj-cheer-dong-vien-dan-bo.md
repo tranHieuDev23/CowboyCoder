@@ -24,15 +24,15 @@ Giả dụ bác John theo lời khuyên của bạn giữ lại một số con �
 
 ## Dữ liệu
 
-\* Dòng 1: Hai số nguyên N và P cách nhau bởi khoảng trắng
+* Dòng 1: Hai số nguyên N và P cách nhau bởi khoảng trắng
 
-\* Dòng 2..N+1: Dòng i+1 chứa một số nguyên duy nhất Ci
+* Dòng 2..N+1: Dòng i+1 chứa một số nguyên duy nhất Ci
 
-\* Dòng N+2..N+P+1: Dòng N+j+1 chứa ba số nguyên phân biệt: Sj, Ejvà Lj
+* Dòng N+2..N+P+1: Dòng N+j+1 chứa ba số nguyên phân biệt: Sj, Ej và Lj
 
 ## Kết quả
 
-\* Dòng 1: Một số nguyên duy nhất, tổng thời gian cần để thăm tất cả đàn bò \(bao gồm hai lần thăm cô bò ở nơi mà bạn nghỉ\).
+* Dòng 1: Một số nguyên duy nhất, tổng thời gian cần để thăm tất cả đàn bò \(bao gồm hai lần thăm cô bò ở nơi mà bạn nghỉ\).
 
 ## Ví dụ
 
@@ -63,3 +63,4 @@ Kết quả:
 ## Code
 
 [http://viahold.com/n14](http://viahold.com/n14)
+
