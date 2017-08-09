@@ -83,4 +83,4 @@ DFS được ứng dụng rất nhiều. Ví dụ như...
 
 [PWALK (SPOJ\)](http://vn.spoj.com/problems/PWALK/)
 
-
+*Phần sau: [\[Lý thuyết đồ thị cơ bản\] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-4-duong-di-ngan-nhat-tren-do-thi-va-thuat-toan-dijkstra)*
