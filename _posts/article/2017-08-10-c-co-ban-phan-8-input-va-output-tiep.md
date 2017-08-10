@@ -30,7 +30,7 @@ Khi ta chạy một dự án C++ trên CodeBlocks, đường dẫn tương đố
 
 # Thư viện ```fstream```
 
-C++ cung cấp thư viện fstream dành cho việc nhập - xuất với file. Thư viện này định nghĩa ba class mới:
+C++ cung cấp thư viện ```fstream``` dành cho việc nhập - xuất với file. Thư viện này định nghĩa ba class mới:
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -273,6 +273,7 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
 
 
