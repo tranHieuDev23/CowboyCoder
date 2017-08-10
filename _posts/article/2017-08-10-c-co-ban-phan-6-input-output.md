@@ -1,5 +1,5 @@
 ---
-title: '[C++ Cơ bản] Phần 6: Input - Output'
+title: '[C++ Cơ bản] Phần 7: Input - Output'
 author: Admin Tổng Quản
 date: 2017-08-10T02:48:49.357Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
@@ -109,6 +109,7 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+
 
 
 
