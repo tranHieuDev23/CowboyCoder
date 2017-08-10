@@ -7,27 +7,27 @@ tags:
   - spoj
   - dp
 ---
-## Link đề bài : [http://vn.spoj.com/problems/KSEQ1/](http://vn.spoj.com/problems/KSEQ1/)
+# Link đề bài : [http://vn.spoj.com/problems/KSEQ1/](http://vn.spoj.com/problems/KSEQ1/)
 
-## Đề bài :
+# Đề bài :
 
 Cho một dãy số A1 .... An Yêu cầu: tìm số K lớn nhất sao cho tồn tại dãy chỉ số i1 < i2 < ... < i2k thỏa mãn Ai1 < Ai( k + 1 ) ; Ai2 < Ai( k + 2 ) ...... Aik < Ai2k  
 
-# Dữ liệu
+## Dữ liệu
 
 Dòng đầu ghi số nguyên dương N.
 
 Dòng sau ghi N số Ai ( 1 ≤ i ≤ N ).
 
-# Kết quả :
+## Kết quả :
 
 Ghi trên một dòng số K lớn nhất tìm được.
 
-# Giới hạn :
+## Giới hạn :
 
 N ≤ 300 ; 1 ≤ Ai ≤ 10000.
 
-# Example :
+## Example :
 ```
 Dữ liệu:
 
@@ -40,6 +40,7 @@ Kết qủa
 3
 ```
 
-# Solution : [http://viahold.com/13wy](http://viahold.com/13wy)
+## Solution : [http://viahold.com/13wy](http://viahold.com/13wy)
 
-# Code : [http://viahold.com/13x5](http://viahold.com/13x5)
+## Code : [http://viahold.com/13x5](http://viahold.com/13x5)
+
