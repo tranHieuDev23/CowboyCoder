@@ -65,6 +65,8 @@ Buffer là một vùng nhớ tạm thời của hệ thống, dành cho việc t
 
 ```cout``` là một đối tượng thuộc class ```ostream```. ```cout``` được kết nối với các đối tượng đầu ra tiêu chuẩn, ví dụ như màn hình console của hệ điều hành. Ta sử dụng ```cout``` với toán tử chèn dữ liệu vào stream (stream insertion) ```<<``` (hai dấu nhỏ hơn).
 
+**Chú ý:** Ở đây mình có nói tới class ```ostream```. Class và các nội dung của lập trình hướng đối tượng sẽ được giới thiệu kĩ hơn ở các bài sau. Hiện tại, hãy tạm hiểu class là một kiểu dữ liệu được người dùng định nghĩa, khác với các kiểu dữ liệu nguyên thủy như ```int```, ```float```, ```double```, vv...
+
 Ví dụ:
 
 {% highlight c++ %}
@@ -112,6 +114,8 @@ Bộ dịch C++ sẽ tự động nhận ra kiểu dữ liệu của biến đư
 
 Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong một câu lệnh.
 
+```cin``` là phương pháp input có sử dụng buffer.
+
 # ```cerr``` và ```clog```
 
 ```cerr``` và ```clog``` là hai đối tượng của class ```ostream``` giống như ```cout```. Về mặc định, chúng cũng được kết nối với các đối tượng đầu ra tiêu chuẩn như ```cout```, và cũng sử dụng chung toán tử ```<<``` như ```cout```.
@@ -119,3 +123,4 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+
