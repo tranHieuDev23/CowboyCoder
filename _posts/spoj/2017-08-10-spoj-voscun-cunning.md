@@ -50,11 +50,17 @@ K dòng tiếp theo in ra số bước nhảy được thực hiện bởi con c
 ```
 **Giải thích**
 ```
-Cho khối lập phương 3x3x3. Con cáo ở ô (2,1,2) có thể nhảy tới (1,1,2) và sau đó là (1,1,1); con cáo ở (2,3,3) nhảy tới (1,3,3), (1,1,3) rồi (1,1,1). Con cáo ở (1,1,1) ở sẵn vị trí. Con cáo ở (3,3,3) nhảy tới (1,3,3), (1,1,3) rồi (1,1,1). Có thể có một số cách dịch chuyển khác với số lượt nhảy tương tự.
+Cho khối lập phương 3x3x3. 
+Con cáo ở ô (2,1,2) có thể nhảy tới (1,1,2) và sau đó là (1,1,1). 
+Con cáo ở (2,3,3) nhảy tới (1,3,3), (1,1,3) rồi (1,1,1). 
+Con cáo ở (1,1,1) ở sẵn vị trí. 
+Con cáo ở (3,3,3) nhảy tới (1,3,3), (1,1,3) rồi (1,1,1). 
+Có thể có một số cách dịch chuyển khác với số lượt nhảy tương tự.
 Tổng số bước nhảy của 27 con cáo là 54.
-Từ 8 đến 1 có thể đi như sau: 8 -&gt; 9 -&gt; 1
+Từ 8 đến 1 có thể đi như sau: 8 -> 9 -> 1
 ```
 # Solution
 [http://viahold.com/1Et7](http://viahold.com/1Et7)
 # Code mẫu
 [http://viahold.com/1EfK](http://viahold.com/1EfK)
+
