@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề gốc : http://vn.spoj.com/problems/C11SUM/ .
+# Link đề gốc : <http://vn.spoj.com/problems/C11SUM/>.
 
 # Đề bài :
 
@@ -59,3 +59,4 @@ Giải thích: 7 + 3 + 7 + 73 + 37 + 737 = 864.
 
 # Code :
 [Here](http://viahold.com/1EFW)
+
