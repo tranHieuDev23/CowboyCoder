@@ -49,6 +49,14 @@ C++ có ba thư viện quan trọng cho việc nhập/xuất:
     </tr>
 </table>
 
+Để khai báo sử dụng thư viện, ta sử dụng cú pháp:
+
+{% highlight c++ %}
+#include <tên_thư_viện>
+{% endhighlight %}
+
+Chú ý không cần sử dụng dấu chấm phẩy.
+
 ## Buffer là gì?
 
 Buffer là một vùng nhớ tạm thời của hệ thống, dành cho việc tạm thời lưu trữ dữ liệu của chương trình trước khi di chuyển tới một vùng khác. Đối với input và output, buffer giống như việc lưu trữ tất cả các nội dung cần được nhập và xuất, trước khi được nhập vào hoặc xả ra.
@@ -109,6 +117,7 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+
 
 
 
