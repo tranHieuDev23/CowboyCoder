@@ -47,7 +47,7 @@ C++ cung cấp thư viện ```fstream``` dành cho việc nhập - xuất với 
     </tr>
     <tr>
         <td><code class="highlight-rouge">fstream</code></td>
-        <td>Class biểu diễn các stream liên quan tới file nói chung, và bao gồm khả năng của cả ofstream và ifstream.</td>
+        <td>Class biểu diễn các stream liên quan tới file nói chung, và bao gồm khả năng của cả <code class="highlight-rouge">ofstream</code> và <code class="highlight-rouge">ifstream</code>.</td>
     </tr>
 </table>
 
@@ -273,6 +273,7 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
 
 
