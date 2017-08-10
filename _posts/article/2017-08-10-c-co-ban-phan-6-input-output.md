@@ -86,6 +86,8 @@ Toán tử ```<<``` có thể được sử dụng nhiều lần trong một câ
 
 C++ cho phép người dùng in ra các giá trị thuộc các kiểu dữ liệu có sẵn ```int```, ```float```, ```double```, ```char```, ```string``` và các giá trị con trỏ.
 
+```cout``` là phương pháp output có sử dụng buffer.
+
 # ```cin```
 
 ```cin``` là một đối tượng thuộc class ```istream```. ```cin``` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng ```cin`` với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
@@ -117,10 +119,3 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
-
-
-
-
-
-
-
