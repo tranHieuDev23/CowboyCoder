@@ -85,3 +85,5 @@ Khi một biến global được khởi tạo, tất cả các bit biểu diễn
 * Vân vân…
 
 Tuy nhiên, việc khởi tạo các biến một cách hợp lệ vẫn là một điều nên làm, để tránh việc các tác nhân bên ngoài (ví dụ: một bộ dịch không theo quy chuẩn này) có thể làm ảnh hưởng tới chương trình.
+
+*Phần sau: [[C++ Cơ bản] Phần 7: Input - Output](http://cowboycoder.tech/article/c-co-ban-phan-6-input-output)*
