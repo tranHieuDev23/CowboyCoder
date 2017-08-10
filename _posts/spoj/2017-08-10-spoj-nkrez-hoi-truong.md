@@ -16,19 +16,19 @@ Nhà trường có một phòng hội trường. Có những yêu cầu muốn s
 
 Yêu cầu: hãy giúp nhà trường chọn các yêu cầu sử dụng hội trường sao cho tổng thời gian hội trường được sử dụng là lớn nhất.
 
-### Dữ liệu
+## Dữ liệu
 
 Dòng đầu tiên chứa một số nguyên dương n \(n ≤ 10000\), số yêu cầu.
 
 Mỗi dòng trong số n dòng tiếp theo chứa 2 số nguyên dương p và k \(0 ≤ p &lt; k ≤ 30000\), mô tả một yêu cầu bắt đầu tại thời điểm p và kết thúc tại thời điểm k.
 
-### Kết qủa
+## Kết qủa
 
 Gồm một dòng duy nhất là tổng thời gian lớn nhất mà hội trường được sử dụng
 
 # Ví dụ:
 
-### Input:
+## Input:
 
 ```
 12
@@ -46,7 +46,7 @@ Gồm một dòng duy nhất là tổng thời gian lớn nhất mà hội trư�
 18 20
 ```
 
-### Output:
+## Output:
 
 ```
 16
@@ -59,5 +59,6 @@ Tham khảo tại: [http://viahold.com/17Am](http://viahold.com/17Am)
 # Code: 
 
 Tham khảo tại: [http://viahold.com/178O](http://viahold.com/178O)
+
 
 
