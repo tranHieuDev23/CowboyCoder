@@ -1,14 +1,16 @@
 ---
-title: '[spoj] C11SUM - Siêu trộm KID và Mật khẩu đêm Trung thu!'
+title: '[SPOJ] C11SUM - Siêu trộm KID và Mật khẩu đêm Trung thu!'
 author: G
 date: 2017-08-10T14:26:34.639Z
 thumbnail: '/img/uploads/[spoj] c11sum.jpg'
 tags:
+  - spoj
   - dp
 ---
-## Link đề gốc : http://vn.spoj.com/problems/C11SUM/ .
+# Link đề gốc : http://vn.spoj.com/problems/C11SUM/ .
 
-## Đề bài :
+# Đề bài :
+
 "Trung thu là tết thiếu nhi
 
 Mà sao người lớn lại đi chơi nhiều
@@ -21,17 +23,17 @@ Vẫn biết trung thu là một dịp tốt để đi chơi với gấu và là
 
 Bài toán trên tờ giấy của ông Jirokichi như sau:
 
-_Cho một xâu S , S chỉ chứa các số 0 đến 9. Tính tổng các DÃY CON LIÊN TIẾP của S mod 10^9+7_
+Cho một xâu S , S chỉ chứa các số 0 đến 9. Tính tổng các DÃY CON LIÊN TIẾP của S mod 10^9+7_
 
-# Input
+## Input
 
 * Một dòng duy nhất chứa xâu S
 
-# Output
+## Output
 
 * Một số duy nhất là kết quả của bài toán.
 
-# Giới hạn:
+## Giới hạn:
 
 Với length\(s\) là độ dài của xâu S:
 
@@ -44,19 +46,16 @@ Với length\(s\) là độ dài của xâu S:
 Input:
 737
 
-Output:864864
-
+Output:
+864864
 ```
 
 ```
 Giải thích: 7 + 3 + 7 + 73 + 37 + 737 = 864.
 ```
 
-## Solution :
+# Solution :
 [Here](http://viahold.com/1EEP)
 
-## Code :
+# Code :
 [Here](http://viahold.com/1EFW)
-
-
-
