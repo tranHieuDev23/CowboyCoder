@@ -7,6 +7,8 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
+*Phần trước: [\[C++ Cơ bản\] Phần 7: Input - Output](http://cowboycoder.tech/article/c-co-ban-phan-6-input-output)*
+
 Trong phần trước, chúng ta đã nói về các đọc và viết ra màn hình console. Bài viết này sẽ nói về việc đọc và viết từ file.
 
 **Cảnh báo**: Bài viết này sẽ có rất nhiều nội dung mới, chưa được giải thích về trước, và sẽ được giải thích trong các phần về sau.
@@ -26,7 +28,7 @@ Bản thân tên của một file cũng là đường dẫn tương đối của
 
 Khi ta chạy một dự án C++ trên CodeBlocks, đường dẫn tương đối được so với thư mục của dự án, thay vì là thư mục của file chương trình. Tuy nhiên khi ta chạy đơn lẻ file chương trình sau khi build ra mà không thông qua CodeBlocks, đường dẫn tương đối sẽ là so với thư mục chứa file chương trình như mặc định.
 
-# Thư viện fstream
+# Thư viện ```fstream```
 
 C++ cung cấp thư viện fstream dành cho việc nhập - xuất với file. Thư viện này định nghĩa ba class mới:
 
@@ -73,11 +75,11 @@ Sau đó, ta cần gọi lệnh ```open()`` của đối tượng fstream, để
 Cú pháp của lệnh ```open()``` là:
 
 {% highlight c++ %}
-luồng.open(const char *filename, ios::openmode mode);
+stream_variable.open(const char *filename, ios::openmode mode);
 {% endhighlight %}
 
-* filename là file path của file mục tiêu. Biến này có kiểu dữ liệu ```const char *```, là kiểu dữ liệu con trỏ cố định chỉ tới một biến kiểu ```char```. Phần nội dung về biến cố định (hằng số) và con trỏ sẽ được nói tới một bài viết khác. Hiện tại, ta sẽ sử dụng địa chỉ của file nằm trong ngoặc kép (```""```) như là địa chỉ của file.
-* mode là một giá trị kiểu bitmask không bắt buộc. Nó cho phép người dùng cài đặt chế độ mở file. Các giá trị có thể thiết lập là:
+* ```filename``` là file path của file mục tiêu. Biến này có kiểu dữ liệu ```const char *```, là kiểu dữ liệu con trỏ cố định chỉ tới một biến kiểu ```char```. Phần nội dung về biến cố định (hằng số) và con trỏ sẽ được nói tới một bài viết khác. Hiện tại, ta sẽ sử dụng địa chỉ của file nằm trong ngoặc kép (```""```) như là địa chỉ của file.
+* ```mode``` là một giá trị kiểu bitmask không bắt buộc. Nó cho phép người dùng cài đặt chế độ mở file. Các giá trị có thể thiết lập là:
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -170,9 +172,10 @@ Khi một chương trình C++ kết thúc, nó sẽ tự động giải phóng b
 
 Như trong ví dụ trên, để đóng một file lại, ta sử dụng cú pháp
 
-```
-luồng.close();
-```
+{% highlight c++ %}
+stream_variable.close();
+{% endhighlight %}
+
 # Di chuyển con trỏ đọc/viết
 
 Class ```istream``` cung cấp lệnh ```seekg``` ("seek get") để di chuyển con trỏ đọc luồng input. Cú pháp của lệnh này là
@@ -200,7 +203,7 @@ fileObject.seekg( n, ios::end );
 fileObject.seekg( 0, ios::end );
 {% endhighlight %}
 
-Class ofstream cũng cung cấp lệnh ```seekp``` ("seek put") với cú pháp tương tự.
+Class ```ofstream``` cũng cung cấp lệnh ```seekp``` ("seek put") với cú pháp tương tự.
 
 # ```freopen```
 
@@ -238,11 +241,11 @@ freopen(const char *filename, const char *mode, FILE *stream);
         <td><code class="highlight-rouge">"r+"</code></td>
         <td>Mở một file để vừa đọc và viết. File phải tồn tại trước đó.</td>
     <tr>
-    </tr>
+    <tr>
         <td><code class="highlight-rouge">"w+"</code></td>
         <td>Tạo một file rỗng mới để vừa đọc vừa viết.</td>
     </tr>
-    </tr>
+    <tr>
         <td><code class="highlight-rouge">"a+"</code></td>
         <td>Mở một file để vừa đọc và viết. Nội dung mới sẽ được nối vào cuối file cũ.</td>
     </tr>
@@ -270,4 +273,5 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
