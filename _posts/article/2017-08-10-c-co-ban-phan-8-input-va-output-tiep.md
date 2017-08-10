@@ -68,7 +68,7 @@ Việc khai báo file stream mới cũng giống như khai báo một biến m�
 fstream myFile;
 {% endhighlight %}
 
-Sau đó, ta cần gọi lệnh ```open()`` của đối tượng fstream, để mở file và hướng file stream vào file mục tiêu.
+Sau đó, ta cần gọi lệnh ```open()``` của đối tượng ```fstream```, để mở file và hướng file stream vào file mục tiêu.
 
 **Chú ý:** Các kiến thức về hàm và lệnh của đối tượng, cũng như các nội dung về lập trình hướng đối tượng nói chung, sẽ được giải thích trong các bài viết sau. Hiện tại, hãy tạm thời làm theo chỉ dẫn của bài viết.
 
@@ -273,6 +273,7 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
 
 
