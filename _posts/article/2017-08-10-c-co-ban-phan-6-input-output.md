@@ -18,7 +18,7 @@ Thư viện ```stdio.h``` và các hàm ```scanf()```, ```printf()``` là phươ
 * Cú pháp của các hàm ```scanf()``` và ```printf()``` phức tạp hơn so với ```cin``` và ```cout``` của C++.
 * ```cin``` và ```cout``` là phương pháp input và output chuẩn của C++.
 
-Bạn có thể nghe nói rằng ```cin``` và ```cout``` chậm hơn ```scanf()``` và ```printf()```. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện stdio.h để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này là không đáng kể, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
+Bạn có thể nghe nói rằng ```cin``` và ```cout``` chậm hơn ```scanf()``` và ```printf()```. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện ```stdio.h``` để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này là không đáng kể, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
 
 ```
 iostream::sync_with_stdio(false);
@@ -109,6 +109,7 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+
 
 
 
