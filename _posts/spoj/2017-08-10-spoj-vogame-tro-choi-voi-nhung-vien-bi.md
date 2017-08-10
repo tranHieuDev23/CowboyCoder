@@ -13,7 +13,7 @@ tags:
 Cho một cái hộp có N viên bi đánh số từ 1 đến N có màu đỏ (màu 1) hoặc màu đen (màu 0). Màu của các viên bi được cho bởi dãy A gồm D số 0 hoặc 1:
 
 * COLOR[i] = A[i] với 1 ≤i≤ D
-* COLOR[i] = COLOR[i - 1]  XOR  COLOR[i - 2] XOR  COLOR[i - 3] XOR  ... XOR  COLOR[i - D] với i &gt; D
+* COLOR[i] = COLOR[i - 1]  XOR  COLOR[i - 2] XOR  COLOR[i - 3] XOR  ... XOR  COLOR[i - D] với i > D
 
 Tuấn chơi một trò chơi như sau: Mỗi lượt Tuấn sẽ bốc ngẫu nhiên ra 2 viên bi bất kỳ từ hộp bi.
 
@@ -49,12 +49,12 @@ Subtask 2 (25% số điểm)
 Subtask 3 (30% số điểm)
 
 * 1 ≤ D ≤ 20
-* 10^5 &lt; N ≤ 10^9
+* 10^5 ≤ N ≤ 10^9
 
 Subtask 4 (30% số điểm)
 
 * 1 ≤ D ≤ 10^5
-* 10^5 &lt; N≤ 10^9
+* 10^5 ≤ N ≤ 10^9
 ```
 ## Ví dụ
 **Input**
@@ -85,13 +85,14 @@ Tương tự như bộ dữ liệu đầu tiên nhưng là hai viên bi màu đe
 
 Bộ dữ liệu thứ ba
 
-Tuấn bốc hai viên bi từ trong hộp ra thì trong đó có một viên bi đỏ và một viên bi đen. Tuấn bỏ viên bi đen đi và chỉ giữ lại viên bi màu đỏ (màu1) và cho viên đỏ lại vào hộp.
+Tuấn bốc hai viên bi từ trong hộp ra thì trong đó có một viên bi đỏ và một viên bi đen. Tuấn bỏ viên bi đen đi và chỉ giữ lại viên bi màu đỏ (màu 1) và cho viên đỏ lại vào hộp.
 ```
 
 # Solution
 [http://viahold.com/1DkR](http://viahold.com/1DkR)
 # Code mẫu
 [http://viahold.com/1DSg](http://viahold.com/1DSg)
+
 
 
 
