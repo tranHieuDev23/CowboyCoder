@@ -110,3 +110,4 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
 
+
