@@ -240,7 +240,7 @@ freopen(const char *filename, const char *mode, FILE *stream);
     <tr>
         <td><code class="highlight-rouge">"r+"</code></td>
         <td>Mở một file để vừa đọc và viết. File phải tồn tại trước đó.</td>
-    <tr>
+    </tr>
     <tr>
         <td><code class="highlight-rouge">"w+"</code></td>
         <td>Tạo một file rỗng mới để vừa đọc vừa viết.</td>
@@ -273,5 +273,6 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
 
