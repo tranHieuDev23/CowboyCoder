@@ -7,7 +7,7 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
-*Phần trước: [\[C++ Cơ bản\]](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local) Phần 6: Biến global và biến local*
+*Phần trước: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
 
 Nhập và xuất là hai yếu tố vô cùng cơ bản của một chương trình. Trong những bài viết trước của C++ Cơ bản, chúng ta đã sử dụng cout để in thông tin ra màn hình console. Bài viết này và bài viết sau sẽ dành ra để giải thích cụ thể về input và output trong C++.
 
@@ -30,10 +30,10 @@ Nhập/xuất của C++ diễn ra theo các stream (dòng), là các dãy byte �
 
 C++ có ba thư viện quan trọng cho việc nhập/xuất:
 
-<table class="table table-stripped table-bordered">
+<table class="table table-striped table-bordered">
     <tr>
         <th>Thư viện</th>
-        <th>Chứng năng</th>
+        <th>Chức năng</th>
     </tr>
     <tr>
         <td><code class="highlighted-rouge">iostream</code></td>
@@ -55,7 +55,7 @@ Buffer là một vùng nhớ tạm thời của hệ thống, dành cho việc t
 
 # ```cout```
 
-```cout``` là một đối tượng thuộc class ```osteam```. cout được kết nối với các đối tượng đầu ra tiêu chuẩn, ví dụ như màn hình console của hệ điều hành. Ta sử dụng cout với toán tử chèn dữ liệu vào stream (stream insertion) ```<<``` (hai dấu nhỏ hơn).
+```cout``` là một đối tượng thuộc class ```ostream```. ```cout``` được kết nối với các đối tượng đầu ra tiêu chuẩn, ví dụ như màn hình console của hệ điều hành. Ta sử dụng ```cout``` với toán tử chèn dữ liệu vào stream (stream insertion) ```<<``` (hai dấu nhỏ hơn).
 
 Ví dụ:
 
@@ -78,9 +78,9 @@ Toán tử ```<<``` có thể được sử dụng nhiều lần trong một câ
 
 C++ cho phép người dùng in ra các giá trị thuộc các kiểu dữ liệu có sẵn ```int```, ```float```, ```double```, ```char```, ```string``` và các giá trị con trỏ.
 
-# cin
+# ```cin```
 
-```cin``` là một đối tượng thuộc class ```istream```. cin được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng cin với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
+```cin``` là một đối tượng thuộc class ```istream```. ```cin``` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng ```cin`` với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
 
 Ví dụ: chương trình sau sẽ yêu cầu bạn nhập vào một số, và in ra số bạn đã nhập vào.
 
@@ -109,6 +109,7 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+
 
 
 
