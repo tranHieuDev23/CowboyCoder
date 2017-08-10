@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj]nkrez.jpg'
 tags:
   - spoj
 ---
-# Link bào gốc: 
+# Link bài gốc: 
 
 [http://vn.spoj.com/problems/NKREZ/](http://vn.spoj.com/problems/NKREZ/)
 
@@ -22,7 +22,7 @@ Dòng đầu tiên chứa một số nguyên dương n \(n ≤ 10000\), số yê
 
 Mỗi dòng trong số n dòng tiếp theo chứa 2 số nguyên dương p và k \(0 ≤ p &lt; k ≤ 30000\), mô tả một yêu cầu bắt đầu tại thời điểm p và kết thúc tại thời điểm k.
 
-### Kết qủa
+### Kết qủa
 
 Gồm một dòng duy nhất là tổng thời gian lớn nhất mà hội trường được sử dụng
 
@@ -59,4 +59,5 @@ Tham khảo tại: [http://viahold.com/17Am](http://viahold.com/17Am)
 # Code: 
 
 Tham khảo tại: [http://viahold.com/178O](http://viahold.com/178O)
+
 
