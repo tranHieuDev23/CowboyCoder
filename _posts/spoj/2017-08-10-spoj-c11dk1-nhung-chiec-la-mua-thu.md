@@ -8,7 +8,7 @@ tags:
   - dp
   - binary-search
 ---
-# Link đề bài http://vn.spoj.com/problems/C11DK1/ .
+# Link đề bài: <http://vn.spoj.com/problems/C11DK1/>.
 
 # Đề bài:
 “Hà Nội mùa thu, cây cơm nguội vàng, cây bàng lá đỏ, nằm kề bên nhau phố xưa nhà cổ, mái ngói thâm nâu. ... Hà Nội mùa thu! Đi giữa mọi người, lòng như thầm hỏi "tôi đang nhớ ai?", sẽ có một ngày trời thu Hà Nội, trả lời cho tôi, sẽ có một ngày từng con đường nhỏ trả lời cho tôi.”
@@ -45,21 +45,13 @@ Chi phí nhỏ nhất tìm được.
 
 ```
 5 3
-
 2
-
 8
-
 3
-
 6
-
 9
-
 7 9
-
 2 3
-
 8 6
 ```
 
@@ -74,3 +66,4 @@ Chi phí nhỏ nhất tìm được.
 
 # Code:
 [Here](http://viahold.com/1DQZ)
+
