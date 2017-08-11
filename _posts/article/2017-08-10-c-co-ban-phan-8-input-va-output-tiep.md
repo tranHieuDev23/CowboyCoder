@@ -274,8 +274,4 @@ int main()
 }
 {% endhighlight %}
 
-
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 9: Toán tử](http://cowboycoder.tech/article/c-co-ban-phan-9-toan-tu)*
