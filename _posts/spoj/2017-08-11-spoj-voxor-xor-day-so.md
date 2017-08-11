@@ -8,7 +8,7 @@ tags:
   - tree
   - spoj
 ---
-## đề: [http://vn.spoj.com/problems/VOXOR/](http://vn.spoj.com/problems/VOXOR/)
+# Đề: [http://vn.spoj.com/problems/VOXOR/](http://vn.spoj.com/problems/VOXOR/)
 
 Cho dãy A gồm N số nguyên không âm. Ta lần lượt thực hiện Q thao tác trên tập hợp này:
 
@@ -83,7 +83,6 @@ Output:
 5
 4
 2
-
 ```
 
 ## Giải thích
@@ -92,10 +91,11 @@ Trước truy vấn XOR 6, dãy số là 1 2 3 4.
 
 Sau truy vấn XOR 6, dãy số là 7 4 5 2.
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/1Pt2](http://viahold.com/1Pt2)
 
-## code
+# code
 
 [http://viahold.com/1Ptx](http://viahold.com/1Ptx)
+
