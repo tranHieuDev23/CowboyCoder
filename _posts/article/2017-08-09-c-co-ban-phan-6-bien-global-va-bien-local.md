@@ -80,10 +80,11 @@ Khi một biến local được khởi tạo, chương trình C++ sẽ lấy m�
 Khi một biến global được khởi tạo, tất cả các bit biểu diễn của nó sẽ có giá trị bằng 0. Điều này có nghĩa là:
 
 * Các kiểu biến số có giá trị đều bằng 0
-* Các kiểu chữ cái sẽ có giá trị đều bằng kí tự '\0' (kí tự null)
+* Các kiểu chữ cái sẽ có giá trị đều bằng kí tự ```'\0'``` (kí tự null)
 * Các con trỏ đều có địa chỉ NULL (sẽ nói trong các bài sau)
 * Vân vân…
 
 Tuy nhiên, việc khởi tạo các biến một cách hợp lệ vẫn là một điều nên làm, để tránh việc các tác nhân bên ngoài (ví dụ: một bộ dịch không theo quy chuẩn này) có thể làm ảnh hưởng tới chương trình.
 
 *Phần sau: [[C++ Cơ bản] Phần 7: Input - Output](http://cowboycoder.tech/article/c-co-ban-phan-6-input-output)*
+
