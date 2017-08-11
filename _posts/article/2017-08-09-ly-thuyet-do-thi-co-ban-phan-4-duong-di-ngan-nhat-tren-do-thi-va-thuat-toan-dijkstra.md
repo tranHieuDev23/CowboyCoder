@@ -102,7 +102,4 @@ Thuật toán Dijkstra bình thường sẽ có độ phức tạp là \\( O(n^2
 * [VDANGER](http://vn.spoj.com/problems/VDANGER/).
 * [BESTSPOT](http://vn.spoj.com/problems/BESTSPOT/).
 
-
-
-
-
+*Phần sau: [\[Lý thuyết đồ thị cơ bản\] Phần 5: DAG và sắp xếp topo trên đồ thị](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-5-dag-va-sap-xep-topo-tren-do-thi)*
