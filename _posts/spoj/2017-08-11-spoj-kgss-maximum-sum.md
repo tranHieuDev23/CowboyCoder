@@ -7,16 +7,17 @@ tags:
   - data-structure
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/KGSS/](http://vn.spoj.com/problems/KGSS/)
+# Đề: [http://vn.spoj.com/problems/KGSS/](http://vn.spoj.com/problems/KGSS/)
 
-cho N<=1e5 số. cho Q<=1e5 truy vấn
+Cho N<=1e5 số. cho Q<=1e5 truy vấn
 
-có 2 loại truy vấn:
+Có 2 loại truy vấn:
 
 * U i x: đổi phần tử tại vị trí i thành x
 * Q x y: tìm tổng của phần tử lớn nhất và lớn nhì trong đoạn x đến y
 
-## SAMPLE
+## Example
+
 ```
 Input:
 5
@@ -34,13 +35,13 @@ Output:
 9
 11
 12
-
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/1T8P](http://viahold.com/1T8P)
 
-## code
+# Code
 
 [http://viahold.com/1T8q](http://viahold.com/1T8q)
+
