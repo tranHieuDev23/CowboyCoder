@@ -27,7 +27,7 @@ Hỏi có tồn tại một cách sắp xếp các đội theo thứ tự sao ch
 
 In ra -1 nếu không tồn tại cách sắp xếp thỏa mãn yêu cầu. Trong trường hợp tồn tại, in ra n số nguyên là chỉ số của các đội bóng trong cách sắp xếp tìm được.
 
-### Hạn chế
+## Hạn chế
 
 * Có 30% số test có n ≤ 9.
 
@@ -51,3 +51,4 @@ Kết quả
 # Code
 
 [http://viahold.com/1QQf](http://viahold.com/1QQf)
+
