@@ -15,23 +15,23 @@ tags:
 
 Cho một dãy số a1.. aN. Một nghịch thế là một cặp số u, v sao cho u &lt; v và a[u ] &gt; a[v]. Nhiệm vụ của bạn là đếm số nghịch thế.
 
-### Dữ liệu
+## Dữ liệu
 
 * Dòng đầu ghi số nguyên dương N.
 * N dòng sau mỗi dòng ghi một số ai\( 1 ≤ i ≤ N \).
 
-### Kết qủa
+## Kết qủa
 
 Ghi trên một dòng số M duy nhất là số nghịch thế.
 
-### Giới hạn
+## Giới hạn
 
 * 1 ≤ N ≤ 60000
 * 1 ≤ ai≤ 60000
 
 # Ví dụ:
 
-### Input:
+## Input:
 
 ```
 3
@@ -40,7 +40,7 @@ Ghi trên một dòng số M duy nhất là số nghịch thế.
 2
 ``` 
 
-### Output:
+## Output:
 
 ```
 2
@@ -53,5 +53,3 @@ Tham khảo tại: [http://viahold.com/1XHB](http://viahold.com/1XHB)
 # Code:
 
 Tham khảo tại: [http://viahold.com/1X4L](http://viahold.com/1X4L)
-
-
