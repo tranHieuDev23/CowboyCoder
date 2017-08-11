@@ -5,6 +5,7 @@ date: 2017-08-11T07:00:52.256Z
 thumbnail: /img/uploads/VMTRIP_graph.jpg
 tags:
   - dfs
+  - bfs
   - spoj
 ---
 ## đề: [http://vn.spoj.com/problems/VMTRIP/](http://vn.spoj.com/problems/VMTRIP/)
@@ -79,3 +80,4 @@ Output:
 ## code
 
 [http://viahold.com/1SJV](http://viahold.com/1SJV)
+
