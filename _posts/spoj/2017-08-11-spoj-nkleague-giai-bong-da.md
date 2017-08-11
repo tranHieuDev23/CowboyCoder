@@ -8,7 +8,7 @@ tags:
   - graph
   - spoj
 ---
-## đề: [http://vn.spoj.com/problems/NKLEAGUE/](http://vn.spoj.com/problems/NKLEAGUE/)
+# Đề: [http://vn.spoj.com/problems/NKLEAGUE/](http://vn.spoj.com/problems/NKLEAGUE/)
 
 Một giải thi đấu bóng đá gồm n đội thi đấu vòng tròn một lượt. Các đội bóng được đánh số thứ tự từ 1 đến n. Theo thể lệ giải đấu, nếu trận đấu diễn ra với kết quả hòa, hai đội sẽ thi đấu luân lưu cho đến khi phân định thắng thua \(nghĩa là các trận đấu đều được phân định thắng thua\).
 
@@ -34,7 +34,6 @@ In ra -1 nếu không tồn tại cách sắp xếp thỏa mãn yêu cầu. Tron
 ## Ví dụ
 
 ```
-
 Dữ liệu
 3
 010
@@ -43,14 +42,12 @@ Dữ liệu
 
 Kết quả
 3 1 2
-
 ```
 
-## Hướng dẫn 
+# Hướng dẫn 
 
 [http://viahold.com/1QQK](http://viahold.com/1QQK)
 
-## Code
+# Code
 
 [http://viahold.com/1QQf](http://viahold.com/1QQf)
-
