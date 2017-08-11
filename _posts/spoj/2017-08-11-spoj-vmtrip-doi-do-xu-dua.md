@@ -8,7 +8,7 @@ tags:
   - bfs
   - spoj
 ---
-## đề: [http://vn.spoj.com/problems/VMTRIP/](http://vn.spoj.com/problems/VMTRIP/)
+# Đề: [http://vn.spoj.com/problems/VMTRIP/](http://vn.spoj.com/problems/VMTRIP/)
 
 Sau khi thống nhất vương quốc dừa một thời gian, vị vua mới là Pirakute lại ăn ngủ không yên vì tình trạng đất nước vẫn chưa được ổn định, lạm phát dừa làm cho đất nước ngày một yếu đi, trái dừa lại dần có nguy cơ bị lạm dụng trở thành vũ khí để chọi nhau như ngày nào… Một đêm nọ Pirakute nằm mơ, thấy rằng một trong những hòn đảo xa xôi trong vương quốc của mình bỗng mọc lên một cây dừa vàng khổng lồ. Thế là sáng hôm sau tỉnh dậy, Pirakute đã nghĩ rằng : “Có thể rằng kinh đô trên hòn đảo mà ta đang ở có phong thủy không được tốt nên đất nước mới suy yếu, lẽ chăng ta nên dời đô đến hòn đảo mà ta đã nhìn thấy trong mơ !?”
 
@@ -69,15 +69,15 @@ Input:9 9 1 9
 6 9
 8 9
 4 1 2 5 3
+
 Output:
 1 3 7 6 9
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/1SJF](http://viahold.com/1SJF)
 
-## code
+# code
 
 [http://viahold.com/1SJV](http://viahold.com/1SJV)
-
