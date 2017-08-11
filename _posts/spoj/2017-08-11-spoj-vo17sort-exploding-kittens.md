@@ -6,6 +6,7 @@ thumbnail: '/img/uploads/[spoj]vo17sort.jpg'
 tags:
   - implementation
   - bfs
+  - spoj
 ---
 # Link đề bài : [http://vn.spoj.com/problems/VO17SORT/](http://vn.spoj.com/problems/VO17SORT/)
 
@@ -66,3 +67,4 @@ Output:
 ## Solution : [http://viahold.com/1Wwj](http://viahold.com/1Wwj)
 
 ## Code : [http://viahold.com/1Wqh](http://viahold.com/1Wqh)
+
