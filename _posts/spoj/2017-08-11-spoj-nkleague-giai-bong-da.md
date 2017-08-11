@@ -14,14 +14,16 @@ Một giải thi đấu bóng đá gồm n đội thi đấu vòng tròn một l
 
 Hỏi có tồn tại một cách sắp xếp các đội theo thứ tự sao cho trong thứ tự đó, mỗi đội đều thắng trận đấu với đội liền sau mình? Trong trường hợp tồn tại, hãy xác định một cách sắp xếp như vậy.
 
-### Dữ liệu
+## Dữ liệu
 
 * Dòng đầu tiên chứa số nguyên n, số đội bóng tham dự giải đấu. \(1 ≤ n ≤ 1000\).
-* Dòng thứ i trong số n dòng tiếp theo chứa j kí tự 0 hoặc 1, kí tự thứ j thế hiện giá trị aij:* aii= 0 với mọi i.
-  * aij= 1 nếu và chỉ nếu đội i thắng đội j. Dữ liệu vào luôn thỏa mãn aij+aji= 1 với i khác j.
+
+* Dòng thứ i trong số n dòng tiếp theo chứa j kí tự 0 hoặc 1, kí tự thứ j thế hiện giá trị aij:
+* aii= 0 với mọi i.
+* aij= 1 nếu và chỉ nếu đội i thắng đội j. Dữ liệu vào luôn thỏa mãn aij+aji= 1 với i khác j.
 
 
-### Kết quả
+## Kết quả
 
 In ra -1 nếu không tồn tại cách sắp xếp thỏa mãn yêu cầu. Trong trường hợp tồn tại, in ra n số nguyên là chỉ số của các đội bóng trong cách sắp xếp tìm được.
 
@@ -29,7 +31,7 @@ In ra -1 nếu không tồn tại cách sắp xếp thỏa mãn yêu cầu. Tron
 
 * Có 30% số test có n ≤ 9.
 
-### Ví dụ
+## Ví dụ
 
 ```
 
@@ -51,3 +53,4 @@ Kết quả
 ## Code
 
 [http://viahold.com/1QQf](http://viahold.com/1QQf)
+
