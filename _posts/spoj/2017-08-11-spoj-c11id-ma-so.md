@@ -57,6 +57,7 @@ Giải thích:
 - Ví dụ 2: Số cách cấp mã số là số hoán vị của tập (1, 2, 3, 4).
 ```
 
-## Solution : [http://viahold.com/1Xd7](http://viahold.com/1Xd7)
+# Solution : [http://viahold.com/1Xd7](http://viahold.com/1Xd7)
 
 # Code : [http://viahold.com/1XeB](http://viahold.com/1XeB)
+
