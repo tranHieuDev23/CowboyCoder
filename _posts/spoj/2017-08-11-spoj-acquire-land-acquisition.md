@@ -24,7 +24,6 @@ Cho N(N≤50000) hình chữ nhật khác nhau về hình dạng, mục tiêu c�
 - Gồm 1 dòng là tổng chi phí bé nhất.
 
 ```
-
 Input :
 
 4
@@ -36,13 +35,12 @@ Input :
 Output :
 
 500
-
 ```
 
 ## Giải thích : 
 
 Chia làm 3 phần là (1), (2, 3), (4) <=> 100 x 1 + 20 x 15 + 1 x 100 = 500
 
-## Solution : [http://viahold.com/1V3Z](http://viahold.com/1V3Z)
+# Solution : [http://viahold.com/1V3Z](http://viahold.com/1V3Z)
 
-## Code : [http://viahold.com/1V48](http://viahold.com/1V48)
+# Code : [http://viahold.com/1V48](http://viahold.com/1V48)
