@@ -31,10 +31,8 @@ Dữ liệu
 
 Kết quả
 3
-
 ```
 
-## Solution : [http://viahold.com/1YpN](http://viahold.com/1YpN)
+# Solution : [http://viahold.com/1YpN](http://viahold.com/1YpN)
 
-## Code : [http://viahold.com/1Yno](http://viahold.com/1Yno)
-
+# Code : [http://viahold.com/1Yno](http://viahold.com/1Yno)
