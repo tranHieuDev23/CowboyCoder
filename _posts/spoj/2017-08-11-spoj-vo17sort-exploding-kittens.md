@@ -61,10 +61,8 @@ Output:
 4
 4
 5 or more 
-
 ```
 
-## Solution : [http://viahold.com/1Wwj](http://viahold.com/1Wwj)
+# Solution : [http://viahold.com/1Wwj](http://viahold.com/1Wwj)
 
-## Code : [http://viahold.com/1Wqh](http://viahold.com/1Wqh)
-
+# Code : [http://viahold.com/1Wqh](http://viahold.com/1Wqh)
