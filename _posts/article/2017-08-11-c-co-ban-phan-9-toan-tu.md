@@ -7,6 +7,8 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
+*Phần trước: [\[C++ Cơ bản\] Phần 8: Input và Output \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-8-input-va-output-tiep)*
+
 Toán tử (operator) là các ký hiệu nhằm yêu cầu chương trình thực hiện các phép xử lý toán học, logic, vân vân… Toán tử có thể chia làm 6 loại:
 
 * Các kí hiệu phép tính đại số
@@ -279,3 +281,4 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có các ph
 </table>
 
 Các toán tử so sánh và logic sẽ trở nên vô cùng quan trọng khi ta nghiên cứu tới các lệnh rẽ nhánh (```if/else```) và vòng lặp của chương trình.
+
