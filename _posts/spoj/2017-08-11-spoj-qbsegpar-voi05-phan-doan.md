@@ -8,9 +8,8 @@ tags:
   - dp
   - bit
   - binary-search
-  - data-structute
+  - data-structure
 ---
-
 # Link đề bài : [http://vn.spoj.com/problems/QBSEGPAR/](http://vn.spoj.com/problems/QBSEGPAR/)
 
 # Đề bài : 
@@ -32,12 +31,11 @@ Dòng thứ i trong số n dòng tiếp theo chứa số nguyên ai (|ai| ≤ 30
 
 Các số cạnh nhau trên một dòng trong file dữ liệu cách nhau ít nhất một dấu cách.
 
-##Output 
+## Output 
 
 Gồm một số nguyên duy nhất là giá trị M tìm được.
 
 ```
-
 Input:
 9 4
 1
@@ -49,10 +47,16 @@ Input:
 1
 3
 1
+
 Output:
 5
-
 ```
 
-## Solution : [http://viahold.com/1S0g](http://viahold.com/1S0g)
-## Code : [http://viahold.com/1S1A](http://viahold.com/1S1A)
+# Solution: 
+
+[http://viahold.com/1S0g](http://viahold.com/1S0g)
+
+# Code: 
+
+[http://viahold.com/1S1A](http://viahold.com/1S1A)
+
