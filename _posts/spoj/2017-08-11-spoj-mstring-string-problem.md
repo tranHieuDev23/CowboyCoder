@@ -17,7 +17,7 @@ Cho hai xâu A và B. Tính độ dài của xâu con đài nhất của A
 
 
 
-### Input
+## Input
 
 
 
@@ -25,7 +25,7 @@ Hai dòng là hai xâu A, B, độ dài &lt;=1000, chỉ gồm các chữ
 
 
 
-### Output
+## Output
 
 
 
@@ -66,5 +66,6 @@ Tham khảo tại: [http://viahold.com/1Xew](http://viahold.com/1Xew)
 # Code:
 
 Tham khảo tại: [http://viahold.com/1XTW](http://viahold.com/1XTW)
+
 
 
