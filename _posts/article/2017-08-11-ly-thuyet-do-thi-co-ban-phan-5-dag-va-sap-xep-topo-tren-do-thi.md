@@ -6,6 +6,8 @@ thumbnail: /img/uploads/Lý thuyết đồ thị cơ bản - cover.jpg
 tags:
   - ly-thuyet-do-thi-co-ban
 ---
+*Phần trước: [\[Lý thuyết đồ thị cơ bản\] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra](http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-4-duong-di-ngan-nhat-tren-do-thi-va-thuat-toan-dijkstra)*
+
 # Chu trình
 
 Theo wikipedia, trong lý thuyết đồ thị, chu trình trong đồ thị là một dây chuyền đóng. Đồ thị chỉ gồm một chu trình với \\(n\\) đỉnh được gọi là đồ thị vòng, ký hiệu \\(Cn\\).
@@ -165,3 +167,10 @@ for(int i=n; i>=1; --i)
 }
 {% endhighlight %}
 
+# Một số bài tập thực hành
+
+[TOPO2509](http://www.spoj.com/KSTN/problems/TOPO2509/) - Bài tập của trường Đại học Bách Khoa Hà Nội.
+
+[NKLEAGUE](http://vn.spoj.com/problems/NKLEAGUE/) (SPOJ). Lời giải có tại [đây](http://cowboycoder.tech/spoj/spoj-nkleague-giai-bong-da).
+
+[KCOLLECT](http://vn.spoj.com/problems/KCOLLECT/) (SPOJ).
