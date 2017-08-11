@@ -7,7 +7,7 @@ tags:
   - data-structure
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/VMSORT/](http://vn.spoj.com/problems/VMSORT/)
+# Đề: [http://vn.spoj.com/problems/VMSORT/](http://vn.spoj.com/problems/VMSORT/)
 
 Kì thi VM đang dần đi đến những vòng thi cuối cùng. Trong khi các thí sinh hăng say với những bài tập hóc búa, mang đậm tính chất Marathon thì các admin VNOI cũng phải đối mặt với những vấn đề rất nan giải, chẳng hạn như thống kê số lượng thí sinh, số lượng thí sinh giải được từng bài tập...
 
@@ -29,57 +29,18 @@ Bạn sẽ phải giúp các admin làm một nhiệm vụ sau: Cho dữ liệu 
 ```
 Input:
 3
-```
-
-```
 4
-```
-
-```
 flashmt
-```
-
-```
 ll931110
-```
-
-```
 technolt
-```
-
-```
 tuananhnb93
-```
-
-```
 3
-```
-
-```
 mr_invincible
-```
-
-```
 conankudo
-```
-
-```
 ll931110
-```
-
-```
 3
-```
-
-```
 khanhptnk
-```
-
-```
 hphong
-```
-
-```
 technolt
 ```
 
@@ -88,11 +49,10 @@ Output:
 8
 ```
 
-## Hướng dẫn
+# Hướng dẫn
 
 [http://viahold.com/1Q1e](http://viahold.com/1Q1e)
 
-## Code
+# Code
 
 [http://viahold.com/1Q2G](http://viahold.com/1Q2G)
-
