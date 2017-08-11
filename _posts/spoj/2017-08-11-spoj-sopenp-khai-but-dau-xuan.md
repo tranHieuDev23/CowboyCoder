@@ -34,7 +34,6 @@ Một dòng duy nhất chứa một số nguyên thể hiện số dãy con có 
 ## Ví dụ 
 
 ```
-
 Dữ liệu:
 4 1 2
 231
@@ -44,9 +43,8 @@ Dữ liệu:
 
 Kết quả:
 8
-
 ```
 
-## Solution : [http://viahold.com/1XTP](http://viahold.com/1XTP)
+# Solution : [http://viahold.com/1XTP](http://viahold.com/1XTP)
 
-## Code : [http://viahold.com/1X85](http://viahold.com/1X85)
+# Code : [http://viahold.com/1X85](http://viahold.com/1X85)
