@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj] nkluck.jpg'
 tags:
   - spoj
   - bit
-  - data-structute
+  - data-structure
 ---
 # Link đề bài : [http://vn.spoj.com/problems/NKLUCK/](http://vn.spoj.com/problems/NKLUCK/)
 
@@ -35,17 +35,17 @@ Chứa một số duy nhất là kết quả bài toán với đọ sai lệch k
 
 ```
 Dữ liệu vào:
-  4 1
-  1
-  2
-  3
-  4
+4 1
+1
+2
+3
+4
 
 
 Dữ liệu ra:
-  0.1
+0.1
 ```
 
-## Solution : [http://viahold.com/1Ye1](http://viahold.com/1Ye1)
+# Solution : [http://viahold.com/1Ye1](http://viahold.com/1Ye1)
 
-## Code : [http://viahold.com/1Y5Y](http://viahold.com/1Y5Y)
+# Code : [http://viahold.com/1Y5Y](http://viahold.com/1Y5Y)
