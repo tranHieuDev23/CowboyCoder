@@ -15,3 +15,7 @@ Các nhân vật trong bài tập được lấy tên dựa trên series Game of
 Đề bài được dịch trực tiếp bởi thành viên của nhóm Cowboy Coder tại [đây](http://viahold.com/1Yd3).
 
 Solution của contest sẽ được update sau khi contest kết thúc.
+
+# Update: solution của contest
+
+<http://viahold.com/1zOF>
