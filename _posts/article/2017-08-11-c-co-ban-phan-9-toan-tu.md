@@ -282,4 +282,5 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có các ph
 
 Các toán tử so sánh và logic sẽ trở nên vô cùng quan trọng khi ta nghiên cứu tới các lệnh rẽ nhánh (```if/else```) và vòng lặp của chương trình.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 10: Toán tử \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-10-toan-tu-tiep)*
 
