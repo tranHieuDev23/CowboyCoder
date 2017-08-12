@@ -53,7 +53,7 @@ C++ là ngôn ngữ đặt kiểu dữ liệu tĩnh (statically typed), có ngh�
 Một số kiểu dữ liệu nguyên thủy còn có thể được tùy chỉnh bằng các từ khóa:
 * ```signed```: Khi đặt trước các kiểu số, nó cho biết kiểu số này có dấu (khoảng giá trị bao gồm cả số âm). Thường vô dụng và không dùng tới.
 * ```unsigned```: Khi đặt trước các kiểu số, nó cho biết kiểu số này không có dấu (chỉ bao gồm số không âm). Điều này làm tăng giá trị cực đại của khoảng biểu diễn lên.
-* ```short```: Đặt trước khiểu int để đặt kiểu giá trị số nguyên, với khoảng biểu diễn và khoảng bộ nhớ chiếm chỗ giảm một nửa. Có thể viết ```short``` thay vì ```short int```.
+* ```short```: Đặt trước kiểu int để đặt kiểu giá trị số nguyên, với khoảng biểu diễn và khoảng bộ nhớ chiếm chỗ giảm một nửa. Có thể viết ```short``` thay vì ```short int```.
 * ```long```: Sử dụng ```long long int``` để đặt kiểu giá trị số nguyên, với khoảng biểu diễn và khoảng bộ nhớ chiếm chỗ tăng gấp đôi. Có thể viết ```long long``` thay vì ```long long int```. ```long int``` không có khác biệt gì so với ```int```.
 
 
@@ -191,3 +191,4 @@ ULL x = 1000;
 {% endhighlight %}
 
 *Phần sau: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
+
