@@ -21,7 +21,7 @@ Hàm, chương trình con và tham số của hàm sẽ được trình bày tro
 
 Biến local được định nghĩa trong một khối lệnh, và chỉ tồn tại bên trong khối lệnh đó. Khi khối lệnh được thực hiện xong thì biến local cũng sẽ biến mất. Biến local cũng không thể truy cập được từ bên ngoài khối lệnh của nó.
 
-Ví dụ: Biến x ở đoạn code sau là biến local của hàm int main()
+Ví dụ: Biến ```x``` ở đoạn code sau là biến local của hàm ```int main()```
 
 {% highlight c++ %}
 #include <iostream>
@@ -38,7 +38,7 @@ int main () {
 
 Biến global được định nghĩa bên ngoài các khối lệnh. Biến global có thể được định nghĩa ở bất cứ vị trí nào trong chương trình (tất nhiên, bên ngoài khối lệnh), tuy nhiên thường ta quy chuẩn đặt chúng ở đầu chương trình. Chúng sẽ giữ nguyên giá trị của mình trong suốt quá trình chạy của chương trình, và tất cả các hàm hay chương trình con của chương trình đều có thể truy cập vào chúng.
 
-Ví dụ: Biến x trong đoạn code sau là biến global
+Ví dụ: Biến ```x``` trong đoạn code sau là biến global
 
 {% highlight c++ %}
 #include <iostream>
@@ -87,4 +87,6 @@ Khi một biến global được khởi tạo, tất cả các bit biểu diễn
 Tuy nhiên, việc khởi tạo các biến một cách hợp lệ vẫn là một điều nên làm, để tránh việc các tác nhân bên ngoài (ví dụ: một bộ dịch không theo quy chuẩn này) có thể làm ảnh hưởng tới chương trình.
 
 *Phần sau: [[C++ Cơ bản] Phần 7: Input - Output](http://cowboycoder.tech/article/c-co-ban-phan-6-input-output)*
+
+
 
