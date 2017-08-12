@@ -54,8 +54,9 @@ Output
 
 ## Solution
 
-Tham khảo tại: 
+Tham khảo tại: [http://viahold.com/1ugl](http://viahold.com/1ugl)
 
 ## Code
 
 Tham khảo tại: [http://viahold.com/1uSb](http://viahold.com/1uSb)
+
