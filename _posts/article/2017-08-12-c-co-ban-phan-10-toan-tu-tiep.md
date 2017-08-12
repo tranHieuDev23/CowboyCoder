@@ -42,12 +42,12 @@ Trong các ví dụ sau đây, ta sử dụng hai biến ```int x = 12``` và ``
         <td><code class="highlight-rouge">~ x</code> cho kết quả bằng -13 (<code class="highlight-rouge">111…1110011‬</code>).</td>
     </tr>
     <tr>
-        <td><code class="highlight-rouge"><<</code> (NOT)</td>
+        <td><code class="highlight-rouge"><<</code></td>
         <td>Phép dịch bit sang trái. Tất cả các bit của giá trị ở bên trái toán tử sẽ được đẩy sang trái một số bit được chỉ định ở bên phải, các vị trí mới sẽ mang giá trị bằng 0.</td>
         <td><code class="highlight-rouge">x << 2</code> cho kết quả bằng 48 (<code class="highlight-rouge">110000</code>).</td>
     </tr>
     <tr>
-        <td><code class="highlight-rouge">>></code> (NOT)</td>
+        <td><code class="highlight-rouge">>></code></td>
         <td>Phép dịch bit sang phải. Tất cả các bit của giá trị ở bên trái toán tử sẽ được đẩy sang phải một số bit được chỉ định ở bên phải, các vị trí mới sẽ mang giá trị bằng 0.</td>
         <td><code class="highlight-rouge">x >> 2</code> cho kết quả bằng 3 (<code class="highlight-rouge">11</code>).</td>
     </tr>
@@ -153,5 +153,6 @@ Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 ```,``` sẽ được thực hiện sau mỗi phép toán nó phân cách.
 
 ```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
+
 
 
