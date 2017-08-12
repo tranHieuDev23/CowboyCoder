@@ -53,7 +53,7 @@ Trong các ví dụ sau đây, ta sử dụng hai biến ```int x = 12``` và ``
     </tr>
 </table>
 
-## Tại sao kết thức này lại quan trọng?
+## Tại sao kiến thức này lại quan trọng?
 
 Các phép tính trên bit có vẻ rất lạ đời và không giống như những phép toán phổ thông, nhưng chúng lại rất quan trọng trong lập trình thực tế vì một vài lý do sau:
 
@@ -153,4 +153,5 @@ Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 ```,``` sẽ được thực hiện sau mỗi phép toán nó phân cách.
 
 ```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
+
 
