@@ -9,7 +9,7 @@ tags:
 ---
 *Phần trước: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
 
-Nhập và xuất là hai yếu tố vô cùng cơ bản của một chương trình. Trong những bài viết trước của C++ Cơ bản, chúng ta đã sử dụng cout để in thông tin ra màn hình console. Bài viết này và bài viết sau sẽ dành ra để giải thích cụ thể về input và output trong C++.
+Nhập và xuất là hai yếu tố vô cùng cơ bản của một chương trình. Trong những bài viết trước của C++ Cơ bản, chúng ta đã sử dụng ```cout``` để in thông tin ra màn hình console. Bài viết này và bài viết sau sẽ dành ra để giải thích cụ thể về input và output trong C++.
 
 # Tóm tắt nhanh về thư viện ```stdio.h``` của C
 
@@ -26,7 +26,7 @@ iostream::sync_with_stdio(false);
 
 # Các thư viện nhập/xuất của C++
 
-Nhập/xuất của C++ diễn ra theo các stream (dòng), là các dãy byte được gửi tới (từ thiết bị nhập xuất, từ các file, vv…) và gửi đi (tới các thiết bị hiển thị như màn hình, loa, vv…) từ chương trình.
+Nhập/xuất của C++ diễn ra theo các stream (luồng), là các dãy byte được gửi tới (từ thiết bị nhập xuất, từ các file, vv…) và gửi đi (tới các thiết bị hiển thị như màn hình, loa, vv…) từ chương trình.
 
 C++ có ba thư viện quan trọng cho việc nhập/xuất:
 
@@ -92,7 +92,7 @@ C++ cho phép người dùng in ra các giá trị thuộc các kiểu dữ li�
 
 # ```cin```
 
-```cin``` là một đối tượng thuộc class ```istream```. ```cin``` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng ```cin`` với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
+```cin``` là một đối tượng thuộc class ```istream```. ```cin``` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng ```cin``` với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
 
 Ví dụ: chương trình sau sẽ yêu cầu bạn nhập vào một số, và in ra số bạn đã nhập vào.
 
@@ -125,3 +125,4 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
 
 *Phần sau: [\[C++ Cơ bản\] Phần 8: Input và Output \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-8-input-va-output-tiep)*
+
