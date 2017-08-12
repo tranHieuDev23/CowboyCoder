@@ -229,9 +229,9 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có:
         <td><code class="highlight-rouge">x > y</code> cho ra kết quả <code class="highlight-rouge">true</code></td>
     </tr>
     <tr>
-        <td><code class="highlight-rouge">&lt</code></td>
+        <td><code class="highlight-rouge"><</code></td>
         <td>Nhỏ hơn</td>
-        <td><code class="highlight-rouge">x &lt y</code> cho ra kết quả <code class="highlight-rouge">false</code></td>
+        <td><code class="highlight-rouge"><</code> cho ra kết quả <code class="highlight-rouge">false</code></td>
     </tr>
     <tr>
         <td><code class="highlight-rouge">>=</code></td>
@@ -239,9 +239,9 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có:
         <td><code class="highlight-rouge">x >= y</code> cho ra kết quả <code class="highlight-rouge">true</code></td>
     </tr>
     <tr>
-        <td><code class="highlight-rouge">&lt=</code></td>
+        <td><code class="highlight-rouge"><=</code></td>
         <td>Nhỏ hơn hoặc bằng</td>
-        <td><code class="highlight-rouge">x &lt= y</code> cho ra kết quả <code class="highlight-rouge">false</code></td>
+        <td><code class="highlight-rouge">x <= y</code> cho ra kết quả <code class="highlight-rouge">false</code></td>
     </tr>
 </table>
 
@@ -261,16 +261,16 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có các ph
         <td><code class="highlight-rouge">&&</code> (AND)</td>
         <td>Nếu như cả hai mệnh đề đều <code class="highlight-rouge">true</code>, toán tử này trả lại giá trị <code class="highlight-rouge">true</code>, ngược lại trả lại giá trị <code class="highlight-rouge">false</code></td>
         <td><code class="highlight-rouge">(x > 15) && (y > 10)</code> cho ra kết quả <code class="highlight-rouge">true</code><br/>
-        <code class="highlight-rouge">(x &lt 15) && (y > 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
-        <code class="highlight-rouge">(x &lt 15) && (y &lt 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
+        <code class="highlight-rouge">(x < 15) && (y > 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
+        <code class="highlight-rouge">(x < 15) && (y < 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
         </td>
     </tr>
     <tr>
         <td><code class="highlight-rouge">||</code> (OR)</td>
         <td>Nếu như có một trong hai mệnh đề là <code class="highlight-rouge">true</code>, toán tử này trả lại giá trị <code class="highlight-rouge">true</code>, ngược lại trả lại giá trị <code class="highlight-rouge">false</code></td>
         <td><code class="highlight-rouge">(x > 15) || (y > 10)</code> cho ra kết quả <code class="highlight-rouge">true</code><br/>
-        <code class="highlight-rouge">(x &lt 15) || (y > 10)</code> cho ra kết quả <code class="highlight-rouge">true</code><br/>
-        <code class="highlight-rouge">(x &lt 15) || (y &lt 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
+        <code class="highlight-rouge">(x < 15) || (y > 10)</code> cho ra kết quả <code class="highlight-rouge">true</code><br/>
+        <code class="highlight-rouge">(x < 15) || (y < 10)</code> cho ra kết quả <code class="highlight-rouge">false</code><br/>
         </td>
     </tr>
     <tr>
@@ -281,4 +281,5 @@ Với hai giá trị ```x = 20``` và ```y = 16``` như trước, ta có các ph
 </table>
 
 Các toán tử so sánh và logic sẽ trở nên vô cùng quan trọng khi ta nghiên cứu tới các lệnh rẽ nhánh (```if/else```) và vòng lặp của chương trình.
+
 
