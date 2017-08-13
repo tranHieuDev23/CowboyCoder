@@ -60,9 +60,8 @@ Output:
 9
 13
 -19884
-
 ```
 
-## Solution : [http://viahold.com/1uCj](http://viahold.com/1uCj)
+# Solution: [http://viahold.com/1uCj](http://viahold.com/1uCj)
 
-## Code : [http://viahold.com/1tt2](http://viahold.com/1tt2)
+# Code: [http://viahold.com/1tt2](http://viahold.com/1tt2)
