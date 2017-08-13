@@ -53,23 +53,21 @@ Vào thư mục `www` tạo một thư mục mới tên là `codeforces`, sau đ
 
 **Bước 3:** Mở file `config.php` sẽ có dạng
 ```
-&ltphp
+<?php
 $CONFIG = Array(
     'PATH' => '',
     'DIR_SAVE_TEST' => 'tests',
 );
 ?>
-
 ```
 Ví dụ thư mục bạn lưu trữ các bài tập codeforces là `C:\CodeBlocks\CodeForces` thì bạn sẽ thay thế nó bằng
 ```
-&lt?php
+<?php
 $CONFIG = Array(
     'PATH' => 'C:\CodeBlocks\CodeForces',
     'DIR_SAVE_TEST' => 'tests',
 );
 ?>
-
 ```
 Sau đó lưu lại.
 
@@ -111,6 +109,20 @@ Sau đó bấm Add bên dưới và nhấn vào OK để lưu.
 **Lưu ý:** Mỗi lần bạn muốn sử dụng chấm thử test ví dụ hãy bấm F9 (tức là compile & run) file bài tập mà bạn đang làm để nó nhận diện thư mục hiện tại sau đó tắt đi (chỉ cần làm duy nhất 1 lần với file mới, khi chuyển file bài khác thì làm lại).
 Sau đó mỗi lần code xong bấm phím tắt mà bạn đã cài đặt ở trên để chạy trình chấm. Ở trình chấm mình đã làm phần compile nên các bạn sau khi đã F9 như trên thì sau đó chỉ cần phím tắt để nó compile và chấm luôn. Nếu có lỗi nó sẽ hiện ở màn hình console.
 
+## Thiết lập Codeblocks mặc định
+Nếu bạn không dùng Codeblocks có thể bỏ qua phần này.
+
+Tìm đến bất kỳ một bài làm nó đó có đuôi .cpp, chuột phải vào nó và chọn Properties. Ở tab General bấm vào Change và chọn Codeblocks. Nhấn Apply và OK để lưu cài đặt.
+
+![undefined](/img/uploads/set-codeblocks-default-cpp.png)
+
+## Sử dụng Codeforces Bookmark
+Vào trang làm bài tập của Codeforces, nhấn vào bookmark đã tạo ban nãy và đợi nó tạo và mở file đó ở Codeblocks.
+
+Muốn chấm bài, trước tiến bấm F9 để nó nhận diện bài đang làm sau đó tắt đi, sau đó mỗi lần muốn chấm thử bài đang làm đó hãy bấm phím tắt mà bạn đã thiết lập. Nó sẽ tự compile và chấm thử test mẫu!
+
+![undefined](/img/uploads/use-codeforces-bookmark.png)
+
 ## Hướng dẫn cài đặt Ampps
 Mở file cài đặt Ampps lên
 
@@ -122,3 +134,4 @@ Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
