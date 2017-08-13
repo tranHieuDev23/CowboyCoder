@@ -5,13 +5,13 @@ date: 2017-08-12T14:07:09.729Z
 thumbnail: '/img/uploads/[spoj]nk05mnim.jpg'
 tags:
   - spoj
-  - game theory
+  - game-theory
 ---
 # Link đề gốc:
 
 [http://vn.spoj.com/problems/NK05MNIM/](http://vn.spoj.com/problems/NK05MNIM/)
 
-## Đề bài:
+# Đề bài:
 
 Hai bạn Nam và Mai cùng chơi một trò chơi với n đống sỏi. Luật chơi như sau:
 
@@ -21,7 +21,7 @@ Hai bạn Nam và Mai cùng chơi một trò chơi với n đống sỏi. Luật
 
 Bạn hãy giúp Mai xác định xem bạn ấy có thể thắng được trong trò chơi hay không
 
-### Dữ liệu vào
+## Dữ liệu vào
 
 Dòng đầu tiên chứa một nguyên t là số bộ test. Các dòng sau là t bộ test.
 
@@ -30,7 +30,7 @@ Mỗi bộ test bao gồm:
 * Dòng đầu tiên chứa một số nguyên n \(n&lt;=100\) là số đống sỏi
 * Dòng thứ hai gồm n số nguyên a1, a2, a3,... , an, ngăn cách nhau bởi một khoảng trắng. Số nguyên ai cho biết số lượng viên sỏi có trong đống thứ i \(1&lt;=ai&lt;=100\)
 
-### Kết qủa
+## Kết qủa
 
 Với mỗi bộ test, in ra 1 nếu bạn Mai thắng, -1 nếu bạn Mai thua
 
@@ -49,14 +49,12 @@ Input
 Output
 1
 -1
-
 ```
 
-## Solution
+# Solution
 
 Tham khảo tại: [http://viahold.com/1ugl](http://viahold.com/1ugl)
 
-## Code
+# Code
 
 Tham khảo tại: [http://viahold.com/1uSb](http://viahold.com/1uSb)
-
