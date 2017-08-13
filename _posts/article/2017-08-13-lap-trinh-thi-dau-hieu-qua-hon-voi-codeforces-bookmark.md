@@ -12,8 +12,8 @@ tags:
 * **Ý tưởng**: Bắt nguồn từ những screencast của Petr mà mình xem ở Youtube, nên mình muốn tạo ra một công cụ có khả năng tự động chạy bài làm của mình với các test mẫu.
 * **Tại sao mình không làm extension mà lại là bookmark?** Vì kiến thức của mình còn hạn hẹp không thể viết được extension cho cả các trình duyệt Firefox và các trình duyệt khác, và thức sự thì bookmark đã có mặt ở các trình duyệt tiên tiến hiện nay nên việc sử dụng bookmark sẽ không khó khăn để có thể sử dụng ở các loại trình duyệt.
 * **Chức năng của Codeforces-Bookmark này?**
- * Tạo file bài tập theo ID của bài tập đó dựa vào template có sẵn do bạn tuỳ chỉnh.
- * Kiểm tra bài tập của bạn với những test mẫu chỉ trong 1 nốt nhạc.
+    * Tạo file bài tập theo ID của bài tập đó dựa vào template có sẵn do bạn tuỳ chỉnh.
+    * Kiểm tra bài tập của bạn với những test mẫu chỉ trong 1 nốt nhạc.
 
 # Hình ảnh khi sử dụng
 
@@ -141,6 +141,7 @@ Vào folder codeforces ở bước trên cùng đã có nối, tiếp tục vào
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
 
 
 
