@@ -8,18 +8,18 @@ tags:
   - bookmark
   - code-faster
 ---
-## Codeforces Bookmark và lời nói đầu
+# Codeforces Bookmark và lời nói đầu
 * **Ý tưởng**: Bắt nguồn từ những screencast của Petr mà mình xem ở Youtube, một extension có thể tự động khởi tạo bài tập từ template có sẵn và tự động kiểm tra các test mẫu.
 * **Tại sao mình không làm extension mà lại là bookmark?** Vì kiến thức của mình còn hạn hẹp không thể viết được extension cho cả các trình duyệt Firefox và các trình duyệt khác, và thức sự thì bookmark đã có mặt ở các trình duyệt tiên tiến hiện nay nên việc sử dụng bookmark sẽ không khó khăn để có thể sử dụng ở các loại trình duyệt.
 * **Chức năng của Codeforces-Bookmark này?**
  * Tạo file bài tập theo ID của bài tập đó dựa vào template có sẵn do bạn tuỳ chỉnh.
  * Kiểm tra bài tập của bạn với những test mẫu chỉ trong 1 nốt nhạc.
 
-## Hình ảnh khi sử dụng
+# Hình ảnh khi sử dụng
 
 ![undefined](/img/uploads/codeforces-bookmark-demo-image.png)
 
-## Các bước cài đặt
+# Các bước cài đặt
 * Tải và cài đặt Ampps
  * Tải về Ampps tại trang chủ [tại đây](http://www.ampps.com/download)
  * Nếu bạn vẫn còn không biết cách cài đặt Ampps thì hãy coi hướng dẫn ở cuối trang.
@@ -27,7 +27,7 @@ tags:
 * Cài đặt phím tắt để sử dụng nhanh trên CodeBlocks.
 * Hướng dẫn sử dụng chi tiết và hiệu quả trên Codeblocks.
 
-## Lưu ý khi sử dụng Ammps mỗi lần làm bài tập
+# Lưu ý khi sử dụng Ammps mỗi lần làm bài tập
 Nếu sau khi cài đặt nó chạy thì hãy tắt nó bằng cách chọn dấu mũi tên lên dưới navbar, sau đó chuột phải vào icon Ampps và chọn Quit
 
 ![undefined](/img/uploads/arrow-up-codeforces-bookmark-image.png)
@@ -38,7 +38,7 @@ Mỗi lần sử dụng hãy mở Ampps bằng quyền Admin mới có thể ho�
 
 ![undefined](/img/uploads/open-ampps-with-admin.png)
 
-## Hướng dẫn tải về và thiết lập
+# Hướng dẫn tải về và thiết lập
 **Bước 1:** Vào [đây](https://github.com/rknguyen/codeforces-bookmark) để tải về các file cần thiết về để bắt đầu thiết lập.
 
 ![undefined](/img/uploads/download-zip-image.png)
@@ -82,7 +82,7 @@ Lưu lại.
 
 ![undefined](/img/uploads/codeforces-bookmark-form-image.png)
 
-## Thiết lập phím tắt để sử dụng nhanh trên CodeBlocks
+# Thiết lập phím tắt để sử dụng nhanh trên CodeBlocks
 **Bước 1:** Nhìn trên thanh công cụ, chọn Tools -> Configure tools...
 
 Nhìn trên bảng vừa hiện ra, chọn Add
@@ -109,14 +109,14 @@ Sau đó bấm Add bên dưới và nhấn vào OK để lưu.
 **Lưu ý:** Mỗi lần bạn muốn sử dụng chấm thử test ví dụ hãy bấm F9 (tức là compile & run) file bài tập mà bạn đang làm để nó nhận diện thư mục hiện tại sau đó tắt đi (chỉ cần làm duy nhất 1 lần với file mới, khi chuyển file bài khác thì làm lại).
 Sau đó mỗi lần code xong bấm phím tắt mà bạn đã cài đặt ở trên để chạy trình chấm. Ở trình chấm mình đã làm phần compile nên các bạn sau khi đã F9 như trên thì sau đó chỉ cần phím tắt để nó compile và chấm luôn. Nếu có lỗi nó sẽ hiện ở màn hình console.
 
-## Thiết lập Codeblocks mặc định
+# Thiết lập Codeblocks mặc định
 Nếu bạn không dùng Codeblocks có thể bỏ qua phần này.
 
 Tìm đến bất kỳ một bài làm nó đó có đuôi .cpp, chuột phải vào nó và chọn Properties. Ở tab General bấm vào Change và chọn Codeblocks. Nhấn Apply và OK để lưu cài đặt.
 
 ![undefined](/img/uploads/set-codeblocks-default-cpp.png)
 
-## Sử dụng Codeforces Bookmark
+# Sử dụng Codeforces Bookmark
 Vào trang làm bài tập của Codeforces, nhấn vào bookmark đã tạo ban nãy và đợi nó tạo và mở file đó ở Codeblocks.
 
 Muốn chấm bài, trước tiến bấm F9 để nó nhận diện bài đang làm sau đó tắt đi, sau đó mỗi lần muốn chấm thử bài đang làm đó hãy bấm phím tắt mà bạn đã thiết lập. Nó sẽ tự compile và chấm thử test mẫu!
@@ -128,16 +128,17 @@ Vào folder codeforces ở bước trên cùng đã có nối, tiếp tục vào
 
 **Lưu ý:** Không thay đổi tên file vì sẽ ảnh hưởng đến Codeforces Bookmark!
 
-## Hướng dẫn cài đặt Ampps
+# Hướng dẫn cài đặt Ampps
 Mở file cài đặt Ampps lên
 
 Nhấn vào Next, tiếp tục tick vào dòng chữ `I accept the agreement`, sau đó tiếp tục nhấn Next cho đến khi nó cài đặt, đợi thành tiến trình chạy xong bỏ tick ở dòng Launch Ampps và bấm Finish
 
 Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
 
-## Kết thúc
+# Kết thúc
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
 
 
