@@ -9,7 +9,7 @@ tags:
   - code-faster
 ---
 # Codeforces Bookmark và lời nói đầu
-* **Ý tưởng**: Bắt nguồn từ những screencast của Petr mà mình xem ở Youtube, một extension có thể tự động khởi tạo bài tập từ template có sẵn và tự động kiểm tra các test mẫu.
+* **Ý tưởng**: Bắt nguồn từ những screencast của Petr mà mình xem ở Youtube, nên mình muốn tạo ra một công cụ có khả năng tự động chạy bài làm của mình với các test mẫu.
 * **Tại sao mình không làm extension mà lại là bookmark?** Vì kiến thức của mình còn hạn hẹp không thể viết được extension cho cả các trình duyệt Firefox và các trình duyệt khác, và thức sự thì bookmark đã có mặt ở các trình duyệt tiên tiến hiện nay nên việc sử dụng bookmark sẽ không khó khăn để có thể sử dụng ở các loại trình duyệt.
 * **Chức năng của Codeforces-Bookmark này?**
  * Tạo file bài tập theo ID của bài tập đó dựa vào template có sẵn do bạn tuỳ chỉnh.
@@ -22,10 +22,17 @@ tags:
 # Các bước cài đặt
 * Tải và cài đặt Ampps
  * Tải về Ampps tại trang chủ [tại đây](http://www.ampps.com/download)
- * Nếu bạn vẫn còn không biết cách cài đặt Ampps thì hãy coi hướng dẫn ở cuối trang.
+ * Nếu bạn vẫn còn không biết cách cài đặt Ampps thì hãy xem hướng dẫn bên dưới.
 * Tải về và thiết lập để sử dụng Codeforces Bookmark.
 * Cài đặt phím tắt để sử dụng nhanh trên CodeBlocks.
 * Hướng dẫn sử dụng chi tiết và hiệu quả trên Codeblocks.
+
+# Hướng dẫn cài đặt Ampps
+Mở file cài đặt Ampps lên
+
+Nhấn vào Next, tiếp tục tick vào dòng chữ `I accept the agreement`, sau đó tiếp tục nhấn Next cho đến khi nó cài đặt, đợi thành tiến trình chạy xong bỏ tick ở dòng Launch Ampps và bấm Finish
+
+Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
 
 # Lưu ý khi sử dụng Ammps mỗi lần làm bài tập
 Nếu sau khi cài đặt nó chạy thì hãy tắt nó bằng cách chọn dấu mũi tên lên dưới navbar, sau đó chuột phải vào icon Ampps và chọn Quit
@@ -130,17 +137,11 @@ Vào folder codeforces ở bước trên cùng đã có nối, tiếp tục vào
 
 **Lưu ý:** Không thay đổi tên file vì sẽ ảnh hưởng đến Codeforces Bookmark!
 
-# Hướng dẫn cài đặt Ampps
-Mở file cài đặt Ampps lên
-
-Nhấn vào Next, tiếp tục tick vào dòng chữ `I accept the agreement`, sau đó tiếp tục nhấn Next cho đến khi nó cài đặt, đợi thành tiến trình chạy xong bỏ tick ở dòng Launch Ampps và bấm Finish
-
-Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
-
 # Kết thúc
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
 
 
 
