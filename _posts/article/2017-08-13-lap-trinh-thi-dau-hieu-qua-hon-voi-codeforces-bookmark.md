@@ -123,6 +123,11 @@ Muốn chấm bài, trước tiến bấm F9 để nó nhận diện bài đang 
 
 ![undefined](/img/uploads/use-codeforces-bookmark.png)
 
+# Tuỳ biến template code
+Vào folder codeforces ở bước trên cùng đã có nối, tiếp tục vào thư mục sample, mở file solution.cpp và thay đổi trong đó!
+
+**Lưu ý:** Không thay đổi tên file vì sẽ ảnh hưởng đến Codeforces Bookmark!
+
 ## Hướng dẫn cài đặt Ampps
 Mở file cài đặt Ampps lên
 
@@ -134,4 +139,5 @@ Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
 
