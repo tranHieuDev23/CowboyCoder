@@ -117,6 +117,8 @@ Tìm đến bất kỳ một bài làm nó đó có đuôi .cpp, chuột phải 
 ![undefined](/img/uploads/set-codeblocks-default-cpp.png)
 
 # Sử dụng Codeforces Bookmark
+**Hãy chắc chắn là bạn đã mở Ampps với quyền Admin**
+
 Vào trang làm bài tập của Codeforces, nhấn vào bookmark đã tạo ban nãy và đợi nó tạo và mở file đó ở Codeblocks.
 
 Muốn chấm bài, trước tiến bấm F9 để nó nhận diện bài đang làm sau đó tắt đi, sau đó mỗi lần muốn chấm thử bài đang làm đó hãy bấm phím tắt mà bạn đã thiết lập. Nó sẽ tự compile và chấm thử test mẫu!
@@ -139,6 +141,7 @@ Với các bảng hiện lên hỏi sau đó bạn hãy chọn `Allow access`
 * Nếu có vấn đề gì xảy ra khi sử dụng các bạn hãy bình luận ở bên dưới để mình biết nhé!
 * Ngoài ra nếu các bạn thấy hay thì hãy bấm Like để theo dõi các bài viết của bọn mình và share để nhiều người biết đến bọn mình hơn nhé!
 * Mọi sự ủng hộ từ các bạn là động lực rất lớn để nhóm mình ra thêm nhiều bài viết hay - bổ ích và các lời giải bài tập trên SPOJ và Codeforces nhanh chóng hơn!
+
 
 
 
