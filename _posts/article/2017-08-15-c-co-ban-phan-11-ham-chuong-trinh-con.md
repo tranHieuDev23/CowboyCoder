@@ -222,7 +222,7 @@ Có 3 dạng tham số của hàm
 Để khai báo một biến tham số truyền biến, ta sử dụng cú pháp khai báo tham số
 
 ```
-kiểu dữ liệu &tên biến // đặt dấu & ở trước tên biến
+kiểu_dữ_liệu &tên biến // đặt dấu & ở trước tên biến
 ```
 
 Kiểu tham số này thực hiện mọi thay đổi trực tiếp lên biến mà không thông qua bản copy nào.
@@ -266,7 +266,7 @@ Thì tham số ```a``` có thể là 1 biến, 1 biểu thức cho ra kiểu ```
 Để khai báo một biến tham số truyền con trỏ, ta sử dụng cú pháp khai báo tham số
 
 ```
-kiểu dữ liệu *tên biến // đặt dấu * ở trước tên biến
+kiểu_dữ_liệu *tên biến // đặt dấu * ở trước tên biến
 ```
 
 Kiểu dữ liệu này sẽ truyền giá trị địa chỉ ô nhớ của biến vào hàm.
@@ -338,5 +338,6 @@ Output
 ```
 30
 ```
+
 
 
