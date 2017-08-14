@@ -276,9 +276,9 @@ Kiểu tham số này, cùng với những kiến thức về con trỏ, sẽ đ
 
 Giả sử ta định nghĩa giai thừa của một số nguyên ```x``` như sau
 
-$ 0! = 1 $
+$$ 0! = 1 $$
 
-$ x! = (x - 1)! * x với x > 0 $
+$$ x! = (x - 1)! * x với x > 0 $$
 
 Đây là một cách định nghĩa kiểu quy nạp - ta định nghĩa một giá trị cơ sở, và các giá trị quy nạp sẽ được định nghĩa từ các giá trị cơ sở trước nó.
 
@@ -338,6 +338,7 @@ Output
 ```
 30
 ```
+
 
 
 
