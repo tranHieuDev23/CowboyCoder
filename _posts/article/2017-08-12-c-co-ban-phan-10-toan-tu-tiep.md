@@ -154,5 +154,4 @@ Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 
 ```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
 
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 11: Hàm - Chương trình con](http://cowboycoder.tech/article/c-co-ban-phan-11-ham-chuong-trinh-con)*
