@@ -15,11 +15,11 @@ tags:
 
 Một mạng lưới gồm N thành phố, và một số đường một chiều nối các cặp thành phố \(giữa hai thành phố có thể có nhiều đường nối một chiều\).Quân địch đang tập trung ở thành phố N, định tiến công ta ở thành phố 1, và chúng sẽ tiến công trên tất cả các con đường chưa được bảo vệ để tiến vào thành phố 1. Bộ chỉ huy ta cần xác định số quân ít nhất trên các con đường để chặn địch tiến về thành phố 1.
 
-### Input
+## Input
 
 Dòng đầu ghi N \(N ≤ 5000\)Các dòng tiếp theo cho đến hết file, mỗi dòng một tả 1 đường gồm u, v, s cho biết có đoạn đường một chiều từ u đến v, và phải cần ít nhất s quân để chặn địch trên đường này. \(s ≤ 65000\)Có không quá 10000 đường.
 
-### Output
+## Output
 
 Số quân ít nhất cần điều động
 
@@ -54,7 +54,6 @@ Input:
 ```
 Output:
 79169
-
 ```
 
 # Solution:
@@ -68,5 +67,6 @@ Tham khảo tại: [http://viahold.com/2y6u](http://viahold.com/2y6u)
 
 
 Code đã được nộp và AC trên SPOJ, sử dụng bộ dịch của C++11
+
 
 
