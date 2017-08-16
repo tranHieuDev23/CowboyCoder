@@ -1,7 +1,7 @@
 ---
 title: '[C++ Cơ bản] Phần 12: Câu lệnh điều kiện'
 author: Admin Tổng Quản
-date: 2017-08-17T00:00:05+07:00
+date: 2017-08-16T17:00:05.000Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
   - cpp-cơ-bản
@@ -201,4 +201,5 @@ int main()
 Trong ví dụ với ```switch```, ta thấy điều tiện lợi nhất là việc không cần hẳn biểu thức ```bool``` dài dòng như ví dụ với ```if``` để kiểm tra giá trị của dau có khác với tất cả các giá trị cho phép hay không. 
 
 Tùy vào trường hợp, chúng ta sẽ sử dụng ```if```, ```else``` và ```switch``` sao cho phù hợp với nhu cầu của chương trình.
+
 
