@@ -339,9 +339,4 @@ Output
 30
 ```
 
-
-
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 12: Câu lệnh điều kiện](http://cowboycoder.tech/article/c-co-ban-phan-12-cau-lenh-dieu-kien)*
