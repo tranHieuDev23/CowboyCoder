@@ -12,6 +12,7 @@ Bên tổ chức không có nói contest này xoay quanh chủ đề gì cả, n
 
 ![undefined](/img/uploads/codeforces_429_image.png)
 
-Trò đó là gì, hãy xem tại link đề bài được dịch trực tiếp bởi thành viên của nhóm Cowboy Coder tại [đây](https://drive.google.com/open?id=1DdsdXDsoCC0YUlh8iz7LLAYMb6nPwDi_DhItqWUi48I).
+Trò đó là gì, hãy xem tại link đề bài được dịch trực tiếp bởi thành viên của nhóm Cowboy Coder tại [đây](http://viahold.com/3hES).
 
 Solution của contest sẽ được update sau khi contest kết thúc.
+
