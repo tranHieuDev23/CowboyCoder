@@ -32,6 +32,7 @@ Ghi ra một số thực là diện tích vùng cùng màu lớn nhất sau khi 
 * Có 20% số test còn lại ứng với 20% số điểm của bài thỏa mãn điều kiện: m, ni ≤ 1000.
 
 ## Ví dụ:
+```
 Input:
 3 1
 
@@ -42,8 +43,10 @@ Input:
 3 2 -1 -1 4 -1 -1 4
 
 Output:
+
 56.0
 
+```
 ## hướng dẫn: 
 
 [http://viahold.com/3VrS](http://viahold.com/3VrS)
@@ -51,3 +54,4 @@ Output:
 ## code
 
 [http://viahold.com/3Vrm](http://viahold.com/3Vrm)
+
