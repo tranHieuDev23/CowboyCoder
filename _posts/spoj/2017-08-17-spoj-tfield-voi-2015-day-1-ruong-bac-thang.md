@@ -7,11 +7,11 @@ tags:
   - geometry
   - spoj
 ---
-## Đề: [http://vn.spoj.com/problems/TFIELD/](http://vn.spoj.com/problems/TFIELD/)
+# Đề: [http://vn.spoj.com/problems/TFIELD/](http://vn.spoj.com/problems/TFIELD/)
 
 Ở các vùng cao hiếm đất cùng mặt bằng để canh tác, khi tiến hành trồng trọt trên các sườn đồi núi có đất màu, người ta phải bạt tam cấp để tạo thành những vạt đất bằng. Khu vực đất dốc dùng để canh tác như vậy gọi là ruộng bậc thang. Hình ảnh các khu ruộng bậc thang vẫn luôn là một hình ảnh đẹp ở các vùng cao khiến du khách và các nhà nhiếp ảnh đam mê và tốn không ít phim ảnh. Gia đình Hoàng có một khu ruộng bậc thang bao quanh một ngọn đồi được chia thành các khoang bậc thang, mỗi khoang trồng một loại cây. Khi nhìn từ trên cao xuống, ta thấy các khoang bậc thang này có hình dạng của các đa giác lồi lồng nhau. Ngoại trừ khoang chứa đỉnh đồi có biên là một đa giác lồi chứa đỉnh đồi, mỗi khoang còn lại được xác định bởi hai đa giác lồng nhau: đa giác có diện tích lớn hơn được gọi là biên ngoài của khoang còn đa giác có diện tích nhỏ hơn được gọi là biên trong của khoang. Mỗi khoang có màu đặc trưng của loại cây được trồng ở khoang đó. Vốn là một người say mê chụp ảnh, muốn có một bức ảnh đẹp, Hoàng tìm cách thay đổi không quá k loại cây được trồng ở k khoang để khi nhìn từ trên cao xuống sẽ thấy một vùng cùng màu có diện tích lớn nhất. Hoàng đã ghi nhận được danh sách m đa giác lồi mô tả biên ngoài của m khoang và màu tương ứng của chúng. Do sơ xuất, Hoàng đã để các thông tin về các khoang trong danh sách bị xáo trộn, không còn được liệt kê theo đúng trình tự từ khoang trong đến khoang ngoài.
 
-* Yêu cầu: Cho biết thông tin về danh sách mà Hoàng đã ghi nhận và số nguyên k, hãy tìm cách thay đổi không quá k loại cây được trồng ở k khoang để khi nhìn từ trên cao xuống sẽ thấy một vùng cùng màu có diện tích lớn nhất.
+**Yêu cầu:** Cho biết thông tin về danh sách mà Hoàng đã ghi nhận và số nguyên k, hãy tìm cách thay đổi không quá k loại cây được trồng ở k khoang để khi nhìn từ trên cao xuống sẽ thấy một vùng cùng màu có diện tích lớn nhất.
 
 ## Dữ liệu vào:
 
@@ -25,6 +25,7 @@ Hai số liên tiếp trên cùng dòng được ghi cách nhau bởi dấu các
 ## Dữ liệu ra:
 
 Ghi ra một số thực là diện tích vùng cùng màu lớn nhất sau khi thay đổi không quá k loại cây được trồng ở k khoang (kết quả đưa ra với độ chính xác 1 chữ số sau dấu chấm thập phân).
+
 ## Ràng buộc:
 
 * Có 40% số test ứng với 40% số điểm của bài thỏa mãn điều kiện: m ≤ 10; k = 1; các đa giác mô tả biên ngoài của các khoang là hình chữ nhật;
@@ -45,15 +46,15 @@ Input:
 Output:
 
 56.0
-
 ```
-## hướng dẫn: 
+# Hướng dẫn: 
 
 [http://viahold.com/3VrS](http://viahold.com/3VrS)
 
-## code
+# Code
 
 [http://viahold.com/3Vrm](http://viahold.com/3Vrm)
+
 
 
 
