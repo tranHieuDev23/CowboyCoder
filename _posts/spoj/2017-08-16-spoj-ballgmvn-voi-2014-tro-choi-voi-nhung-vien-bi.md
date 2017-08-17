@@ -50,7 +50,8 @@ Output:
 ```
 
 # Solution:
-Tham khảo tại: [Dang cap nhat]()
+Tham khảo tại: [http://viahold.com/3a1P](http://viahold.com/3a1P)
 
 # Code:
-Tham khảo tại: [Dang cap nhat]()
+Tham khảo tại: [http://viahold.com/3a0b](http://viahold.com/3a0b)
+
