@@ -1,5 +1,5 @@
 ---
-title: '[Lập trình thi đấu cơ bản] Phần 1: Giới thiệu về lập trình thi đấu'
+title: '[Lập trình thi đấu cơ bản] Phần 0: Giới thiệu về lập trình thi đấu'
 author: Nam Phương Đại Hiệp
 date: 2017-08-18T00:03:14.573Z
 thumbnail: /img/uploads/comp.png
@@ -14,3 +14,4 @@ Ngoài ra, nếu bạn là một bậc thầy trong lập trình thi đấu thì
 Hay đơn giản là kiếm tiền từ những contest online với giá trị giải thưởng có khi cả nghìn Trump.
 #Một số thuật ngữ hay dùng trong lập trình thi đấu
 (complete soon)
+
