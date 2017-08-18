@@ -202,4 +202,5 @@ Trong ví dụ với ```switch```, ta thấy điều tiện lợi nhất là vi�
 
 Tùy vào trường hợp, chúng ta sẽ sử dụng ```if```, ```else``` và ```switch``` sao cho phù hợp với nhu cầu của chương trình.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 13: Vòng lặp](http://cowboycoder.tech/article/c-co-ban-phan-13-vong-lap)*
 
