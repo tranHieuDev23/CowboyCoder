@@ -228,11 +228,11 @@ while (true)
 }
 ```
 
-Về mặt tiêu cực, nếu bạn không yêu cầu vòng lặp vô hạn, chương trình của bạn sẽ đơn giản dừng lại ở đó và không chạy tiếp được nữa ¯\_(ツ)_/¯.
+Về mặt tiêu cực, nếu bạn không yêu cầu vòng lặp vô hạn, chương trình của bạn sẽ đơn giản dừng lại ở đó và không chạy tiếp được nữa ¯\\_(ツ)_/¯.
 
 # Điều khiển vòng lặp
 
-Để có thể điểu khiển diễn biến của vòng lặp, ta sử dụng các từ khóa ```break```, ```continue``` và ```goto``.
+Để có thể điểu khiển diễn biến của vòng lặp, ta sử dụng các từ khóa ```break```, ```continue``` và ```goto```.
 
 Khi từ khóa ```break``` được gọi trong vòng lặp, nó sẽ kết thúc hoàn toàn vòng lặp đó.
 
@@ -322,4 +322,5 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
