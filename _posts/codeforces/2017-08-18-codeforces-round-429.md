@@ -6,7 +6,7 @@ thumbnail: /img/uploads/codeforces - thumbnail.jpg
 tags:
   - codeforces
 ---
-Vào lúc 22:05 ngày 18/8/2017 theo giờ Việt Nam, Codeforces Round #429 sẽ được tổ chức dành cho cả hai Division. Contest có 6 bài và diễn ra trong 2 tiếng đồng hồ.
+Vào lúc 22:05 ngày 18/8/2017 theo giờ Việt Nam, Codeforces Round #429 sẽ được tổ chức dành cho cả hai Division. Contest có 5 bài và diễn ra trong 2 tiếng đồng hồ.
 
 Bên tổ chức không có nói contest này xoay quanh chủ đề gì cả, nhưng bọn mình có bổ sung thêm một vài trò để các bạn giải trí trước khi thi :))
 
@@ -16,4 +16,7 @@ Trò đó là gì, hãy xem tại link đề bài được dịch trực tiếp 
 
 Solution của contest sẽ được update sau khi contest kết thúc.
 
+# Update: Solution của contest
+
+<http://coginator.com/7cs>
 
