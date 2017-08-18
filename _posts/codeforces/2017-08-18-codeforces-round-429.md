@@ -16,4 +16,6 @@ Trò đó là gì, hãy xem tại link đề bài được dịch trực tiếp 
 
 Solution của contest sẽ được update sau khi contest kết thúc.
 
+# Update: Solution của contest
 
+<http://coginator.com/7cs>
