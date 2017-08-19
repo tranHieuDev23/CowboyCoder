@@ -112,7 +112,7 @@ Ví dụ: Vòng lặp sau đây không có khởi tạo, điều kiện hay bi�
 {% highlight c++ %}
 for (;;)
 {
-    cout << "Help! I am an infinity loop!\n";
+    cout << "Help! I am an infinity loop!" << endl;
 }
 {% endhighlight %}
 
@@ -142,7 +142,7 @@ int x; cin >> x;
 while (x <= 100)
 {
     if (x % 6 == 0)
-        cout << x << '\n';
+        cout << x << endl;
     x ++;
 }
 {% endhighlight %}
@@ -172,7 +172,7 @@ Ví dụ: Hãy thay đoạn code in ra các số nguyên chia hết cho 6 trong 
 do
 {
     if (x % 6 == 0)
-        cout << x << '\n';
+        cout << x << endl;
     x ++;
 }
 while (x <= 100);
@@ -223,7 +223,7 @@ while (true)
         kết thúc vòng lặp;
     tính toán thêm nữa;
     if (điều kiện thứ hai)
-    kết thúc vòng lặp;
+        kết thúc vòng lặp;
     …;
 }
 ```
@@ -244,7 +244,7 @@ for (int i = 1; i <= 100; i ++)
     if (i % 13 == 0)
         break;
     if (i % 6 == 0)
-        cout << i << '\n';
+        cout << i << endl;
 }
 {% endhighlight %}
 
@@ -322,5 +322,6 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
 
