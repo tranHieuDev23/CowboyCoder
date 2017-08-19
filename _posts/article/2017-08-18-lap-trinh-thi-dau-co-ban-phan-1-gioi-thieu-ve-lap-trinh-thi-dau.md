@@ -13,5 +13,10 @@ Bạn có thể tìm thấy câu trả lời ở post trước [Lợi và hại 
 Ngoài ra, nếu bạn là một bậc thầy trong lập trình thi đấu thì bạn có lẽ còn có được nhiều điều hơn thế. Ví dụ nếu bạn giành được huy chương IOI (sẽ giải thích đây là cái gì dưới) thì bạn sẽ có cơ hội lớn vào học những trường đại học danh giá trên thế giới. Hoặc giành được huy chương ở ACM-ICPC thì sẽ là một cơ hội việc làm rộng mở với đãi ngộ tốt.
 Hay đơn giản là kiếm tiền từ những contest online với giá trị giải thưởng có khi cả nghìn Trump.
 #Một số thuật ngữ hay dùng trong lập trình thi đấu
-(complete soon)
+- AC: Accepted - nghĩa là bài của bạn đã pass toàn bộ tất cả các test đồng nghĩa với việc hoàn thành yêu cầu của bài toán.
+- WA: Wrong Answer - nghĩa là bài của bạn cho kết quả sai. Hãy nhớ rằng ví dụ bài có 100 test, cho dù bạn pass 99 test nhưng chỉ sai một test thì cũng nhận về kết quả là WA.
+- TLE: Time Limit Exceed - nghĩa là bài của bạn đã chạy vượt quá thời gian cho phép trong yêu cầu của bài toán.
+- MLE: Memory Limit Exceed - nghĩa là bài của bạn đã dùng nhiều hơn bộ nhớ mà bài toán cho phép.
+- Submit: Là hành động nộp solution của bạn lên máy chấm để chạy và cho kết quả.
+- Debug: Đôi khi chương trình của bạn gặp một vài vấn đề khiến nó không thể AC, do đó ta cần phải rà soát và sửa lỗi. Qúa trình này gọi là debug. 
 
