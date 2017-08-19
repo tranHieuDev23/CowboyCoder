@@ -23,5 +23,7 @@ Hay đơn giản là kiếm tiền từ những contest online với giá trị 
 - MLE: Memory Limit Exceed - nghĩa là bài của bạn đã dùng nhiều hơn bộ nhớ mà bài toán cho phép.
 - Submit: Là hành động nộp solution của bạn lên máy chấm để chạy và cho kết quả.
 - Debug: Đôi khi chương trình của bạn gặp một vài vấn đề khiến nó không thể AC, do đó ta cần phải rà soát và sửa lỗi. Qúa trình này gọi là debug. 
+- Testing: Quá trình kiểm thử chương trình.
+
 
 
