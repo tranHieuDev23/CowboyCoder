@@ -1,7 +1,7 @@
 ---
 title: '[Lập trình thi đấu cơ bản] Phần 0: Giới thiệu về lập trình thi đấu'
 author: Nam Phương Đại Hiệp
-date: 2017-08-20T00:00:00+07:00
+date: 08/21/2017 12:00 AM
 thumbnail: /img/uploads/comp.png
 tags:
   - competitive-programming
@@ -47,6 +47,7 @@ Hay đơn giản là kiếm tiền từ những contest online với giá trị 
 ![undefined](/img/uploads/index1.jpeg)
 
 * Testing: Quá trình kiểm thử chương trình.
+
 
 
 
