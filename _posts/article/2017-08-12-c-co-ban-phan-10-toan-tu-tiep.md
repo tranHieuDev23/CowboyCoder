@@ -134,7 +134,7 @@ Output
 
 * ```.``` và ```->```: Cho phép truy cập vào các yếu tố của cấu trúc dữ liệu và class. Sẽ được giải thích trong các bài viết sau.
 * ```&```: Khi được đặt trước một biến, ```&``` trở thành toán tử địa chỉ, trả lại địa chỉ của ô bộ nhớ (con trỏ) của biến.
-* ```*```: Khi được đặt trước một biến con trỏ, ```*``` trở thành toán tử địa chỉ, trả lại giá trị trong ô bộ nhớ đó. Hai toán tử con trỏ sẽ được giải thích trong các bài viết sau.
+* ```*```: Khi được đặt trước một tên biến, biến đó sẽ trở thành một biến lưu giá trị con trỏ bộ nhớ. Hai toán tử con trỏ sẽ được giải thích trong các bài viết sau.
 
 # Thứ tự tính toán
 
@@ -155,3 +155,4 @@ Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 ```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
 
 *Phần sau: [\[C++ Cơ bản\] Phần 11: Hàm - Chương trình con](http://cowboycoder.tech/article/c-co-ban-phan-11-ham-chuong-trinh-con)*
+
