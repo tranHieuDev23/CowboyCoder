@@ -1,7 +1,7 @@
 ---
 title: '[Lập trình thi đấu cơ bản] Phần 0: Giới thiệu về lập trình thi đấu'
 author: Nam Phương Đại Hiệp
-date: 2017-08-21T00:00:00+07:00
+date: 2017-08-21T12:00:00+07:00
 thumbnail: /img/uploads/comp.png
 tags:
   - competitive-programming
