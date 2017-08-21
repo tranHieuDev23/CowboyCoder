@@ -1,7 +1,7 @@
 ---
 title: '[C++ Cơ bản] Phần 14: Mảng - Array'
 author: Admin Tổng Quản
-date: 2017-08-22T21:25:31+07:00
+date: 2017-08-22T14:25:31.000Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
   - cpp-cơ-bản
@@ -40,7 +40,7 @@ Ví dụ
 {% highlight c++ %}
 array1[0] = 0; // đặt phần tử đầu tiên của mảng array1 bằng 0
 array2[4] ++; // tăng phần tử thứ 5 của mảng array2 lên 1
-cout << arrayTwoD[2][3] // in ra phần tử ở vị trí (2, 3) của mảng 2 chiều arrayTwoD
+cout << arrayTwoD[2][3]; // in ra phần tử ở vị trí (2, 3) của mảng 2 chiều arrayTwoD
 {% endhighlight %}
 
 Chỉ số của các phần tử trong mảng bắt đầu từ số 0 - một mảng có ```n``` phần tử sẽ có các chỉ số 0, 1, 2,… tới ```n - 1```. Để thuận tiện hơn, ta sẽ hình dung chỉ số của phần tử là số phần tử nằm giữa phần tử đó, với phần tử đầu tiên.
@@ -162,4 +162,5 @@ int main()
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
+
 
