@@ -323,5 +323,4 @@ int main()
 }
 {% endhighlight %}
 
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 14: Mảng - Array](http://cowboycoder.tech/article/c-co-ban-phan-14-mang-array)*
