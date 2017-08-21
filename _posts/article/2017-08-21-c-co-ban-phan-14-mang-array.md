@@ -7,6 +7,8 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
+*Phần trước: [\[C++ Cơ bản\] Phần 13: Vòng lặp](http://cowboycoder.tech/article/c-co-ban-phan-13-vong-lap)*
+
 Trong phần trước, chúng ta đã đặt ra bài toán Lưu trữ thông tin cá nhân của người dân thành phố Hà Nội, và đúc kết ra rằng phải sử dụng các vòng lặp mới có thể duyệt qua và xử lý hết số lượng thông tin như vậy.
 
 Tương tự, ta cũng không thể tự tay tạo ra từng biến để lưu trữ thông tin của người dân Hà Nội được - ta sẽ phải tạo tới hơn 7 triệu biến, ai có tưng đấy thời gian cơ chứ? Bài viết này sẽ đề cập tới mảng - một cách để khai báo nhiều biến có cùng kiểu giá trị.
@@ -165,6 +167,7 @@ int main()
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
+
 
 
 
