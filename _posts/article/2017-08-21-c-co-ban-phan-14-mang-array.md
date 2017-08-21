@@ -25,7 +25,7 @@ Ví dụ:
 
 {% highlight c++ %}
 int array1[100];
-int x, array2[100]; /* có thể khai báo mảng cùng với các biến khác /*
+int x, array2[100]; /* có thể khai báo mảng cùng với các biến khác */
 int arrayTwoD[100][100]; /* mảng hai chiều */
 
 {% endhighlight %}
@@ -165,6 +165,7 @@ int main()
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
+
 
 
 
