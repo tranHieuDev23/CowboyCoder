@@ -27,6 +27,7 @@ Ví dụ:
 int array1[100];
 int x, array2[100]; // có thể khai báo mảng cùng với các biến khác
 int arrayTwoD[100][100]; // mảng hai chiều
+
 {% endhighlight %}
 
 Chiều của mảng là gì? Ta có thể hình dung mảng nhiều chiều là mảng chứa các mảng - mảng hai chiều là mảng với các phần tử là mảng 1 chiều, mảng 3 chiều là mảng với các phần tử là mảng 2 chiều, vân vân… Ví dụ thực tế của mảng nhiều chiều là một bảng dữ liệu, bao gồm các hàng và cột giống như mảng hai chiều.
@@ -41,6 +42,7 @@ Ví dụ
 array1[0] = 0; // đặt phần tử đầu tiên của mảng array1 bằng 0
 array2[4] ++; // tăng phần tử thứ 5 của mảng array2 lên 1
 cout << arrayTwoD[2][3]; // in ra phần tử ở ví trí (2, 3) của mảng hai chiều arrayTwoD
+
 {% endhighlight %}
 
 Chỉ số của các phần tử trong mảng bắt đầu từ số 0 - một mảng có ```n``` phần tử sẽ có các chỉ số 0, 1, 2,… tới ```n - 1```. Để thuận tiện hơn, ta sẽ hình dung chỉ số của phần tử là số phần tử nằm giữa phần tử đó, với phần tử đầu tiên.
@@ -59,6 +61,7 @@ Ta cũng có thể khai báo mảng mà không có số lượng phần tử, n�
 
 {% highlight c++ %}
 double arr[] = {1, 2.0, 3.0, 3.14, 2.23}; // mảng có 5 phần tử
+
 {% endhighlight %}
 
 Để khởi tạo giá trị cho mảng nhiều chiều, ta cũng đặt mảng giá trị khởi tạo của các phần tử trong ngoặc nhọn. Ví dụ về việc khởi tạo mảng 2 chiều:
@@ -162,6 +165,7 @@ int main()
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
+
 
 
 
