@@ -25,8 +25,8 @@ Ví dụ:
 
 {% highlight c++ %}
 int array1[100];
-int x, array2[100]; // có thể khai báo mảng cùng với các biến khác
-int arrayTwoD[100][100]; // mảng hai chiều
+int x, array2[100]; /* có thể khai báo mảng cùng với các biến khác /*
+int arrayTwoD[100][100]; /* mảng hai chiều */
 
 {% endhighlight %}
 
@@ -39,9 +39,9 @@ Chiều của mảng là gì? Ta có thể hình dung mảng nhiều chiều là
 Ví dụ
 
 {% highlight c++ %}
-array1[0] = 0; // đặt phần tử đầu tiên của mảng array1 bằng 0
-array2[4] ++; // tăng phần tử thứ 5 của mảng array2 lên 1
-cout << arrayTwoD[2][3]; // in ra phần tử ở ví trí (2, 3) của mảng hai chiều arrayTwoD
+array1[0] = 0; /* đặt phần tử đầu tiên của mảng array1 bằng 0 */
+array2[4] ++; /* tăng phần tử thứ 5 của mảng array2 lên 1 */
+cout << arrayTwoD[2][3]; /* in ra phần tử ở ví trí (2, 3) của mảng hai chiều arrayTwoD */
 
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ double arr[5] = {1, 2.0, 3.0, 3.14, 2.23};
 Ta cũng có thể khai báo mảng mà không có số lượng phần tử, nếu như ta đã khởi tạo giá trị cho các phần tử trong mảng. Khi đó số lượng phần tử của mảng sẽ bằng số lượng giá trị đã được khởi tạo.
 
 {% highlight c++ %}
-double arr[] = {1, 2.0, 3.0, 3.14, 2.23}; // mảng có 5 phần tử
+double arr[] = {1, 2.0, 3.0, 3.14, 2.23}; /* mảng có 5 phần tử */
 
 {% endhighlight %}
 
@@ -165,6 +165,7 @@ int main()
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
+
 
 
 
