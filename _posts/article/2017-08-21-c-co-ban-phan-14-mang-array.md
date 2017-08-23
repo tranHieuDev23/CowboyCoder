@@ -168,10 +168,4 @@ int main()
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
 
-
-
-
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.tech/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)*
