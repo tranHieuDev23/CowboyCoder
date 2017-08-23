@@ -1,7 +1,7 @@
 ---
-title: '[C++ Cơ bản] Phần 15: Các giá trị kiểu số. Thư viện toán học <cmath>.'
+title: '[C++ Cơ bản] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.'
 author: Admin Tổng Quản
-date: 2017-08-24T00:04:45+07:00
+date: 2017-08-23T17:04:45.000Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
   - cpp-cơ-bản
@@ -39,24 +39,24 @@ Output
 
 Tại sao cũng cùng là biểu thức đó, mà biểu thức trên lại sai trong khi biểu thức dưới lại đúng?
 
-Hãy nhớ lại về giới hạn của ```int```: ```int``` có thể biểu diễn được các số tới \\( 2 ^ 31 - 1 \\). Phép tính ở trên đã bị tràn giới hạn, và cho ra kết quả sai.
+Hãy nhớ lại về giới hạn của ```int```: ```int``` có thể biểu diễn được các số tới \\( 2 ^ {31} - 1 \\). Phép tính ở trên đã bị tràn giới hạn, và cho ra kết quả sai.
 
 Trong phép toán ở dưới, số ```300000ll``` có thêm một phần hậu tố (đuôi) ```ll``` nữa. Phần hậu tố này khai báo rằng giá trị ```300000``` ở đây thuộc kiểu ```long long int```, thay vì là ```int``` như mặc định.
 
 Ngoài hậu tố ```ll```, chúng ta còn sử dụng thêm ```u``` để chỉ định một giá trị nào đó là ```unsigned``` (không có dấu).
 
 {% highlight c++ %}
-10 // int
-10ll // long long int
-10u // unsigned int
-10ull // unsigned long long int
+10 /* int */
+10ll /* long long int */
+10u /* unsigned int */
+10ull /* unsigned long long int */
 {% endhighlight %}
 
 Ta cũng có thể biểu diễn một số dưới dạng bát phân hoặc thập lục phân, bằng cách thêm một phần tiền tố phía trước giá trị của số đó. ```0``` là tiền tố của số bát phân, ```0x``` hoặc ```0X``` là tiền tố của số thập lục phân.
 
 {% highlight c++ %}
-cout << 072 << endl; // Bát phân
-cout << 0xA << endl; // Thập lục phân
+cout << 072 << endl; /* Bát phân */
+cout << 0xA << endl; /* Thập lục phân */
 {% endhighlight %}
 
 Output
@@ -81,11 +81,11 @@ Nếu phần nguyên hoặc phần thập phân bị bỏ trống, giá trị c�
 Ví dụ:
 
 {% highlight c++ %}
-10.0 // biểu diễn đúng, giá trị kiểu double
-10.0f // biểu diễn đúng, giá trị kiểu float
-.01 // biểu diễn đúng, giá trị kiểu double và bằng 0.01
-21f // biểu diễn sai, không có dấu chấm và phần thập phân
-21.f // biểu diễn đúng, giá trị kiểu float và bằng 21.0
+10.0 /* biểu diễn đúng, giá trị kiểu double */
+10.0f /* biểu diễn đúng, giá trị kiểu float */
+.01 /* biểu diễn đúng, giá trị kiểu double và bằng 0.01 */
+21f /* biểu diễn sai, không có dấu chấm và phần thập phân */
+21.f /* biểu diễn đúng, giá trị kiểu float và bằng 21.0 */
 {% endhighlight %}
 
 Đối với kiểu biểu diễn nhân lũy thừa của 10, giá trị số bắt buộc phải có phần nguyên hoặc phần thập phân. Phần nhân lũy thừa của 10 sử dụng hậu tố ```e``` hoăc ```E```, đi liền là số mũ của 10.
@@ -93,9 +93,9 @@ Ví dụ:
 Ví dụ:
 
 {% highlight c++ %}
-314e-3 // biểu diễn đúng, giá trị bằng 3.14
-.01E2 // biểu diễn đúng, giá trị bằng 1
-e10 // biểu diễn sai, thiếu cả phần nguyên và phần thập phân.
+314e-3 /* biểu diễn đúng, giá trị bằng 3.14 */
+.01E2 /* biểu diễn đúng, giá trị bằng 1 */
+e10 /* biểu diễn sai, thiếu cả phần nguyên và phần thập phân. */
 {% endhighlight %}
 
 # Thư viện toán học ```cmath```
@@ -193,4 +193,5 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
 
