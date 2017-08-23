@@ -167,7 +167,7 @@ Hàm ```rand()``` không thực sự sinh ra một số ngẫu nhiên - nó sử
 
 Nếu bạn muốn biết thêm về cơ chế random với seed, cũng như các cơ chế sinh random khác, đoạn video sau sẽ cung cấp lời giải thích rõ ràng hơn cho bạn.
 
-{% include youtube-video.html src="https://www.youtube.com/watch?v=9rIy0xY99a0" %}
+{% include youtube-video.html src="https://www.youtube.com/embed/9rIy0xY99a0" %}
 
 Ok, vậy ta cần phải liên tục thay đổi seed sau mỗi lần chạy, để chương trình không sinh ra các số giống nhau. Giải pháp là sử dụng thời điểm chạy chương trình làm seed!
 
@@ -193,5 +193,8 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
+
+
 
 
