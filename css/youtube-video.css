@@ -3,7 +3,9 @@
 .youtube-video {
 	position:relative;
 	padding-bottom:56.25%;
-	padding-top:30px;
+	display: block;
+    max-width: 90%;
+    margin: 10px auto;
 	height:0;
 	overflow:hidden;
 }
