@@ -10,7 +10,7 @@ tags:
 Cũng như nhiều lĩnh vực khác, để trở thành một pro trong cộng đồng lập trình thi đấu, thì có một từ khóa mà bạn phải luôn nhớ. Đó là "practice anh more practice" hay nói khác đi là phải siêng năng luyện tập và giải bài tập một cách hiệu quả. Vậy làm sao để hiệu quả? Không đơn giản là thấy bài nào cũng làm, bài nào cũng giải một cách vô tội vạ. Mà chúng ta phải có một cách trainning thật sự khoa học. Hôm nay, mình sẽ chia sẻ cho các bạn một số nguyên tắc mà mình đút kết được trong quá trình luyện tập của mình.
 
 ## Lập trình phải học một cách chủ động
-![undefined](/img/uploads/practice-vs-learning.jpg)
+![undefined](/img/uploads/0101.jpg)
 
 Vâng, đó là điều đầu tiên cực kì quan trọng. Đa số cộng đồng lập trình thi đấu hiện nay đang là sinh viên hay học sinh phổ thông. Vì vậy việc học trong một khuôn khổ, theo một giáo trình nhất định đôi khi khiến bạn chán nản. Bạn nên tự tìm cho mình một động lực để phấn đấu, để không bị tuột mood khi gặp phải một vấn đề nan giải. Chẳng hạn như bạn hãy tập lên kế hoạch, định hướng trước những gì mình sẽ học và học như hế nào. Như thế bạn sẽ chủ động hơn trong việc học tập của mình và giúp nó hiệu quả hơn.
 
@@ -18,30 +18,30 @@ Vâng, đó là điều đầu tiên cực kì quan trọng. Đa số cộng đ�
 
 ### Học từ những người đi trước
 
-![undefined](/img/uploads/knowledge-vs-experience.jpg)
+![undefined](/img/uploads/0102.jpg)
 
 Có một điều bạn luôn phải nhớ rằng, cho dù bạn có là một người uyên bác đến đâu, kiến thức mênh mong như thế nào mà không biết kết hợp chúng để giải quyết vấn đề thì mọi thứ đó cũng điều vô nghĩa cả. Bời vì bạn thiếu một thứ, đó là kinh nghiệm. Kinh nghiệm là thứ không phải tự nhiên mà có, mà nó là thứ phải hun đút theo thời gian. Vì vậy những người đàn anh, những người đi trước là nơi tuyệt vời nhất để học hỏi và rèn luyện kinh nghiệm của mình. Nên đừng tự tin quá cao vào bản thân, hãy làm quen và học hỏi các bậc tiền bối, tham gia vào các hội nhóm liên quan đến lập trình thi đấu để được thưởng lãm những skill khủng mà không phải lúc nào ta cũng nhìn thấy.
 
 ### Học từ internet
-![undefined](/img/uploads/abc.jpg)
+![undefined](/img/uploads/0103.jpg)
 
 Cái này thì quá rõ ràng, không khó để hiểu tại sao đa số các CPer thường chọn internet để làm điểm định cư lí tưởng. Internet là một kho kiến thức khổng lồ. Hầu như tất cả các thuật toán, giải thuật mới hay cũ điều có ở đây. Đó là một nguồn tham khảo đầy hấp dẫn. Tuy nhiên, điều đó cũng cực kì nguy hiểm, bởi vì nhiều khi bạn sẽ gặp phải những trang web viết lung tung, không chính xác. Chính vì vậy, khi tham khảo các nguồn tài liệu trên internet, bạn cần phải chọn lọc một cách kĩ càng. Mình sẽ liệt kê một số trang web uy tín và được cộng đồng CPer đánh giá cao:
 
 - [Codeforces](codeforces.com): Đây là một trang chuyên tổ chức contest cực kì uy tín. Song song với đó là những blog chia sẻ thú vị đáng để bạn để tâm.
 
-![undefined](/img/uploads/index.png)
+![undefined](/img/uploads/0104.png)
 - [Topcoder](topcoder.com): Lại là một trang tổ chức contest, những nó có phần hấp dẫn hơn codeforces. Vì những người đạt thành tích cao trong các contest sẽ có cơ hội được tham dự Topcoder Open được tổ chức hằng năm, và để săn những giẩi thưởng khủng tại đây.
-![undefined](/img/uploads/Hidlx62E.jpg)
+![undefined](/img/uploads/0105.jpg)
 
 
 - [Google Code Jam](https://code.google.com/codejam/): Ngay cái tên cũng đã nói lên giá trị của nó. Đây là cuộc thi được tổ chức hằng năm bỏi Google. Những coder hàng đầu thường tham dự để tìm kiếm một chiếc vé đến Google Code Jam World Final. Đặt biệt, những coder có thành tích cao trong các cuộc thi của GCJ sẽ được ưu ái hơn những người khác nếu muốn ứng tuyển vào một vị trí mơ ước tại Google. 
-![undefined](/img/uploads/google-code-jam.jpg)
+![undefined](/img/uploads/0106.jpg)
 - [Spoj](spoj.com) và [VN Spoj](vn.spoj.com): Chính xác hơn thì đây là nơi lưu trữ bài tập cực khủng, từ vấn bài tập kinh điển, đến hiện đại bạn đều hoàn toàn có thể tìm thấy ở đây. Do vậy, không khó hiểu khi đây là điểm hẹn hò lí tưởng cho những người đam mê lập tình thi đấu.
-![undefined](/img/uploads/spoj.png)
+![undefined](/img/uploads/0107.png)
 - Ngoài ra, còn rất nhiều trang khác như [Hackerrank](hackerrank.com), [Hackerearth](hackerearth.com), ... Các bạn nên tự tìm hiểu để trao dồi hơn khả năng của mình và khám phá những trang đó.
 
 ## Các kĩ năng cần có của một lập trình viên thi đấu
-![undefined](/img/uploads/index.jpeg)
+![undefined](/img/uploads/0108.jpeg)
 
 ### Code nhanh và chính xác
 Đúng vậy, kĩ năng code nhanh là cực kì cần thiết trong lập trình thi đấu. Trong các kì thi ACM, khi mà điểm của các đội bằng nhau thì người ta sẽ xếp hạng dựa trên penalty - tức là thời gian hoàn thành problems của các đội. Đội nào có penalty nhỏ hơn sẽ là đội giành chiến thắng. Vì vậy, code nhanh và chính xác là hết sức quan trọng. Nếu có được kĩ năng ấy thì bạn đã có một lợi thế lớn trong lập trình thi đấu. Các bạn có thể kiểm tra khả năng typing của mình và luyện tập ở các trang web nổi tiếng như: 10fastfingers.com, typingtest.com, ...
@@ -64,5 +64,6 @@ Cũng như thời gian, chiến thuật cũng quan trọng không kém. Nguời 
 - Hình học cơ bản
 Đó là những thứ khá cơ bản và cần thiết nếu bạn thật sự muốn thi đấu. Bạn nên cố gắng tìm tòi và học hỏi những "bộ môn võ công này" càng sớm càng tốt. Cowboy coder sẽ hỗ trợ các bạn bằng cách cho ra những series hay và hấp dẫn, các bạn hãy chờ đợi nhé.
 Đó là tất cả của phần một. Hãy chờ đón phần hai, chúng ta sẽ bàn về quy trình giải một bài toán trong lập tình thi đấu.
+
 
 
