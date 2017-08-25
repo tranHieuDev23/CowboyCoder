@@ -1,5 +1,5 @@
 ---
-title: '[Lập trình thi đấu cơ bản] Phần 1: '
+title: '[Lập trình thi đấu cơ bản] Phần 1: Học như thế nào để thi đấu?'
 author: Nam Phương Đại Hiệp
 date: 2017-08-22T12:00:38.290Z
 thumbnail: /img/uploads/comp.png
@@ -64,6 +64,7 @@ Cũng như thời gian, chiến thuật cũng quan trọng không kém. Nguời 
 - Hình học cơ bản
 Đó là những thứ khá cơ bản và cần thiết nếu bạn thật sự muốn thi đấu. Bạn nên cố gắng tìm tòi và học hỏi những "bộ môn võ công này" càng sớm càng tốt. Cowboy coder sẽ hỗ trợ các bạn bằng cách cho ra những series hay và hấp dẫn, các bạn hãy chờ đợi nhé.
 Đó là tất cả của phần một. Hãy chờ đón phần hai, chúng ta sẽ bàn về quy trình giải một bài toán trong lập tình thi đấu.
+
 
 
 
