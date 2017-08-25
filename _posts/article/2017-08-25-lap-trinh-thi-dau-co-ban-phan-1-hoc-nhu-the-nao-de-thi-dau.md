@@ -7,6 +7,8 @@ tags:
   - competitve programing
   - cp
 ---
+*Phần trước: [\[Lập trình thi đấu cơ bản\] Phần 0: Giới thiệu về lập trình thi đấu](http://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-1-gioi-thieu-ve-lap-trinh-thi-dau)*
+
 Cũng như nhiều lĩnh vực khác, để trở thành một pro trong cộng đồng lập trình thi đấu, thì có một từ khóa mà bạn phải luôn nhớ. Đó là "practice anh more practice" hay nói khác đi là phải siêng năng luyện tập và giải bài tập một cách hiệu quả. Vậy làm sao để hiệu quả? Không đơn giản là thấy bài nào cũng làm, bài nào cũng giải một cách vô tội vạ. Mà chúng ta phải có một cách trainning thật sự khoa học. Hôm nay, mình sẽ chia sẻ cho các bạn một số nguyên tắc mà mình đút kết được trong quá trình luyện tập của mình.
 
 # Lập trình phải học một cách chủ động
@@ -66,6 +68,8 @@ Ngoài ra, các bạn cũng có thể đọc cuốn ebook [Giải thuật và L�
 ## Nắm vững một ngôn ngữ lập trình
 
 Có rất nhiều ngôn ngữ được sử dụng trong các cuộc thi lập trình trên toàn thế giới. Tuy nhiên, ở Việt Nam đối với học sinh thì thường có hai lựa chọn là Pascal và C++, đối với sinh viên thì lại là C++ hoặc Java. Do đó, lựa chọn cho mình một ngôn ngữ chủ yếu và nắm vững nó là một điều bắt buộc phải làm nếu muốn đạt được những kết quả như ý.
+
+Tại Cowboy Coder, chúng mình cung cấp series bài viết [C++ Cơ bản](http://cowboycoder.tech/article/c-co-ban-phan-0-gioi-thieu-series-bai-viet), giúp các bạn có thể tiếp cận với một trong những ngôn ngữ phổ biến của bộ môn Lập trình thi đấu từ cơ bản.
  
 ## Quản lí thời gian trong kì thi
 
@@ -76,3 +80,4 @@ Có rất nhiều ngôn ngữ được sử dụng trong các cuộc thi lập t
 Cũng như thời gian, chiến thuật cũng quan trọng không kém. Nguời xưa có câu: "Biết người, biết ta. Trăm trận, trăm thắng." Khi đọc một bài toán, đầu tiên hãy cố gắng lấy được càng nhiều điểm càng tốt của bài toán đó. Hãy giải từng subtask một trước tiên. Tránh tình trạng lao đầu vào tìm thuật toán tối ưu đến hết giờ vẫn chưa ra. Trong khi ít nhất ta có thể có được phần nhiều số điểm của bài ở những subtask dễ hơn. Các bạn hãy hết sức lưu ý điều này, bời vì trong các kì thi lớn có tính cạnh tranh cao, đôi khi khẳng cách giữa có huy chương và không có huy chương là những điểm số cực kì nhỏ.
 
 Bài viết phần một kết thúc ở đây. Trong phần hai, chúng ta sẽ bàn về quy trình giải một bài toán trong lập tình thi đấu.
+
