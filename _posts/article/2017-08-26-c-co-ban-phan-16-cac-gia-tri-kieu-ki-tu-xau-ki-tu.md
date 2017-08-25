@@ -7,6 +7,8 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
+*Phần trước: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.tech/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)*
+
 # Biểu diễn giá trị kiểu ```char```
 
 Các giá trị kiểu ```char``` sẽ được đặt trong dấu ngoặc đơn ```''```. Nếu như giá trị kiểu char có tiền tố ```L```, giá trị đó thuộc kiểu ```wchar_t```. Nếu không có thì giá trị mặc định thuộc kiểu ```char```.
@@ -218,3 +220,4 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
 <table>
 
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
+
