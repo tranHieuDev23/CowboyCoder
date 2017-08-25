@@ -19,6 +19,8 @@ Bên trong ngoặc đơn có thể là kí tự được biểu diễn (ví dụ
 
 Muốn thể hiện kí tự thường thì sử dụng ```''```. Vậy nếu muốn thể hiện kí tự ngoặc đơn ```'``` thì làm như thế nào?
 
+![undefined](/img/uploads/cpp-cơ-bản-2-1.jpg)
+
 Để thể hiện một số kí tự đặc biệt, ta sử dụng escape sequence - dịch thô ra là "dãy kí tự thoát", nhưng ở đây sẽ sử dụng cách gọi gốc. Escape sequence bắt đầu bằng kí tự ```\```, tiếp theo là một hoặc nhiều kí tự khác. Các escape sequence mang ý nghĩa đặc biệt.
 
 Ví dụ cho một số escape sequence:
@@ -220,4 +222,5 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
 <table>
 
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
+
 
