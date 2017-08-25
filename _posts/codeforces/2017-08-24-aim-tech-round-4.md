@@ -14,5 +14,7 @@ Contest này được ra đề và tổ chức bởi AIM Tech - một tập đo�
 
 Đề bài Div. 2 sẽ được dịch trực tiếp bởi thành viên của nhóm Cowboy Coder tại [đây](http://cogismith.com/zqt).
 
-Solution của contest sẽ được update sau khi contest kết thúc.
+Tham khảo Solution tại [đây](http://cogismith.com/1RyN)
+
+
 
