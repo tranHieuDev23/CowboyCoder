@@ -194,7 +194,4 @@ int main()
 }
 {% endhighlight %}
 
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự.](http://cowboycoder.tech/article/c-co-ban-phan-16-cac-gia-tri-kieu-ki-tu-xau-ki-tu)*
