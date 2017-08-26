@@ -7,7 +7,7 @@ tags:
   - programming
   - kinh-nghiem-song
 ---
-*Bài viết gốc: [How to not perform well on life and survive](http://codeforces.com/blog/entry/54064) được viết bởi I\_love\_Hoang\_Yen, nick Codeforces của anh Thanh Trung Nguyen, founder của cộng đồng Lập trình VNOI, hay còn được mọi người biết tới với biệt danh RR. Bản dịch đã được sự cho phép của anh Thanh Trung Nguyen và của bạn Phạm Cao Nguyên (natsukagami)*
+*Bài viết gốc: [How to not perform well on life and survive](http://codeforces.com/blog/entry/54064) được viết bởi I\_love\_Hoang\_Yen, nick Codeforces của anh Thanh Trung Nguyen, founder của cộng đồng Lập trình VNOI, hay còn được mọi người biết tới với biệt danh RR. Bản dịch đã được sự cho phép của anh Thanh Trung Nguyen và của bạn Phạm Cao Nguyên (natsukagami).*
 
 Ngày hôm qua đọc blog của ErdemKizez, mình lại nhớ về mình ngày trước. Mình không thể nào ngủ được khi nghĩ về những thất bại của mình trong thi cử và trong cuộc sống. Nhưng mình nghĩ mình đã sống sót qua cái tao đoạn ấy, nên mình quyết định viết bài blog này...
 
@@ -113,6 +113,7 @@ Từ những câu chuyện mà bọn mình (các thành viên nhỏ tuổi hơn 
 Nhưng câu chuyện của anh RR không kết thúc ở đây. "Contest đã trở thành một phần không thể thiếu trong cuộc đời mình rồi." - câu nói đó còn có ý nghĩa hơn khi bạn nhìn vào những gì mà RR đã làm cho cộng đồng lập trình thi đấu của Việt Nam. Anh ấy xây dựng nên forum VNOI dành cho dân lập trình thi đấu của Việt Nam - nhưng mà người ta không thích forum nữa, nên là trang dừng hoạt động chỉ sau vài tháng. Không chịu bỏ cuộc, anh ấy lập ra và tổ chức nhóm VNOI trên Facebook - một nơi "hợp thời" hơn chăng? - và biến nó thành một cộng đồng chia sẻ nổi tiếng. RR cũng là người xây dựng nên VNOI Wiki - trang web cung cấp các bản dịch và bài viết về giải thuật, cấu trúc dữ liệu và chiến lược thi đấu bằng tiếng Việt. Với những người không có vốn tiếng Anh dày dặn (mà phần lớn học sinh Việt Nam thì không có vốn tiếng Anh dày dặn), đây là nguồn thông tin tuyệt vời nhất để có thể bắt đầu sự nghiệp thi đấu. Trong một vài năm qua, mình cho rằng cộng đồng ở Việt Nam đã hoàn toàn thay đổi - không còn là một nhóm thi đua trên VOJ nữa, mà là một ngôi nhà lớn nơi mọi người chia sẻ và giảng dạy lẫn nhau, như một gia đình.
 
 "Làm sao để không thi tốt mà vẫn sống"? Mình muốn đổi tên thành Làm sao để không thi tốt mà vẫn sống một cách BADASS. RR lúc nào cũng nói là anh ấy muốn thay đổi thế giới, thì đó, mình thấy anh ấy làm khá được mà.
+
 
 
 
