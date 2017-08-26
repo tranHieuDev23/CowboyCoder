@@ -21,6 +21,8 @@ Rồi mình lên lớp 8, nhà trường một số học sinh giỏi để tham
 
 # Cấp 3 và kì thi Quốc gia
 
+![undefined](/img/uploads/lam-sao-de-khong-thi-tot-ma-van-song-1-1.jpg)
+
 Mình đỗ được vào một trường Trung học Phổ thông tốt. Bài thi đầu vào lấy hai môn Toán và Văn học, nhưng mình vẫn đỗ được! Nếu xét về mặt Lập trình thi đấu, trường của mình có thể gọi là trường tốt nhất ở Việt Nam, vì từ đây nhà trường đã đào tạo được nhiều học sinh giành huy chương vàng IOI như ll931110, skyvn97, natsukagami, vân vân...
 
 Mình vẫn code suốt ngày khi lên cấp 3, nhưng giờ mình đã có nhiều bạn bè từ các đội tuyển Tin Quốc gia khác để nói chuyện về lập trình và thuật toán. Hồi đó mọi người còn xài Yahoo ấy.
@@ -64,6 +66,8 @@ Và thế là mình lại trượt IOI, và tất cả đều là lỗi của m�
 
 # ACM ở trường đại học
 
+![undefined](/img/uploads/lam-sao-de-khong-thi-tot-ma-van-song-1-3.jpg)
+
 Mình học đại học tại trường NTU ở Singapore. ktuan cũng học ở đây. ktuan là huyền thoại trong giới Lập trình thi đấu ở Việt Nam: người Việt Nam duy nhất đạt được nick đỏ (mọi người đang ở rating tầm 2500 thì anh ấy đã đạt tới trên 3000 rồi), người Việt Nam duy nhất từng đi Google Code Jam Final tới vài lần, và về nhì ở Facebook Hacker Cup Finals.
 
 Dù sao thì, một hai thánh trước khi mình nhập học, anh ktuan có hỏi mình xem liệu mình có muốn tham dự đội ACM ICPC của anh ấy không. Anh ấy rất nghiêm túc về chuyện giành được huy chương ICPC nên muốn bắt đầu training ngay lập tức. Mình vừa mới thất bại trong kì thi chọn học sinh thi IOI, nên mình muốn nghỉ ngơi và từ chối lời đề nghị của anh ấy. Tất nhiên, đấy là cái "không" ngu nhất của mình và mình vẫn còn hối hận tới tận ngày hôm nay.
@@ -73,6 +77,8 @@ Dù sao thì, một hai thánh trước khi mình nhập học, anh ktuan có h�
 Năm tiếp theo mình tham dự ICPC WF với người bạn thân nhất của mình là ConanKudo, cho dù mình bị dính bug ở vòng Regional khi khai báo mảng: mình tính nhầm 20 * 30 = 60, nên mảng của mình bị quá bé. Ở vòng WF mình rất sợ bị dính bug ngu và sai thuật toán thêm nữa. Nhưng tất nhiên ở vòng này mình vẫn dính phải nhiều lỗi sai, bao gồm: hiểu sai đề, tràn số nguyên, cài đặt \\( O(2N * N ^ 2) \\) thay vì \\( O(2N * N) \\) và bị TLE, tối ưu hóa sai và bị WA thêm. Tất cả chỗ sai đó, chỉ trong bài dễ nhất của contest. Bạn có thể xem mình đã bị dính bao nhiêu WA ở bài C tại đây: [Bảng điểm World Final 2012](https://zibada.guru/finals/2012/). Nhìn vào top 20 và bạn sẽ nhanh chóng tìm ra người bị dính +7. Các thành viên trong đội mfinh cũng không thi tốt trong ngày hôm dó và bọn mình chỉ có thể giải được 3 bài dễ (B, C, D) sau 3 tiếng thi đấu. Mình cảm thấy tuyệt vọng tới phát khóc - bọn mình tới tận vòng WF để mang huy chương về, và giờ thì mình làm mọi thứ ra thế này đây.
 
 Thật thần kì là ConnanKudo đã giúp mình bình tĩnh lại và bọn mình giải được thêm 3 bài nữa trong 1,5 tiếng tiếp theo. "OMG có thể bọn mình giải được thêm 1 bài nữa là sẽ được huy chương!". Nhưng bọn mình không có đủ thời gian để cài đặt bài implementation I và chỉ có một số ý tưởng cho bài A. Bọn mình quyết định code A luôn, thay những cái chỗ mình không thể giải được bằng sinh random và duyệt cận. Và tất nhiên là bọn mình không giải được bài đó.
+
+![undefined](/img/uploads/lam-sao-de-khong-thi-tot-ma-van-song-1-2.jpg)
 
 Một lần nữa mình lại cảm thấy thật tồi tệ. Tới thời điểm hiện tại mình đã thất bại ở mọi thứ: không được đi IOI, không được huy chương ở ICPC WF.
 
@@ -92,6 +98,8 @@ Mình lại quay lại luyện tập, nhưng có một vấn đề lớn: flashm
 
 Mình luyện tập ròng rã trong hai năm cùng với flashmt dưới dự chỉ dạy của cao thủ lập trình thi đấu giỏi nhất Việt Nam hiện giờ là RR_PPAP. Mình lại tìm lại được tình yêu với contest thêm lần nữa. Tất nhiên, bọn mình không được huy chương ACM ICPC WF, nhưng mình cảm thấy nó cũng OK. Hai năm rèn luyện đã dạy mình nhiều thứ, bao gồm cả việc đối mặt với thất bại. Mình nhận ra rằng quãng thời gian luyện tập cho kì thi đem lại nhiều niềm vui hơn so với huy chương.
 
+![undefined](/img/uploads/lam-sao-de-khong-thi-tot-ma-van-song-1-4.jpg)
+
 Giờ đây mình không còn tham gia contest nữa - Mình sẽ làm đám cưới cuối năm nay *("Hú hú" - người dịch)* nên mình lúc nào cũng bận rộn. Nhưng mình đã bị mất rank đỏ trong contest vừa rồi và mình nhất định phải quay lại để lấy lại nó. Contest đã trở thành một phần không thể thiếu trong cuộc đời mình rồi.
 
 # Bonus: Comment của natsukagami
@@ -105,3 +113,4 @@ Từ những câu chuyện mà bọn mình (các thành viên nhỏ tuổi hơn 
 Nhưng câu chuyện của anh RR không kết thúc ở đây. "Contest đã trở thành một phần không thể thiếu trong cuộc đời mình rồi." - câu nói đó còn có ý nghĩa hơn khi bạn nhìn vào những gì mà RR đã làm cho cộng đồng lập trình thi đấu của Việt Nam. Anh ấy xây dựng nên forum VNOI dành cho dân lập trình thi đấu của Việt Nam - nhưng mà người ta không thích forum nữa, nên là trang dừng hoạt động chỉ sau vài tháng. Không chỉ dừng lại ở đó, anh ấy còn thành lập tra nhóm VNOI trên Facebook - có vẻ "thời thượng" hơn chăng? - và biến nó trở thành một cộng đồng chia sẻ kiến thức nổi tiếng. RR cũng là người xây dựng nên VNOI Wiki - trang web cung cấp các bản dịch và bài viết về giải thuật, cấu trúc dữ liệu và chiến lược thi đấu bằng tiếng Việt. Với những người không có vốn tiếng Anh dày dặn (mà phần lớn học sinh Việt Nam thì không có vốn tiếng Anh dày dặn), đây là nguồn thông tin tuyệt vời nhất để có thể bắt đầu sự nghiệp thi đấu. Trong một vài năm qua, mình cho rằng cộng đồng ở Việt Nam đã hoàn toàn thay đổi - không còn là một nhóm thi đua trên VOJ nữa, mà là một ngôi nhà lớn nơi mọi người chia sẻ và giảng dạy lẫn nhau, như một gia đình.
 
 "Làm sao để không thi tốt mà vẫn sống"? Mình muốn đổi tên thành Làm sao để không thi tốt mà vẫn sống một cách BADASS. RR lúc nào cũng nói là anh ấy muốn thay đổi thế giới, thì đó, mình thấy anh ấy làm khá được mà.
+
