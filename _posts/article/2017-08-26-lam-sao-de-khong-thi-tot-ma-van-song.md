@@ -13,7 +13,7 @@ Ngày hôm qua đọc blog của ErdemKizez, mình lại nhớ về mình ngày 
 
 # Backstory
 
-Khi mình bắt đầu đi học (hồi 5-6 tuổi), mình khác biệt so với lũ trẻ xung quanh: mình làm mấy trò dị dị như nhớ số điệnt thoại hay là làm toán... Cộng thêm một việc nữa, ấy là mình là thằng bé con nhất trong lớp. Vậy nên tất nhiên mình trở thành mục tiêu của bọn bắt nạt. Mình vẫn nhớ cái cảm giác tệ hại khi bị bắt nạt, và còn tệ hơn nữa khi nghe giáo viên nói với mẹ mình về chuyện ấy: "Nhìn con bé con đáng yêu ấy xem, làm sao mà con bé ấy có thể bắt nạt ai được chứ."
+Khi mình bắt đầu đi học (hồi 5-6 tuổi), mình khác biệt so với lũ trẻ xung quanh: mình làm mấy trò dị dị như nhớ số điện thoại hay là làm toán... Cộng thêm một việc nữa, ấy là mình là thằng bé con nhất trong lớp. Vậy nên tất nhiên mình trở thành mục tiêu của bọn bắt nạt. Mình vẫn nhớ cái cảm giác tệ hại khi bị bắt nạt, và còn tệ hơn nữa khi nghe giáo viên nói với mẹ mình về chuyện ấy: "Nhìn con bé con đáng yêu ấy xem, làm sao mà con bé ấy có thể bắt nạt ai được chứ."
 
 Lên lớp 2, có một chuyện thần kì đã xảy ra: mình được điểm cao nhất ở trong lớp. Tự nhiên chuyện bắt nạt dừng lại hẳn. Mình nhận ra rằng khi mình trở thành học sinh số một ở trong lớp và được thầy cô để mắt tới, mình sẽ không còn bị bắt nạt nữa. Thế là mình quyết định sẽ luôn trở thành số một ở trong lớp... Mọi chuyện diễn ra được vài năm cho tới khi có môn Lịch sử và Địa lý.
 
@@ -113,4 +113,5 @@ Từ những câu chuyện mà bọn mình (các thành viên nhỏ tuổi hơn 
 Nhưng câu chuyện của anh RR không kết thúc ở đây. "Contest đã trở thành một phần không thể thiếu trong cuộc đời mình rồi." - câu nói đó còn có ý nghĩa hơn khi bạn nhìn vào những gì mà RR đã làm cho cộng đồng lập trình thi đấu của Việt Nam. Anh ấy xây dựng nên forum VNOI dành cho dân lập trình thi đấu của Việt Nam - nhưng mà người ta không thích forum nữa, nên là trang dừng hoạt động chỉ sau vài tháng. Không chỉ dừng lại ở đó, anh ấy còn thành lập tra nhóm VNOI trên Facebook - có vẻ "thời thượng" hơn chăng? - và biến nó trở thành một cộng đồng chia sẻ kiến thức nổi tiếng. RR cũng là người xây dựng nên VNOI Wiki - trang web cung cấp các bản dịch và bài viết về giải thuật, cấu trúc dữ liệu và chiến lược thi đấu bằng tiếng Việt. Với những người không có vốn tiếng Anh dày dặn (mà phần lớn học sinh Việt Nam thì không có vốn tiếng Anh dày dặn), đây là nguồn thông tin tuyệt vời nhất để có thể bắt đầu sự nghiệp thi đấu. Trong một vài năm qua, mình cho rằng cộng đồng ở Việt Nam đã hoàn toàn thay đổi - không còn là một nhóm thi đua trên VOJ nữa, mà là một ngôi nhà lớn nơi mọi người chia sẻ và giảng dạy lẫn nhau, như một gia đình.
 
 "Làm sao để không thi tốt mà vẫn sống"? Mình muốn đổi tên thành Làm sao để không thi tốt mà vẫn sống một cách BADASS. RR lúc nào cũng nói là anh ấy muốn thay đổi thế giới, thì đó, mình thấy anh ấy làm khá được mà.
+
 
