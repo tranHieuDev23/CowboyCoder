@@ -23,4 +23,34 @@ Công việc tiếp theo sau khi đã hiểu được bài toán muốn nói gì
  Vâng, đây có lẽ vừa là phần hứng thú nhất cũng là phần khó chịu nhất. Bạn phải code thật không ngoan và khoa học nếu không muốn dính phải bug và ngồi loay hoay để tìm nó. Tuy nhiên nói vậy chứ trong khi code khó lòng có ai đủ tỉnh táo để làm một phát ăn ngay được. Do đó, có một số số nguyên tắc để giúp code của bạn trong sáng và dễ "gỡ bug" hơn:
 - Đặt tên biến, function theo một hệ thống nhất định: Hãy cố gắng để quản lí các biến, function của mình một cách hiệu quả. Sao cho để nhìn vào chúng, bạn biết được chúng có chức năng gì cũng như giá trị của nó.
 - Hiểu rõ những gì mình đã code, đang code và sắp code. Ví dụ, khi đang code function solve() thì hãy suy nghĩ về function output(). Phải làm sao để chúng đồng nhất và kết quả được lưu như thế nào để lúc xuất ra được hiệu quả.
-- Hiểu rõ những cấu trúc mình đang sử dụng: Điều này khá quan trọng nhất là với những bạn hay code bằng C++. C++ cung cấp khá nhiều cấu trúc dữ liệu trừu tượng, do đó đôi khi lúc sử dụng chúng chúng ta tạo ra bug mà không hề hay biết. Và những cấu trúc đó thì lại vô cùng khó debug. Nên tốt nhất ta phải hiều những gì ta đang làm là chắc ăn nhất.  
+- Hiểu rõ những cấu trúc mình đang sử dụng: Điều này khá quan trọng nhất là với những bạn hay code bằng C++. C++ cung cấp khá nhiều cấu trúc dữ liệu trừu tượng, do đó đôi khi lúc sử dụng chúng chúng ta tạo ra bug mà không hề hay biết. Và những cấu trúc đó thì lại vô cùng khó debug. Nên tốt nhất ta phải hiều những gì ta đang làm là chắc ăn nhất.
+- Sử dụng comment hợp lí: Comment là một công cụ giúp người lập trình chú thích lại những dòng code của mình. Vì vậy, hãy sử dụng chúng hợp lí thay vì lạm dụng chúng.
+- Phong cách code khoa học: Không cần phải nói nhiều, hãy nhìn hai đoạn code có cùng một chức năng dưới đây thì các bạn sẽ hiểu vì sao cần có điều này.
+
+{% highlight c++ %}
+...
+int n, x, ans = 0;
+
+int main() {
+  freopen("in.txt", "r", stdin);
+  
+  cin >> n;
+  for (int i = 1; i <= n; i++)
+    for (int j = 1; j <= n; j++)
+      cin >> x, ans = max(x, ans);
+  
+  cout << ans;
+}
+{% endhighlight %}  
+
+
+{% highlight c++ %}
+... 
+int n, a[100][100], ans = 0; // global variable
+int main() {
+  freopen("in.txt","r",stdin); cin >> n; //input data
+  for(int i=1;i<=n;i++) for(int j=1;j<=n;j++) cin>>a[i][j];//input data, too
+  for(int i=1;i<=n;i++) for(int j=1;j<=n;j++) 
+  if(ans<a[i][j]) ans=a[i][j]; cout<<ans;//find max: if ans less than a[i][j], ans will be a[i][j].
+}
+{% endhighlight %}
