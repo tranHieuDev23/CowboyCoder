@@ -17,11 +17,11 @@ Thông thường, một bài toán trong lập trình sẽ được chia ra thà
 
 Bạn có thể xem một bài toán mẫu ở đây: http://vn.spoj.com/problems/QBSELECT/
 ##Triển khai các ý tưởng
-Công việc tiếp theo sau khi đã hiểu được bài toán muốn nói gì chắc chắn là phải bắt tay vào việc nghĩ bài. Đầu tiên, ta phải nhận xét được bài toán đề ra có những đặc điểm gì và chia chúng ra thành những bài toán nhỏ. Giai đoạn này phần nhiều dựa vào kinh nghiệm cũng như sự nhạy bén của bạn. Vì suy nghĩ đúng hướng thì sẽ tiết kiệm được rất nhiều thời gian cũng như trở ngại khi bắt đầu code. Do đó, bạn nên cố gắng làm càng nhiều bài tập càng tốt và rút được càng nhiều kinh nghiệm từ chúng càng tốt. Một điều phải nhớ, đó là thuật toán bạn đưa ra phải chạy tốt trong thời gian cho phép. Vì máy tính hiện đại có thể chạy được tầm khoảng 100000000 phép tính trên một giây, nên những thuật toán O(N^2) với N khoảng 1000000 là không chấp nhận được, do đó phải tìm thuật toán có thời gian chạy từ O(NlogN) trở xuống là hợp lí. Tương tự như vậy, hãy ước lượng cho đúng thuật toán của mình để có thể ăn được càng nhiều test càng tốt. Vì độ phức tạp tính toán là một vấn đề phức tạp, nên chúng ta sẽ không bàn sâu hơn ở đây.
+Công việc tiếp theo sau khi đã hiểu được bài toán muốn nói gì chắc chắn là phải bắt tay vào việc nghĩ bài. Đầu tiên, ta phải nhận xét được bài toán đề ra có những đặc điểm gì và chia chúng ra thành những bài toán nhỏ. Giai đoạn này phần nhiều dựa vào kinh nghiệm cũng như sự nhạy bén của bạn. Vì suy nghĩ đúng hướng thì sẽ tiết kiệm được rất nhiều thời gian cũng như trở ngại khi bắt đầu code. Do đó, bạn nên cố gắng làm càng nhiều bài tập càng tốt và rút được càng nhiều kinh nghiệm từ chúng. Một điều phải nhớ, đó là thuật toán bạn đưa ra phải chạy tốt trong thời gian cho phép. Vì máy tính hiện đại có thể chạy được tầm khoảng 100000000 phép tính trên một giây, nên những thuật toán O(N^2) với N khoảng 1000000 là không chấp nhận được, do đó phải tìm thuật toán có thời gian chạy từ O(NlogN) trở xuống là hợp lí. Tương tự như vậy, hãy ước lượng cho đúng thuật toán của mình để có thể ăn được thật nhiều test. Vì độ phức tạp tính toán là một vấn đề phức tạp, nên chúng ta sẽ không bàn hơn ở đây.
 ![undefined](/img/uploads/0202.jpg)
 ##Coding
  Vâng, đây có lẽ vừa là phần hứng thú nhất cũng là phần khó chịu nhất. Bạn phải code thật không ngoan và khoa học nếu không muốn dính phải bug và ngồi loay hoay để tìm nó. Tuy nhiên nói vậy chứ trong khi code khó lòng có ai đủ tỉnh táo để làm một phát ăn ngay được. Do đó, có một số số nguyên tắc để giúp code của bạn trong sáng và dễ "gỡ bug" hơn:
-- Đặt tên biến, function theo một hệ thống nhất định: Hãy cố gắng để quản lí các biến, function của mình một cách hiệu quả. Sao cho để nhìn vào chúng, bạn biết được chúng có chức năng gì cũng như giá trị của nó.
+- Đặt tên biến, function theo một hệ thống nhất định: Hãy cố gắng để quản lí các biến, function của mình một cách hiệu quả. Sao cho để nhìn vào chúng, bạn biết được chúng có chức năng gì cũng như giá trị của nó. Đừng bao giờ đặt tên xong mà chúng ta không biết chúng là gì. Điều đó thật sự tệ hại.
 - Hiểu rõ những gì mình đã code, đang code và sắp code. Ví dụ, khi đang code function solve() thì hãy suy nghĩ về function output(). Phải làm sao để chúng đồng nhất và kết quả được lưu như thế nào để lúc xuất ra được hiệu quả.
 - Hiểu rõ những cấu trúc mình đang sử dụng: Điều này khá quan trọng nhất là với những bạn hay code bằng C++. C++ cung cấp khá nhiều cấu trúc dữ liệu trừu tượng, do đó đôi khi lúc sử dụng chúng chúng ta tạo ra bug mà không hề hay biết. Và những cấu trúc đó thì lại vô cùng khó debug. Nên tốt nhất ta phải hiều những gì ta đang làm là chắc ăn nhất.
 - Sử dụng comment hợp lí: Comment là một công cụ giúp người lập trình chú thích lại những dòng code của mình. Vì vậy, hãy sử dụng chúng hợp lí thay vì lạm dụng chúng.
@@ -46,11 +46,12 @@ int main() {
 
 {% highlight c++ %}
 ... 
-int n, a[100][100], ans = 0; // global variable
+int n, a[100][100], ans = 0;//global variable
 int main() {
   freopen("in.txt","r",stdin); cin >> n; //input data
   for(int i=1;i<=n;i++) for(int j=1;j<=n;j++) cin>>a[i][j];//input data, too
-  for(int i=1;i<=n;i++) for(int j=1;j<=n;j++) 
+  for(int i=1;i<=n;i++) for(int j=1;j<=n;j++)//iterate through matrix
   if(ans<a[i][j]) ans=a[i][j]; cout<<ans;//find max: if ans less than a[i][j], ans will be a[i][j].
 }
 {% endhighlight %}
+
