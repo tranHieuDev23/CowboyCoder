@@ -7,6 +7,8 @@ tags:
   - competive-programing
   - cp
 ---
+*Phần trước: [\[Lập trình thi đấu cơ bản\] Phần 1: Học như thế nào để thi đấu?](http://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-1-hoc-nhu-the-nao-de-thi-dau)*
+
 Như chúng ta đã biết, mục tiêu của lập trình thi đấu chính là giải những bài toán được đưa ra một cách hoàn hảo nhất. Vì vậy hôm nay mình sẽ nói về những nguyên tắc cơ bản khi giải một bài toán trong lập trình thi đấu.
 
 # Hiểu và nắm rõ bài toán được đưa ra
@@ -26,7 +28,7 @@ Công việc tiếp theo sau khi đã hiểu được bài toán muốn nói gì
 
 Đầu tiên, ta phải nhận xét được bài toán đề ra có những đặc điểm gì và chia chúng ra thành những bài toán nhỏ. Giai đoạn này phần nhiều dựa vào kinh nghiệm cũng như sự nhạy bén của bạn. Vì suy nghĩ đúng hướng thì sẽ tiết kiệm được rất nhiều thời gian cũng như trở ngại khi bắt đầu code. Do đó, bạn nên cố gắng làm càng nhiều bài tập càng tốt và rút được càng nhiều kinh nghiệm từ chúng. 
 
-Một điều phải nhớ, đó là thuật toán bạn đưa ra phải chạy tốt trong thời gian cho phép. Vì máy tính hiện đại có thể chạy được tầm khoảng 100000000 (\\( 10 ^ 8 \\)) phép tính trên một giây, nên những thuật toán \\( O(N^2) \\) với \\( N \\) khoảng 1000000 (\\( 10 ^ 5 \\) là không chấp nhận được, phải tìm thuật toán có thời gian chạy từ \\( O(NlogN) \\) trở xuống là hợp lí. Tương tự như vậy, hãy ước lượng cho đúng thuật toán của mình để có thể ăn được thật nhiều test. Vì độ phức tạp tính toán là một vấn đề phức tạp, nên chúng ta sẽ không bàn hơn ở đây.
+Một điều phải nhớ, đó là thuật toán bạn đưa ra phải chạy tốt trong thời gian cho phép. Vì máy tính hiện đại có thể chạy được tầm khoảng 100000000 (\\( 10 ^ 8 \\)) phép tính trên một giây, nên những thuật toán \\( O(N^2) \\) với \\( N \\) khoảng 1000000 (\\( 10 ^ 5 \\)) là không chấp nhận được, phải tìm thuật toán có thời gian chạy từ \\( O(NlogN) \\) trở xuống là hợp lí. Tương tự như vậy, hãy ước lượng cho đúng thuật toán của mình để có thể ăn được thật nhiều test. Vì độ phức tạp tính toán là một vấn đề phức tạp, nên chúng ta sẽ không bàn hơn ở đây.
 
 ![undefined](/img/uploads/0202.jpg)
 
@@ -65,3 +67,4 @@ int main() {
   if(ans<a[i][j]) ans=a[i][j]; cout<<ans;//find max: if ans less than a[i][j], ans will be a[i][j].
 }
 {% endhighlight %}
+
