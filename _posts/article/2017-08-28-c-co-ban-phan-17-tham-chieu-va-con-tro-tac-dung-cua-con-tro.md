@@ -41,7 +41,7 @@ Tham chiếu (reference) là một biến được chỉ định đại diện c
 Để khai báo một biến là biến tham chiếu, ta đặt toán tử ```&``` trước tên biến khi khai báo. Ví dụ
 
 {% highlight c++ %}
-int &a = b; // Biến a là tham chiếu tới biến b
+int &a = b; /* Biến a là tham chiếu tới biến b */
 {% endhighlight %}
 
 Giả sử ban đầu nếu biến ```b``` có giá trị là 10, biến ```a``` cũng sẽ có giá trị là 10. Nếu biến ```a``` bị gán giá trị 20, giá trị của ```b``` cũng trở thành 20.
@@ -188,4 +188,5 @@ Bởi vì con trỏ có bản chất là kiểu giá trị số nguyên, nên ta
 {% highlight c++ %}
 char *pointer = NULL;
 {% endhighlight %}
+
 
