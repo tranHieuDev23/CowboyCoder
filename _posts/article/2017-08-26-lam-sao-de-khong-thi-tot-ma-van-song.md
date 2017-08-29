@@ -88,7 +88,7 @@ Mình không thể chịu đựng nổi được. Trong vài tháng trời mình
 
 Ở tuần cuối cùng của tháng 11 năm 2012, mình cảm giác rằng đời mình đã chạm tới đáy. Thật sự rất thảm não. Nhưng không còn đường nào để đời mình trở nên tệ hơn nữa, nên mình nghĩ rằng có thể nó sẽ bắt đầu tốt lên chăng.
 
-Mình bắt đầu hẹn hò với Hoang Yen từ đầu năm 2013 và điều này đã làm thay đổi cuộc đời mình. Nhưng mỗi lần đăng nhập vào Codeforces, mình lại nhớ lại tất cả những thất bịa của mình, nên vào một lúc nào đó tầm giữa năm 2013 mình quyết định rằng mình ghét tài khoản cũ R\_R\_ tới nỗi mình quyết định lập ra tài khoản mới này. (Mình biết là rất sai trái khi có 2 tài khoản, và mình vẫn dùng cả hai lúc này lúc khác, nên mình vẫn cảm thấy rất tệ.)
+Mình bắt đầu hẹn hò với Hoang Yen từ đầu năm 2013 và điều này đã làm thay đổi cuộc đời mình. Nhưng mỗi lần đăng nhập vào Codeforces, mình lại nhớ lại tất cả những thất bại của mình, nên vào một lúc nào đó tầm giữa năm 2013 mình quyết định rằng mình ghét tài khoản cũ R\_R\_ tới nỗi mình quyết định lập ra tài khoản mới này. (Mình biết là rất sai trái khi có 2 tài khoản, và mình vẫn dùng cả hai lúc này lúc khác, nên mình vẫn cảm thấy rất tệ.)
 
 # Kì thi ACM cuối
 
@@ -113,6 +113,7 @@ Từ những câu chuyện mà bọn mình (các thành viên nhỏ tuổi hơn 
 Nhưng câu chuyện của anh RR không kết thúc ở đây. "Contest đã trở thành một phần không thể thiếu trong cuộc đời mình rồi." - câu nói đó còn có ý nghĩa hơn khi bạn nhìn vào những gì mà RR đã làm cho cộng đồng lập trình thi đấu của Việt Nam. Anh ấy xây dựng nên forum VNOI dành cho dân lập trình thi đấu của Việt Nam - nhưng mà người ta không thích forum nữa, nên là trang dừng hoạt động chỉ sau vài tháng. Không chịu bỏ cuộc, anh ấy lập ra và tổ chức nhóm VNOI trên Facebook - một nơi "hợp thời" hơn chăng? - và biến nó thành một cộng đồng chia sẻ nổi tiếng. RR cũng là người xây dựng nên VNOI Wiki - trang web cung cấp các bản dịch và bài viết về giải thuật, cấu trúc dữ liệu và chiến lược thi đấu bằng tiếng Việt. Với những người không có vốn tiếng Anh dày dặn (mà phần lớn học sinh Việt Nam thì không có vốn tiếng Anh dày dặn), đây là nguồn thông tin tuyệt vời nhất để có thể bắt đầu sự nghiệp thi đấu. Trong một vài năm qua, mình cho rằng cộng đồng ở Việt Nam đã hoàn toàn thay đổi - không còn là một nhóm thi đua trên VOJ nữa, mà là một ngôi nhà lớn nơi mọi người chia sẻ và giảng dạy lẫn nhau, như một gia đình.
 
 "Làm sao để không thi tốt mà vẫn sống"? Mình muốn đổi tên thành Làm sao để không thi tốt mà vẫn sống một cách BADASS. RR lúc nào cũng nói là anh ấy muốn thay đổi thế giới, thì đó, mình thấy anh ấy làm khá được mà.
+
 
 
 
