@@ -17,7 +17,7 @@ Vấn đề phát sinh là khi ta cần gán giá trị của một người ng�
 name[x] = name[y];
 phoneNumber[x] = phoneNumber[y];
 address[x] = address[y];
-…
+...
 {% endhighlight %}
 
 Rất dài và rất dễ gây sai sót trong quá trình viết lệnh. Truyền thông tin của một người vào trong hàm cũng sẽ nảy sinh nhiều phức tạp tương tự.
@@ -426,4 +426,5 @@ Thật ra là có, ở một số điểm sau:
 ```class``` cũng có hàm bên trong cấu trúc dữ liệu, con trỏ, cấp phát bộ nhớ động, tất cả mọi thứ mà ```struct``` có. Các template trong thư viện STL của C++ được triển khai như là các class. Class cũng là thuật ngữ trong lập trình hướng đối tượng.
 
 Do đó, ở trong các bài viết sau về Lập trình hướng đối tượng với C++, chúng ta sẽ đi sâu hơn về class, và sử dụng ```class``` cho mọi trường hợp thay vì ```struct```.
+
 
