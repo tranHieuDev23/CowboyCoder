@@ -4,7 +4,7 @@ author: Nam Phương Đại Hiệp
 date: 2017-08-31T14:06:13.336Z
 thumbnail: /img/uploads/comp.png
 tags:
-  - competitive programing
+  - competitive-programing
   - cp
 ---
 Như đã nói ở phần trước, cho dù bạn có một chiến lược làm bài hiệu quả và hoàn hảo thế nào thì cũng khó có thể tránh khỏi những "bug" trong quá trình code. Vì vậy, việc hạn chế và khắc phục những lỗi trong chương trình là một điều hết sức quan trọng trong lập trình thi đấu. Đó là lí do vì sao ta có bài này với kiểm thử và soát lỗi trong chương trình.
@@ -19,4 +19,5 @@ Bời vì VNOI đã có một bài hướng dẫn cách viết trình test bài 
 - Các tình huống hiếm gặp. Đôi khi ở một số trang online judge như UVa Online Judge hay Codechef bạn gặp những lỗi khá vô duyên như xuất dữ liệu dư khoảng trắng hay tab gì đấy. Cho nên hay thử tất cả những trường hợp bạn có thể nghĩ ra cho đến khi AC :).
 - Cuối cùng, có lẽ là trường hợp bất khả kháng. Đó là stress testing. Khi mà bạn đã thử tất cả mọi cách, mọi test có thể nghĩ ra mà bạn vẫn không tìm ra test nào sai cả. Thì bạn hãy tự viết một chương trình bruteforce hay tìm những bài đã AC. Sinh hàng tá test random để so sánh hai chương trình đến khi tìm được test sai thì thôi.
 ![undefined](/img/uploads/0301.jpeg)
+
 
