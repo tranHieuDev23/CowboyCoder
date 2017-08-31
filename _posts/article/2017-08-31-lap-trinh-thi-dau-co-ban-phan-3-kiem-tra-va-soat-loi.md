@@ -11,7 +11,7 @@ tags:
 
 Như đã nói ở phần trước, cho dù bạn có một chiến lược làm bài hiệu quả và hoàn hảo thế nào thì cũng khó có thể tránh khỏi những "bug" trong quá trình code. Vì vậy, việc hạn chế và khắc phục những lỗi trong chương trình là một điều hết sức quan trọng trong lập trình thi đấu. Bài viết này sẽ đề cập tới vấn đề kiểm thử và soát lỗi trong chương trình.
 
-Bạn có biết testing là cả một nghệ thuật. Trong nhiều cuộc thi ACM, việc bạn nộp mà không AC sẽ mang đến hậu quả là bạn sẽ bị thua thiệt về penalty. Do đó, nếu không muốn trở thành spammer thì hãy cố gắng hạn chế việc nộp bài càng nhiều càng tốt. 
+Bạn có biết testing là cả một nghệ thuật? Trong nhiều cuộc thi ACM, việc bạn nộp mà không AC sẽ mang đến hậu quả là bạn sẽ bị thua thiệt về penalty. Do đó, nếu không muốn trở thành spammer thì hãy cố gắng hạn chế việc nộp bài càng nhiều càng tốt. 
 
 Bời vì VNOI đã có một bài hướng dẫn cách viết trình test bài chất lượng là [Tự code, tự chấm, tự sướng - Bí kíp thi offline](http://vnoi.info/wiki/algo/skill/viet-trinh-cham). Nên ở đây, mình sẽ không hướng dẫn lại các bạn cách viết code để test nữa mà sẽ nói về một số nguyên tắc và kinh nghiệm thu thập được trong quá trình "stress testing" của mình.
 
@@ -36,3 +36,4 @@ if (N == 0)
 - Cuối cùng, có lẽ là trường hợp bất khả kháng. Đó là stress testing. Khi mà bạn đã thử tất cả mọi cách, mọi test có thể nghĩ ra mà bạn vẫn không tìm ra test nào sai cả. Thì bạn hãy tự viết một chương trình bruteforce hay tìm những bài đã AC. Sinh hàng tá test random để so sánh hai chương trình đến khi tìm được test sai thì thôi.
 
 ![undefined](/img/uploads/0301.jpeg)
+
