@@ -532,3 +532,4 @@ void deleteStudent()
 Ok, chúng ta đã hoàn thành xong việc thêm, sửa và xóa thông tin học sinh. Bài thực hành sẽ tiếp tục ở phần sau, với việc tìm kiếm học sinh theo thông tin, và lưu lại dữ liệu lên file.
 
 
+
