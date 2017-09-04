@@ -331,7 +331,7 @@ void saveFile()
 
 # Đóng file hiện tại và kết thúc chương trình
 
-Chức năng cuối cùng ta phải làm cho chương trình, đó là đóng file hiện tại lại và chuyển về trạng thái ban đầu (```isEditing``` bằng ```false``). 
+Chức năng cuối cùng ta phải làm cho chương trình, đó là đóng file hiện tại lại và chuyển về trạng thái ban đầu (```isEditing``` bằng ```false```). 
 
 Phép lịch sự tối thiểu bao giờ cũng phải là hỏi người dùng có muốn lưu trữ file hiện tại không, phòng ngừa việc ấn nhấm mà tắt đi không lưu lại.
 
@@ -363,5 +363,6 @@ Trong lập trình thực tế, chúng ta sẽ muốn lưu trữ các thông tin
 Chương trình sau khi hoàn thành cũng rất dài, tới gần 400 dòng. Trong lập trình thực tế ta sẽ muốn tránh việc viết một file quá dài dòng như thế này, mà thay vào đó là viết chương trình ra thành các module nhỏ, và gọi các module nhỏ trong một file lớn. Điều này giúp cho việc bảo trì chương trình dễ dàng hơn. Đó cũng chính là một chức năng quan trọng của việc lập trình hướng đối tượng - Object Oriented Programming - mà chúng ta sẽ bắt đầu đề cập tới kể từ bài viết tiếp theo.
 
 Tới đây là kết thúc bài thực hành tổng hợp rồi. Các bạn có thể xem code mẫu và download chương trình hoàn trình trên [repository GitHub](https://github.com/cowboycodervn/Basic-CPP---Exercise-1/tree/master) của nhóm Cowboy Coder.
+
 
 
