@@ -531,5 +531,5 @@ void deleteStudent()
 
 Ok, chúng ta đã hoàn thành xong việc thêm, sửa và xóa thông tin học sinh. Bài thực hành sẽ tiếp tục ở phần sau, với việc tìm kiếm học sinh theo thông tin, và lưu lại dữ liệu lên file.
 
-
+*Phần sau: [\[C++ Cơ bản\] Phần 20: Bài thực hành tổng hợp - Chương trình quản lý học sinh \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-20-bai-thuc-hanh-tong-hop-chuong-trinh-quan-ly-hoc-sinh-tiep)*
 
