@@ -427,4 +427,5 @@ Thật ra là có, ở một số điểm sau:
 
 Do đó, ở trong các bài viết sau về Lập trình hướng đối tượng với C++, chúng ta sẽ đi sâu hơn về class, và sử dụng ```class``` cho mọi trường hợp thay vì ```struct```.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 19: Bài thực hành tổng hợp - Chương trình quản lý học sinh](http://cowboycoder.tech/article/c-co-ban-phan-19-bai-thuc-hanh-tong-hop-chuong-trinh-quan-ly-hoc-sinh)*
 
