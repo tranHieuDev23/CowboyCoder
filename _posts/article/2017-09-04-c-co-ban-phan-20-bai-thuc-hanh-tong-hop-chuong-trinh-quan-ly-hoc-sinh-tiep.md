@@ -364,6 +364,4 @@ Chương trình sau khi hoàn thành cũng rất dài, tới gần 400 dòng. Tr
 
 Tới đây là kết thúc bài thực hành tổng hợp rồi. Các bạn có thể xem code mẫu và download chương trình hoàn trình trên [repository GitHub](https://github.com/cowboycodervn/Basic-CPP---Exercise-1/tree/master) của nhóm Cowboy Coder.
 
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 21: Lập trình hướng đối tượng - Object Oriented Programming](http://cowboycoder.tech/article/c-co-ban-phan-21-lap-trinh-huong-doi-tuong-object-oriented-programming)*
