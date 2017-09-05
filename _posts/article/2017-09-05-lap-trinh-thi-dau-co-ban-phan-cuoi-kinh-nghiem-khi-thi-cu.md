@@ -7,6 +7,8 @@ tags:
   - competitive-programming
   - cp
 ---
+*Phần trước: [\[Lập trình thi đấu cơ bản\] Phần 3: Kiểm tra và soát lỗi bài làm](http://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-3-kiem-tra-va-soat-loi)*
+
 Như vậy là sau 4 bài trước của series Lập trình thi đấu cơ bản, chúng ta đã phần nào hiểu rõ những khái niệm, những nguyên tắc đơn giản nhất để bước chân vào "giang hồ". Chúng mình rất muốn chia sẻ với các bạn nhiều hơn nữa, tuy nhiên do thời gian có hạn và phải gánh thêm nhiều series khác, do đó Cowboy Coder xin tạm kết thúc series "Lập trình thi đấu cơ bản" ở bài này.
 
 Ngay từ đầu, đối tượng hướng đến của series này chính đó là các bạn học sinh, sinh viên. Các bạn là những người có nhiều cơ hội được tham gia thi thố, cọ sát. Và hơn cả là những kì thi quan trọng có thể ảnh hưởng đến cả tương lai của các bạn như kì thi học sinh giỏi quốc gia chẳng hạn. Vì vậy, ở bài này chúng ta sẽ bàn về những kinh nghiệm khi thi cử. Để làm sao tối đa hóa khả năng bản thân, cũng như đạt những kết quả như mong muốn. 
@@ -41,4 +43,5 @@ else sol_subtask2();
 ![undefined](/img/uploads/0403.jpg)
 
 Đây là lúc yolo được rồi. Bạn có một thời gian rãnh làm mọi điều bạn muốn trong lúc chờ đợi kết quả. Nhưng mà, mình khuyên các bạn nên làm một cái gì đó có ích một chút, chứ đừng ngồi chờ kết quả cả tuần, cả tháng. Vì kết quả là do người khác quyết định chứ không phải bạn, dù bạn có cầu nguyện hay làm gì đi nữa thì cũng chẳng có tác dụng gì cả. :)
+
 
