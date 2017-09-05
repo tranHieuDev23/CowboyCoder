@@ -16,7 +16,7 @@ Trước khi bắt đầu bài viết, hãy cùng công nhận hai sự thật s
 
 Điều đầu tiên là rõ ràng - nếu như có nhiều đoạn code cùng làm một chức năng trong chương trình, khi ta muốn chỉnh sửa sẽ phải chỉnh sửa tất cả các đoạn code như thế. Điều đó rất dễ sinh ra lỗi, hoặc ít nhất sẽ khiến bạn và những người phải đọc code của bạn vô cùng khó chịu. Đó cũng là lý do vì sao chúng ta phải sử dụng tới chương trình con.
 
-Trừ khi bạn đang viết những chương trình "dùng một lần rồi bỏ", ngược lại thì điều thứ hai cũng đúng. Bạn sẽ luôn luôn phải mó đến code cũ để sửa bug hoặc nâng cấp chương trình, hoặc sửa bug vì nâng cấp chương trình, vân vân… Đời là bể khổ, viết code là quá trình viết ra bug mà ¯\_(ツ)_/¯
+Trừ khi bạn đang viết những chương trình "dùng một lần rồi bỏ", ngược lại thì điều thứ hai cũng đúng. Bạn sẽ luôn luôn phải mó đến code cũ để sửa bug hoặc nâng cấp chương trình, hoặc sửa bug vì nâng cấp chương trình, vân vân… Đời là bể khổ, viết code là quá trình viết ra bug mà ¯\\_(ツ)_/¯
 
 Để thích nghi với hai điều trên, bắt đầu từ bài viết này chúng ta sẽ làm quen với một phương pháp lập trình mới rất quan trọng trong ứng dụng thực tế, đó là lập trình hướng đối tượng.
 
@@ -79,6 +79,7 @@ Quay trở về hai quy tắc ở đầu bài, ta thấy OOP chính là giải p
 ![undefined](/img/uploads/cpp-cơ-bản-21-4.jpg)
  
 Đó, xong phần lý thuyết rồi. Bài viết tiếp theo sẽ nói về cách triển khai OOP trong C++, bắt đầu với class và object.
+
 
 
 
