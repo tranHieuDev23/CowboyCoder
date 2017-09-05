@@ -7,7 +7,7 @@ tags:
   - competitive-programming
   - cp
 ---
-Như vậy là sau 4 bài trước của series lập trình thi đấu cơ bản. Chúng ta đã phần nào hiểu rõ những khái niệm, những nguyên tắc đơn sơ nhất để bước chân vào "giang hồ". Chúng mình rất muốn chia sẻ với các bạn nhiều hơn nữa, tuy nhiên do thời gian có hạn và phải gánh thêm nhiều series khác, do đó cowboy coder xin tạm kết thúc series "Lập trình thi đấu cơ bản" ở bài này.
+Như vậy là sau 4 bài trước của series Lập trình thi đấu cơ bản, chúng ta đã phần nào hiểu rõ những khái niệm, những nguyên tắc đơn giản nhất để bước chân vào "giang hồ". Chúng mình rất muốn chia sẻ với các bạn nhiều hơn nữa, tuy nhiên do thời gian có hạn và phải gánh thêm nhiều series khác, do đó Cowboy Coder xin tạm kết thúc series "Lập trình thi đấu cơ bản" ở bài này.
 
 Ngay từ đầu, đối tượng hướng đến của series này chính đó là các bạn học sinh, sinh viên. Các bạn là những người có nhiều cơ hội được tham gia thi thố, cọ sát. Và hơn cả là những kì thi quan trọng có thể ảnh hưởng đến cả tương lai của các bạn như kì thi học sinh giỏi quốc gia chẳng hạn. Vì vậy, ở bài này chúng ta sẽ bàn về những kinh nghiệm khi thi cử. Để làm sao tối đa hóa khả năng bản thân, cũng như đạt những kết quả như mong muốn. 
 
@@ -15,7 +15,7 @@ Ngay từ đầu, đối tượng hướng đến của series này chính đó 
 
 ![undefined](/img/uploads/0401.jpg)
 
-Chuẩn bị luôn là bước quan trọng nhất. Nếu bạn muốn có một kết quả tốt thì bạn phải có một bước chuẩn bị kĩ càng. Tuy nhiên, việc chuẩn bị là cả một quá trình, chứ không phải trong một vài ngày là đủ. Đừng bao giờ dành những ngày cuối cùng trước khi thi của mình để nhồi nhét, để cố ôn tập bất kì thứ gì. Bời vì kiến thức ở môn tin học và trong lập trình thi đấu có đặc thù của nó. Là một môn đề cao khả năng tư duy, mà tư duy thì phải cần có thời gian rèn giũa mới phát triển được. Do đó, việc học và tranning của bạn là cả một quá trình dài đã qua. Đừng vì lo sợ thiếu sót kiến thức mà lao đầu vào cày cuốc, việc đó chỉ khiến bạn thêm bối rối và phát hiện thêm nhiều lỗ hổng của mình mà thôi. Còn nếu thật sự kiến thức bạn quá thiếu sót, kiểu như chưa biết gì thì... thôi cứ Yolo đi. Vì vài ngày ngắn ngủi cũng chẳng giúp bạn hơn được ai cả. Thay vào đó, hãy thư giản, nghe nhạc, xem phim hay chơi game chẳng hạn. Và điều quan trọng nhất vẫn là sức khỏe. Hãy giữ cho mình một tinh thần sảng khoái và tràn đầy sức sống trước khi bước vào bất kì một cuộc thi nào.
+Chuẩn bị luôn là bước quan trọng nhất. Nếu bạn muốn có một kết quả tốt thì bạn phải có một bước chuẩn bị kĩ càng. Tuy nhiên, việc chuẩn bị là cả một quá trình, chứ không phải trong một vài ngày là đủ. Đừng bao giờ dành những ngày cuối cùng trước khi thi của mình để nhồi nhét, để cố ôn tập bất kì thứ gì. Bời vì kiến thức ở môn tin học và trong lập trình thi đấu có đặc thù của nó. Là một môn đề cao khả năng tư duy, mà tư duy thì phải cần có thời gian rèn giũa mới phát triển được. Do đó, việc học và training của bạn là cả một quá trình dài đã qua. Đừng vì lo sợ thiếu sót kiến thức mà lao đầu vào cày cuốc, việc đó chỉ khiến bạn thêm bối rối và phát hiện thêm nhiều lỗ hổng của mình mà thôi. Còn nếu thật sự kiến thức bạn quá thiếu sót, kiểu như chưa biết gì thì... thôi cứ YOLO đi. Vì vài ngày ngắn ngủi cũng chẳng giúp bạn hơn được ai cả. Thay vào đó, hãy thư giản, nghe nhạc, xem phim hay chơi game chẳng hạn. Và điều quan trọng nhất vẫn là sức khỏe. Hãy giữ cho mình một tinh thần sảng khoái và tràn đầy sức sống trước khi bước vào bất kì một cuộc thi nào.
 
 # Trong kì thi
 
@@ -41,3 +41,4 @@ else sol_subtask2();
 ![undefined](/img/uploads/0403.jpg)
 
 Đây là lúc yolo được rồi. Bạn có một thời gian rãnh làm mọi điều bạn muốn trong lúc chờ đợi kết quả. Nhưng mà, mình khuyên các bạn nên làm một cái gì đó có ích một chút, chứ đừng ngồi chờ kết quả cả tuần, cả tháng. Vì kết quả là do người khác quyết định chứ không phải bạn, dù bạn có cầu nguyện hay làm gì đi nữa thì cũng chẳng có tác dụng gì cả. :)
+
