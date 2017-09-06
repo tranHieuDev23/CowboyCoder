@@ -80,7 +80,4 @@ Quay trở về hai quy tắc ở đầu bài, ta thấy OOP chính là giải p
  
 Đó, xong phần lý thuyết rồi. Bài viết tiếp theo sẽ nói về cách triển khai OOP trong C++, bắt đầu với class và object.
 
-
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 22: Class và Object](http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object)*
