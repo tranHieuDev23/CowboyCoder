@@ -58,11 +58,11 @@ Lại nói tới chuyện class ```Animal```. Đã là động vật thì phải
 
 Nếu bây giờ bạn có một object thuộc class ```Animal```, bạn chỉ muốn ra lệnh ```walk()``` cho nó, mà không hề muốn quan tâm gì tới cái phần ẩn phía dưới kia hết. Đó chính là tính trừu tượng - cung cấp phần quan trọng của đối tượng mà không cần quan tâm tới các yếu tố hậu trường.
 
-# Tính đa hình (polymorphism)
+## Tính đa hình (polymorphism)
 
 Như ở trong ví dụ đi lại của động vật, ta thấy rõ ràng rằng với cùng một class ```Animal```, đối tượng này có thể có chương trình con ```walk()``` hoạt động như thế này, trong khi đối tượng khác có thể có ```walk()``` hoạt động kiểu khác. Đây chính là ví dụ của tính đa hình - cùng một chương trình con có thể có cách hoạt động khác nhau, tùy vào cài đặt object đang được gọi.
 
-# Tính đóng gói (encapsulation)
+## Tính đóng gói (encapsulation)
 
 Ta chuyển sang chuyện ăn uống của các loài động vật. Cũng giống như đi lại, các loài động vật chỉ cần cho thức ăn vào miệng và ăn, không cần quan trọng phía bên trong ruột rà xử lý ra làm sao (táy máy vào có khi còn lòi ruột). Trong lập trình cũng như thế, có những yếu tố của một đối tượng mà ta muốn che giấu khỏi người khác hoặc chương trình khác, để không bị xáo trộn lung tung gây hỏng hóc.
 
@@ -79,6 +79,7 @@ Quay trở về hai quy tắc ở đầu bài, ta thấy OOP chính là giải p
 ![undefined](/img/uploads/cpp-cơ-bản-21-4.jpg)
  
 Đó, xong phần lý thuyết rồi. Bài viết tiếp theo sẽ nói về cách triển khai OOP trong C++, bắt đầu với class và object.
+
 
 
 
