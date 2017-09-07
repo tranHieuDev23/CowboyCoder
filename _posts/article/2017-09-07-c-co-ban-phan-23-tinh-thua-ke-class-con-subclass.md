@@ -7,7 +7,7 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 22: Class và Object](http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object)
+*Phần trước: [\[C++ Cơ bản\] Phần 22: Class và Object](http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object)*
 
 Tính thừa kết giúp chúng ta tiết kiệm công sức viết code, bằng cách để cho các class con (subclass) thừa hưởng các tính chất của class cha (superclass). Trong bài viết này chúng ta sẽ tìm hiểu về cách triển khai tính thừa kế trong C++.
 
@@ -24,7 +24,7 @@ class tên_class: kiểu_thừa_kế_1 tên_superclass_1, kiểu_thừa_kế_2 t
 
 Trong đó kiểu thừa kế có thể là ```public```, ```protected```, hoặc ```private```.
 
-Ví dụ: Chương trình sau có 2 class ```Animal``` và ```Cat```, trong đó ```Cat``` là subclass của ```Animal```, do đó Cat thừa hưởng hai biến ```type``` và ```area``` của ```Animal```.
+Ví dụ: Chương trình sau có 2 class ```Animal``` và ```Cat```, trong đó ```Cat``` là subclass của ```Animal```, do đó ```Cat``` thừa hưởng hai biến ```type``` và ```area``` của ```Animal```.
 
 {% highlight c++ %}
 #include <iostream>
@@ -159,4 +159,5 @@ Output
 ```
 2
 ```
+
 
