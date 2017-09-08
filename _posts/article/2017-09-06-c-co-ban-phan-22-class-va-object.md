@@ -375,3 +375,5 @@ int main()
     return 0;
 }
 {% endhighlight %}
+
+*Phần sau: [\[C++ Cơ bản\] Phần 23: Tính thừa kế - Class con \(subclass\)](http://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass)*
