@@ -7,7 +7,7 @@ tags:
   - cpp-cơ-bản
   - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 23: Tính thừa kế - Class con (subclass)](http://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass)
+*Phần trước: [\[C++ Cơ bản\] Phần 23: Tính thừa kế - Class con (subclass)](http://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass)*
 
 Chúng ta đều biết hai kiểu dữ liệu số nguyên ```int``` và ```long long int``` đều có giới hạn về khoảng biểu diễn. Sẽ xảy ra trường hợp ta cần phải tự triển khai một kiểu dữ liệu số riêng để vượt qua các giới hạn ấy. Ý tưởng là tạo một class biểu diễn số bằng một string các kí tự chữ số. Vậy làm thế nào để có thể viết toán tử cộng trừ nhân chia cho class mới này?
 
@@ -152,12 +152,12 @@ Overload bên ngoài class, như một hàm của chương trình lớn. Khi đ�
 {% highlight c++ %}
 class BigInteger
 {
-    nội dung;
+    //nội dung;
 };
 
 BigInteger operator + (BigInteger x, BigInteger y)
 {
-    nội dung;
+    //nội dung;
 }
 {% endhighlight %}
 
@@ -166,4 +166,5 @@ Hãy để ý rằng các phép toán tử này cũng có kiểu dữ liệu tr�
 Ta có thể overload tất cả các toán tử trong C++, trừ toán tử truy cập scope ```::```, toán tử truy cập yếu tố trong class ```.```, toán tử điều kiện ```?:``` và toán tử tham chiếu yếu tố của class ```.*``` (mà bạn chưa cần phải quan tâm ở đây).
 
 Subclass sẽ không được thừa hưởng các toán tử được overload của superclass.
+
 
