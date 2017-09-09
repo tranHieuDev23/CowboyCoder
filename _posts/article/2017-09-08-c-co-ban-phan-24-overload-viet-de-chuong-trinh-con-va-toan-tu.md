@@ -167,4 +167,5 @@ Ta có thể overload tất cả các toán tử trong C++, trừ toán tử tru
 
 Subclass sẽ không được thừa hưởng các toán tử được overload của superclass.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 25: Abstract class - Class trừu tượng](http://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong)*
 
