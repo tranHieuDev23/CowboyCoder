@@ -160,4 +160,5 @@ Output
 2
 ```
 
+*Phần sau: [\[C++ Cơ bản\] Phần 24: Overload - Viết đè chương trình con và toán tử](http://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu)*
 
