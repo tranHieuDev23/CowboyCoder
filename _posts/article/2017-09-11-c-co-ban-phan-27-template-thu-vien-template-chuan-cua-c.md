@@ -36,7 +36,7 @@ Generic programming là khả năng cho phép lập trình viên có thể viế
 Để áp dụng generic, ta chèn thêm nội dung sau vào trước hàm hoặc class cần cài đặt:
 
 {% highlight c++ %}
-template <danh sách tham số>
+template </* danh sách tham số */>
 {% endhighlight %}
 
 Trong đó danh sách tham số được liệt kê giống như tham số của hàm, trừ một điểm: kiểu dữ liệu có thể được truyền vào làm tham số, nếu kiểu dữ liệu của tham số này là ```typename``` hoặc ```class```. Hai từ khóa này có giá trị như nhau trong template, nên bạn có thể sử dụng cái nào cũng được.
@@ -129,4 +129,5 @@ Example<int, 100> a;
 Như các bạn đã thấy, template cho phép chúng ta tạo ra các đoạn code đa năng, sử dụng được với nhiều kiểu dữ liệu và trong nhiều trường hợp khác nhau. Bản thân ngôn ngữ C++ cũng cung cấp cho chúng ta hệ thống thư viện STL - Standard Template Library - với rất nhiều template hàm và cấu trúc dữ liệu mạnh mẽ, sẵn sàng đáp ứng các yêu cầu của dự án lập trình.
 
 STL rất rộng lớn, để có thể bao quát được hết các thư viện sẽ mất nhiều thời gian và đòi hỏi phải áp dụng nhiều trong thực tế để có thể thuần thục được. Các bạn có thể nghiên cứu thêm về hệ thống thư viện STL trong tài liệu [C++ STL for newbies](http://www.mediafire.com/download/5o1gllos4gjkz3k/STL.pdf) của tác giả Điêu Xuân Mạnh.
+
 
