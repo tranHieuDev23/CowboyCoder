@@ -206,3 +206,4 @@ Lý do thứ ba là với interface, ta có thể gom chung các đối tượng
 
 Tới đây là kết thúc phần lập trình hướng đối tượng với C++ rồi. Bài viết tiếp theo sẽ là một bài thực hành, để các bạn có thể tổng hợp lại tất cả kiến thực hướng đối tượng với C++.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 26: Bài thực hành - Game đố vui](http://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui)*
