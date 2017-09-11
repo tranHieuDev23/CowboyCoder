@@ -327,3 +327,4 @@ OOP thật sự rất tiện lợi cho việc lắp đặt và nâng cấp - v�
 
 Bài thực hành này kết thúc phần học về lập trình hướng đối tượng với C++. Bài viết tiếp theo sẽ giúp các bạn làm quen với STL - thư viện template của C++ và các class quan trọng trong thư viện này.
 
+*Phần sau: [\[C++ Cơ bản\] Phần 27: Template. Thư viện template chuẩn của C++.](http://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c)*
