@@ -131,3 +131,4 @@ Như các bạn đã thấy, template cho phép chúng ta tạo ra các đoạn 
 STL rất rộng lớn, để có thể bao quát được hết các thư viện sẽ mất nhiều thời gian và đòi hỏi phải áp dụng nhiều trong thực tế để có thể thuần thục được. Các bạn có thể nghiên cứu thêm về hệ thống thư viện STL trong tài liệu [C++ STL for newbies](http://www.mediafire.com/download/5o1gllos4gjkz3k/STL.pdf) của tác giả Điêu Xuân Mạnh.
 
 
+*Phần sau: [\[C++ Cơ bản\] Phần 28: Áp dụng C++ vào lập trình thực tế \(phần cuối\)](http://cowboycoder.tech/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi)*
