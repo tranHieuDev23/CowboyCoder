@@ -1,5 +1,5 @@
 ---
-title: '[C++ Cơ bản] Phần 27: Áp dụng C++ vào lập trình thực tế (phần cuối)'
+title: '[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)'
 author: Admin Tổng Quản
 date: 2017-09-13T13:20:54.841Z
 thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
@@ -49,4 +49,5 @@ C++ cũng là một ngôn ngữ được yêu thích trong cộng đồng lập 
 Các bạn có thể tìm hiểu thêm về lập trình thi đấu trong series bài viết Lập trình thi đấu cơ bản trên trang Cowboy Coder.
 
 Đến đây là kết thúc series bài viết C++ Cơ bản rồi. Mình rất cảm ơn các bạn đã theo dõi các bài viết của mình tới ngày hôm nay, và với những kiến thức các bạn đã học được qua cuộc hành trình này, xin chúc các bạn có nhiều thành công lớn hơn trên con đường sắp tới :))
+
 
