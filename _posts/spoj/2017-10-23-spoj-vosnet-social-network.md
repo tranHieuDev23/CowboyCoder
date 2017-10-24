@@ -12,7 +12,7 @@ tags:
 
 # Đề bài:
 
-Social Network - Một cụm từ chắc ai trong chúng ta đều biết ! Một mạng xã hội sẽ gồm nhiều tài khoản (được biết như những người trong một xã hội) và các mối quan hệ giữa chúng (như sự quen biết giữa con người với con người).
+Social Network - Một cụm từ chắc ai trong chúng ta đều biết! Một mạng xã hội sẽ gồm nhiều tài khoản (được biết như những người trong một xã hội) và các mối quan hệ giữa chúng (như sự quen biết giữa con người với con người).
 
 Chúng ta hãy cùng làm một "nghiên cứu" nho nhỏ về mạng xã hội. Mạng sẽ gồm N tài khoản (để đơn giản đặt tên từ 1 đến N) và M cặp quan hệ (U,V) cho biết U và V quen biết nhau.
 
@@ -29,6 +29,7 @@ Cứ sau mỗi tháng, người ta sẽ thống kê số mối quan hệ mới �
 ## Input
 Dòng đầu tiên gồm 2 số N và M;
 M dòng tiếp theo, mỗi dòng gồm cặp số biểu diễn quan hệ (U,V);
+
 ## Output
 Một dòng duy nhất chứa 1 dãy số, số thứ i từ trái sang sẽ biểu diễn số mối quan hệ mới được tạo thành trong tháng thứ i (tất nhiên số cuối cùng sẽ là 0 - biểu diễn tháng bão hòa);
 
@@ -57,7 +58,8 @@ Các mối quan hệ mới theo mỗi tháng:
 N ≤ 3000, M ≤ 6000;
 20% số dữ liệu có N ≤ 100;
 
-## Solution: [http://twineer.com/1IbA](http://twineer.com/1IbA)
+# Solution: [http://twineer.com/1IbA](http://twineer.com/1IbA)
 
-## Code: [http://twineer.com/1I8v](http://twineer.com/1I8v)
+# Code: [http://twineer.com/1I8v](http://twineer.com/1I8v)
+
 
