@@ -5,7 +5,7 @@ date: 2017-10-30T18:38:52.336Z
 thumbnail: '/img/uploads/[spoj] traka.jpg'
 tags:
   - spoj
-  - shortest path
+  - shortest-path
   - geometry
 ---
 # Link đề bài: [www.spoj.com/problems/TRAKA/](www.spoj.com/problems/TRAKA/)
@@ -27,7 +27,6 @@ Có N người thợ, M chiếc xe. Người thứ i hoàn thành việc sửa b
 ## Ví dụ:
 
 ```
-
 Input:
 
 3 3
@@ -41,7 +40,6 @@ Input:
 Output:
 
 11
-
 ```
 
 ## Solution: [http://vializer.com/1MsR](http://vializer.com/1MsR)
