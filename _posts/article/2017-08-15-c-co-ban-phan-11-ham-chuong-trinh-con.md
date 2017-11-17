@@ -215,7 +215,7 @@ Có 3 dạng tham số của hàm
 
 ## Tham số truyền giá trị
 
-Đây là kiểu tham số mặc định của hàm. Khi ta gọi hàm, các tham số truyền giá trị sẽ **copy** giá trị được truyền vào biến, và tất cả các thay đổi sẽ chỉ diễn ra trên biến tham số đó. Hàm ```daoSo()``` ta vừa viết rơi vào trường hợp này - chỉ có giá trị của hai biến tham số ```a``` và ```b``` thay đổi, ```a``` và ```b``` ở bên ngoài vẫn không có gì thay đổi cả.
+Đây là kiểu tham số mặc định của hàm. Khi ta gọi hàm, chương trình sẽ **tạo ra các biến mới, copy giá trị được truyền vào biến**, và **tất cả các thay đổi sẽ chỉ diễn ra trên các biến mới này**. Hàm ```daoSo()``` ta vừa viết rơi vào trường hợp này - chỉ có giá trị của hai biến tham số ```a``` và ```b``` thay đổi, ```a``` và ```b``` ở bên ngoài vẫn không có gì thay đổi cả.
 
 ## Tham số truyền biến
 
@@ -340,3 +340,4 @@ Output
 ```
 
 *Phần sau: [\[C++ Cơ bản\] Phần 12: Câu lệnh điều kiện](http://cowboycoder.tech/article/c-co-ban-phan-12-cau-lenh-dieu-kien)*
+
