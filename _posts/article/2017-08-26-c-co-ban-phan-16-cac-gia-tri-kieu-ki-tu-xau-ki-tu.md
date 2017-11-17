@@ -223,4 +223,5 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
 
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
 
-*Phần sau: [\[C++ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
+*Phần sau: [\[C\+\+ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
+
