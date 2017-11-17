@@ -100,6 +100,8 @@ int tong(int a, int b)
 
 Từ khóa ```return``` sẽ thông báo kết thúc hàm ngay lập tức, và trả về giá trị nếu có.
 
+Một hàm được định nghĩa trả về một kiểu giá trị khác ```void``` mà kết thúc không có ```return``` sẽ khiến chương trình bị lỗi ```undefined behavior```. Các bộ dịch không nhất thiết cần phải thông báo lỗi này (nhưng thường sẽ có cảnh báo), và chương trình vẫn có thể được dịch thành công kể cả khi có lỗi này. Khi đó giá trị trả về có thể là bất cứ giá trị nào. Để tránh sai sót, hãy luôn kết thúc các hàm một cách hợp lệ.
+
 Từ khóa ```return``` cũng có thể sử dụng trong hàm kiểu ```void``` để kết thúc hàm đó. Trong trường hợp này, ta không cần có phần giá trị trả về.
 
 Ví dụ:
@@ -340,4 +342,5 @@ Output
 ```
 
 *Phần sau: [\[C++ Cơ bản\] Phần 12: Câu lệnh điều kiện](http://cowboycoder.tech/article/c-co-ban-phan-12-cau-lenh-dieu-kien)*
+
 
