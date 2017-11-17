@@ -89,7 +89,9 @@ Các bạn có thể xem kích cỡ và khoảng của các kiểu dữ liệu t
 
 ## Tại sao kiến thức này lại quan trọng?
 
-Như đã nói, C++ được sử dụng nhiều trong việc lập trình điều khiển phần cứng. Không phải phần cứng nào cũng có nhiều dung lượng bộ nhớ - các thiết bị như đèn nháy, máy giặt làm sao có thể lắp RAM 4 GB như laptop được. 
+Đầu tiên, việc biết giới hạn biểu diễn của các kiểu dữ liệu là cực kì quan trọng, để tránh việc thực hiện tính toán tràn khả năng biểu diễn dẫn tới sai sót. Việc thực hiện tính toán trên các kiểu dữ liệu sẽ được đề cập rõ hơn trong các bài viết về toán tử.
+
+Như đã nói trong các bài viết trước, C++ được sử dụng nhiều trong việc lập trình điều khiển phần cứng. Không phải phần cứng nào cũng có nhiều dung lượng bộ nhớ - các thiết bị như đèn nháy, máy giặt làm sao có thể lắp RAM 4 GB như laptop được. 
 
 Kể cả khi dung lượng không phải là vấn đề, việc tiết kiệm bộ nhớ của chương trình và đem đến trải nghiệm tốt hơn cho người dùng cũng là một việc nên làm.
 
@@ -191,4 +193,5 @@ ULL x = 1000;
 {% endhighlight %}
 
 *Phần sau: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
+
 
