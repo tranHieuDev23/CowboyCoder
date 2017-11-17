@@ -210,7 +210,7 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
         <td></td>
     <tr>
     <tr>
-        <td><code>đối_tượng.empty()</code></code></td>
+        <td><code>đối_tượng.empty()</code></td>
         <td>Kiểm tra xem string có phải là string rỗng không (string độ dài bằng 0)</td>
         <td><code>s.empty()</code> trả về <code>false</code></td>
     <tr>
@@ -224,5 +224,6 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
 
 *Phần sau: [\[C++ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
+
 
 
