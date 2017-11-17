@@ -119,7 +119,7 @@ Output:
 Bigger
 ```
 
-* ```,```: Cho phép thực hiện một loạt các biểu thức trong cùng một câu lệnh. Giá trị của cả nhóm biểu thức sẽ bằng giá trị của biểu thức cuối cùng. Ví dụ:
+* ```,```: Cho phép thực hiện một loạt các biểu thức trong cùng một câu lệnh, theo đúng thứ tự được liệt kê. Giá trị của cả nhóm biểu thức sẽ bằng giá trị của biểu thức cuối cùng. Ví dụ:
 
 {% highlight c++ %}
 int a = 10;
@@ -155,3 +155,4 @@ Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 ```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
 
 *Phần sau: [\[C++ Cơ bản\] Phần 11: Hàm - Chương trình con](http://cowboycoder.tech/article/c-co-ban-phan-11-ham-chuong-trinh-con)*
+
