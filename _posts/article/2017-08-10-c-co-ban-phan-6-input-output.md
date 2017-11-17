@@ -18,11 +18,13 @@ Thư viện ```stdio.h``` và các hàm ```scanf()```, ```printf()``` là phươ
 * Cú pháp của các hàm ```scanf()``` và ```printf()``` phức tạp hơn so với ```cin``` và ```cout``` của C++.
 * ```cin``` và ```cout``` là phương pháp input và output chuẩn của C++.
 
-Bạn có thể nghe nói rằng ```cin``` và ```cout``` chậm hơn ```scanf()``` và ```printf()```. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện ```stdio.h``` để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này là không đáng kể, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
+Bạn có thể nghe nói rằng ```cin``` và ```cout``` chậm hơn ```scanf()``` và ```printf()```. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện ```stdio.h``` để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này **có thể tạm bỏ qua được**, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
 
 ```
 iostream::sync_with_stdio(false);
 ```
+
+Lưu ý rằng kể cả sau khi áp dụng ```iostream::sync_with_stdio(false)```, tốc độ của ```cin/cout``` vẫn có thể chậm hơn đáng kể so với ```scanf()/printf()``` trên một số bộ dịch, nhưng nhìn chung thì điều này không quá ảnh hưởng tới việc lập trình thi đấu. Mục đích chính của các kì thi phần lớn là để kiểm tra kĩ năng thuật toán, cho dù kĩ năng tối ưu hóa vẫn là hết sức quan trọng.
 
 # Các thư viện nhập/xuất của C++
 
@@ -125,4 +127,5 @@ Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong m�
 ```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
 
 *Phần sau: [\[C++ Cơ bản\] Phần 8: Input và Output \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-8-input-va-output-tiep)*
+
 
