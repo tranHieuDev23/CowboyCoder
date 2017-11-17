@@ -203,27 +203,24 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
         <td><code>đối_tượng.size()</code> và <code>đối_tượng.length()</code></td>
         <td>Trả về độ dài của đối tượng</td>
         <td><code>s.size()</code> trả về 5</td>
-    <tr>
+    </tr>
     <tr>
         <td><code>đối_tượng.clear()</code></td>
         <td>Xóa hết nội dung của string</td>
         <td></td>
-    <tr>
+    </tr>
     <tr>
         <td><code>đối_tượng.empty()</code></td>
         <td>Kiểm tra xem string có phải là string rỗng không (string độ dài bằng 0)</td>
         <td><code>s.empty()</code> trả về <code>false</code></td>
-    <tr>
+    </tr>
     <tr>
         <td><code>đối_tượng.substr(int, int)</code></td>
         <td>Trả về string con của string đối tượng. Tham số đầu tiên là chỉ số bắt đầu của string con cần lấy, tham số thứ hai là độ dài cần lấy.</td>
         <td><code>s.substr(1, 3)</code> trả về <code>"ell"</code></td>
-    <tr>
-<table>
+    </tr>
+</table>
 
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
 
-*Phần sau: [[C++ Cơ bản] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
-
-
-
+*Phần sau: [\[C++ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
