@@ -7,7 +7,7 @@ tags:
   - graph
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/XUCXAC/](http://vn.spoj.com/problems/XUCXAC/)
+# Đề: [http://vnoi.info/problems/show/XUCXAC/](http://vnoi.info/problems/show/XUCXAC/)
 
 Một mặt bàn nằm ngang được chia làm lưới ô vuông, trong mỗi ô có ghi một số tự nhiên.
 

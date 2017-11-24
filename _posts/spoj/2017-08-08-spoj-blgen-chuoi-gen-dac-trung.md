@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj] blgen.jpg'
 tags:
   - dp
 ---
-# Link đề gốc: <http://vn.spoj.com/problems/BLGEN/>.
+# Link đề gốc: <http://vnoi.info/problems/show/BLGEN/>.
 
 # Đề bài:
 

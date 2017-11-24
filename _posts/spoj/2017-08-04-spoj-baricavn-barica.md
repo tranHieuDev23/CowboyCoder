@@ -7,7 +7,7 @@ tags:
   - spoj
   - sorting
 ---
-# Link đề gốc: <http://vn.spoj.com/problems/BARICAVN>
+# Link đề gốc: <http://vnoi.info/problems/show/BARICAVN>
 
 # Đề bài: 
 * Barica là một con cóc không bình thường. Barica sống trong một cái ao, nơi có N lá sen bềnh bồng trên mặt nước. Những lá sen được đánh số từ 1 đến N. Nhìn từ trên xuống, mỗi lá sen đc xem như một điểm trên hệ trục tọa độ Oxy. Barica có thể nhảy từ lá sen có tọa độ (x1;y1) đến tọa độ (x2,y2) nếu:

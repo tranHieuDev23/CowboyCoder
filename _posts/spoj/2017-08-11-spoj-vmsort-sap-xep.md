@@ -7,7 +7,7 @@ tags:
   - data-structure
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/VMSORT/](http://vn.spoj.com/problems/VMSORT/)
+# Đề: [http://vnoi.info/problems/show/VMSORT/](http://vnoi.info/problems/show/VMSORT/)
 
 Kì thi VM đang dần đi đến những vòng thi cuối cùng. Trong khi các thí sinh hăng say với những bài tập hóc búa, mang đậm tính chất Marathon thì các admin VNOI cũng phải đối mặt với những vấn đề rất nan giải, chẳng hạn như thống kê số lượng thí sinh, số lượng thí sinh giải được từng bài tập...
 

@@ -9,7 +9,7 @@ tags:
   - graph
   - connected-component
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/C11BC2/](http://vn.spoj.com/problems/C11BC2/)
+# Link bài gốc : [http://vnoi.info/problems/show/C11BC2/](http://vnoi.info/problems/show/C11BC2/)
 # Đề bài :
 Một ngày đẹp trời nọ, trên vương quốc của các Coders 2011, bỗng xuất hiện 1 lão phù thủy độc ác, lão phù thủy sirDat_LS đã có âm mưu thôn tính đất nước  của đức vua vodanh9x. Lão phù thủy này rất yêu con gái của đức vua là Rose và đã bắt Rose về nơi ở của lão ta.
 

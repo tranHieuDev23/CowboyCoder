@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-[http://vn.spoj.com/problems/BAOVE/](http://vn.spoj.com/problems/BAOVE/)
+[http://vnoi.info/problems/show/BAOVE/](http://vnoi.info/problems/show/BAOVE/)
 
 # Đề bài:
 

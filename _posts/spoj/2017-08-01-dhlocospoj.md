@@ -9,7 +9,7 @@ tags:
 ---
 # Link gốc:
 
-[http://vn.spoj.com/problems/DHLOCO/](http://vn.spoj.com/problems/DHLOCO/)
+[http://vnoi.info/problems/show/DHLOCO/](http://vnoi.info/problems/show/DHLOCO/)
 
 # Đề bài:
 

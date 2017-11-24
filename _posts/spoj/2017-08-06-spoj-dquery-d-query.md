@@ -7,7 +7,7 @@ tags:
   - spoj
   - mo
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/DQUERY/](http://vn.spoj.com/problems/DQUERY/)
+# Link bài gốc : [http://vnoi.info/problems/show/DQUERY/](http://vnoi.info/problems/show/DQUERY/)
 # Đề bài :
 Cho một dãy số n phần tử a1, a2, ..., an và một số các truy vấn-d. Một truy vấn-d là một cặp \(i, j\) \(1 ≤ i ≤ j ≤ n\). Với mỗi truy vấn-d \(i, j\), bạn cần trả về số phần tử phân biệt nằm trong dãy con ai, ai+1, ..., aj.
 

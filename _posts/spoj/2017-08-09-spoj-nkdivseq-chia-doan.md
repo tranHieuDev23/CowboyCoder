@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/NKDIVSEQ/](http://vn.spoj.com/problems/NKDIVSEQ/)
+[http://vnoi.info/problems/show/NKDIVSEQ/](http://vnoi.info/problems/show/NKDIVSEQ/)
 
 # Đề bài:
 

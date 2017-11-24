@@ -8,7 +8,7 @@ tags:
   - tree
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/QTREEV/](http://vn.spoj.com/problems/QTREEV/)
+# Đề: [http://vnoi.info/problems/show/QTREEV/](http://vnoi.info/problems/show/QTREEV/)
 
 Cho một đồ thị cây có N đỉnh N-1 cạnh, gốc của cây là đỉnh 1, mỗi đỉnh có một trọng số không âm là Ai. Dễ dàng nhận thấy, ngoại trừ đỉnh 1, các đỉnh còn lại đều có một đỉnh cha và nhận nó làm đỉnh con. Từ mảng A người ta tiến hành xây dựng mảng P như sau:
 

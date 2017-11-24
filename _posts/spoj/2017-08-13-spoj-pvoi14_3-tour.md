@@ -8,7 +8,7 @@ tags:
   - graph
 ---
 # Link gốc
-[http://vn.spoj.com/problems/PVOI14_3/](http://vn.spoj.com/problems/PVOI14_3/)
+[http://vnoi.info/problems/show/PVOI14_3/](http://vnoi.info/problems/show/PVOI14_3/)
 # Đề bài
 Sau khi xây dựng xong khu du lịch, thầy Minh bắt tay vào khai thác bằng cách tổ chức các hành trình du lịch. Khu du lịch gồm N địa điểm đánh số từ 1 đến N. Hệ thống giao thông trong vùng gồm M tuyến đường 1 chiều khác nhau, tuyến đường thứ j (j = 1, 2, ..., M) cho phép đi từ địa điểm uj đến địa điểm vj với chi phí đi lại là số nguyên dương cj. Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch bất kỳ và đi thăm một số địa điểm du lịch sau đó quay về địa điểm xuất phát mà chi phí trung bình là nhỏ nhất. Chi phí trung bình được tính bằng tổng chi phí của các tuyến đường mà hành trình đi qua chia cho số tuyến đường trên hành trình.
 

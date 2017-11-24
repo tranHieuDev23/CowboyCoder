@@ -8,7 +8,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-[http://vn.spoj.com/problems/C11CAVE/](http://vn.spoj.com/problems/C11CAVE/)
+[http://vnoi.info/problems/show/C11CAVE/](http://vnoi.info/problems/show/C11CAVE/)
 
 # Đề bài:
 

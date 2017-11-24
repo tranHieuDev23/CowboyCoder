@@ -7,7 +7,7 @@ tags:
   - brute-force
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/VMSUBSTR/](http://vn.spoj.com/problems/VMSUBSTR/)
+# Đề: [http://vnoi.info/problems/show/VMSUBSTR/](http://vnoi.info/problems/show/VMSUBSTR/)
 
 Sau một năm học cày cuốc vất vả; Hè này Huy quyết định mời các bạn về quê chơi. Huy sẽ dẫn các bạn đi leo núi, ngắm cảnh... và sẽ mở một buổi chiêu đãi các bạn tài nhà mình. "Nhà rộng và đẹp lắm, có cả một vườn cây ăn trái sum xuê !" - Huy giới thiệu về ngôi nhà của mình.
 

@@ -7,7 +7,7 @@ tags:
   - dp
   - spoj
 ---
-# Link đề: [http://vn.spoj.com/problems/VOLIS/](http://vn.spoj.com/problems/VOLIS/)
+# Link đề: [http://vnoi.info/problems/show/VOLIS/](http://vnoi.info/problems/show/VOLIS/)
 
 # Tóm tắt:
 

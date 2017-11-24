@@ -7,7 +7,7 @@ tags:
   - spoj
   - data-structure
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/QMAX/](http://vn.spoj.com/problems/QMAX/)
+# Link bài gốc : [http://vnoi.info/problems/show/QMAX/](http://vnoi.info/problems/show/QMAX/)
 # Đề bài :
 Cho một dãy gồm n phần tử có giá trị ban đầu bằng 0.
 

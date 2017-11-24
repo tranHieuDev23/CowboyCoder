@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-[http://vn.spoj.com/problems/WEATHER/](http://vn.spoj.com/problems/WEATHER/)
+[http://vnoi.info/problems/show/WEATHER/](http://vnoi.info/problems/show/WEATHER/)
 
 # Đề bài:
 

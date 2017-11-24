@@ -8,7 +8,7 @@ tags:
   - tree
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/VOXOR/](http://vn.spoj.com/problems/VOXOR/)
+# Đề: [http://vnoi.info/problems/show/VOXOR/](http://vnoi.info/problems/show/VOXOR/)
 
 Cho dãy A gồm N số nguyên không âm. Ta lần lượt thực hiện Q thao tác trên tập hợp này:
 

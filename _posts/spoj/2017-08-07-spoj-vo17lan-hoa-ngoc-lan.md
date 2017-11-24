@@ -10,7 +10,7 @@ tags:
   - implementation
   - math
 ---
-# Link đề gốc : [http://vn.spoj.com/problems/VO17LAN/](http://vn.spoj.com/problems/VO17LAN/)
+# Link đề gốc : [http://vnoi.info/problems/show/VO17LAN/](http://vnoi.info/problems/show/VO17LAN/)
 
 # Đề bài
 Để chuẩn bị cho kì thi VOI 2017, hai đội tuyển Hải Phòng và Hải Dương dắt tay nhau ra Hà Nội học Giáo Sư.

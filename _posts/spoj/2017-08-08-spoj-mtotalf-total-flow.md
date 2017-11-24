@@ -7,7 +7,7 @@ tags:
   - max-flow
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/MTOTALF/](http://vn.spoj.com/problems/MTOTALF/)
+# Đề: [http://vnoi.info/problems/show/MTOTALF/](http://vnoi.info/problems/show/MTOTALF/)
 
 Để quản lý nước cho đàn bò, FJ  đã vẽ bản đồ đường ống gồm N (1<=N<=700) 
 ống trong trang trại mà nối bể nước với các chuồng. FJ thấy rằng các 

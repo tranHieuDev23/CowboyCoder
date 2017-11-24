@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-http://vn.spoj.com/problems/ROADS/
+http://vnoi.info/problems/show/ROADS/
 
 # Đề bài:
 

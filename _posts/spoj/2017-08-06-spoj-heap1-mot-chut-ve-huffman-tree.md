@@ -8,7 +8,7 @@ tags:
   - data-structure
   - heap
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/HEAP1/](http://vn.spoj.com/problems/HEAP1/)
+# Link bài gốc : [http://vnoi.info/problems/show/HEAP1/](http://vnoi.info/problems/show/HEAP1/)
 # Đề bài
 Một người nông dân muốn cắt 1 thanh gỗ có độ dài L của mình thành N miếng , mỗi miếng có độ dài là 1 số nguyên dương A[i] ( A[1] + A[2] + … A[N] = L ) . Tuy nhiên để cắt một miếng gỗ có độ dài là X thành 2 phần thì ông ta sẽ mất X tiền . Ông nông dân này không giỏi tính toán lắm , vì vậy bạn được yêu cầu lập trình giúp ông ta cho biết cần để dành ít nhất bao nhiêu tiền thì mới có thể cắt được tấm gỗ như mong muốn . 
 

@@ -7,7 +7,7 @@ tags:
   - spoj
   - dijkstra
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/NETACCEL/](http://vn.spoj.com/problems/NETACCEL/)
+# Link bài gốc : [http://vnoi.info/problems/show/NETACCEL/](http://vnoi.info/problems/show/NETACCEL/)
 
 # Đề bài :
 Cho mạng máy tính gồm N máy và M liên kết hai chiều giữa các máy. Các máy được đánh số từ 1 đến N. Máy của Bờm là máy 1 còn máy của Cuội là máy N. Mỗi đường nối cần tốn một giá trị thời gian khác nhau để dữ liệu truyền qua. Tốc độ kết nối giữa hai máy là độ dài đường truyền dữ liệu ngắn nhất giữa hai máy đó.

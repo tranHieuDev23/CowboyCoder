@@ -8,7 +8,7 @@ tags:
   - bignum
   - dp
 ---
-## Link bài gốc : [http://vn.spoj.com/problems/PBCDEM/](http://vn.spoj.com/problems/PBCDEM/)
+## Link bài gốc : [http://vnoi.info/problems/show/PBCDEM/](http://vnoi.info/problems/show/PBCDEM/)
 
 ## Đề bài :
 

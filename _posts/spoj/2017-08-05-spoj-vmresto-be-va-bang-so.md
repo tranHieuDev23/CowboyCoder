@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề gốc: [http://vn.spoj.com/problems/VMRESTO/](http://vn.spoj.com/problems/VMRESTO/)
+# Link đề gốc: [http://vnoi.info/problems/show/VMRESTO/](http://vnoi.info/problems/show/VMRESTO/)
 
 # Đề bài
 Bé năm nay mới 7 tuổi, nhưng đã thể hiện niềm đam mê với Toán học. Bé rất thích chơi với những bảng sốN\*N - các hàng được đánh số từ0tớiN-1từ trên xuống dưới và các cột được đánh số từ0tớiN-1từ trái sang phải. Đặc biệt bé tỏ ra vô cùng hứng thú với những bảng số kỳ diệu - những bảng số có tổng mỗi hàng, tổng mỗi cột, tổng đường chéo chính và tổng đường chéo phụbằng nhau.

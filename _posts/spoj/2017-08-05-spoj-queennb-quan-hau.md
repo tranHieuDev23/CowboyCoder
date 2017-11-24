@@ -8,7 +8,7 @@ tags:
   - spoj
 ---
 # Đề gốc 
-[http://vn.spoj.com/problems/QUEENNB/](http://vn.spoj.com/problems/QUEENNB/)
+[http://vnoi.info/problems/show/QUEENNB/](http://vnoi.info/problems/show/QUEENNB/)
 # Đề bài
 Mất ngủ vì không có đối thủ trong môn cờ vua, KHUELD quyết định chế tạo một robot để chơi cờ với mình. Một trong những việc đầu tiên là phải “dạy” robot biết quy tắc không chế bàn cờ của quân hậu.
 

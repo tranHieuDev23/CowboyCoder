@@ -7,7 +7,7 @@ tags:
   - spoj
   - data-structure
 ---
-# Link Bài Gốc : [http://vn.spoj.com/problems/VOTREE/](http://vn.spoj.com/problems/VOTREE/)
+# Link Bài Gốc : [http://vnoi.info/problems/show/VOTREE/](http://vnoi.info/problems/show/VOTREE/)
 
 # Đề Bài :
 

@@ -8,7 +8,7 @@ tags:
   - bit
   - data-structure
 ---
-# Link đề bài : [http://vn.spoj.com/problems/NKLUCK/](http://vn.spoj.com/problems/NKLUCK/)
+# Link đề bài : [http://vnoi.info/problems/show/NKLUCK/](http://vnoi.info/problems/show/NKLUCK/)
 
 # Đề bài :
 

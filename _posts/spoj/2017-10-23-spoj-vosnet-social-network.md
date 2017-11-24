@@ -8,7 +8,7 @@ tags:
   - graph
   - math
 ---
-# Link đề bài: [http://vn.spoj.com/problems/VOSNET/](http://vn.spoj.com/problems/VOSNET/)
+# Link đề bài: [http://vnoi.info/problems/show/VOSNET/](http://vnoi.info/problems/show/VOSNET/)
 
 # Đề bài:
 

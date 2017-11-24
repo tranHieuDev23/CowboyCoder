@@ -8,7 +8,7 @@ tags:
   - dfs
   - graph
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/V8ORG/](http://vn.spoj.com/problems/V8ORG/)
+# Link bài gốc : [http://vnoi.info/problems/show/V8ORG/](http://vnoi.info/problems/show/V8ORG/)
 # Đề bài :
 Ở một đất nước nọ, lực lượng an ninh vừa phát hiện một tổ chức đối lập. Tổ chức đối lập này được tổ chức chặt chẽ, bao gồm mạng lưới thành viên và chỉ huy ở các cấp bậc khác nhau. Các thành viên của tổ chức được đánh số từ 1 đến N. Tổ chức có một chỉ huy tối cao, luôn được đánh số 1. Mỗi thành viên chỉ biết viên chỉ huy trực tiếp của mình \(có duy nhất một viên chỉ huy trực tiếp\) chứ không biết các chỉ huy cấp cao hơn.
 

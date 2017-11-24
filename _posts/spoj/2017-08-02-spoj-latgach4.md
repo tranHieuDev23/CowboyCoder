@@ -1,5 +1,5 @@
 ---
-title: '[SPOJ] - LATGACH4'
+title: '[SPOJ] LATGACH4'
 author: houtaru
 date: 2017-08-01T18:43:31.464Z
 thumbnail: '/img/uploads/[spoj] - latgach4.jpg'
@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề bài: 
 
-<http://vn.spoj.com/problems/LATGACH4/>
+<http://vnoi.info/problems/show/LATGACH4/>
 
 # Đề bài:
 

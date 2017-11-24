@@ -7,7 +7,7 @@ tags:
   - spoj
   - binary-search
 ---
-# Link đề gốc: [http://vn.spoj.com/problems/MINCUT/](http://vn.spoj.com/problems/MINCUT/)
+# Link đề gốc: [http://vnoi.info/problems/show/MINCUT/](http://vnoi.info/problems/show/MINCUT/)
 
 # Đề bài
 Cho A là lưới ô vuông gồm m dòng và n cột. Các dòng của lưới được đánh số từ 1 đến m, từ trên xuống dưới. Các cột của lưới được đánh số từ 1 đến n , từ trái sang phải. Ô nằm trên giao của dòng i và cột j của lưới, được gọi là ô \(i, j\), chứa số nguyên không âm a_i,j có giá trị không vượt quá 10 ^ 6.

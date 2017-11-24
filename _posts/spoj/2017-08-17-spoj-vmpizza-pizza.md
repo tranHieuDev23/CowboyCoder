@@ -8,7 +8,7 @@ tags:
   - SPOJ
   - data-structure
 ---
-# Link đề bài: [http://vn.spoj.com/problems/VMPIZZA/](http://vn.spoj.com/problems/VMPIZZA/)
+# Link đề bài: [http://vnoi.info/problems/show/VMPIZZA/](http://vnoi.info/problems/show/VMPIZZA/)
 
 # Đề bài:
 

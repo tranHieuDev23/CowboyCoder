@@ -7,10 +7,10 @@ tags:
   - spoj
   - data-structure
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/QMAX2/](http://vn.spoj.com/problems/QMAX2/)
+# Link bài gốc : [http://vnoi.info/problems/show/QMAX2/](http://vnoi.info/problems/show/QMAX2/)
 # Đề bài : 
 
-Giống bài QMAX ([http://vn.spoj.com/problems/QMAX/](http://vn.spoj.com/problems/QMAX/)) .
+Giống bài QMAX ([http://vnoi.info/problems/show/QMAX/](http://vnoi.info/problems/show/QMAX/)) .
 
 ## Input
 

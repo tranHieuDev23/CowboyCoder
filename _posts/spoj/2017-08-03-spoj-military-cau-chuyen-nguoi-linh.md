@@ -8,7 +8,7 @@ tags:
   - convex-hull
 ---
 # Link gốc
-[http://vn.spoj.com/problems/MILITARY/](http://vn.spoj.com/problems/MILITARY/)
+[http://vnoi.info/problems/show/MILITARY/](http://vnoi.info/problems/show/MILITARY/)
 
 # Đề bài
 

@@ -8,7 +8,7 @@ tags:
   - geometry
 ---
 # Link đề gốc:
-[http://vn.spoj.com/problems/BALLGMVN/](http://vn.spoj.com/problems/BALLGMVN/)
+[http://vnoi.info/problems/show/BALLGMVN/](http://vnoi.info/problems/show/BALLGMVN/)
 
 # Đề bài:
 Trong một hội thi Ballgame, ban tổ chức chuẩn bị một bàn lớn. Trên mặt bàn có n bi xanh đánh số từ 1 đến n và n bi đỏ đánh số từ n + 1 đến 2n. Mỗi trận đấu, các vận động viên sẽ chơi luân phiên nhau. Đến lượt chơi của mình, Hùng cần tìm 3 bi mà vị trí của chúng là thằng hàng hanu và sao cho trong số đó có hai bi đỏ và 1 bi xanh \(khi đó ăn được một bi đỏ\), hoặc là có hai bi xanh và 1 bi đỏ \(khi đó được ăn 1 bi xanh\).

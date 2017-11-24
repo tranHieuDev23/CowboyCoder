@@ -8,7 +8,7 @@ tags:
   - data-structure
   - Dp
 ---
-# Link đề bài: [http://vn.spoj.com/problems/NKMAXSEQ/](http://vn.spoj.com/problems/NKMAXSEQ/)
+# Link đề bài: [http://vnoi.info/problems/show/NKMAXSEQ/](http://vnoi.info/problems/show/NKMAXSEQ/)
 
 # Đề bài:
 Cho dãy số nguyên a1, a2, …, an.

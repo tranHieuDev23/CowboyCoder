@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-[http://vn.spoj.com/problems/NK05MNIM/](http://vn.spoj.com/problems/NK05MNIM/)
+[http://vnoi.info/problems/show/NK05MNIM/](http://vnoi.info/problems/show/NK05MNIM/)
 
 # Đề bài:
 

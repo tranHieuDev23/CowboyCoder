@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề bài: 
 
-<http://vn.spoj.com/problems/C11CAL/>
+<http://vnoi.info/problems/show/C11CAL/>
 
 # Đề bài:
 

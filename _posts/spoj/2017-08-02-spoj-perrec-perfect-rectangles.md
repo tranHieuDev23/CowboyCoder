@@ -7,7 +7,7 @@ tags:
   - data-structure
   - spoj
 ---
-## Đề:[http://vn.spoj.com/problems/PERREC/](http://vn.spoj.com/problems/PERREC/)
+## Đề:[http://vnoi.info/problems/show/PERREC/](http://vnoi.info/problems/show/PERREC/)
 
 Cho 1 bảng kích thước N \* N được chia thành các ô vuông đơn vị. Mỗi ô vuông có thể có màu đen hoặc trắng. Bây giờ, định nghĩa 1 hình chữ nhật tốt là 1 hình chữ nhật có các cạnh song song với cạnh của bảng và chỉ chứa các ô vuông màu trắng. 1 hình chữ nhật được gọi là hoàn hảo, nếu nó là 1 hình chữ nhật tốt, và không tồn tại 1 hình chữ nhật tốt nào khác chứa nó \(tức không thể mở rộng hình chữ nhật này sang trái, phải, trên hay dưới\).
 

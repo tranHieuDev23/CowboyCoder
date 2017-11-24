@@ -8,7 +8,7 @@ tags:
   - spoj
 ---
 # Link gốc
-[http://vn.spoj.com/problems/QTSEQ/](http://vn.spoj.com/problems/QTSEQ/)
+[http://vnoi.info/problems/show/QTSEQ/](http://vnoi.info/problems/show/QTSEQ/)
 # Đề bài
 Một vụ tai nạn giao thông vừa xảy ra ngoài phố. Mọi người tò mò chen lấn vòng trong vòng ngoài để xem. Rất đông người xem vụ tai nạn như:khanh_can_k7, nhungngoisao, chicuong123, harry_porter_7, mr_ntt, manhboyak6. Một anh đến chậm không tài nào vào xem được. Tức quá, anh ta liền hét toáng lên:
 

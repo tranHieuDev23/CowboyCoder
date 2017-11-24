@@ -8,7 +8,7 @@ tags:
   - dp
   - geometry
 ---
-# Link đề bài : [http://www.spoj.com/problems/APIO10A/](http://www.spoj.com/problems/APIO10A/)
+# Link đề bài : [http://www.vnoi.info/problems/show/APIO10A/](http://www.vnoi.info/problems/show/APIO10A/)
 
 # Đề bài :
 

@@ -10,7 +10,7 @@ tags:
   - binary-search
   - data-structure
 ---
-# Link đề bài : [http://vn.spoj.com/problems/QBSEGPAR/](http://vn.spoj.com/problems/QBSEGPAR/)
+# Link đề bài : [http://vnoi.info/problems/show/QBSEGPAR/](http://vnoi.info/problems/show/QBSEGPAR/)
 
 # Đề bài : 
 

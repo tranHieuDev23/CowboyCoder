@@ -8,7 +8,7 @@ tags:
   - bit
   - data-structure
 ---
-# Link đề bài: [http://www.spoj.com/problems/MATSUM/](http://www.spoj.com/problems/MATSUM/)
+# Link đề bài: [http://www.vnoi.info/problems/show/MATSUM/](http://www.vnoi.info/problems/show/MATSUM/)
 
 # Đề bài:
 

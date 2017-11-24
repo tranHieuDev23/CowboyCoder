@@ -9,7 +9,7 @@ tags:
   - dp
 ---
 # Link gốc
-[http://vn.spoj.com/problems/VOSMAXK/](http://vn.spoj.com/problems/VOSMAXK/)
+[http://vnoi.info/problems/show/VOSMAXK/](http://vnoi.info/problems/show/VOSMAXK/)
 # Đề bài
 Benjamin là một cậu học sinh rất hiếu động và cũng rất ngoan. Ông già noel thầm nghĩ cậu bé này rất xứng đáng để được nhận quà trong ngày giáng sinh. Vốn bản tính tinh nghịch, cậu bé đã ghi ước nguyện của mình vào tờ giấy như sau:
 

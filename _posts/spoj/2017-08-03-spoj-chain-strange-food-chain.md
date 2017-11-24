@@ -8,7 +8,7 @@ tags:
   - dsu
   - data-structure
 ---
-# Link bài gốc : [http://www.spoj.com/problems/CHAIN/](http://www.spoj.com/problems/CHAIN/)
+# Link bài gốc : [http://www.vnoi.info/problems/show/CHAIN/](http://www.vnoi.info/problems/show/CHAIN/)
 
 # Đề bài :
 

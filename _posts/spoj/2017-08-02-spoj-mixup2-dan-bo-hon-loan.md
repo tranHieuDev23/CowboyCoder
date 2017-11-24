@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề gốc
 
-[http://vn.spoj.com/problems/MIXUP2/](http://vn.spoj.com/problems/MIXUP2/)
+[http://vnoi.info/problems/show/MIXUP2/](http://vnoi.info/problems/show/MIXUP2/)
 
 # Đề bài:
 

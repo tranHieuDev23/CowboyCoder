@@ -9,7 +9,7 @@ tags:
   - bfs
 ---
 # Link gốc
-[http://vn.spoj.com/problems/VOSCUN/](http://vn.spoj.com/problems/VOSCUN/)
+[http://vnoi.info/problems/show/VOSCUN/](http://vnoi.info/problems/show/VOSCUN/)
 # Đề bài
 Cho một khối lập phương NxNxN được tạo thành bởi việc xếp nhiều cái lồng lên nhau. Các lồng được đánh số từ (1,1,1) đến (N,N,N). Bên trong mỗi lồng có một con cáo, nó mong muốn được tới lồng (1,1,1). Tuy nhiên, các con cáo này không phải là những con cáo bình thường, đây trở thành vấn đề bạn cần giải quyết.
 

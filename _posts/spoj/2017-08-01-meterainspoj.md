@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/METERAIN/](http://vn.spoj.com/problems/METERAIN/)
+[http://vnoi.info/problems/show/METERAIN/](http://vnoi.info/problems/show/METERAIN/)
 
 # Đề bài: 
 Phú ông nhận được thông tin về một trận mưa thiên thạch sắp ập xuống trái đất. Không những thế, Phú ông còn biết tọa độ của vị trí điểm rơi của mỗi một thiên thạch. Phú ông nhờ Cuội xác định xem có bao nhiêu thiên thạch có thể rơi xuống cánh đồng của ông ta. Cánh đồng của Phú ông có dạng một hình đa giác lồi được xác định bởi danh sách các đỉnh được liệt kê theo thứ tự ngược chiều kim đồng hồ.

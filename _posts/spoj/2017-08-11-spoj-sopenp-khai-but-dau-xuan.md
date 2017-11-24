@@ -8,7 +8,7 @@ tags:
   - data-structute
   - two-pointer
 ---
-# Link đề bài : [http://vn.spoj.com/problems/SOPENP/](http://vn.spoj.com/problems/SOPENP/)
+# Link đề bài : [http://vnoi.info/problems/show/SOPENP/](http://vnoi.info/problems/show/SOPENP/)
 
 # Đề bài :
 

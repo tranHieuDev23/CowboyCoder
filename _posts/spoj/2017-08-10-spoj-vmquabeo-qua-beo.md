@@ -9,7 +9,7 @@ tags:
   - rmq
   - data-structure
 ---
-# Link đề gốc: [http://vn.spoj.com/problems/VMQUABEO/](http://vn.spoj.com/problems/VMQUABEO/)
+# Link đề gốc: [http://vnoi.info/problems/show/VMQUABEO/](http://vnoi.info/problems/show/VMQUABEO/)
 
 # Đề bài
 Cân nặng đã ở mức đáng báo động, admin K quyết định tập chạy để giảm cân. Khu vực admin K sống có một con đường dài, điểm đầu của con đường là điểm 0, điểm cuối của con đường là điểm N-1. Các điểm cách đều nhau một khoảng 1 đơn vị độ dài; điểm thứ i có độ cao H\[i\]. Admin K muốn chọn ra một đoạn đường để tập chạy sao cho:

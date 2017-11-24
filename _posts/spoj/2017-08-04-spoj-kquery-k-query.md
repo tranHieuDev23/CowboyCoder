@@ -7,7 +7,7 @@ tags:
   - spoj
   - data-structure
 ---
-# Link đề bài gốc : [http://www.spoj.com/problems/KQUERY/](http://www.spoj.com/problems/KQUERY/)
+# Link đề bài gốc : [http://www.vnoi.info/problems/show/KQUERY/](http://www.vnoi.info/problems/show/KQUERY/)
 
 # Đề bài :
 

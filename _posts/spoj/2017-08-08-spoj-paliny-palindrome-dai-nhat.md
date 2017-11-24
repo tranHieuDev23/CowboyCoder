@@ -8,7 +8,7 @@ tags:
   - string
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/PALINY/](http://vn.spoj.com/problems/PALINY/)
+# Đề: [http://vnoi.info/problems/show/PALINY/](http://vnoi.info/problems/show/PALINY/)
 
 Cho xâu S. Tìm xâu đối xứng dài nhất gồm các kí tự liên tiếp trong S
 

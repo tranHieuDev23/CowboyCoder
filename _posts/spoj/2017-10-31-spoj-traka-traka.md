@@ -8,7 +8,7 @@ tags:
   - shortest-path
   - geometry
 ---
-# Link đề bài: [www.spoj.com/problems/TRAKA/](www.spoj.com/problems/TRAKA/)
+# Link đề bài: [www.vnoi.info/problems/show/TRAKA/](www.vnoi.info/problems/show/TRAKA/)
 
 # Đề bài:
 

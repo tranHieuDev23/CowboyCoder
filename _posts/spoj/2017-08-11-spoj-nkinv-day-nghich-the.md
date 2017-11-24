@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/NKINV/](http://vn.spoj.com/problems/NKINV/)
+[http://vnoi.info/problems/show/NKINV/](http://vnoi.info/problems/show/NKINV/)
 
 # Đề bài:
 

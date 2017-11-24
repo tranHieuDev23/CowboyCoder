@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề bài : [http://vn.spoj.com/problems/KSEQ1/](http://vn.spoj.com/problems/KSEQ1/)
+# Link đề bài : [http://vnoi.info/problems/show/KSEQ1/](http://vnoi.info/problems/show/KSEQ1/)
 
 # Đề bài :
 

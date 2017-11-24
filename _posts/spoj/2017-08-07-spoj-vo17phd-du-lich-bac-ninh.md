@@ -8,7 +8,7 @@ tags:
   - shortest-path
 ---
 # Link gốc
-[http://vn.spoj.com/problems/VO17PHD/](http://vn.spoj.com/problems/VO17PHD/)
+[http://vnoi.info/problems/show/VO17PHD/](http://vnoi.info/problems/show/VO17PHD/)
 # Đề bài
 Sau khi ra đề xong cho kỳ thi VNOP (Vietnam National Olympiad in Philosophy) Online 2017, GS - TSKH - NGND - CVCC kiêm nhà Đông Phương học PVH quyết định tự thưởng cho mình một chuyến du lịch Bắc Ninh.
 

@@ -9,7 +9,7 @@ tags:
   - dsu
   - graph
 ---
-# Link đề bài: [http://www.spoj.com/problems/RELINETS/](http://www.spoj.com/problems/RELINETS/)
+# Link đề bài: [http://www.vnoi.info/problems/show/RELINETS/](http://www.vnoi.info/problems/show/RELINETS/)
 
 # Đề bài:
 Cho đồ thị n đỉnh m cạnh mỗi cạnh có trọng số c. Bạn phải tạo 1 đồ thị sao cho bỏ đi 1 cạnh bất kì đồ thị vẫn liên thông. trọng số của đồ thị = tổng các trọng số cạnh. Tính trọng số bé nhất của đồ thị đảm bảo yêu cầu bài toán.

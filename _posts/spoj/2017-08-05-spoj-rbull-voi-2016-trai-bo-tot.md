@@ -9,7 +9,7 @@ tags:
   - dp
   - voi
 ---
-# Linh đề gốc : [http://vn.spoj.com/problems/RBULL/](http://vn.spoj.com/problems/RBULL/)
+# Linh đề gốc : [http://vnoi.info/problems/show/RBULL/](http://vnoi.info/problems/show/RBULL/)
 
 # Đề bài
 

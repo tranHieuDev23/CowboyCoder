@@ -8,7 +8,7 @@ tags:
   - max-flow
 ---
 # Link gốc
-[http://vn.spoj.com/problems/JOBSET/](http://vn.spoj.com/problems/JOBSET/)
+[http://vnoi.info/problems/show/JOBSET/](http://vnoi.info/problems/show/JOBSET/)
 # Đề bài
 Công ty xây dựng SVI phải lựa chọn các dự án cần thực hiện để lợi nhuận đem lại là nhiều nhất. Công ty có một danh sách gồm n dự án đánh số từ 1 đến n. Sau khi công ty rà soát năng lự thực hiện các dự án, công ty đưa ra bảng đánh giá hiệu quả (có thể là lợi nhuận hoặc thua lỗ) từ việc thực hiện dự án i là pi (nếu pi &gt; 0 đó là lợi nhuận, ngược lại nếu pi &lt; 0 thì đó là thua lỗi phải chị từ việc thực hiện dự án i, |pi| &lt; 10^6). Việc lựa chọn các dự án cần thực hiện để lợi nhuận đem lại là lớn nhất không phải là đơn giản bời vì công ty không thể chi lựa chọn các công việc đem lại lợi nhuận để thực hiện. Có một danh sách gồm m điều kiện liên quan đến việc lựa chọn thực hiện các dự án. Điều kiện thứ j yêu cầu: "Nếu thực hiện dự án uj thì phải thực hiện dự án vj", j = 1, 2, .., m. Một tập con các dự án được gọi là lựa chọn được nếu mỗi dự án trong nó luôn thỏa mãn các điều kiện trong danh sách.
 

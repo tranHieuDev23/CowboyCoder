@@ -8,7 +8,7 @@ tags:
   - bfs
   - spoj
 ---
-# Link đề bài : [http://vn.spoj.com/problems/VO17SORT/](http://vn.spoj.com/problems/VO17SORT/)
+# Link đề bài : [http://vnoi.info/problems/show/VO17SORT/](http://vnoi.info/problems/show/VO17SORT/)
 
 # Đề bài :
 

@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/CRATE/](http://vn.spoj.com/problems/CRATE/)
+[http://vnoi.info/problems/show/CRATE/](http://vnoi.info/problems/show/CRATE/)
 
 # Đề bài:
 

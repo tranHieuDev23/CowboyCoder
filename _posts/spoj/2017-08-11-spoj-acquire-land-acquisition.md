@@ -8,7 +8,7 @@ tags:
   - dp
   - convex-hull
 ---
-# Link đề bài : [http://www.spoj.com/problems/ACQUIRE/](http://www.spoj.com/problems/ACQUIRE/)
+# Link đề bài : [http://www.vnoi.info/problems/show/ACQUIRE/](http://www.vnoi.info/problems/show/ACQUIRE/)
 
 # Đề bài :
 

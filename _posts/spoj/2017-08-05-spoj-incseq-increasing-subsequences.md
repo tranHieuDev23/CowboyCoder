@@ -9,7 +9,7 @@ tags:
   - data-structure
   - bit
 ---
-# Link đề bài : [http://www.spoj.com/problems/INCSEQ/](http://www.spoj.com/problems/INCSEQ/)
+# Link đề bài : [http://www.vnoi.info/problems/show/INCSEQ/](http://www.vnoi.info/problems/show/INCSEQ/)
 
 # Đề bài :
 Cho 1 dãy N phần tử (1 <= N <= 10^4). Đếm số dãy con tăng độ dài k (1 <= k <= 50 && k <= N).

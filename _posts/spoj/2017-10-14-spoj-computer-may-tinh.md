@@ -8,7 +8,7 @@ tags:
   - dp
   - binary search
 ---
-## Link đề bài : [http://vn.spoj.com/problems/COMPUTER/](http://vn.spoj.com/problems/COMPUTER/)
+## Link đề bài : [http://vnoi.info/problems/show/COMPUTER/](http://vnoi.info/problems/show/COMPUTER/)
 
 ## Đề bài:
 Công ty phần mềm XYZ mới mua x máy tính để bàn và y máy tính xách tay. Giá một chiếc máy tính để bàn là a đôla còn giá một chiếc máy tính xách tay là b đôla. Để tránh sự thắc mắc giữa các phòng ban, Tổng giám đốc đã đưa ra cách phân bổ các máy tính này về n phòng ban như sau:

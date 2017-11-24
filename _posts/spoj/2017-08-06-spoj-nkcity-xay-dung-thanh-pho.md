@@ -7,7 +7,7 @@ tags:
   - spoj
   - kruskal
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/NKCITY/](http://vn.spoj.com/problems/NKCITY/)
+# Link bài gốc : [http://vnoi.info/problems/show/NKCITY/](http://vnoi.info/problems/show/NKCITY/)
 # Đề bài :
 Nước Anpha đang lập kế hoạch xây dựng một thành phố mới và hiện đại. 
 Theo kế hoạch, thành phố sẽ có N vị trí quan trọng, được gọi là N trọng 

@@ -7,7 +7,7 @@ tags:
   - dp
   - qhd
 ---
-# Link gốc : [http://vn.spoj.com/problems/AMSSEQ/](http://vn.spoj.com/problems/AMSSEQ/).
+# Link gốc : [http://vnoi.info/problems/show/AMSSEQ/](http://vnoi.info/problems/show/AMSSEQ/).
 
 # Đề bài :
 Cho 1 dãy số gồm N phần tử \(N ≤ 10000\), mỗi phần tử có 1 giá trị nằm trong khoảng \[-1000, 1000\]. Ban đầu, bạn sẽ ở vị trí ô số 0 với tổng điểm là 0. Mỗi nước đi, người chơi có thể di chuyển sang phải tối thiểu là 1 bước và tối đa là K bước \(K ≤ 10\) . Khi dừng lại ở 1 ô nào đó thì giá trị của ô đó sẽ được cộng vào tổng điểm. Bạn có thể dừng cuộc chơi bất cứ lúc nào. Hãy tìm cách chơi sao cho tổng điểm nhận được là nhiều nhất.

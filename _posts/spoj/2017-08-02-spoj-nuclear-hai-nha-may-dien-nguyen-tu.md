@@ -8,7 +8,7 @@ tags:
   - data-structure
 ---
 # Link đề bài gốc: 
-[http://vn.spoj.com/problems/NUCLEAR/](http://vn.spoj.com/problems/NUCLEAR/)
+[http://vnoi.info/problems/show/NUCLEAR/](http://vnoi.info/problems/show/NUCLEAR/)
 # Đề bài:
 
 Hai nhà máy điện nguyên tử sẽ được xây dựng tại Byteland trong tương lai gần. Nhà máy điện thứ nhất có bán kính nguy hiểm là R1 và nhà máy điện thứ hai có bán kính nguy hiểm là R2. Để tránh bị nhiễm phóng xạ, tất cả các hộ gia đình cách nhà máy thứ nhất <= R1 km hoặc cách nhà máy thứ hai <= R2 km sẽ phải chuyển chỗ ở.Hai nhà máy sẽ được xây dựng cũng như các hộ gia đình đều nằm trên mặt phẳng với hệ tọa độ Descartes vuông góc , trong đó khoảng cách giữa hai điểm (x1,y1) và (x2,y2) được tính theo công thức:

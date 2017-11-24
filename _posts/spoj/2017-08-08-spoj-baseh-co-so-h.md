@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề bài : [http://vn.spoj.com/problems/BASEH/](http://vn.spoj.com/problems/BASEH/).
+# Link đề bài : [http://vnoi.info/problems/show/BASEH/](http://vnoi.info/problems/show/BASEH/).
 
 ## Đề bài :
 Cho một dãy số a\[1\],a\[2\],a\[3\],...,a\[n\] và hai số K,H được xác định như sau:

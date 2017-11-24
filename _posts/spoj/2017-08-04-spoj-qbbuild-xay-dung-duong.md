@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/QBBUILD/](http://vn.spoj.com/problems/QBBUILD/)
+[http://vnoi.info/problems/show/QBBUILD/](http://vnoi.info/problems/show/QBBUILD/)
 
 # Đề bài:
 

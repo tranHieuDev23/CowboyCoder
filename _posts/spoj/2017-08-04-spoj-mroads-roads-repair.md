@@ -12,7 +12,7 @@ tags:
   - dp
 ---
 # Link gốc
-[http://vn.spoj.com/problems/MROADS/](http://vn.spoj.com/problems/MROADS/)
+[http://vnoi.info/problems/show/MROADS/](http://vnoi.info/problems/show/MROADS/)
 # Đề bài
 Có N thành phố và N-1 cặp đường nối chúng, có duy nhất 1 đường nối 2 thành phố khác nhau.
 

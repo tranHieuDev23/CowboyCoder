@@ -7,7 +7,7 @@ tags:
   - data-structure
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/KGSS/](http://vn.spoj.com/problems/KGSS/)
+# Đề: [http://vnoi.info/problems/show/KGSS/](http://vnoi.info/problems/show/KGSS/)
 
 Cho N<=1e5 số. cho Q<=1e5 truy vấn
 

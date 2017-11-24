@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề bài : [www.spoj.com/problems/BYTESH1/](www.spoj.com/problems/BYTESH1/)
+# Link đề bài : [www.vnoi.info/problems/show/BYTESH1/](www.vnoi.info/problems/show/BYTESH1/)
 # Đề bài :
 Cho 2 loại gạch : 1x2, hình chữ L (gồm 3 ô vuông). đếm số cách xếp gạch để lấp đầy hình chữ nhật 2xN ô.
 

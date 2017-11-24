@@ -8,7 +8,7 @@ tags:
   - dp
   - geometry
 ---
-# Link đề gốc: <http://vn.spoj.com/problems/NKLEAVES/>
+# Link đề gốc: <http://vnoi.info/problems/show/NKLEAVES/>
 
 Một ngày thu đẹp trời, Radu và Mars nhận ra rằng khu vườn của họ chứa đầy lá rụng. Họ quyết định gom lá thành đúng K đống lá.
 

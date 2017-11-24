@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề gốc: [http://vn.spoj.com/problems/VMDAOBIT/](http://vn.spoj.com/problems/VMDAOBIT/)
+# Link đề gốc: [http://vnoi.info/problems/show/VMDAOBIT/](http://vnoi.info/problems/show/VMDAOBIT/)
 
 # Đề bài
 

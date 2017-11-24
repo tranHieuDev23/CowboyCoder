@@ -9,7 +9,7 @@ tags:
   - data-structure
   - binary-search
 ---
-# Link đề bài : [http://vn.spoj.com/problems/MDOLLS/](http://vn.spoj.com/problems/MDOLLS/)
+# Link đề bài : [http://vnoi.info/problems/show/MDOLLS/](http://vnoi.info/problems/show/MDOLLS/)
 
 # Đề bài :
 "Dilworth" có một bộ sưu tập các con búp bê Nga.  Búp bê với chiều rộng w1 

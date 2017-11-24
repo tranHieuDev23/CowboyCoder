@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề gốc:
 
-<http://vn.spoj.com/problems/MINK/>
+<http://vnoi.info/problems/show/MINK/>
 
 # Đề bài:
 

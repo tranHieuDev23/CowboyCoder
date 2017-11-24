@@ -8,7 +8,7 @@ tags:
   - bitmask
 ---
 # Link bài gốc: 
-[http://vn.spoj.com/problems/QBGAME/](http://vn.spoj.com/problems/QBGAME/)
+[http://vnoi.info/problems/show/QBGAME/](http://vnoi.info/problems/show/QBGAME/)
 
 # Đề bài:
 

@@ -8,7 +8,7 @@ tags:
   - Math
   - spoj
 ---
-# Link đề bài : [http://vn.spoj.com/problems/INTEGER7/](http://vn.spoj.com/problems/INTEGER7/)
+# Link đề bài : [http://vnoi.info/problems/show/INTEGER7/](http://vnoi.info/problems/show/INTEGER7/)
 
 # Đề bài :
 Tìm hai số nguyên không âm x1 và x2 thỏa mãn a1 * x1 + b1 = a2 * x2 + b2 và x1 + x2 là nhỏ nhất. Biết rằng luôn tồn tại số x1, x2 thỏa mãn.

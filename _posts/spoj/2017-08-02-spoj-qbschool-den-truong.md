@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề gốc:
 
-[http://vn.spoj.com/problems/QBSCHOOL/](http://vn.spoj.com/problems/QBSCHOOL/)
+[http://vnoi.info/problems/show/QBSCHOOL/](http://vnoi.info/problems/show/QBSCHOOL/)
 
 # Đề bài:
 

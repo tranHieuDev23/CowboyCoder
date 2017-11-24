@@ -8,7 +8,7 @@ tags:
   - graph
 ---
 # Link bài gốc: 
-[http://vn.spoj.com/problems/UPGRANET/](http://vn.spoj.com/problems/UPGRANET/)
+[http://vnoi.info/problems/show/UPGRANET/](http://vnoi.info/problems/show/UPGRANET/)
 
 
 # Đề bài:

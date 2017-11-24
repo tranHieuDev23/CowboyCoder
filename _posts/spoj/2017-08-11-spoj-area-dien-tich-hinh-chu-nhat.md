@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/AREA/](http://vn.spoj.com/problems/AREA/)
+[http://vnoi.info/problems/show/AREA/](http://vnoi.info/problems/show/AREA/)
 
 # Đề bài:
 

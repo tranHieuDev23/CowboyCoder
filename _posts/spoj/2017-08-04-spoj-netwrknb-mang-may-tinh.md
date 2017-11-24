@@ -7,7 +7,7 @@ tags:
   - data-structure
   - dfs
 ---
-# Link đề bài gốc : [http://vn.spoj.com/problems/NETWRKNB/](http://vn.spoj.com/problems/NETWRKNB/)
+# Link đề bài gốc : [http://vnoi.info/problems/show/NETWRKNB/](http://vnoi.info/problems/show/NETWRKNB/)
 # Đề bài : 
 Những ngày nghỉ tại NTU là thời gian để ANHNT ngẫm nghĩ về các cấu trúc mạng máy tính. Mạng mà ANHNT đang nghiên cứu gồm có 𝑛 máy tính đánh số từ 1 tới 𝑛 và 𝑛 − 1 dây cáp mạng đánh số từ 1 tới 𝑛 − 1. Dây cáp thứ 𝑖 nối giữa hai máy tính 𝑢𝑖 , 𝑣𝑖 và cho phép truyền tin giữa hai máy này theo cả hai chiều với độ tin cậy là 𝑤𝑖 .
 

@@ -6,7 +6,7 @@ thumbnail: /img/uploads/VMRR-graph.jpg
 tags:
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/VMRR/](http://vn.spoj.com/problems/VMRR/)
+# Đề: [http://vnoi.info/problems/show/VMRR/](http://vnoi.info/problems/show/VMRR/)
 
 Có một điều bí mật, mà xưa nay chỉ được lưu truyền giữa các admin VNOI, là RR có những sở thích rất khác người. Không chỉ dừng lại ở việc ngồi ngắm bảng rank của các kỳ thi trên mạng hàng tiếng đồng hồ hay ngồi học thuộc tên của các coder nổi tiếng thế giới, RR còn có sở thích tìm tên mình trong những chuỗi văn bản dài...
 

@@ -8,7 +8,7 @@ tags:
   - SPOJ
   - data-structure
 ---
-# Link bài viết: [http://vn.spoj.com/problems/IOIBIN/](http://vn.spoj.com/problems/IOIBIN/)
+# Link bài viết: [http://vnoi.info/problems/show/IOIBIN/](http://vnoi.info/problems/show/IOIBIN/)
 
 # Đề bài:
 Có N thùng nước được đánh số từ 1 đến N, giữa 2 thùng bất kỳ đều có một ống nối có một van có thể khóa hoặc mở. Ở trạng thái ban đầu tất cả các van đều đóng.

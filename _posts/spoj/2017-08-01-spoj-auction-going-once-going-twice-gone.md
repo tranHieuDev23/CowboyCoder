@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc: 
 
-<http://vn.spoj.com/problems/AUCTION/>
+<http://vnoi.info/problems/show/AUCTION/>
 
 # Đề bài :
 

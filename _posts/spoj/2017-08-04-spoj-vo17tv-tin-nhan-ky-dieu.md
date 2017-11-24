@@ -7,7 +7,7 @@ tags:
   - binary-search
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/VO17TV/](http://vn.spoj.com/problems/VO17TV/)
+# Đề: [http://vnoi.info/problems/show/VO17TV/](http://vnoi.info/problems/show/VO17TV/)
 
 Ngoại tình là một trong những việc làm bị xã hội gay gắt nhất. Có ba kiểu ngoại tình chủ yếu: Tán vợ hàng xóm, ... vợ bạn và cưới cô em vợ. Có những vụ ngoại tình cưới em vợ đã đi vào thi ca Việt Nam mà giờ đây chúng ta ai cũng biết.
 

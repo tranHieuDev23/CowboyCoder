@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề gốc: [http://vn.spoj.com/problems/LEM7/](http://vn.spoj.com/problems/LEM7/)
+# Link đề gốc: [http://vnoi.info/problems/show/LEM7/](http://vnoi.info/problems/show/LEM7/)
 
 # Đề bài
 Một công ty gồm một số phòng, mỗi phòng gồm 1 số lãnh đạo và 1 số nhân viên, trong phòng không có ai vừa là lãnh đạo vừa là nhân viên. Không có 2 người nào cùng thuộc 2 phòng khác nhau. Mỗi lãnh đạo điều hành công việc của mọi nhân viên trong phòng nhưng 2 lãnh đạo thuộc cùng phòng không điều hành nhau. Hiệu quả của 1 phòng được tính bằng số lượng quan hệ trong phòng đó.

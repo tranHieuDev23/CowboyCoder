@@ -11,7 +11,7 @@ tags:
 ---
 # Link bài tập gốc (tiếng Anh)
 
-[http://www.spoj.com/problems/QTREE/](http://www.spoj.com/problems/QTREE/)
+[http://www.vnoi.info/problems/show/QTREE/](http://www.vnoi.info/problems/show/QTREE/)
 
 # Đề bài (tiếng Việt):
 

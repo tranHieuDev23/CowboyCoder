@@ -10,7 +10,7 @@ tags:
 ---
 # Link bài gốc: 
 
-<http://vn.spoj.com/problems/KDIFF/>
+<http://vnoi.info/problems/show/KDIFF/>
 
 # Đề bài:
 

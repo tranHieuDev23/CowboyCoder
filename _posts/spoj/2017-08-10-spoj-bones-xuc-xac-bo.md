@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề gốc: <http://vn.spoj.com/problems/BONES/>.
+# Link đề gốc: <http://vnoi.info/problems/show/BONES/>.
 
 # Đề bài :
 

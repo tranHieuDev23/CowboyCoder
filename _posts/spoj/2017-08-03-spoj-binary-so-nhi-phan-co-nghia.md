@@ -7,7 +7,7 @@ tags:
   - math
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/BINARY/](http://vn.spoj.com/problems/BINARY/)
+# Đề: [http://vnoi.info/problems/show/BINARY/](http://vnoi.info/problems/show/BINARY/)
 
 Cho số nguyên không âm N (N < 2^31). Hãy xác định xem trong phạm vi từ 0 tới N có bao nhiêu số mà trong dạng biểu diễn nhị phân của nó có đúng K chữ số 0 có nghĩa.
 

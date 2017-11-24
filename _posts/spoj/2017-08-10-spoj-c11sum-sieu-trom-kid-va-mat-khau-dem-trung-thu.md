@@ -7,7 +7,7 @@ tags:
   - spoj
   - dp
 ---
-# Link đề gốc : <http://vn.spoj.com/problems/C11SUM/>.
+# Link đề gốc : <http://vnoi.info/problems/show/C11SUM/>.
 
 # Đề bài :
 

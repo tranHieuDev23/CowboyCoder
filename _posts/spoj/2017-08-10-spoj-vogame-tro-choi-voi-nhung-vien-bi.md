@@ -8,7 +8,7 @@ tags:
   - dp
 ---
 # Link gốc
-[http://vn.spoj.com/problems/VOGAME/](http://vn.spoj.com/problems/VOGAME/)
+[http://vnoi.info/problems/show/VOGAME/](http://vnoi.info/problems/show/VOGAME/)
 # Đề bài
 Cho một cái hộp có N viên bi đánh số từ 1 đến N có màu đỏ (màu 1) hoặc màu đen (màu 0). Màu của các viên bi được cho bởi dãy A gồm D số 0 hoặc 1:
 

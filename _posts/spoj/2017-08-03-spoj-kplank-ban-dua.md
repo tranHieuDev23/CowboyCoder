@@ -8,7 +8,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-[http://vn.spoj.com/problems/KPLANK/](http://vn.spoj.com/problems/KPLANK/)
+[http://vnoi.info/problems/show/KPLANK/](http://vnoi.info/problems/show/KPLANK/)
 
 # Đề bài:
 

@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề bài : [http://vn.spoj.com/problems/C11ID/](http://vn.spoj.com/problems/C11ID/)
+# Link đề bài : [http://vnoi.info/problems/show/C11ID/](http://vnoi.info/problems/show/C11ID/)
 
 # Đề bài :
 

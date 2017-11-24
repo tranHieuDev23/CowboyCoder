@@ -7,7 +7,7 @@ tags:
   - graph
   - spoj
 ---
-# Đề: [http://vn.spoj.com/problems/CHEER/](http://vn.spoj.com/problems/CHEER/)
+# Đề: [http://vnoi.info/problems/show/CHEER/](http://vnoi.info/problems/show/CHEER/)
 
 Bác John dạo này lười đến nỗi không muốn bảo trì các con đường dẫn bác đến thăm N \(5 &lt;= N &lt;= 10,000\) cánh đồng \(đánh số từ 1 đến N\) nữa. Mỗi cánh đồng là nơi ở của một cô bò. Bác John có kế hoạch loại bỏ nhiều nhất P \(N-1 &lt;= P &lt;= 100,000\) con đường sao cho các cánh đồng vẫn liên thông.
 

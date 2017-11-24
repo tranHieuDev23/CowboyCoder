@@ -8,7 +8,7 @@ tags:
 ---
 # Link đề gốc:
 
-http://vn.spoj.com/problems/QBDIVSEQ/
+http://vnoi.info/problems/show/QBDIVSEQ/
 
 # Đề bài:
 

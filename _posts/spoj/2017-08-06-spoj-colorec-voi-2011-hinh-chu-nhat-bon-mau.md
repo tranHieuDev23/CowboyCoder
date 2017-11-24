@@ -6,7 +6,7 @@ thumbnail: /img/uploads/COLOREC_Image.jpg
 tags:
   - implementation
 ---
-# Link đề bài gốc : [http://vn.spoj.com/problems/COLOREC/](http://vn.spoj.com/problems/COLOREC/)
+# Link đề bài gốc : [http://vnoi.info/problems/show/COLOREC/](http://vnoi.info/problems/show/COLOREC/)
 # Đề bài : 
 
 Trên mặt phẳng tọa độ Đề các vuông góc Oxy cho n điểm phân biệt Ai\(xi, yi\) i = 1, 2, 3, …, n.   Mỗi điểm Ai được tô bởi màu Ci thuộc {1, 2, 3, 4}. Ta gọi hình chữ nhật bốn màu là hình chữ nhật thỏa mãn hai điều kiện sau:

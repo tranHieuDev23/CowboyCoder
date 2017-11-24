@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/LEM4/](http://vn.spoj.com/problems/LEM4/)
+[http://vnoi.info/problems/show/LEM4/](http://vnoi.info/problems/show/LEM4/)
 
 # Đề bài
 

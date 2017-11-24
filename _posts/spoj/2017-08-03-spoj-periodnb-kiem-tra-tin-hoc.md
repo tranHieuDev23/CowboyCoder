@@ -9,7 +9,7 @@ tags:
   - dp
 ---
 # Link gốc
-[http://vn.spoj.com/problems/PERIODNB/](http://vn.spoj.com/problems/PERIODNB/)
+[http://vnoi.info/problems/show/PERIODNB/](http://vnoi.info/problems/show/PERIODNB/)
 # Đề bài
 Dạy tin học cơ sở luôn là công việc vất vả ngay cả với những giáo viên nhiều kinh nghiệm như thầy HUNGNT. Trong giờ bài tập tin học, có 𝑛 học sinh ngồi quanh một bàn tròn, các học sinh được đánh số
 từ 1 tới 𝑛 theo chiều kim đồng hồ. Xuất phát từ một vị trí từ đầu buổi học, thầy HUNGNT phải đi một vòng quanh bàn theo chiều kim đồng hồ để hướng dẫn từng bạn theo đúng thứ tự thầy đi qua. Mỗi bạn được thầy hướng dẫn đúng Δ micro giây (μs) và sau đó bắt tay vào lập trình ngay trong khi thầy chuyển sang hướng dẫn bạn kế tiếp theo chiều kim đồng hồ…, thời gian di chuyển của thầy coi như không đáng kể. 

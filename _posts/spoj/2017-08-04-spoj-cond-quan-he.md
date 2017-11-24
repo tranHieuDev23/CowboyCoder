@@ -7,7 +7,7 @@ tags:
   - spoj
 ---
 # Link đề gốc: 
-[http://vn.spoj.com/problems/COND/](http://vn.spoj.com/problems/COND/)
+[http://vnoi.info/problems/show/COND/](http://vnoi.info/problems/show/COND/)
 
 # Đề bài:
 

@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc 
 
-[http://vn.spoj.com/problems/JEWELNB/](http://vn.spoj.com/problems/JEWELNB/)
+[http://vnoi.info/problems/show/JEWELNB/](http://vnoi.info/problems/show/JEWELNB/)
 
 # Đề bài
 

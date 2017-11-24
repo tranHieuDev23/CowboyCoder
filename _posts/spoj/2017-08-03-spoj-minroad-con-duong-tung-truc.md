@@ -8,7 +8,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-[http://vn.spoj.com/problems/MINROAD/](http://vn.spoj.com/problems/MINROAD/)
+[http://vnoi.info/problems/show/MINROAD/](http://vnoi.info/problems/show/MINROAD/)
 
 # Đề bài:
 

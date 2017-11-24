@@ -9,7 +9,7 @@ tags:
   - heavy-light-decomposition
   - data-structure
 ---
-# Link đề bài : [http://vn.spoj.com/problems/QTREE3/](http://vn.spoj.com/problems/QTREE3/)
+# Link đề bài : [http://vnoi.info/problems/show/QTREE3/](http://vnoi.info/problems/show/QTREE3/)
 
 # Đề bài:
 

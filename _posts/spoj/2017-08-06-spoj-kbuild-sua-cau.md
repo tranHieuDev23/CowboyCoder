@@ -6,7 +6,7 @@ thumbnail: /img/uploads/KBUILD_Image.jpg
 tags:
   - data-structure
 ---
-# Link đề bài gốc : [http://vn.spoj.com/problems/KBUILD/](http://vn.spoj.com/problems/KBUILD/)
+# Link đề bài gốc : [http://vnoi.info/problems/show/KBUILD/](http://vnoi.info/problems/show/KBUILD/)
 # Đề bài : 
 
 Vì lo lắng Pirate sẽ buồn chán khi một thân một mình ở đảo hoang, bạn gái Pirate từ trong đất liền dự định sang chơi với anh ấy.

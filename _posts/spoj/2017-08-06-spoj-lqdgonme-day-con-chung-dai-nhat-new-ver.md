@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-[http://vn.spoj.com/problems/LQDGONME/](http://vn.spoj.com/problems/LQDGONME/)
+[http://vnoi.info/problems/show/LQDGONME/](http://vnoi.info/problems/show/LQDGONME/)
 
 # Đề bài:
 

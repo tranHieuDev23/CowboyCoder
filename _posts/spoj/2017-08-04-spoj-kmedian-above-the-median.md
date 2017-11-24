@@ -9,7 +9,7 @@ tags:
   - dp
 ---
 # Link gốc
-[http://vn.spoj.com/problems/KMEDIAN/](http://vn.spoj.com/problems/KMEDIAN/)
+[http://vnoi.info/problems/show/KMEDIAN/](http://vnoi.info/problems/show/KMEDIAN/)
 
 # Đề bài (tiếng Anh, không nói cũng biết =)) )
 

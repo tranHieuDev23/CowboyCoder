@@ -7,7 +7,7 @@ tags:
   - spoj
   - implementation
 ---
-# Link đề bài : [http://vn.spoj.com/problems/NKNUMFRE/](http://vn.spoj.com/problems/NKNUMFRE/)
+# Link đề bài : [http://vnoi.info/problems/show/NKNUMFRE/](http://vnoi.info/problems/show/NKNUMFRE/)
 
 # Đề bài :
 

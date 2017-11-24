@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề gốc:
 
-<http://vn.spoj.com/problems/MBEEWALK/>
+<http://vnoi.info/problems/show/MBEEWALK/>
 
 # Đề bài:
 

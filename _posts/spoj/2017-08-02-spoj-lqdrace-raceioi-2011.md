@@ -10,7 +10,7 @@ tags:
 ---
 # Link đề gốc
 
-[http://vn.spoj.com/problems/LQDRACE/](http://vn.spoj.com/problems/LQDRACE/)
+[http://vnoi.info/problems/show/LQDRACE/](http://vnoi.info/problems/show/LQDRACE/)
 
 # Đề bài
 

@@ -7,7 +7,7 @@ tags:
   - spoj
   - greedy
 ---
-# Link bài gốc : [http://vn.spoj.com/problems/DHEXP/](http://vn.spoj.com/problems/DHEXP/)
+# Link bài gốc : [http://vnoi.info/problems/show/DHEXP/](http://vnoi.info/problems/show/DHEXP/)
 # Đề bài :
 Một dãy gồm _n_ số nguyên không âm _a_1, _a_2,...,_ an_ được viết thành một hàng ngang, giữa hai số liên tiếp có một khoảng trắng, như vậy có tất cả \(n­_-1\) khoảng trắng. Người ta muốn đặt _k_ dấu cộng và \(n-1-k\) dấu trừ vào \(n­-1\) khoảng trắng đó để nhận được một biểu thức có giá trị lớn nhất.
 

@@ -8,7 +8,7 @@ tags:
   - data-structure
   - dp
 ---
-# Link đề bài: [http://vn.spoj.com/problems/INCVN/](http://vn.spoj.com/problems/INCVN/)
+# Link đề bài: [http://vnoi.info/problems/show/INCVN/](http://vnoi.info/problems/show/INCVN/)
 # Đề bài:
 Cho 1 dãy số gồm N\(0 &lt; N ≤ 10000\) số tự nhiên S1,S2,...,Sn \(0 ≤ S\[i\] ≤ 100000\), Hãy đếm số lượng dãy con tăng có độ dài K\(0 &lt; k ≤ 50\).
 

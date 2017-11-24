@@ -8,7 +8,7 @@ tags:
 ---
 # Link bài gốc: 
 
-[http://vn.spoj.com/problems/NKREZ/](http://vn.spoj.com/problems/NKREZ/)
+[http://vnoi.info/problems/show/NKREZ/](http://vnoi.info/problems/show/NKREZ/)
 
 # Đề bài:
 

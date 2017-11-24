@@ -9,7 +9,7 @@ tags:
   - graph
 ---
 # Link gốc
-[http://vn.spoj.com/problems/VMUNCH/](http://vn.spoj.com/problems/VMUNCH/)
+[http://vnoi.info/problems/show/VMUNCH/](http://vnoi.info/problems/show/VMUNCH/)
 # Đề bài
 Bessie rất yêu bãi cỏ của mình và thích thú chạy về chuồng bò vào giờ vắt sữa buổi tối.
 

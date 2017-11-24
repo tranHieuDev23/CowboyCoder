@@ -8,7 +8,7 @@ tags:
   - string
   - palindrome
 ---
-# Link bài gốc: <http://vn.spoj.com/problems/QBPAL/>
+# Link bài gốc: <http://vnoi.info/problems/show/QBPAL/>
 
 Trong một buổi học viết chữ, Bờm phát hiện trong một số từ khi bỏ đi một số ký tự thì đọc ngược hay đọc xuôi đều giống nhau.
 

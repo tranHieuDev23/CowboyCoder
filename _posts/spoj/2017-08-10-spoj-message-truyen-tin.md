@@ -9,7 +9,7 @@ tags:
   - graph
 ---
 # Link gốc
-[http://vn.spoj.com/problems/MESSAGE/](http://vn.spoj.com/problems/MESSAGE/)
+[http://vnoi.info/problems/show/MESSAGE/](http://vnoi.info/problems/show/MESSAGE/)
 # Đề bài
 Một lớp gồm N học sinh, mỗi học sinh cho biết những bạn mà học sinh đó có thể liên lạc được (chú ý liên lạc này là liên lạc một chiều : u có thể gửi tin tới v nhưng v thì chưa chắc đã có thể gửi tin tới u).
 

@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-[http://vn.spoj.com/problems/MSTRING/](http://vn.spoj.com/problems/MSTRING/)
+[http://vnoi.info/problems/show/MSTRING/](http://vnoi.info/problems/show/MSTRING/)
 
 # Đề bài:
 

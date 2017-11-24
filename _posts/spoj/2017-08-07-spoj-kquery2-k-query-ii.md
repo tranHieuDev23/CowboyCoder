@@ -8,7 +8,7 @@ tags:
   - data-structure
   - sqrt-decomposition
 ---
-# Link đề bài: [http://vn.spoj.com/problems/KQUERY2/](http://vn.spoj.com/problems/KQUERY2/)
+# Link đề bài: [http://vnoi.info/problems/show/KQUERY2/](http://vnoi.info/problems/show/KQUERY2/)
 
 # Đề bài:
 Cho một dãy n phần tử a1, a2, ..., an và một số các truy vấn-k. Ngoài ra còn có một số thao tác cập nhật.

@@ -9,7 +9,7 @@ tags:
 ---
 # Link đề bài gốc:
 
-[http://vn.spoj.com/problems/VECTOR/](http://vn.spoj.com/problems/VECTOR/)
+[http://vnoi.info/problems/show/VECTOR/](http://vnoi.info/problems/show/VECTOR/)
 
 # Đề bài:
 

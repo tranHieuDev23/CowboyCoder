@@ -11,7 +11,7 @@ tags:
 ---
 # Link gốc
 
-[http://vn.spoj.com/problems/QVESCAPE/](http://vn.spoj.com/problems/QVESCAPE/)
+[http://vnoi.info/problems/show/QVESCAPE/](http://vnoi.info/problems/show/QVESCAPE/)
 
 # Đề bài
 

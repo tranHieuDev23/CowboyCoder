@@ -8,7 +8,7 @@ tags:
   - max-flow
 ---
 # Link gốc
-[http://vn.spoj.com/problems/FLOW1/](http://vn.spoj.com/problems/FLOW1/)
+[http://vnoi.info/problems/show/FLOW1/](http://vnoi.info/problems/show/FLOW1/)
 # Đề bài
 Cuộc thi giao lưu "Tết Ta Tin (TTT)" giữa hai đội Sư Phạm (SP) và Tổng Hợp (TH) có m bài toán tin học, mỗi đội có n học sinh tham dự. Các bài toán được đánh số từ 1 đến m và các học sinh của mỗi đội được đánh số từ 1 tới n.Học sinh của hai đội đều là những lập trình viên xuất sắc, tuy nhiên mỗi học sinh có thể giải quyết những bài toán thuộc sở trường của mình hiệu quả hơn những bài khác.Hãy giúp thầy My tổ chức cuộc thi theo thể thức sau:
 * Chọn đúng n cặp đấu, mỗi cặp gồm 01 học sinh SP và 01 học sinh TH làm 01 bài toán trong số những bài toán này.

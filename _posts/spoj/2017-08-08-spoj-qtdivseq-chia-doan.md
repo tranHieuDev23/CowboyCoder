@@ -9,7 +9,7 @@ tags:
 ---
 # Link bài gốc:
 
-[http://vn.spoj.com/problems/QTDIVSEQ/](http://vn.spoj.com/problems/QTDIVSEQ/)
+[http://vnoi.info/problems/show/QTDIVSEQ/](http://vnoi.info/problems/show/QTDIVSEQ/)
 
 # Đề bài:
 

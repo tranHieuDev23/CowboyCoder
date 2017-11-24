@@ -8,7 +8,7 @@ tags:
   - dp
 ---
 # Link gốc:
-[http://vn.spoj.com/problems/BONUS/](http://vn.spoj.com/problems/BONUS/)
+[http://vnoi.info/problems/show/BONUS/](http://vnoi.info/problems/show/BONUS/)
 
 # Đề bài
 Tuấn là người chiến thắng trong một cuộc thi “tìm hiểu kiến thức vũ trụ” và được nhận các phần thưởng do công ty XYZ tài trợ. Các phần thưởng được bố trí trên một bảng hình vuông n x n có dạng một lưới ô vuông kích thước đơn vị. Các dòng của bảng được đánh số từ 1 đến n, từ trên xuống dưới và các cột của bảng được đánh số từ 1 đến n, từ trái qua phải. Ô nằm trên giao của dòng i và cột j được gọi là ô \(i,j\) và trên ô đó chứa một món quà có giá trị là a\[i,j\] \(1 &lt;= i, j &lt;= n\)

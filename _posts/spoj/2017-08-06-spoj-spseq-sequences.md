@@ -9,7 +9,7 @@ tags:
   - data-structure
   - binary-search
 ---
-# Link đề bài: [http://vn.spoj.com/problems/SPSEQ/](http://vn.spoj.com/problems/SPSEQ/)
+# Link đề bài: [http://vnoi.info/problems/show/SPSEQ/](http://vnoi.info/problems/show/SPSEQ/)
 
 # Đề bài:
 

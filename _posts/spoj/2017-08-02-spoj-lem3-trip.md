@@ -8,7 +8,7 @@ tags:
   - dp
 ---
 # Link bài gốc:
-[http://vn.spoj.com/problems/LEM3/](http://vn.spoj.com/problems/LEM3/)
+[http://vnoi.info/problems/show/LEM3/](http://vnoi.info/problems/show/LEM3/)
 
 # Đề bài:
 
