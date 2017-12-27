@@ -155,14 +155,15 @@ Cài đặt bằng C++:
 
 {% highlight c++ %}
 DFS(s);
-f[t]=1;
-for(int i=n; i>=1; --i) 
+f[s]=0;
+for(int i=1; i <= n; ++i) 
 {
     int u=x[i];
     for(int j=0; j<g[u].size(); ++j)
     {
-        int v=g[u][j];
-        f[u]+=f[v];
+        int v=g[u][j].F;
+	int w=g[u][j].S;
+        f[v]=max(f[v], f[u] + w);
     }
 }
 {% endhighlight %}
