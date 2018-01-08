@@ -52,5 +52,5 @@ Kết quả
 55
 ```
 
-### Solution: [http://brisktopia.com/9wDV](http://brisktopia.com/9wDV)
-### Code: [http://brisktopia.com/9w0r](http://brisktopia.com/9w0r)
+## Solution: [http://brisktopia.com/9wDV](http://brisktopia.com/9wDV)
+## Code: [http://brisktopia.com/9w0r](http://brisktopia.com/9w0r)
