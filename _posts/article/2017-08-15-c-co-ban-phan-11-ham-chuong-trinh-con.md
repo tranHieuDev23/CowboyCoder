@@ -25,7 +25,7 @@ Giải pháp là sử dụng một biến tạm thời để lưu trữ giá tr�
 {% highlight c++ %}
 int temp = a;
 a = b;
-b = a;
+b = temp;
 {% endhighlight %}
 
 Nhưng nếu ta phải thực hiện công việc tầm 10 lần trong chương trình thì sao? Việc viết ba dòng code này mỗi khi cần đảo giá trị là một điều rất bất hợp lý - code sẽ dài và không trực quan (không có chỗ nào trong 3 dòng code ghi là đây là lệnh để đảo giá trị ```a``` và ```b``` cả). Hơn nữa, nếu phải sửa một chỗ nào đó trong việc đảo giá trị - ví dụ kiểm tra hai giá trị được đảo có cùng kiểu dữ liệu không chẳng hạn - ta sẽ phải sửa hàng chục lần.
