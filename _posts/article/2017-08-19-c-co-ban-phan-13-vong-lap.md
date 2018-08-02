@@ -42,14 +42,14 @@ Nếu như phần nội dung chỉ bao gồm một lệnh, ta không cần phả
 
 Ví dụ: Đây là vòng lặp nhằm in ra các giá trị số nguyên từ 1 tới 1000000
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 for (int i = 1; i <= 1000000; i \+\+)
 cout << i << endl;
 {% endhighlight %}
 
 Một ví dụ khác: Đây là vòng lặp nhằm in ra các giá trị số lẻ từ 1 tới 100
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 for (int i = 1; i <= 100; i \+\+)
 {
 if (i % 2 == 1)
@@ -59,7 +59,7 @@ cout << i << endl;
 
 Hoặc
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 for (int i = 1; i <= 100; i \+= 2)
 cout << i << endl;
 {% endhighlight %}
@@ -81,7 +81,7 @@ Giả sử bạn muốn in ra bảng cửu chương. Ta sẽ cần phải thực
 
 Cũng giống như các lệnh if có thể lồng vào nhau, các vòng lặp nói chung cũng có thể được lồng vào nhau. Chương trình in ra bảng cửu chương sẽ như sau:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 
 using namespace std;
@@ -107,7 +107,7 @@ Nếu như ta bỏ trống phần điều kiện biến đổi, điều kiện b
 
 Ví dụ: Vòng lặp sau đây không có khởi tạo, điều kiện hay biến đổi gì, và sẽ diễn ra vô tận vì điều kiện được mặc định là đúng.
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 for (;;)
 {
 cout << "Help! I am an infinity loop!" << endl;
@@ -132,7 +132,7 @@ Vòng lặp này kiểm tra điều kiện đã cho, và chừng nào điều ki
 
 Ví dụ: Viết ra các số nguyên chia hết cho 6, bắt đầu từ một số `x` được nhập bởi người dùng, và không vượt quá 100
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 int x; cin >> x;
 while (x <= 100)
 {
@@ -162,7 +162,7 @@ Tương tư như vòng lặp `while`, vòng lặp `do - while` sẽ thực hiệ
 
 Ví dụ: Hãy thay đoạn code in ra các số nguyên chia hết cho 6 trong ví dụ trên thành
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 do
 {
 if (x % 6 == 0)
@@ -178,7 +178,7 @@ Sau đó nhập vào một giá trị lớn hơn 100 mà chia hết cho 6 (ví d
 
 Nếu như vòng lặp luôn luôn thỏa mãn điều kiện kiểm tra, nó sẽ không bao giờ có thể kết thúc, và sẽ diễn ra tới vô hạn :D Cách đơn giản nhất để có vòng lặp vô hạn là sử dụng `for(;;)` như hướng dẫn như trên, hoặc sử dụng `while(true)` (dịch sang tiếng Việt: chừng nào giá trị `true` còn đúng).
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 
 using namespace std;
@@ -228,7 +228,7 @@ Khi từ khóa `break` được gọi trong vòng lặp, nó sẽ kết thúc ho
 
 Ví dụ: In ra các số chia hết cho 6 từ 1 tới 100, nhưng nếu ta tìm được một số chia hết cho 13 trong khoảng này, ta sẽ dừng luôn vòng lặp vì quá xúi quẩy.
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 for (int i = 1; i <= 100; i \+\+)
 {
 if (i % 13 == 0)
@@ -247,7 +247,7 @@ Khi từ khóa `continue` được gọi trong vòng lặp, lần lặp hiện t
 
 Ví dụ: Duyệt biến `x` với các giá trị từ 1 tới 5, và in ra `"Episkey"` với mỗi một số. Nếu `x` là số chẵn, in ra thêm dòng chữ `"Avada Kedavra"`.
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 
 using namespace std;
@@ -283,7 +283,7 @@ Nếu như vòng lặp được gọi trong một chương trình con, và chư�
 
 Ví dụ: Số nguyên tố là số tự nhiên lớn hơn 1 chỉ có ước số tự nhiên là 1 và chính nó. Ta sẽ viết hàm kiểm tra xem một số `x` có phải số nguyên tố không, bằng cách duyệt qua các giá trị `i` từ 2 tới `x - 1`, và nếu như `x` chia hết cho một trong các giá trị `i` này, hàm sẽ trả lại giá trị `false` ngay lập tức.
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 
 using namespace std;
