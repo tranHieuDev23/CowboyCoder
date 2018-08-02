@@ -26,7 +26,10 @@
     <meta name="description" content="{{ page.excerpt | strip_html | truncate: 150 , '...' }}"/>
 
     <!-- Facebook meta tags -->
-    <meta property="og:type"   content="website" /> 
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="{{ page.title }}"/> 
+    <meta property="og:image"   content="{{ page.thumbnail }}"/> 
+    <meta property="og:description"   content="{{ page.excerpt | strip_html | truncate: 150 , '...' }}"/> 
     <meta property="fb:app_id" content="155198375049942" />
 
     <!-- MathLab -->
