@@ -69,7 +69,7 @@
 
                 {% include prev-next.html %}
                 <div style="margin-bottom:5rem">
-                    <div class="fb-comments" data-width="100%" data-numposts="5"></div>
+                    <div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="100%" data-numposts="5"></div>
                 </div>
             </div>
 
