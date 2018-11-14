@@ -43,7 +43,7 @@ output
 2
 ```
 
-![](http://vn.spoj.com/content/voj:COLOREC.png)
+![](https://vn.spoj.com/content/voj:COLOREC.png)
 
 Ràng buộc:50% số test ứng với 50% số điểm của bài có 4 &lt;= n &lt;= 100
 
