@@ -6,7 +6,7 @@ thumbnail: '/img/uploads/[spoj]-computer.jpg'
 tags:
   - spoj
   - dp
-  - binary search
+  - binary-search
 ---
 ## Link đề bài : [http://vnoi.info/problems/show/COMPUTER/](http://vnoi.info/problems/show/COMPUTER/)
 
