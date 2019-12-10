@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [C++ Cơ bản] Phần 22: Class và Object
+
+Tính thừa kết giúp chúng ta tiết kiệm công sức viết code, bằng cách để cho các class con (subcla..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)"/> 
+    <meta property="og:image"   content="/img/uploads/C++ Co ban - Thumbnail.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [C++ Cơ bản] Phần 22: Class và Object
+
+Tính thừa kết giúp chúng ta tiết kiệm công sức viết code, bằng cách để cho các class con (subcla..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)</a>
+</div>
+                <h1 class="content-title">[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)</h1>
+                <h2 class="content-author">Đăng bởi Admin Tổng Quản lúc 07 Sep 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object">[C++ Cơ bản] Phần 22: Class và Object</a></em></p>
+
+<p>Tính thừa kết giúp chúng ta tiết kiệm công sức viết code, bằng cách để cho các class con (subclass) thừa hưởng các tính chất của class cha (superclass). Trong bài viết này chúng ta sẽ tìm hiểu về cách triển khai tính thừa kế trong C++.</p>
+
+<h1 id="định-nghĩa-subclass">Định nghĩa subclass</h1>
+
+<p>Để định nghĩa subclass, ta sử dụng cú pháp</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class tên_class: kiểu_thừa_kế_1 tên_superclass_1, kiểu_thừa_kế_2 tên superclass_2,…
+{
+    nội dung;
+}
+</code></pre></div></div>
+
+<p>Trong đó kiểu thừa kế có thể là <code class="highlighter-rouge">public</code>, <code class="highlighter-rouge">protected</code>, hoặc <code class="highlighter-rouge">private</code>.</p>
+
+<p>Ví dụ: Chương trình sau có 2 class <code class="highlighter-rouge">Animal</code> và <code class="highlighter-rouge">Cat</code>, trong đó <code class="highlighter-rouge">Cat</code> là subclass của <code class="highlighter-rouge">Animal</code>, do đó <code class="highlighter-rouge">Cat</code> thừa hưởng hai biến <code class="highlighter-rouge">type</code> và <code class="highlighter-rouge">area</code> của <code class="highlighter-rouge">Animal</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Animal</span>
+<span class="p">{</span>
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">type</span><span class="p">,</span> <span class="n">area</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">Cat</span><span class="o">:</span> <span class="k">public</span> <span class="n">Animal</span>
+<span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+
+        <span class="n">string</span> <span class="n">getType</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">type</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">setType</span><span class="p">(</span><span class="n">string</span> <span class="n">_type</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">type</span> <span class="o">=</span> <span class="n">_type</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Cat</span> <span class="n">cat</span><span class="p">;</span>
+    <span class="n">cat</span><span class="p">.</span><span class="n">setType</span><span class="p">(</span><span class="s">"Cat"</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cat</span><span class="p">.</span><span class="n">getType</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Output</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cat
+</code></pre></div></div>
+
+<p>Sau khi định nghĩa subclass xong, ta lại có thể tiếp tục định nghĩa subclass của nó nữa. Ví dụ như class <code class="highlighter-rouge">MeoTamThe</code> sau đây là subclass của <code class="highlighter-rouge">Cat</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">MeoTamThe</span><span class="o">:</span> <span class="k">public</span> <span class="n">Cat</span>
+<span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">color</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>Một object khi thuộc về một class thì cũng sẽ thuộc về tất cả các superclass của class đó. Để dễ hình dung thì “Nếu đây là một con mèo, thì đây cũng là một con động vật”.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Animal cat = Cat();
+</code></pre></div></div>
+
+<p><img src="/img/uploads/cpp-cơ-bản-22-1.jpg" alt="undefined" /></p>
+
+<h1 id="quyền-truy-cập">Quyền truy cập</h1>
+
+<p>Subclass có quyền truy cập tới tất cả các yếu tố <code class="highlighter-rouge">public</code> và <code class="highlighter-rouge">protected</code> của superclass.</p>
+
+<h1 id="quyền-thừa-kế">Quyền thừa kế</h1>
+
+<p>Quyền truy cập của các yếu tố mà subclass được thừa kế sẽ phụ thuộc vào kiểu thừa kế của subclass đối với superclass.</p>
+
+<ul>
+  <li>Nếu kiểu thừa kế là <code class="highlighter-rouge">public</code>, tất cả các yếu tố <code class="highlighter-rouge">public</code> và <code class="highlighter-rouge">protected</code> của superclass sẽ giữ nguyên quyền truy cập khi thừa kế xuống subclass.</li>
+  <li>Nếu kiểu thừa kế là <code class="highlighter-rouge">protected</code>, tất cả các yếu tố <code class="highlighter-rouge">public</code> và <code class="highlighter-rouge">protected</code> của superclass sẽ trở thành <code class="highlighter-rouge">protected</code> của subclass.</li>
+  <li>Nếu kiểu thừa kế là <code class="highlighter-rouge">private</code>, tất cả các yếu tố <code class="highlighter-rouge">public</code> và <code class="highlighter-rouge">protected</code> của superclass sẽ trở thành <code class="highlighter-rouge">private</code> của subclass.</li>
+</ul>
+
+<p>Kiểu thừa kế giống như là việc co gọn quyền truy cập khi xuống tới subclass vậy.</p>
+
+<p>Subclass sẽ không được thừa hưởng các yếu tố sau:</p>
+
+<ul>
+  <li>constructor, destructor và copy constructor của superclass.</li>
+  <li>Các toán tử đã bị viết đè (overload) ở class cha. Ta sẽ nghiên cứu thêm về overload trong bài viết tiếp theo.</li>
+</ul>
+
+<h1 id="thừa-kế-từ-nhiều-class">Thừa kế từ nhiều class</h1>
+
+<p>Một class trong C++ có thể được thừa kế từ nhiều superclass, chỉ cần liệt kê danh sách các class thừa kế ở trong định nghĩa của nó.</p>
+
+<p>Ví dụ ở trong chương trình sau, class <code class="highlighter-rouge">MyClass</code> được thừa kế từ hai class <code class="highlighter-rouge">SuperClassOne</code> và <code class="highlighter-rouge">SuperClassTwo</code>, nên có thể sử dụng được hai biến <code class="highlighter-rouge">intOne</code> và <code class="highlighter-rouge">intTwo</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">SuperClassOne</span>
+<span class="p">{</span>
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="kt">int</span> <span class="n">intOne</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">SuperClassTwo</span>
+<span class="p">{</span>
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="kt">int</span> <span class="n">intTwo</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">MyClass</span><span class="o">:</span> <span class="k">public</span> <span class="n">SuperClassOne</span><span class="p">,</span> <span class="k">public</span> <span class="n">SuperClassTwo</span>
+<span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">MyClass</span><span class="p">(</span><span class="kt">int</span> <span class="n">_intOne</span><span class="p">,</span> <span class="kt">int</span> <span class="n">_intTwo</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">intOne</span> <span class="o">=</span> <span class="n">_intOne</span><span class="p">;</span>
+            <span class="n">intTwo</span> <span class="o">=</span> <span class="n">_intTwo</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">int</span> <span class="n">getSum</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">intOne</span> <span class="o">+</span> <span class="n">intTwo</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">MyClass</span> <span class="n">myObject</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">myObject</span><span class="p">.</span><span class="n">getSum</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Output</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu">[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử</a></em></p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/cpp-cơ-bản">cpp-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/programming">programming</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/c-co-ban-phan-22-class-va-object" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [C++ Cơ bản] Phần 22: Class và Object</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu" class="prev-next-link">[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

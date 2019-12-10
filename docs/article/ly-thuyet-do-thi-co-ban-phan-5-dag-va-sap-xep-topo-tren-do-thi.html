@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[Lý thuyết đồ thị cơ bản] Phần 5: DAG và sắp xếp topo trên đồ thị</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [Lý thuyết đồ thị cơ bản] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra
+
+Chu trình
+
+Theo wikipedia, trong lý thuyết đồ ..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[Lý thuyết đồ thị cơ bản] Phần 5: DAG và sắp xếp topo trên đồ thị"/> 
+    <meta property="og:image"   content="/img/uploads/Lý thuyết đồ thị cơ bản - cover.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [Lý thuyết đồ thị cơ bản] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra
+
+Chu trình
+
+Theo wikipedia, trong lý thuyết đồ ..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[Lý thuyết đồ thị cơ bản] Phần 5: DAG và sắp xếp topo trên đồ thị</a>
+</div>
+                <h1 class="content-title">[Lý thuyết đồ thị cơ bản] Phần 5: DAG và sắp xếp topo trên đồ thị</h1>
+                <h2 class="content-author">Đăng bởi Phương Nguyễn lúc 11 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-4-duong-di-ngan-nhat-tren-do-thi-va-thuat-toan-dijkstra">[Lý thuyết đồ thị cơ bản] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra</a></em></p>
+
+<h1 id="chu-trình">Chu trình</h1>
+
+<p>Theo wikipedia, trong lý thuyết đồ thị, chu trình trong đồ thị là một dây chuyền đóng. Đồ thị chỉ gồm một chu trình với \(n\) đỉnh được gọi là đồ thị vòng, ký hiệu \(Cn\).</p>
+
+<h2 id="các-loại-chu-trình">Các loại chu trình:</h2>
+
+<p><img src="/img/uploads/ly-thuyet-do-thi-co-ban-5-1.svg" alt="undefined" /></p>
+
+<ul>
+  <li>Chu trình chẵn: là chu trình có độ dài chẵn.</li>
+  <li>Chu trình lẻ: là chu trình có độ dài lẻ.</li>
+  <li>Chu trình có hướng: là một chu trình đơn mà mọi cung trong đó đều cùng hướng, nghĩa là mọi đỉnh đều có bậc trong và bậc ngoài bằng 1. Có thể gọi đơn giản là chu trình khi ngữ cảnh rõ ràng.</li>
+  <li>Chu trình đơn: là chu trình không chứa cùng một cạnh quá một lần. Trong đồ thị ở hình trên, \( (1, 5, 2, 1) \) là một chu trình đơn. Nếu không chỉ rõ, chu trình thường được hiểu là một chu trình đơn. (Nó có thể đi qua một điểm nhiều lần)</li>
+  <li>Chu trình Euler: là chu trình qua tất cả các cạnh, mỗi cạnh đúng một lần.</li>
+  <li>Chu trình bao trùm: là cách gọi khác của chu trình Hamilton.</li>
+</ul>
+
+<p>Ở đây chúng ta sẽ nhắc đến chu trình có hướng và cách phát hiện ra chu trình trên đồ thị có hướng bằng DFS (có rất nhiều cách để phát hiện chu trình nhưng DFS thông dụng nhất, và một cách khác sẽ được nói ở mục dưới). Trong một số bài giảng, thường sẽ phân loại cạnh thu được sau DFS và sẽ có hai loại gọi là tree edge và backedge, nhưng mình sẽ nói đơn giản cách kiểm tra một đồ thị có hướng có tồn tại chu trình hay không.</p>
+
+<p>Thuật toán đơn giản là, trong quá trình DFS thăm tới đỉnh \( u \), nếu khi ta xét tới một đỉnh \( v \) kề với đỉnh \( u \) mà đã được thăm rồi và quá trình thăm chưa kết thúc, khi đó đồ thị sẽ tồn tại chu trình.</p>
+
+<p>Dễ dàng chứng minh tính đúng đắn của thuật toán. Phương pháp cài đặt được trình bày ở dưới.</p>
+
+<h1 id="dag-directed-acyclic-graph">DAG (Directed Acyclic Graph)</h1>
+
+<p>Một đồ thị có hướng \( G = (V, E) \) được gọi là một DAG khi đồ thị đó không có chu trình có hướng.</p>
+
+<h2 id="sắp-xếp-topo-trên-đồ-thị">Sắp xếp topo trên đồ thị</h2>
+
+<h3 id="công-việc">Công việc</h3>
+
+<p>Cho đồ thị có hướng không chu trình (DAG). Tìm cách sắp xếp thứ tự các đỉnh sao cho với mọi cung từ \( u \) đến \( v \) trong đồ thị, \( u \) luôn nằm trước \( v \).</p>
+
+<h3 id="thuật-toán">Thuật toán</h3>
+<p>Thuật toán để tìm thứ tự topo gọi là thuật toán sắp xếp topo. Mỗi DAG luôn có ít nhất một thứ tự topo và có thuật toán tuyến tính để tìm nó.</p>
+
+<h4 id="cách-1">Cách 1:</h4>
+
+<p>Ý tưởng: Thêm ngẫu nhiên một đỉnh \( u \) không có cung vào ở trạng thái hiện tại của đồ thị vào trong mảng topo, bỏ tất cả các cung đi ra từ \( u \) đi và lặp lại như bước đầu cho tới khi tập đỉnh của đồ thị hiện tại rỗng.</p>
+
+<p>Xem xét:</p>
+<ul>
+  <li>Thuật toán này được phát hiện bởi Kahn vào năm 1962.</li>
+  <li>Khi ta thêm một đỉnh \( u \) ngẫu nhiên không có cung vào ở trạng thái hiện tại của đồ thị vào mảng topo, tất cả các cung vào \( u \) ở đồ thị ban đầu đều xuất phát từ các đỉnh đứng trước \( u \) trong mảng topo đi tới \( u \) do bước bỏ các cung đi ra từ một đỉnh đã được sắp xếp.</li>
+  <li>Nếu đồ thị tồn tại trạng thái không tồn tại một đỉnh không có cung vào mà tập cạnh khi đó khác rỗng, hoặc số lượng đỉnh trong mảng topo khác \( \mid V \mid \) thì chứng tỏ đồ thị có chu trình, và không phải một DAG.</li>
+</ul>
+
+<p>Độ phức tạp của thuật toán là \( O( \mid V \mid + \mid E \mid) \).</p>
+
+<p>Cài đặt bằng C++:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">g</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>                                   <span class="c1">//số lượng đỉnh và cạnh
+</span><span class="kt">int</span> <span class="n">deg</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span>                              <span class="c1">//lưu số lượng cung vào.
+</span><span class="kt">int</span> <span class="n">x</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span> <span class="n">slx</span><span class="p">,</span> <span class="n">q</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span> <span class="n">R</span><span class="p">;</span>   <span class="c1">//x là mảng thứ tự topo, q là hàng đợi chứa các đỉnh 
+</span>                                <span class="c1">//không có cung vào ở trạng thái hiện tại
+</span><span class="kt">void</span> <span class="nf">sxtopo</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">u</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">u</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">u</span><span class="p">)</span> <span class="k">if</span><span class="p">(</span><span class="n">deg</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">q</span><span class="p">[</span><span class="o">++</span><span class="n">R</span><span class="p">]</span><span class="o">=</span><span class="n">u</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">R</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">u</span><span class="o">=</span><span class="n">q</span><span class="p">[</span><span class="n">R</span><span class="o">--</span><span class="p">];</span>
+        <span class="n">x</span><span class="p">[</span><span class="o">++</span><span class="n">slx</span><span class="p">]</span><span class="o">=</span><span class="n">u</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">v</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+            <span class="o">--</span><span class="n">deg</span><span class="p">[</span><span class="n">v</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">deg</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">q</span><span class="p">[</span><span class="o">++</span><span class="n">R</span><span class="p">]</span><span class="o">=</span><span class="n">v</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">slx</span><span class="o">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="s">"!DAG"</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="cách-2">Cách 2:</h4>
+
+<p>Ý tưởng: Sau khi duyệt DFS trên đồ thị, ta sẽ có một mảng kết quả lưu các đỉnh theo thứ tự thăm xong trước tới sau, mảng này chính là trật tự topo.</p>
+
+<p>Xem xét:</p>
+<ul>
+  <li>Tìm kiếm theo chiều sâu trên đồ thị (DFS) có thể dùng giải thuật này để tạo một danh sách tuyến tính các đỉnh của một đồ thị. Có ba cách hiện thực phương pháp này, một trong số đó là duyệt đảo hậu thứ tự (reverse postordering). Với các đồ thị có hướng không có chu trình, cách duyệt đảo hậu thứ tự cho ra một trật tự topo của đồ thị đó.</li>
+  <li>Với phương pháp sắp xếp topo bằng DFS, nếu đồ thị không phải là DAG thì ta vẫn có một thứ tự, nhưng ta lại có thế dùng DFS để kiểm tra luôn xem đồ thị có là DAG hay không.</li>
+  <li>Chứng minh thứ tự nhận được thỏa mản là một trật tự topo: Giả sử tồn tại một đỉnh \( u \) đứng trước một đỉnh \( v \) trong mảng kết quả mà có cung đi từ \( v \) tới \( u \). Khi đó do quá trình DFS \( u \) được thăm trước \( v \), nên khi thăm tới \( v \), ta xét các đỉnh kề với đỉnh \( v \), trong đó \( u \) được đánh dấu đã thăm -&gt; đồ thị không phải một DAG -&gt; trái với giả thuyết.</li>
+</ul>
+
+<p>Độ phức tạp của thuật toán là \( O( \mid V \mid + \mid E \mid) \).</p>
+
+<p>Cài đặt bằng C++:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">g</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">x</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span> <span class="n">slx</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">dd</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span> <span class="n">kt</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span>
+<span class="kt">void</span> <span class="nf">DFS</span><span class="p">(</span><span class="kt">int</span> <span class="n">u</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">dd</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">v</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">kt</span><span class="p">[</span><span class="n">v</span><span class="p">])</span> 
+        <span class="p">{</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="s">"!DAG"</span><span class="p">;</span> 
+            <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">DFS</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">x</span><span class="p">[</span><span class="o">++</span><span class="n">slx</span><span class="p">]</span><span class="o">=</span><span class="n">u</span><span class="p">;</span>
+    <span class="n">kt</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="ứng-dụng">Ứng dụng</h3>
+
+<p>Sắp xếp topo có rất nhiều ứng dụng quan trọng, đặc biệt là áp dụng quy hoạch động trên mảng trật tự topo.</p>
+
+<h4 id="bài-toán-tổng-số-đường-đi">Bài toán tổng số đường đi</h4>
+
+<p>Cho đồ thị có hướng không chu trình và 2 đỉnh \( s \), \( t \). Cho biết có bao nhiêu đường đi từ \( s \) đến \( t \). (2 đường đi khác nhau nếu thứ tự các đỉnh trên chúng khác nhau)</p>
+
+<p>Thuật toán: DFS từ \( s \). Gọi <code class="highlighter-rouge">f[u]</code> là số đường đi từ \( u \) tới \( t \). Khi đó <code class="highlighter-rouge">f[t]=1</code>.</p>
+
+<p>Nếu có một cung đi từ \( u \) tới \( v \), <code class="highlighter-rouge">f[u] += f[v]</code>.</p>
+
+<p>Cài đặt bằng C++:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">DFS</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+<span class="n">f</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">u</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">v</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+        <span class="n">f</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">+=</span><span class="n">f</span><span class="p">[</span><span class="n">v</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="bài-toán-đường-đi-dài-nhất">Bài toán đường đi dài nhất</h4>
+
+<p>Cho đồ thị có hướng, không có chu trình, có trọng số và 2 đỉnh \( s \), \( t \). Tìm đường đi dài nhất từ \( s \) tới các đỉnh khác.</p>
+
+<p>Thuật toán: DFS từ \( s \). Gọi <code class="highlighter-rouge">f[u]</code> là đường đi dài nhất từ \( s \) tới \( u \). Khi đó <code class="highlighter-rouge">f[s]=0</code>.</p>
+
+<p>Nếu có một cung đi từ \( u \) tới v, ```f[v]=max(f[v], f[u]+ trọng số cạnh (u,v))``.</p>
+
+<p>Cài đặt bằng C++:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">DFS</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+<span class="n">f</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">u</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">v</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">j</span><span class="p">].</span><span class="n">F</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">w</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">j</span><span class="p">].</span><span class="n">S</span><span class="p">;</span>
+        <span class="n">f</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="một-số-bài-tập-thực-hành">Một số bài tập thực hành</h1>
+
+<p><a href="http://www.spoj.com/KSTN/problems/TOPO2509/">TOPO2509</a> - Bài tập của trường Đại học Bách Khoa Hà Nội.</p>
+
+<p><a href="http://vn.spoj.com/problems/NKLEAGUE/">NKLEAGUE</a> (SPOJ). Lời giải có tại <a href="http://cowboycoder.tech/spoj/spoj-nkleague-giai-bong-da">đây</a>.</p>
+
+<p><a href="http://vn.spoj.com/problems/KCOLLECT/">KCOLLECT</a> (SPOJ).</p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/lý-thuyết-đồ-thị-cơ-bản">lý-thuyết-đồ-thị-cơ-bản</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/spoj/spoj-nknumfre-so-than-thien" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [SPOJ] NKNUMFRE - Số thân thiện</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-10-toan-tu-tiep" class="prev-next-link">[C++ Cơ bản] Phần 10: Toán tử (tiếp) <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-5-dag-va-sap-xep-topo-tren-do-thi" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

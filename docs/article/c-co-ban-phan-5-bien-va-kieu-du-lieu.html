@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[C++ Cơ bản] Phần 5: Biến và kiểu dữ liệu</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [C++ Cơ bản] Phần 4: Cú pháp C++ cơ bản
+
+Khi lập trình, chúng ta cần phải sử dụng biến để lưu trữ dữ liệu của chương trình. Các biến đư..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[C++ Cơ bản] Phần 5: Biến và kiểu dữ liệu"/> 
+    <meta property="og:image"   content="/img/uploads/C++ Cơ bản - Thumbnail.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [C++ Cơ bản] Phần 4: Cú pháp C++ cơ bản
+
+Khi lập trình, chúng ta cần phải sử dụng biến để lưu trữ dữ liệu của chương trình. Các biến đư..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[C++ Cơ bản] Phần 5: Biến và kiểu dữ liệu</a>
+</div>
+                <h1 class="content-title">[C++ Cơ bản] Phần 5: Biến và kiểu dữ liệu</h1>
+                <h2 class="content-author">Đăng bởi Admin Tổng Quản lúc 08 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/c-co-ban-phan-4-cu-phap-c-co-ban">[C++ Cơ bản] Phần 4: Cú pháp C++ cơ bản</a></em></p>
+
+<p>Khi lập trình, chúng ta cần phải sử dụng biến để lưu trữ dữ liệu của chương trình. Các biến được lưu trữ trên bộ nhớ của hệ thống - khi ta khai báo một biến trong chương trình, ta đang yêu cầu hệ thống trích ra một khoảng bộ nhớ để lưu trữ thông tin của biến đó.</p>
+
+<p>C++ là ngôn ngữ đặt kiểu dữ liệu tĩnh (statically typed), có nghĩa là mỗi biến và hàm của chương trình đều có một kiểu dữ liệu cố định trong quá trình chạy chương trình. Kiểu dữ liệu quyết định kích thước bộ nhớ mà biến hoặc hàm chiếm trên hệ thống, khoảng giá trị mà biến hoặc hàm có thể biểu diễn, và những thao tác xử lý ta có thể thực hiện lên giá trị của chúng.</p>
+
+<h1 id="các-kiểu-dữ-liệu-nguyên-thủy">Các kiểu dữ liệu nguyên thủy</h1>
+
+<table class="table table-striped table-bordered">
+<tr>
+    <th>Kiểu dữ liệu</th>
+    <th>Từ khóa</th>
+</tr>
+<tr>
+    <td><b>Boolean</b><br />Kiểu dữ liệu đúng sai (true/false)</td>
+    <td><code class="highlighter-rouge">bool</code></td>
+</tr>
+<tr>
+    <td><b>Character</b><br />Kiểu kí tự</td>
+    <td><code class="highlighter-rouge">char</code></td>
+</tr>
+<tr>
+    <td><b>Integer</b><br />Kiểu số nguyên</td>
+    <td><code class="highlighter-rouge">int</code></td>
+</tr>
+<tr>
+    <td><b>Floating point</b><br />Kiểu số thực</td>
+    <td><code class="highlighter-rouge">float</code></td>
+</tr>
+<tr>
+    <td><b>Double floating point</b><br />Kiểu số thực, với khoảng biểu diễn và độ chính xác cao hơn</td>
+    <td><code class="highlighter-rouge">double</code></td>
+</tr>
+<tr>
+    <td><b>Valueless</b><br />Không trả giá trị gì về cả. Kiểu dữ liệu này thường thấy khi ta muốn tạo ra một chương trình con - một hàm chỉ thực hiện thao tác trên các đối tượng, mà không trả lại gì cả.</td>
+    <td><code class="highlighter-rouge">void</code></td>
+</tr>
+<tr>
+    <td><b>Wide character</b><br />Kiểu kí tự, với khoảng biểu diễn rộng hơn</td>
+    <td><code class="highlighter-rouge">wchar_t</code></td>
+</tr>
+</table>
+
+<p>Một số kiểu dữ liệu nguyên thủy còn có thể được tùy chỉnh bằng các từ khóa:</p>
+<ul>
+  <li><code class="highlighter-rouge">signed</code>: Khi đặt trước các kiểu số, nó cho biết kiểu số này có dấu (khoảng giá trị bao gồm cả số âm). Thường vô dụng và không dùng tới.</li>
+  <li><code class="highlighter-rouge">unsigned</code>: Khi đặt trước các kiểu số, nó cho biết kiểu số này không có dấu (chỉ bao gồm số không âm). Điều này làm tăng giá trị cực đại của khoảng biểu diễn lên.</li>
+  <li><code class="highlighter-rouge">short</code>: Đặt trước kiểu int để đặt kiểu giá trị số nguyên, với khoảng biểu diễn và khoảng bộ nhớ chiếm chỗ giảm một nửa. Có thể viết <code class="highlighter-rouge">short</code> thay vì <code class="highlighter-rouge">short int</code>.</li>
+  <li><code class="highlighter-rouge">long</code>: Sử dụng <code class="highlighter-rouge">long long int</code> để đặt kiểu giá trị số nguyên, với khoảng biểu diễn và khoảng bộ nhớ chiếm chỗ tăng gấp đôi. Có thể viết <code class="highlighter-rouge">long long</code> thay vì <code class="highlighter-rouge">long long int</code>. <code class="highlighter-rouge">long int</code> không có khác biệt gì so với <code class="highlighter-rouge">int</code>.</li>
+</ul>
+
+<h1 id="khoảng-giá-trị-và-bộ-nhớ-chiếm-chỗ-của-các-kiểu-dữ-liệu">Khoảng giá trị và bộ nhớ chiếm chỗ của các kiểu dữ liệu</h1>
+
+<p><em>“Cái đm, lại phải nhớ một đống số nữa à?”</em></p>
+
+<p><img src="/img/uploads/cpp-cơ-bản-2-1.jpg" alt="undefined" /></p>
+
+<p>Thật ra là không. Đúng, khoảng giá trị của các biến là hằng số, nhưng ta không cần phải nhớ một cách máy móc. Lấy ví dụ như kiểu <code class="highlighter-rouge">int</code>:</p>
+
+<p>Như chúng ta đã biết, các dữ liệu trong  máy tính được lưu trữ bằng dãy bit nhị phân 0 - 1. 8 bit nhị phân thì bằng 1 byte. Cứ \( 2 ^ {10} \) (1024) byte thì bằng 1 kB, \( 2 ^ {10} \) kB thì bằng 1 MB, vân vân… <code class="highlighter-rouge">int</code> là kiểu dữ liệu số nguyên 4 byte, vậy nên nó sẽ được biểu diễn bằng 32 bit.</p>
+
+<p>Nếu biểu diễn số nguyên bằng cả 32 bit thì sẽ không thể biểu diễn số âm được. Vậy người ta quy ước bit đầu tiên của giá trị <code class="highlighter-rouge">int</code> sẽ mang giá trị \( - 2 ^ {31} \), thay vì \( 2 ^ {31} \) như bình thường. Ví dụ:</p>
+
+<ul>
+  <li>Số 7 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 0000 0111 (3 bit 1 ở cuối, tổng bằng 7)</li>
+  <li>Số 100 sẽ được biểu diễn là 0000 0000 0000 0000 0000 0000 ‭0110 0100‬‬‬</li>
+  <li>Số -1 sẽ được biểu diễn là ‭1111111111111111111111111111111111111111111111111111111111111111‬ (tất cả đều là số 1, giá trị bằng \( - 2 ^ {31} + 2 ^ {30} + 2 ^ {29} + 2 ^ {28} + …\))‬‬</li>
+</ul>
+
+<p>Vậy khoảng giá trị của <code class="highlighter-rouge">int</code> là từ \( - 2 ^ {31} \) tới \( 2 ^ {31} - 1 \).</p>
+
+<p><code class="highlighter-rouge">short</code> có kích cỡ bằng một nửa <code class="highlighter-rouge">int</code>, vậy nó sẽ chiếm 2 byte, khoảng giá trị là \( - 2 ^ {15} \) tới \( 2 ^ {15} - 1 \).</p>
+
+<p><code class="highlighter-rouge">long</code> có kích cỡ bằng gấp đôi <code class="highlighter-rouge">int</code>, vậy nó sẽ chiếm 8 byte, khoảng giá trị là \( - 2 ^ {63} \) tới \( 2 ^ {63} - 1 \).</p>
+
+<p>Khi các biến dạng số được gắn thêm <code class="highlighter-rouge">unsigned</code>, chúng sẽ không biểu diễn số âm nữa, do đó tất cả các bit của chúng đều sẽ được dùng để biểu diễn số nhị phân – việc tính toán khoảng của chúng cũng đơn giản như vậy.</p>
+
+<p>Ta chỉ cần nhớ dữ liệu được lưu trữ bằng bao nhiêu byte, là có thể suy ra khoảng của chúng.</p>
+
+<p>Đối với các kiểu dữ liệu kí tự, kí tự biểu diễn được còn phụ thuộc vào bảng mã chương trình sử dụng.</p>
+
+<p>Các bạn có thể xem kích cỡ và khoảng của các kiểu dữ liệu tại <a href="https://msdn.microsoft.com/en-us/library/s3f49ktz.aspx">đây</a>.</p>
+
+<h2 id="tại-sao-kiến-thức-này-lại-quan-trọng">Tại sao kiến thức này lại quan trọng?</h2>
+
+<p>Đầu tiên, việc biết giới hạn biểu diễn của các kiểu dữ liệu là cực kì quan trọng, để tránh việc thực hiện tính toán tràn khả năng biểu diễn dẫn tới sai sót. Việc thực hiện tính toán trên các kiểu dữ liệu sẽ được đề cập rõ hơn trong các bài viết về toán tử.</p>
+
+<p>Như đã nói trong các bài viết trước, C++ được sử dụng nhiều trong việc lập trình điều khiển phần cứng. Không phải phần cứng nào cũng có nhiều dung lượng bộ nhớ - các thiết bị như đèn nháy, máy giặt làm sao có thể lắp RAM 4 GB như laptop được.</p>
+
+<p>Kể cả khi dung lượng không phải là vấn đề, việc tiết kiệm bộ nhớ của chương trình và đem đến trải nghiệm tốt hơn cho người dùng cũng là một việc nên làm.</p>
+
+<p>Đối với các bạn sử dụng C++ để lập trình thi đấu, việc sử dụng quá nhiều bộ nhớ cũng sẽ gây sinh ra lỗi Memory Limit Exceeded (MLE) và bài làm của các bạn có thể bị đánh fail, vậy nên phải biết cách sử dụng bộ nhớ hợp lý.</p>
+
+<h1 id="khai-báo-biến-trong-c">Khai báo biến trong C++</h1>
+
+<p>Để khai báo biến, ta sử dụng cú pháp:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kiểu_dữ_liệu danh_sách_các_biến;
+</code></pre></div></div>
+
+<p>Ví dụ:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span>    <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+<span class="kt">char</span>   <span class="n">c</span><span class="p">,</span> <span class="n">ch</span><span class="p">;</span>
+<span class="kt">float</span>  <span class="n">f</span><span class="p">,</span> <span class="n">salary</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">d</span><span class="p">;</span></code></pre></figure>
+
+<p>Các biến cũng có thể được gán giá trị khởi tạo bằng cú pháp:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kiểu_dữ_liệu tên_biến = giá_trị;
+</code></pre></div></div>
+
+<p>Ví dụ:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> 
+<span class="kt">char</span> <span class="n">x</span> <span class="o">=</span> <span class="sc">'x'</span><span class="p">;</span> </code></pre></figure>
+
+<p>Giá trị khởi tạo của các biến khi không được người dùng đặt trước sẽ được nói trong một bài khác, tuy nhiên việc tự khởi tạo giá trị cho biến là một việc nên làm, tránh những thay đổi ở bên ngoài chương trình có thể làm giá trị này khác đi.</p>
+
+<h1 id="đặt-giá-trị-cho-biến">Đặt giá trị cho biến</h1>
+
+<p>Sau khi được khai báo, giá trị của biến có thể được thay đổi lại bằng cú pháp:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tên_biên = giá_trị;
+</code></pre></div></div>
+
+<p>Ví dụ:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span></code></pre></figure>
+
+<p>Nếu đặt giá trị cho một biến chưa tồn tại trước đó, trình dịch sẽ báo lỗi.</p>
+
+<h1 id="chương-trình-ví-dụ">Chương trình ví dụ</h1>
+
+<p>Chương trình sau đây sẽ khởi tạo một số biến và in ra giá trị của chúng</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>  
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
+   <span class="c1">// Khai báo biến
+</span>   <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+   <span class="kt">float</span> <span class="n">f</span><span class="p">;</span>
+ 
+   <span class="c1">// Đặt giá trị cho biến
+</span>   <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+   <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+   <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span> <span class="p">;</span>
+
+   <span class="n">f</span> <span class="o">=</span> <span class="mf">70.0</span><span class="o">/</span><span class="mf">3.0</span><span class="p">;</span>
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">f</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span> <span class="p">;</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30
+23.3333
+</code></pre></div></div>
+
+<h1 id="viết-tắt-kiểu-dữ-liệu-bằng-typedef">Viết tắt kiểu dữ liệu bằng <code class="highlighter-rouge">typedef</code></h1>
+
+<p>Từ khóa <code class="highlighter-rouge">typedef</code> cho phép ta đặt cách gọi khác cho một kiểu dữ liệu. Ví dụ, ta muốn sử dụng cách gọi <code class="highlighter-rouge">ULL</code> để gọi tên cho kiểu dữ liệu <code class="highlighter-rouge">unsigned long long int</code>, ta sử dụng cú pháp:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">ULL</span><span class="p">;</span></code></pre></figure>
+
+<p>Khi đó ta có thể khai báo các biến kiểu <code class="highlighter-rouge">unsigned long long int</code> bằng cách sử dụng tên kiểu dữ liệu <code class="highlighter-rouge">ULL</code>:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">ULL</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span></code></pre></figure>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local">[C++ Cơ bản] Phần 6: Biến global và biến local</a></em></p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/cpp-cơ-bản">cpp-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/programming">programming</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/ly-thuyet-do-thi-co-ban-phan-3-tim-kiem-theo-chieu-sau-tren-do-thi-depth-first-search-dfs" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [Lý thuyết đồ thị cơ bản] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search (DFS)</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/spoj/spoj-paliny-palindrome-dai-nhat" class="prev-next-link">[SPOJ] PALINY - Palindrome dài nhất <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/c-co-ban-phan-5-bien-va-kieu-du-lieu" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

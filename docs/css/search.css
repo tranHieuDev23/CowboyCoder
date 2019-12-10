@@ -1,0 +1,29 @@
+/* Styling for search box */
+#search-box {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#search-box:focus, #search-submit:active:focus, #search-submit:focus {   
+    border-color: #ffc40d !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 196, 13, 0.8) !important;
+    outline: 0 none !important;
+}
+
+/* Styling for search result */
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results-item > a {
+    font-family: "Oswald", sans-serif;
+}
+
+.search-results-item > p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.search-results-empty {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+}

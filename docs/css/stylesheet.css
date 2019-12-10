@@ -1,0 +1,59 @@
+/* Apply border-box to the whole webpage */
+* {
+    box-sizing: border-box;
+}
+
+a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+/* Styling for content */
+.content-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 42px;
+    line-height: 46px;
+    margin-bottom: 7px;
+}
+
+.content-author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.content {
+    margin-bottom: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content > h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content > p > img, .content > img {
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+.img-responsive-16by9 {
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}

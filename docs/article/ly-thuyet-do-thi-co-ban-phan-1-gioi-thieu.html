@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[Lý thuyết đồ thị cơ bản] Phần 1: Giới thiệu</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Trong toán học và tin học, đồ thị là đối tượng nghiên cứu cơ bản của lý thuyết đồ thị. Một cách không chính thức, đồ thị là một tập các đối tượng g..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[Lý thuyết đồ thị cơ bản] Phần 1: Giới thiệu"/> 
+    <meta property="og:image"   content="/img/uploads/Lý thuyết đồ thị cơ bản - cover.jpg"/> 
+    <meta property="og:description"   content="Trong toán học và tin học, đồ thị là đối tượng nghiên cứu cơ bản của lý thuyết đồ thị. Một cách không chính thức, đồ thị là một tập các đối tượng g..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[Lý thuyết đồ thị cơ bản] Phần 1: Giới thiệu</a>
+</div>
+                <h1 class="content-title">[Lý thuyết đồ thị cơ bản] Phần 1: Giới thiệu</h1>
+                <h2 class="content-author">Đăng bởi Phương Nguyễn lúc 05 Aug 2017</h2>
+                <div class="content">
+                    <p>Trong toán học và tin học, <strong>đồ thị</strong> là đối tượng nghiên cứu cơ bản của lý thuyết đồ thị. Một cách không chính thức, đồ thị là một tập các đối tượng gọi là <strong>đỉnh</strong> nối với nhau bởi các <strong>cạnh</strong>. Thông thường, đồ thị được vẽ dưới dạng một tập các điểm (đỉnh, nút) nối với nhau bởi các đoạn thẳng (cạnh). Tùy theo ứng dụng mà một số cạnh có thể có hướng.</p>
+
+<h1 id="sơ-lược-các-khái-niệm-cơ-bản-về-đồ-thị">Sơ lược các khái niệm cơ bản về đồ thị</h1>
+
+<p>Một cách không chính thức, đồ thị là một tập các đối tượng được gọi là các đỉnh nối với nhau bởi các cạnh.</p>
+
+<p>Một đồ thị kí hiệu là</p>
+
+<script type="math/tex; mode=display">G=(V, E)</script>
+
+<p>Trong đó:</p>
+
+<ul>
+  <li>
+    <p>\( V \) là tập các đỉnh của đồ thị. Đặt \( \mid V \mid = n \) (số đỉnh).</p>
+  </li>
+  <li>
+    <p>\( E \) là tập các cạnh của đồ thị. Đặt \( \mid E \mid = m \) (số cạnh).</p>
+  </li>
+</ul>
+
+<p><img src="/img/uploads/ly-thuyet-do-thi-co-ban-1-1.jpg" alt="undefined" /></p>
+
+<h2 id="đỉnh">Đỉnh:</h2>
+
+<p>Đỉnh biểu diễn các đối tượng trong đồ thị, thường được đánh dấu bằng các số hoặc kí hiệu bằng các chữ cái in thường u,v,…</p>
+
+<h2 id="cạnh">Cạnh:</h2>
+
+<p>Cạnh nối đỉnh <em>x</em> với đỉnh <em>y</em> là một tập gồm hai phần tử \( {x, y} \), thường được vẽ dưới dạng một <em>đoạn thẳng</em> nối hai đỉnh.</p>
+
+<h2 id="cạnh-có-hướng-cung">Cạnh có hướng (cung):</h2>
+
+<p>Là một cặp đỉnh có thứ tự. Trong mỗi cặp có thứ tự đó, đỉnh thứ nhất được gọi là đỉnh đầu, đỉnh thứ hai là đỉnh cuối.</p>
+
+<h2 id="cạnh-vô-hướng">Cạnh vô hướng:</h2>
+
+<p>Không quan tâm đến hướng và coi hai đỉnh như nhau.</p>
+
+<h2 id="khuyên">Khuyên:</h2>
+
+<p>Là một cạnh nối một đỉnh với chính nó.</p>
+
+<h2 id="hai-cạnh-song-song">Hai cạnh song song:</h2>
+
+<p>Là hai cạnh cùng nối hai đỉnh u, v.</p>
+
+<h2 id="đồ-thị-có-hướng">Đồ thị có hướng:</h2>
+
+<p>Là đồ thị mà tất cả các cạnh trong đồ thị đều có hướng.</p>
+
+<h2 id="đồ-thị-vô-hướng">Đồ thị vô hướng:</h2>
+
+<p>Là đồ thị mà tất cả các cạnh trong đồ thị đều vô hướng.</p>
+
+<h2 id="đơn-đồ-thị">Đơn đồ thị:</h2>
+
+<p>Là đồ thị không có khuyên và không có cạnh song song.</p>
+
+<h2 id="đa-đồ-thị">Đa đồ thị:</h2>
+
+<p>Là đồ thị không phải là đơn đồ thị.</p>
+
+<h2 id="bậc">Bậc:</h2>
+
+<p>Trong đồ thị vô hướng, bậc của đỉnh <em>v</em> trong đồ thị <em>G</em>, ký hiệu \( d_G(u) \), là số cạnh liên thuộc với <em>v</em>, trong đó, khuyên được tính hai lần.</p>
+
+<p>Ta có định lí:</p>
+
+<p>Giả sử \( G=(V, E) \) là đồ thị vô hướng, khi đó tổng các bậc đỉnh trong V sẽ bằng 2 lần số cạnh.</p>
+
+<script type="math/tex; mode=display">\sum_{ v \in V }{ d_G(v) } = m * 2</script>
+
+<p>Hệ quả: Trong đồ thị vô hướng, số đỉnh bậc lẻ là chẵn.</p>
+
+<p>Trong đồ thị có hướng, ta định nghĩa <strong>bán bậc ra</strong> của u là số cung đi ra khỏi nó, kí hiệu \( d^+_G(u) \), <strong>bán bậc vào</strong> của u là số cung đi ra khỏi nó, kí hiệu \( d^-_G(u) \).</p>
+
+<p>Giả sử \( G=(V, E) \) là đồ thị có hướng, khi đó tổng các bán bậc vào bằng tổng các bán bậc ra và bằng số cung của đồ thị.</p>
+
+<script type="math/tex; mode=display">\sum_{ v \in V }{ d^+_G(v) } = \sum_{ v \in V }{ d^+_G(v) } = m</script>
+
+<h2 id="đường-đi-và-chu-trình">Đường đi và chu trình:</h2>
+
+<p>Một dãy các đỉnh P = (p0,p1,…,pk) sao cho (Pi-1, Pi) ∊ E, ∀i: 1&lt;=i&lt;=k được gọi là một đường đi.</p>
+
+<p>Một đường đi là chu trình khi p0 = pk.</p>
+
+<h2 id="liên-thông">Liên thông:</h2>
+
+<p>Một đồ thị vô hướng là liên thông nếu tồn tại đường đi giữa hai cặp đỉnh bất kì thuộc đồ thị.</p>
+
+<p>Một đồ thị có hướng là liên thông nếu phiên bản vô hướng của đồ thị đó là liên thông.</p>
+
+<h2 id="đồ-thị-phẳng">Đồ thị phẳng:</h2>
+
+<p>Đồ thị phẳng là đồ thị có thể được vẽ trên mặt phẳng sao cho không có hai đỉnh nào trùng nhau và các cạnh nào trùng nhau hoặc cắt nhau.</p>
+
+<p>Công thức Euler:</p>
+
+<p>Giả sử đồ thị vô hướng liên thông \( G=(V, E) \) là đồ thị phẳng, với n đỉnh và m cạnh chia mặt phẳng thành e phần thì</p>
+
+<script type="math/tex; mode=display">n - m + e = 2</script>
+
+<h1 id="biểu-diễn-đồ-thị-trên-máy-tính">Biểu diễn đồ thị trên máy tính:</h1>
+
+<p>Có nhiều cách để biểu diễn đồ thị trên máy tính, tùy thuộc vào tính chất của đồ thị hoặc thuật toán áp dụng với đồ thị… Ta cũng có thể lưu kèm theo các thông tin như trọng số, giá trị phù hợp với từng cạnh. Dưới đây là một vài cách phổ biến.</p>
+
+<h2 id="ma-trận-kề">Ma trận kề:</h2>
+
+<p>Tạo một ma trận A kích thước n*n trong đó n là số đỉnh của đồ thị. Ta gán a[u][v] = 0 nếu có cạnh cạnh nối hai đỉnh u, v.</p>
+
+<p>Nếu đồ thị là đa đồ thị, ta có thể gán a[u][v] = số cạnh nối u và v.</p>
+
+<p>Định nghĩa và gán tùy theo lập trình viên hiểu là vô hướng hay có hướng, đơn đồ thị hay đa đồ thị.</p>
+
+<ol>
+  <li>Ưu điểm:
+    <ul>
+      <li>Để kiểm tra hai đỉnh u, v có kề nhau không, ta chỉ cần kiểm tra trong độ phức tạp \( O(1) \).</li>
+    </ul>
+  </li>
+  <li>Nhược điểm:
+    <ul>
+      <li>Dù đồ thị có nhiều cạnh hay ít cạnh thì cũng phải mất n*n ô nhớ để lưu.</li>
+      <li>Để duyệt tất cả các đỉnh kề với u, ta phải duyệt tất cả các đỉnh v ∊ V cho dù đỉnh u kề với ít hoặc không kề với đỉnh nào khác.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Biểu diễn bằng ma trận kề thường được dùng khi đồ thị có ít đỉnh, hoặc đồ thị dày, nhiều cạnh, hoặc thuật toán để thao tác trên đồ thị yêu cầu.</p>
+
+<h2 id="danh-sách-cạnh">Danh sách cạnh:</h2>
+
+<p>Với đồ thị \( G=(V, E) \) có n đỉnh, m cạnh, ta có thể liệt kê tất cả các cạnh của đồ thị bằng một danh sách tương ứng, mỗi phần tử của mảng tương ứng là một cặp (u,v) là một cạnh thuộc E, tùy theo người lập trình định nghĩa là có hướng hay vô hướng.</p>
+
+<ol>
+  <li>Ưu điểm:
+    <ul>
+      <li>Với đồ thị thưa, ta chỉ cần mất m (số lượng cạnh) ô nhớ để lưu đồ thị.</li>
+    </ul>
+  </li>
+  <li>Nhược điểm:
+    <ul>
+      <li>Khi cần kiểm tra hai đỉnh u,v có kề nhau hay không, ta không thể kiểm tra nhanh trong //( O(1) //) như cách lưu bằng ma trận kề, mặc dù tùy theo cách lưu danh sách cạnh mà ta có thể kiểm tra trong //( O(logn) //) hoặc ít hơn.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="danh-sách-kề">Danh sách kề:</h2>
+
+<p>Với mỗi đỉnh của đồ thị, ta lưu một danh sách các đỉnh kề với đỉnh đó.</p>
+
+<ol>
+  <li>Ưu điểm:
+    <ul>
+      <li>Với phương pháp này, việc duyệt tất cả các đỉnh kề với đỉnh u vô cùng dễ dàng.</li>
+    </ul>
+  </li>
+  <li>Nhược điểm:
+    <ul>
+      <li>Khi cần kiểm tra hai đỉnh u,v có kề nhau hay không, ta không thể kiểm tra nhanh trong \( O(1) \) như cách lưu bằng ma trận kề, mặc dù tùy theo cách lưu danh sách cạnh mà ta có thể kiểm tra trong \( O(logn) \) hoặc ít hơn.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-tim-kiem-theo-chieu-rong-tren-do-thi-breadth-first-search-bfs">[Lý thuyết đồ thị cơ bản] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First Search (BFS)</a></em></p>
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/lý-thuyết-đồ-thị-cơ-bản">lý-thuyết-đồ-thị-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/graph">graph</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/phep-nhan-an-do-va-phep-tinh-luy-thua" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> Phép nhân Ấn Độ và phép tính lũy thừa</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/spoj/spoj-rbull-voi-2016-trai-bo-tot" class="prev-next-link">[SPOJ] RBULL - VOI 2016 - Trại bò tót <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-1-gioi-thieu" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

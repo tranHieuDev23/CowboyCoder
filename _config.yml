@@ -30,6 +30,7 @@ theme: minima
 plugins_dir:
   - jekyll-paginate-v2
 future: true
+destination: "docs"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

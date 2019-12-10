@@ -1,0 +1,51 @@
+/* Styling for navbar */
+nav {
+    border-width: 0 !important;
+}
+
+.navbar-collapse {
+    border-width: 0 !important;
+}
+
+.navbar-default {
+    background: black;
+    margin-bottom: 0;
+}
+
+.navbar-header {
+    background: #ffc40d;
+}
+
+.navbar-toggle {
+    background: black !important;
+    border-color: black !important;
+}
+
+.navbar-toggle:active {
+    background: black !important;
+}
+
+.navbar-toggle span.icon-bar {
+    background-color: #ffc40d !important;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:visited {
+    font-family: 'Oswald', sans-serif;
+    color: #ffc40d;
+    background: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    font-family: 'Oswald', sans-serif;
+    background: #ffc40d;
+    color: black;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: black
+}

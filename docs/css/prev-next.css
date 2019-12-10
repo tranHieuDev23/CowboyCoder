@@ -1,0 +1,32 @@
+/* Styling for prev-next.html */
+.prev-next {
+    background-color: white;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 48px;
+    justify-content: center;
+    margin: 26px 0 20px 0;
+}
+
+.prev-next-item {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    margin: 12px 0px;
+}
+
+.prev-next-item.previous > a{
+    margin: auto auto auto 0;
+}
+
+.prev-next-item.next > a{
+    margin: auto 0 auto auto;
+}
+
+.prev-next-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}

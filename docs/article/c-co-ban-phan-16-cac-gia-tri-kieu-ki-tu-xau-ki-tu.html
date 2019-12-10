@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự.</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [C++ Cơ bản] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.
+
+Biểu diễn giá trị kiểu char
+
+Các giá trị kiểu char sẽ được đặt tro..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự."/> 
+    <meta property="og:image"   content="/img/uploads/C++ Cơ bản - Thumbnail.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [C++ Cơ bản] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.
+
+Biểu diễn giá trị kiểu char
+
+Các giá trị kiểu char sẽ được đặt tro..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự.</a>
+</div>
+                <h1 class="content-title">[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự.</h1>
+                <h2 class="content-author">Đăng bởi Admin Tổng Quản lúc 26 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater">[C++ Cơ bản] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.</a></em></p>
+
+<h1 id="biểu-diễn-giá-trị-kiểu-char">Biểu diễn giá trị kiểu <code class="highlighter-rouge">char</code></h1>
+
+<p>Các giá trị kiểu <code class="highlighter-rouge">char</code> sẽ được đặt trong dấu ngoặc đơn <code class="highlighter-rouge">''</code>. Nếu như giá trị kiểu char có tiền tố <code class="highlighter-rouge">L</code>, giá trị đó thuộc kiểu <code class="highlighter-rouge">wchar_t</code>. Nếu không có thì giá trị mặc định thuộc kiểu <code class="highlighter-rouge">char</code>.</p>
+
+<p>Bên trong ngoặc đơn có thể là kí tự được biểu diễn (ví dụ <code class="highlighter-rouge">'x'</code>), một kí tự đặc biệt (ví dụ <code class="highlighter-rouge">'\n'</code>), hoặc một kí tự thuộc chuẩn UCS (mà bạn tạm thời chưa cần phải quan tâm vội).</p>
+
+<h2 id="kí-tự-đặc-biệt">Kí tự đặc biệt</h2>
+
+<p>Muốn thể hiện kí tự thường thì sử dụng <code class="highlighter-rouge">''</code>. Vậy nếu muốn thể hiện kí tự ngoặc đơn <code class="highlighter-rouge">'</code> thì làm như thế nào?</p>
+
+<p><img src="/img/uploads/cpp-cơ-bản-2-1.jpg" alt="undefined" /></p>
+
+<p>Để thể hiện một số kí tự đặc biệt, ta sử dụng escape sequence - dịch thô ra là “dãy kí tự thoát”, nhưng ở đây sẽ sử dụng cách gọi gốc. Escape sequence bắt đầu bằng kí tự <code class="highlighter-rouge">\</code>, tiếp theo là một hoặc nhiều kí tự khác. Các escape sequence mang ý nghĩa đặc biệt.</p>
+
+<p>Ví dụ cho một số escape sequence:</p>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Escape sequence</th>
+        <th>Ý nghĩa</th>
+    </tr>
+    <tr>
+        <td><code>\\</code></td>
+        <td>Kí tự <code>\</code></td>
+    </tr>
+    <tr>
+        <td><code>\'</code></td>
+        <td>Kí tự ngoặc đơn <code>'</code></td>
+    </tr>
+    <tr>
+        <td><code>\"</code></td>
+        <td>Kí tự ngoặc kép <code>"</code></td>
+    </tr>
+    <tr>
+        <td><code>\?</code></td>
+        <td>Dấu hỏi <code>?</code></td>
+    </tr>
+    <tr>
+        <td><code>\n</code></td>
+        <td>Kí tự xuống dòng</td>
+    </tr>
+    <tr>
+        <td><code>\b</code></td>
+        <td>Backspace (Kí tự xóa)</td>
+    </tr>
+</table>
+
+<h1 id="endl-và-n"><code class="highlighter-rouge">endl</code> và <code class="highlighter-rouge">'\n'</code></h1>
+
+<p><em>“Khoan khoan khoan, sao lại có thêm một kí tự xuống dòng ở kia?”</em></p>
+
+<p>Tuy cùng có khả năng xuống dòng cho output, tuy nhiên <code class="highlighter-rouge">endl</code> và <code class="highlighter-rouge">'\n'</code> lại có chức năng khác nhau.</p>
+
+<p><code class="highlighter-rouge">endl</code> khi được đẩy vào output sẽ output ra kí tự xuống dòng (<code class="highlighter-rouge">'\n'</code>) và giải phóng buffer (flush).</p>
+
+<p><code class="highlighter-rouge">'\n'</code> thì chỉ là kí tự xuống dòng.</p>
+
+<p>Trong lập trình thi đấu, việc flush buffer nhiều cũng sẽ làm giảm tốc độ của chương trình đi. Vậy nên đối với các bạn tham gia lập trình thi đấu, mình khuyến cáo sử dụng <code class="highlighter-rouge">'\n'</code> thay cho <code class="highlighter-rouge">endl</code>.</p>
+
+<p>Ví dụ:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">10</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span> <span class="o">&lt;&lt;</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Output</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+20
+</code></pre></div></div>
+
+<h1 id="string">String</h1>
+
+<p>String hay còn gọi là xâu kí tự, chuỗi kí tự, vân vân… là một tập hợp kí tự. Chúng hình thành nên câu, từ, đoạn văn, vân vân…</p>
+
+<p>Để biểu diễn một string, ta đặt một chuỗi kí tự trong ngoặc kép <code class="highlighter-rouge">""</code>. Dòng chữ <code class="highlighter-rouge">"Hello world!"</code> mặc định của chương trình CodeBlocks cũng là một string.</p>
+
+<p>C++ hỗ trợ hai phương pháp biểu diễn dữ liệu string - phương pháp biểu diễn bằng mảng <code class="highlighter-rouge">char</code> của C, và class <code class="highlighter-rouge">string</code> mới trong C++.</p>
+
+<h1 id="phương-pháp-mảng-char">Phương pháp mảng char</h1>
+
+<p>Ngôn ngữ C sử dụng mảng các giá trị kiểu <code class="highlighter-rouge">char</code> để biểu diễn một string. Mảng này bao gồm các kí tự của string, cộng thêm với một kí tự kết thúc null <code class="highlighter-rouge">'\0'</code>.</p>
+
+<p>Ví dụ: Ta có thể khai báo string <code class="highlighter-rouge">hello</code> như sau</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">char</span> <span class="n">hello</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="p">;</span></code></pre></figure>
+
+<p>Việc khai báo này cũng tương đương với đoạn code sau:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">char</span> <span class="n">hello</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'H'</span><span class="p">,</span> <span class="sc">'e'</span><span class="p">,</span> <span class="sc">'l'</span><span class="p">,</span> <span class="sc">'l'</span><span class="p">,</span> <span class="sc">'o'</span><span class="p">,</span> <span class="sc">' '</span><span class="p">,</span> <span class="sc">'W'</span><span class="p">,</span> <span class="sc">'o'</span><span class="p">,</span> <span class="sc">'r'</span><span class="p">,</span> <span class="sc">'l'</span><span class="p">,</span> <span class="sc">'d'</span><span class="p">,</span> <span class="sc">'\0'</span><span class="p">};</span></code></pre></figure>
+
+<p>Ta có thể in ra string <code class="highlighter-rouge">hello</code> bằng các lệnh in dữ liệu thông thường.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">hello</span><span class="p">;</span></code></pre></figure>
+
+<p>C++ cung cấp thư viện <code class="highlighter-rouge">cstring</code> để thực hiện các thao tác phức tạp hơn với kiểu dữ liệu string được biểu diễn bằng mảng <code class="highlighter-rouge">char</code>. Một số hàm quan trọng của thư viện này là:</p>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Hàm</th>
+        <th>Chức năng</th>
+    </tr>
+    <tr>
+        <td><code>strcpy(s1, s2)</code></td>
+        <td>Gán giá trị của string <code>s2</code> cho <code>s1</code></td>
+    </tr>
+    <tr>
+        <td><code>strcat(s1, s2)</code></td>
+        <td>Gắn string <code>s2</code> vào cuối <code>s1</code></td>
+    </tr>
+    <tr>
+        <td><code>strlen(s1)</code></td>
+        <td>Trả về độ dài của string <code>s1</code></td>
+    </tr>
+    <tr>
+        <td><code>strcmp(s1, s2) </code></td>
+        <td>Trả về 0 nếu string <code>s1</code> bằng <code>s2</code>. Trả về một giá trị số nguyên bé hơn 0 nếu <code>s1</code> nhỏ hơn <code>s2</code>, và lớn hơn 0 nếu <code>s1</code> lớn hơn <code>s2</code>.</td>
+    </tr>
+    <tr>
+        <td><code>strchr(s1, ch)</code></td>
+        <td>Trả lại con trỏ bộ nhớ của vị trí đầu tiên trong string <code>s1</code> có sự xuất hiện của kí tự <code>ch</code></td>
+    </tr>
+    <tr>
+        <td><code>strstr(s1, s2)</code></td>
+        <td>Trả lại con trỏ bộ nhớ của vị trí đầu tiên trong string <code>s1</code> có sự xuất hiện của string <code>s2</code></td>
+    </tr>
+</table>
+
+<p><strong>Chú ý:</strong> Một string <code class="highlighter-rouge">s1</code> được gọi là bé hơn string <code class="highlighter-rouge">s2</code>, nếu như kí tự đầu tiên khác nhau giữa hai string từ trái qua ở string <code class="highlighter-rouge">s1</code> có giá trị nhỏ hơn ở string <code class="highlighter-rouge">s2</code> - hiểu nôm na thì <code class="highlighter-rouge">s1</code> có thứ tự trong từ điển đứng trước <code class="highlighter-rouge">s2</code>.</p>
+
+<p>Ví dụ:</p>
+
+<ul>
+  <li>String <code class="highlighter-rouge">"abcabc"</code> có thứ tự từ điển đứng trước <code class="highlighter-rouge">"acb"</code></li>
+  <li>String <code class="highlighter-rouge">"abc"</code> có thứ tự từ điển đứng trước <code class="highlighter-rouge">"abcabc"</code> Chi tiết đầy đủ về các hàm của thư viện này có thể được tìm thấy ở đây.</li>
+</ul>
+
+<p>Class string</p>
+
+<p>C++ cũng cung cấp class/kiểu dữ liệu <code class="highlighter-rouge">string</code> để quản lý xâu kí tự. Để sử dụng class này, ta cần phải khai báo thư viện <code class="highlighter-rouge">string</code>.</p>
+
+<p>Ưu điểm của class <code class="highlighter-rouge">string</code> là khả năng sử dụng các toán tử - ta có thể sử dụng toán tử <code class="highlighter-rouge">+</code> để ghép hai string lại với nhau, hay sử dụng các toán tử so sánh để so sánh các đối tượng string với nhau, thay vì phải sử dụng hàm như phương pháp mảng <code class="highlighter-rouge">char</code>.</p>
+
+<p><code class="highlighter-rouge">string</code> ngang hàng với kiểu dữ liệu xâu kí tự mảng <code class="highlighter-rouge">char</code> về nhiều mặt - giá trị của hai kiểu dữ liệu có thể được gán cho nhau, và chúng có thể được đặt chung trong một phép toán. Chú ý rằng mảng <code class="highlighter-rouge">char</code> không thể được áp dụng các toán tử với nhau như <code class="highlighter-rouge">string</code>, mà phải có giá trị kiểu string trong phép toán.</p>
+
+<p>Ví dụ: Chương trình sau đây yêu cầu bạn nhập tên của mình vào, và in ra một câu chào hỏi.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap ten cua ban: "</span><span class="p">;</span>
+    <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Xin chao "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">"!"</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Để truy cập vào kí tự của một đối tượng class <code class="highlighter-rouge">string</code>, ta cũng sử dụng ngoặc vuông như đối với mảng <code class="highlighter-rouge">char</code>. Ví dụ <code class="highlighter-rouge">ViDu[3]</code> là kí tự thứ 4 của string <code class="highlighter-rouge">ViDu</code>.</p>
+
+<p>Thư viện <code class="highlighter-rouge">cstring</code> không thể áp dụng lên các đối tượng class <code class="highlighter-rouge">string</code>, thay vào đó bản thân đối tượng <code class="highlighter-rouge">string</code> có những hàm để hỗ trợ cho chính bản thân mình.</p>
+
+<p>Lấy ví dụ với biến <code class="highlighter-rouge">string s = "Hello"</code>, một số hàm quan trọng của <code class="highlighter-rouge">string</code> bao gồm:</p>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Hàm</th>
+        <th>Chức năng</th>
+        <th>Ví dụ</th>
+    </tr>
+    <tr>
+        <td><code>đối_tượng.size()</code> và <code>đối_tượng.length()</code></td>
+        <td>Trả về độ dài của đối tượng</td>
+        <td><code>s.size()</code> trả về 5</td>
+    </tr>
+    <tr>
+        <td><code>đối_tượng.clear()</code></td>
+        <td>Xóa hết nội dung của string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>đối_tượng.empty()</code></td>
+        <td>Kiểm tra xem string có phải là string rỗng không (string độ dài bằng 0)</td>
+        <td><code>s.empty()</code> trả về <code>false</code></td>
+    </tr>
+    <tr>
+        <td><code>đối_tượng.substr(int, int)</code></td>
+        <td>Trả về string con của string đối tượng. Tham số đầu tiên là chỉ số bắt đầu của string con cần lấy, tham số thứ hai là độ dài cần lấy.</td>
+        <td><code>s.substr(1, 3)</code> trả về <code>"ell"</code></td>
+    </tr>
+</table>
+
+<p>Các bạn có thể tham khảo danh sách đẩy đủ các hàm của class <code class="highlighter-rouge">string</code> trên trang <a href="http://www.cplusplus.com/reference/string/string/">C++ Reference</a>.</p>
+
+<p>Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.</p>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro">[C++ Cơ bản] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.</a></em></p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/cpp-cơ-bản">cpp-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/programming">programming</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/lap-trinh-thi-dau-co-ban-phan-1-hoc-nhu-the-nao-de-thi-dau" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [Lập trình thi đấu cơ bản] Phần 1: Học như thế nào để thi đấu?</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/lam-sao-de-khong-thi-tot-ma-van-song" class="prev-next-link">Làm sao để không thi tốt mà vẫn sống <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/c-co-ban-phan-16-cac-gia-tri-kieu-ki-tu-xau-ki-tu" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

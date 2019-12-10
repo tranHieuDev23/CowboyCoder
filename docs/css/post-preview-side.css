@@ -1,0 +1,70 @@
+/* Styling for post preview box */
+
+.post-preview-side-header {
+  position: relative;
+}
+
+.post-preview-side-foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  display: none;
+}
+
+.post-preview-side-img {
+  width: 100%;
+}
+
+.post-preview-side-metadata {
+  padding: 0px 20px 0 20px;
+  background: white;
+}
+
+.post-preview-side-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.post-preview-side-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+}
+
+.post-preview-side-body {
+  padding: 0px 20px 12px 20px;
+  overflow-wrap: break-word;
+}
+
+.post-preview-side-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .post-preview-side-foreground {
+    display: block;
+  }
+
+  .post-preview-side-metadata {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 14px 20px 12px 20px;
+    width: 90%;
+    max-height: 100%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .post-preview-side-body {
+    padding: 14px 20px 12px 20px;
+  }
+
+  .post-preview-side-title, .post-preview-side-subtitle {
+    color: #ffc40d;
+  }
+}

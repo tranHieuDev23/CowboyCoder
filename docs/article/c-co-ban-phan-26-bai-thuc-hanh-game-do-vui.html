@@ -1,0 +1,678 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng
+
+Chào mừng các bạn đến với chương trình Ai là Cốt đơ trên trang Cowboy Coder. Đ..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui"/> 
+    <meta property="og:image"   content="/img/uploads/C++ Co ban - Thumbnail.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng
+
+Chào mừng các bạn đến với chương trình Ai là Cốt đơ trên trang Cowboy Coder. Đ..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui</a>
+</div>
+                <h1 class="content-title">[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui</h1>
+                <h2 class="content-author">Đăng bởi Admin Tổng Quản lúc 10 Sep 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong">[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng</a></em></p>
+
+<p><em>Chào mừng các bạn đến với chương trình Ai là Cốt đơ trên trang Cowboy Coder. Để có thể giành được giải thưởng 100 triệu cái hắt hơi của chương trình, các bạn sẽ phải trả lời một vài câu hỏi. Các câu hỏi sẽ có 3 dạng: Câu hỏi trắc nghiệm, Câu hỏi đúng sai và Câu hỏi nhập số. Nào, hãy cùng nhau bắt đầu chương trình!</em></p>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-1.jpg" alt="undefined" /></p>
+
+<p>Yeah, chả ai quan tâm đâu.</p>
+
+<p>Nhưng nếu bây giờ bạn phải triển khai phần mềm cho chương trình trên, bạn sẽ làm như thế nào? Bài thực hành này sẽ giúp bạn tạo được một chương trình đố vui bằng C++, đồng thời cũng giúp bạn tổng quát lại các kết thức về Lập trình hướng đối tượng với C++.</p>
+
+<h1 id="yêu-cầu-của-bài-thực-hành">Yêu cầu của bài thực hành</h1>
+
+<p>Khi chương trình khởi động, ta sẽ chỉ định chương trình đọc file chứa câu hỏi. File chứa câu hỏi sẽ có nội dung như sau:</p>
+
+<ul>
+  <li>Dòng đầu tiên chứa một số <code class="highlighter-rouge">n</code> - số lượng câu hỏi.</li>
+  <li>Các nhóm dòng tiếp theo chứa nội dung các câu hỏi. Dòng đầu tiên là một chữ cái biểu diễn loại câu hỏi - <code class="highlighter-rouge">M</code> (Multiple Choice) là câu hỏi trắc nghiệm 4 đáp án, <code class="highlighter-rouge">T</code> (True/False) là câu hỏi đúng sai và <code class="highlighter-rouge">N</code> (Number) là câu hỏi nhập đáp án dạng số.</li>
+  <li>Đối với câu hỏi dạng <code class="highlighter-rouge">M</code>, 4 dòng tiếp theo chứa nội dung của 4 đáp án <code class="highlighter-rouge">A</code>, <code class="highlighter-rouge">B</code>, <code class="highlighter-rouge">C</code>, <code class="highlighter-rouge">D</code>. Sau 4 dòng này là một dòng thứ 5, chứa đáp án được viết dưới dạng chữ in hoa.</li>
+  <li>Đối với câu hỏi dạng <code class="highlighter-rouge">T</code>, dòng tiếp theo chứa đáp án <code class="highlighter-rouge">T</code> hoặc <code class="highlighter-rouge">F</code> (đúng hoặc sai).</li>
+  <li>Đối với câu hỏi dạng <code class="highlighter-rouge">N</code>, dòng tiếp theo chứa đáp án là một số thực.</li>
+</ul>
+
+<p>Sau khi đọc hết <code class="highlighter-rouge">n</code> câu hỏi, chương trình sẽ lần lượt hiện ra các câu hỏi đã đọc vào. Người dùng sẽ trả lời các câu hỏi bằng kí tự in hoa (đối với câu hỏi dạng <code class="highlighter-rouge">M</code> hoặc <code class="highlighter-rouge">T</code>), hoặc bằng số thực (nếu là câu hỏi dạng <code class="highlighter-rouge">N</code>). Chương trình sẽ thông báo người dùng có trả lời đúng hay không, và nếu trả lời sai, thì đáp án đúng là gì. Kết thúc chương trình, chương trình sẽ thông báo số lượng câu trả lời người dùng đã trả lời đúng.</p>
+
+<p>Để cho đơn giản, ta mặc định người dùng luôn luôn nhập vào đúng kiểu đáp án, để không phải mất công kiểm tra.</p>
+
+<p>Các bạn có thể download chương trình đã hoàn thiện ở <a href="https://github.com/cowboycodervn/Basic-C---Exercise-2/raw/master/Quiz.exe">đây</a>, cùng với file câu hỏi mẫu ở <a href="https://github.com/cowboycodervn/Basic-C---Exercise-2/blob/master/INPUT.TXT">đây</a>.</p>
+
+<h1 id="interface-question">Interface <code class="highlighter-rouge">Question</code></h1>
+
+<p>Chắc hẳn các bạn cũng đã có thể <em>nghe nhạc hiệu đoán được chương trình</em> rồi: Chúng ta sẽ sử dụng một interface <code class="highlighter-rouge">Question</code> chung cho 3 loại câu hỏi trên, để có thể chung đường xử lý cho cả 3 dạng câu hỏi.</p>
+
+<p>Một câu hỏi có 3 chức năng cần cài đặt: đọc vào nội dung câu hỏi từ file input, in ra nội dung câu hỏi, và nhận vào câu trả lời. Do đó interface <code class="highlighter-rouge">Question</code> sẽ cần phải cài đặt 3 hàm abstract <code class="highlighter-rouge">readFromFile()</code>, <code class="highlighter-rouge">printQuestion()</code> và <code class="highlighter-rouge">getAnswer()</code> tương ứng, để các subclass triển khai sau.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">readFromFile()</code> nhận một tham số truyền biến là một object thuộc class <code class="highlighter-rouge">ifstream</code> - luồng vào từ file cần nhập - và đọc nội dung câu hỏi vào object. Nhớ là tham số truyền biến, sử dụng toán tử <code class="highlighter-rouge">&amp;</code>, nếu không sẽ sinh lỗi khi dịch.</li>
+  <li><code class="highlighter-rouge">printQuestion()</code> in ra nội dung câu hỏi theo mẫu có sẵn.</li>
+  <li><code class="highlighter-rouge">getAnswer()</code> là một hàm kiểu <code class="highlighter-rouge">bool</code>, đợi người dùng nhập câu trả lời vào, in ra thông báo phù hợp và trả lại <code class="highlighter-rouge">true</code> nếu người dùng trả lời đúng, <code class="highlighter-rouge">false</code> nếu trả lời sai.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">Question</span>
+<span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">readFromFile</span><span class="p">(</span><span class="n">ifstream</span> <span class="o">&amp;</span><span class="n">fileInput</span><span class="p">)</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">printQuestion</span><span class="p">()</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">getAnswer</span><span class="p">()</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>Đừng quên thêm thư viện fstream vào để có thể sử dụng được ifstream nhé.</p>
+
+<p>Sau khi có interface <code class="highlighter-rouge">Question</code> rồi, ta có thể dễ dàng hình dung ra nội dung của hàm <code class="highlighter-rouge">int main()</code> ở dưới thành các bước sau:</p>
+
+<ul>
+  <li>Đọc file câu hỏi vào một mảng con trỏ interface <code class="highlighter-rouge">Question</code></li>
+  <li>Mở file câu hỏi, sử dụng câu lệnh điều kiện để quyết định dùng loại class câu hỏi nào</li>
+  <li>Duyệt qua từng câu hỏi một, in ra nội dung, và nhận lại câu trả lời từ người dùng</li>
+  <li>In ra số lượng câu trả lời đúng, và kết thúc chương trình</li>
+</ul>
+
+<p>Tạm thời ta sẽ bỏ trống phần đọc nội dung câu hỏi tới khi cài đặt xong class của 3 dạng câu hỏi về sau.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">char</span> <span class="n">fileName</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">correctAnswer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="cm">/* correctAnswer là số lượng câu trả lời đúng */</span>
+<span class="n">Question</span> <span class="o">*</span><span class="n">allQuestion</span><span class="p">[</span><span class="mi">1000</span><span class="p">];</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap file cau hoi: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">fileName</span><span class="p">;</span>
+
+    <span class="n">ifstream</span> <span class="n">fileInput</span><span class="p">;</span> <span class="n">fileInput</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">);</span>
+    <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="cm">/* Đọc vào nội dung các câu hỏi */</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">PrintQuestion</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">GetAnswer</span><span class="p">())</span>
+            <span class="n">correctAnswer</span> <span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"So luong cau tra loi dung: "</span> <span class="o">&lt;&lt;</span> <span class="n">correctAnswer</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="class-multiplequestion---câu-hỏi-trắc-nghiệm">Class <code class="highlighter-rouge">MultipleQuestion</code> - câu hỏi trắc nghiệm</h1>
+
+<p>Dạng câu hỏi đầu tiên ta triển khai sẽ là câu hỏi trắc nghiệm - class <code class="highlighter-rouge">MultipleQuestion</code>. Trước khi làm bất cứ thao tác gì, đừng quên tuyên bố class này là subclass của interface <code class="highlighter-rouge">Question</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">MultipleQuestion</span><span class="o">:</span> <span class="k">public</span> <span class="n">Question</span></code></pre></figure>
+
+<p>Câu hỏi trắc nghiệm thì cần có 1 nội dung lớn, 4 lựa chon và 1 đáp án đúng. Ta sẽ lưu trữ chúng trong các object <code class="highlighter-rouge">string</code> là <code class="highlighter-rouge">question</code> (câu hỏi), mảng <code class="highlighter-rouge">string choice[]</code> (lựa chọn) và biến <code class="highlighter-rouge">char correctAnswer</code> (đáp án đúng). Chẳng có lý do gì mà ta muốn công khai các nội dung này ra cả, nên ta sẽ để chúng là <code class="highlighter-rouge">private</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">MultipleQuestion</span><span class="o">:</span> <span class="k">public</span> <span class="n">Question</span>
+<span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">question</span><span class="p">,</span> <span class="n">choice</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+        <span class="kt">char</span> <span class="n">correctAnswer</span><span class="p">;</span></code></pre></figure>
+
+<p>Giờ tới lúc triển khai việc đọc. Nội dung câu hỏi và các đáp án chiếm trọn một dòng và bao gồm cả dấu cách. Ta cần cách đọc hết cả một dòng mà không bỏ qua dấu cách. Còn nhớ hàm <code class="highlighter-rouge">getline()</code> ở bài thực hành trước chứ?</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="nl">public:</span>
+        <span class="kt">void</span> <span class="nf">readFromFile</span><span class="p">(</span><span class="n">ifstream</span> <span class="o">&amp;</span><span class="n">fileInput</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">question</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+                <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">choice</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+            <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">correctAnswer</span><span class="p">;</span>
+        <span class="p">}</span></code></pre></figure>
+
+<p>Việc đọc câu hỏi vào rất đơn giản, việc in nội dung ra cũng vậy. Chỉ có một điều khác biệt, đó là ta cần in ra các chữ cái đại diện cho đáp án. Trong bảng mã ASCII mà C++ sử dụng, các chữ cái <code class="highlighter-rouge">A</code>, <code class="highlighter-rouge">B</code>, <code class="highlighter-rouge">C</code>, <code class="highlighter-rouge">D</code> được đặt liền nhau. Do đó ta sẽ cộng biến đếm vào giá trị của kí tự <code class="highlighter-rouge">'A'</code>, để trả lại chữ cái in ra phù hợp - biến <code class="highlighter-rouge">label</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">printQuestion</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">question</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">char</span> <span class="n">label</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">label</span> <span class="o">&lt;&lt;</span> <span class="s">": "</span> <span class="o">&lt;&lt;</span> <span class="n">choice</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-2.jpg" alt="undefined" /></p>
+
+<p>Cuối cùng là việc đọc đáp án. Công việc này cũng rất đơn giản - chỉ cần <code class="highlighter-rouge">cin</code> đáp án vào một biến dạng <code class="highlighter-rouge">char</code>, và kiểm tra xem đáp án có bằng với <code class="highlighter-rouge">correctAnswer</code> hay không để in ra thông báo phù hợp.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">bool</span> <span class="nf">getAnswer</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="n">answer</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">answer</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi dung!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi sai! Cau tra loi dung la "</span> <span class="o">&lt;&lt;</span> <span class="n">correctAnswer</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-3.jpg" alt="undefined" /></p>
+
+<p>Nội dung hoàn chỉnh của class <code class="highlighter-rouge">MultipleQuestion</code> sẽ là như sau</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">MultipleQuestion</span><span class="o">:</span> <span class="k">public</span> <span class="n">Question</span>
+<span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">question</span><span class="p">,</span> <span class="n">choice</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+        <span class="kt">char</span> <span class="n">correctAnswer</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="kt">void</span> <span class="n">readFromFile</span><span class="p">(</span><span class="n">ifstream</span> <span class="o">&amp;</span><span class="n">fileInput</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">question</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+                <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">choice</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+            <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">correctAnswer</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">printQuestion</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">question</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">char</span> <span class="n">label</span> <span class="o">=</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">label</span> <span class="o">&lt;&lt;</span> <span class="s">": "</span> <span class="o">&lt;&lt;</span> <span class="n">choice</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="n">getAnswer</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="kt">char</span> <span class="n">answer</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">answer</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi dung!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi sai! Cau tra loi dung la "</span> <span class="o">&lt;&lt;</span> <span class="n">correctAnswer</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<h1 id="class-truefalse-câu-hỏi-đúng-sai-và-class-numberquestion-câu-hỏi-dạng-số">Class <code class="highlighter-rouge">TrueFalse</code> (câu hỏi đúng sai) và class <code class="highlighter-rouge">NumberQuestion</code> (câu hỏi dạng số)</h1>
+
+<p>Dạng câu hỏi đúng sai giống hệt như dạng câu hỏi <code class="highlighter-rouge">MultipleQuestion</code>, nhưng chỉ khác là từ 4 lựa chọn ta chỉ có 2 (<code class="highlighter-rouge">T</code> hoặc <code class="highlighter-rouge">F</code>). Do đó cách triển khai cũng chỉ khác ở việc đọc nội dung vào và ở cách nội dung được in ra mà thôi.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">TrueFalse</span><span class="o">:</span> <span class="k">public</span> <span class="n">Question</span>
+<span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">question</span><span class="p">;</span>
+        <span class="kt">char</span> <span class="n">correctAnswer</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="kt">void</span> <span class="n">readFromFile</span><span class="p">(</span><span class="n">ifstream</span> <span class="o">&amp;</span><span class="n">fileInput</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">question</span><span class="p">);</span>
+            <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">correctAnswer</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">printQuestion</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">question</span> <span class="o">&lt;&lt;</span> <span class="s">" (T/F)</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="p">}</span>
+        
+        <span class="kt">bool</span> <span class="n">getAnswer</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="kt">char</span> <span class="n">answer</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">answer</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi dung!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi sai! Cau tra loi dung la "</span> <span class="o">&lt;&lt;</span> <span class="n">correctAnswer</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-4.jpg" alt="undefined" /></p>
+
+<p>Class <code class="highlighter-rouge">NumberQuestion</code> thì giống hệt class <code class="highlighter-rouge">TrueFalse</code>, nhưng chỉ khác là phải chuyển <code class="highlighter-rouge">correctAnswer</code> từ một kí tự thành một số thôi. Ta chỉ cần copy lại class này, đổi tên class và đổi kiểu dữ liệu của <code class="highlighter-rouge">correctAnswer</code> thành <code class="highlighter-rouge">double</code>, thế là xong.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">class</span> <span class="nc">NumberQuestion</span><span class="o">:</span> <span class="k">public</span> <span class="n">Question</span>
+<span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">string</span> <span class="n">question</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">correctAnswer</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="kt">void</span> <span class="n">readFromFile</span><span class="p">(</span><span class="n">ifstream</span> <span class="o">&amp;</span><span class="n">fileInput</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">question</span><span class="p">);</span>
+            <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">correctAnswer</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">printQuestion</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">question</span> <span class="o">&lt;&lt;</span> <span class="s">" (T/F)</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="n">getAnswer</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="kt">double</span> <span class="n">answer</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">answer</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi dung!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Cau tra loi sai! Cau tra loi dung la "</span> <span class="o">&lt;&lt;</span> <span class="n">correctAnswer</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-5.jpg" alt="undefined" /></p>
+
+<h1 id="áp-dụng-3-dạng-câu-hỏi-vào-chương-trình">Áp dụng 3 dạng câu hỏi vào chương trình</h1>
+
+<p>Sau khi cài đặt xong 3 dạng câu hỏi, ta chỉ còn một chi tiết cuối, đó là đọc nội dung của chúng từ file. Ta sẽ sử dụng câu lệnh điều kiện <code class="highlighter-rouge">if</code> cho việc này - nếu như biến dạng <code class="highlighter-rouge">char type</code> (loại, tức loại của câu hỏi) đọc vào có giá trị là <code class="highlighter-rouge">'M'</code>, câu hỏi sẽ là câu hỏi trắc nghiệm và con trỏ tương ứng phải chỉ vào một đối tượng class <code class="highlighter-rouge">MultipleQuestion</code>. Tương tự với hai dạng kia.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap file cau hoi: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">fileName</span><span class="p">;</span>
+
+    <span class="n">ifstream</span> <span class="n">fileInput</span><span class="p">;</span> <span class="n">fileInput</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">);</span>
+    <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">char</span> <span class="n">questionType</span><span class="p">;</span>
+        <span class="n">fileInput</span> <span class="o">&gt;&gt;</span> <span class="n">questionType</span><span class="p">;</span>
+        <span class="n">string</span> <span class="n">temp</span><span class="p">;</span> <span class="n">getline</span><span class="p">(</span><span class="n">fileInput</span><span class="p">,</span> <span class="n">temp</span><span class="p">);</span> <span class="cm">/* Dọn dẹp phần còn lại của dòng để xuống dòng */</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">questionType</span> <span class="o">==</span> <span class="sc">'M'</span><span class="p">)</span>
+            <span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MultipleQuestion</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">questionType</span> <span class="o">==</span> <span class="sc">'T'</span><span class="p">)</span>
+            <span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TrueFalse</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">questionType</span> <span class="o">==</span> <span class="sc">'N'</span><span class="p">)</span>
+            <span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">NumberQuestion</span><span class="p">;</span></code></pre></figure>
+
+<p>Cuối cùng là việc đọc nội dung câu hỏi vào đối tượng.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">        <span class="n">allQuestion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">readFromFile</span><span class="p">(</span><span class="n">fileInput</span><span class="p">);</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-26-6.jpg" alt="undefined" /></p>
+
+<p>Vậy là chương trình của chúng ta đã xong rồi! Các bạn có thể xem lại code của chương trình tại <a href="https://github.com/cowboycodervn/Basic-C---Exercise-2/blob/master/Quiz.cpp">đây</a>.</p>
+
+<h1 id="bình-luận">Bình luận</h1>
+
+<p>OOP thật sự rất tiện lợi cho việc lắp đặt và nâng cấp - với interface <code class="highlighter-rouge">Question</code> đã được định nghĩa sẵn, ta có thể thêm vào chương trình bất cứ loại câu hỏi nào mà ta có thể nghĩ ra, với điều kiện phải overload lại 3 hàm abstract cần thiết. Giả sử ta có một class phụ trách việc hiển thị câu hỏi lên giao diện đồ họa, ta cũng có thể điều chỉnh chương trình này lại sao cho phù hợp với cấu trúc của class kia, và lắp đặt lại thành một trò chơi câu hỏi đẹp mắt.</p>
+
+<p>Bài thực hành này kết thúc phần học về lập trình hướng đối tượng với C++. Bài viết tiếp theo sẽ giúp các bạn làm quen với STL - thư viện template của C++ và các class quan trọng trong thư viện này.</p>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c">[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++.</a></em></p>
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/cpp-cơ-bản">cpp-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/programming">programming</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/c-co-ban-phan-25-abstract-class-class-truu-tuong" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c" class="prev-next-link">[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

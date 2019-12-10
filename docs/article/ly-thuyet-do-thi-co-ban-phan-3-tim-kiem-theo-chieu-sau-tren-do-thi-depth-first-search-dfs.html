@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[Lý thuyết đồ thị cơ bản] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search (DFS)</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [Lý thuyết đồ thị cơ bản] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First Search (BFS)
+
+Bài này chúng ta sẽ tiếp tục với c..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[Lý thuyết đồ thị cơ bản] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search (DFS)"/> 
+    <meta property="og:image"   content="/img/uploads/Lý thuyết đồ thị cơ bản - cover.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [Lý thuyết đồ thị cơ bản] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First Search (BFS)
+
+Bài này chúng ta sẽ tiếp tục với c..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[Lý thuyết đồ thị cơ bản] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search (DFS)</a>
+</div>
+                <h1 class="content-title">[Lý thuyết đồ thị cơ bản] Phần 3: Tìm kiếm theo chiều sâu trên đồ thị - Depth-First Search (DFS)</h1>
+                <h2 class="content-author">Đăng bởi Phương Nguyễn lúc 07 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-tim-kiem-theo-chieu-rong-tren-do-thi-breadth-first-search-bfs">[Lý thuyết đồ thị cơ bản] Phần 2: Tìm kiếm theo chiều rộng trên đồ thị - Breadth-First Search (BFS)</a></em></p>
+
+<p>Bài này chúng ta sẽ tiếp tục với các thuật toán tìm kiếm trên đồ thị. Bài trước là BFS, bài này sẽ nói về DFS, tìm kiếm theo chiều sâu. Nó là một thuật toán đơn giản nhưng bạn sẽ làm được nhiều thứ tuyệt vời với nó.</p>
+
+<p>Như bình thường, chúng ta sẽ có một đồ thị có hướng liên thông G=(V, E), |V|=n, |E|=m và sẽ biểu diễn nó bằng một danh sách kề. Chúng ta sẽ sử dựng một mảng vector để lưu. Vector g[u] sẽ lưu một danh sách các đỉnh kề với u.</p>
+
+<p>Và mục đích của chúng ta sẽ là “khám phá” đồ thị này. Chúng ta sẽ đi thăm tất cả các đỉnh của đồ thị, theo một thứ tự bất kì nào đó, mỗi đỉnh một lần.</p>
+
+<p>Bằng việc sử dụng BFS, chúng ta sẽ duyệt đồ thị loang ra theo từng lớp từ một đỉnh xuất phát u và chúng ta sẽ tìm được những con đường ngắn nhất, những cách nhanh nhất để tới một đỉnh khác. Và BFS là một cách tốt để tìm xem đỉnh nào không thể tới được từ u.</p>
+
+<p>DFS tương tự như vậy. Tuy những con đường đi tới một đỉnh khác chúng ta tìm ra chưa chắc đã là ngắn nhất, nhưng xét trên phương diện cài đặt thì DFS đơn giản và gọn nhẹ hơn BFS nhiều.</p>
+
+<h1 id="ý-tưởng">Ý Tưởng</h1>
+
+<p>Ý tưởng vô cùng đơn giản. Nó giống như việc bạn lạc vào một mê cung. Và bạn có một cái bánh mì. Cách tốt nhất để thoát khỏi mê cung trước khi bánh mì hết là: Bạn nhìn thấy một lối đi trước mặt, bạn đi theo lối đó, và vừa đi vừa rải những mẩu bánh mì nhỏ dọc theo con đường. Khi bạn tới một ngõ cụt, bạn quay lại con đường đã đi. Nếu bạn gặp ngã rẽ, bạn nhìn thấy bánh mì ở một con đường và bạn biết mình đã đi qua nó rồi, nó vô dụng, và bạn sẽ đi theo ngả khác.</p>
+
+<p>Và nếu bạn hết bánh mì, nó giống như việc bộ nhớ máy tính của bạn không đủ hoặc thời gian bạn có để giải quyết vấn đề đã hết vậy. Xin chúc mừng, bạn đã dùng hết thời gian và bánh mì để duyệt các đỉnh trong mê cung, và giờ bạn đã mắc kẹt và sẽ chết đói :v</p>
+
+<p><img src="/img/uploads/ly-thuyet-do-thi-co-ban-3-1.jpg" alt="undefined" /></p>
+
+<h1 id="thuật-toán">Thuật Toán</h1>
+
+<ol>
+  <li>Thăm đỉnh xuất phát, đỉnh u, đánh dấu đỉnh u.</li>
+  <li>Xét các đỉnh v kề với đỉnh hiện đang thăm
+    <ul>
+      <li>Nếu đỉnh v chưa được đánh dấu (chưa thăm), thăm đỉnh v.</li>
+      <li>Nếu đỉnh v đã được đánh đấu, bỏ qua.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/img/uploads/ly-thuyet-do-thi-co-ban-3-2.gif" alt="undefined" /></p>
+
+<h1 id="cài-đặt-bằng-ngôn-ngữ-c">Cài đặt bằng ngôn ngữ C++</h1>
+
+<p>So sánh với BFS, chúng ta có thể cài đặt DFS dễ dàng với một hàm đệ quy.</p>
+
+<p>Tùy theo những gì bạn cần làm trên đồ thị mà bạn có thể điều chỉnh code cho phù hợp.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">vector</span> <span class="n">g</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span> <span class="c1">// vector lưu các đỉnh kề với các đỉnh
+</span><span class="kt">int</span> <span class="n">dd</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span> <span class="c1">// mảng đánh dấu
+</span>
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">u</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">dd</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// đánh dấu đỉnh u đã đi qua
+</span>    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span> <span class="n">i</span><span class="p">)</span> <span class="c1">// với mỗi đỉnh v kề với u
+</span>    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">v</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">);</span> <span class="c1">// nếu v chưa đánh dấu, tới thăm đỉnh u
+</span>    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="độ-phức-tạp">Độ phức tạp</h1>
+
+<p>O(|V| + |E|) tương đương BFS</p>
+
+<ul>
+  <li>DFS được gọi đúng 1 lần ứng với mỗi đỉnh.</li>
+  <li>Mỗi cạnh được duyệt qua 1 lần với đồ thị có hướng. Nếu là đồ thị vô hướng thì mỗi cạnh được duyệt qua 2 lần.</li>
+</ul>
+
+<h1 id="ứng-dụng">Ứng dụng</h1>
+
+<p>DFS được ứng dụng rất nhiều. Ví dụ như…</p>
+
+<ul>
+  <li>Xác định các thành phần liên thông của đồ thị</li>
+  <li>Sắp xếp tô-pô cho đồ thị</li>
+  <li>Xác định các thành phần liên thông mạnh của đồ thị có hướng</li>
+  <li>Kiểm tra một đồ thị có phải là đồ thị phẳng hay không</li>
+</ul>
+
+<p><strong>Chú ý:</strong> Với code đệ quy bằng ngôn ngữ C++, do C++ giới hạn bộ nhớ một chương trình con được phép sử dụng, đôi khi số lượng đỉnh lớn một chút sẽ làm bạn bị tràn lượng bộ nhớ đó, cần phải áp dụng cài đặt khử đệ quy để tránh trường hợp này. Tuy nhiên trong các cuộc thi lập trình thi đấu (và trong lập trình thực tế), bạn ít khi gặp phải trường hợp này. Cài đặt khử đệ quy cũng khó và dễ sai hơn so với đệ quy, nên cũng không đáng phải liều mạng tới mức đó.</p>
+
+<h1 id="một-số-bài-tập-vận-dụng">Một số bài tập vận dụng</h1>
+
+<p><a href="http://vn.spoj.com/problems/ADS/">ADS (SPOJ)</a>. Lời giải xem tại <a href="http://cowboycoder.tech/spoj/spoj-ads-quang-cao">đây</a>.</p>
+
+<p><a href="http://vn.spoj.com/problems/PWALK/">PWALK (SPOJ)</a></p>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-4-duong-di-ngan-nhat-tren-do-thi-va-thuat-toan-dijkstra">[Lý thuyết đồ thị cơ bản] Phần 4: Đường đi ngắn nhất trên đồ thị và thuật toán Dijkstra</a></em></p>
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/lý-thuyết-đồ-thị-cơ-bản">lý-thuyết-đồ-thị-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/graph">graph</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/spoj/spoj-amsseq-day-so" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [SPOJ] AMSSEQ - Dãy số</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-5-bien-va-kieu-du-lieu" class="prev-next-link">[C++ Cơ bản] Phần 5: Biến và kiểu dữ liệu <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/ly-thuyet-do-thi-co-ban-phan-3-tim-kiem-theo-chieu-sau-tren-do-thi-depth-first-search-dfs" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

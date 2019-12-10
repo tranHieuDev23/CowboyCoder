@@ -1,0 +1,19 @@
+/* Styling for Youtube Video iframe */
+
+.youtube-video {
+	position:relative;
+	padding-bottom:56.25%;
+	display: block;
+    max-width: 90%;
+    margin: 10px auto;
+	height:0;
+	overflow:hidden;
+}
+
+.youtube-video iframe, .youtube-video object, .youtube-video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}

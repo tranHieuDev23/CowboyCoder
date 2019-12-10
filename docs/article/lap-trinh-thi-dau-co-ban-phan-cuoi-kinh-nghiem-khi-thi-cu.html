@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[Lập trình thi đấu cơ bản] Phần cuối: Kinh nghiệm khi thi cử</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [Lập trình thi đấu cơ bản] Phần 3: Kiểm tra và soát lỗi bài làm
+
+Như vậy là sau 4 bài trước của series Lập trình thi đấu cơ bản, chúng ..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[Lập trình thi đấu cơ bản] Phần cuối: Kinh nghiệm khi thi cử"/> 
+    <meta property="og:image"   content="/img/uploads/comp.png"/> 
+    <meta property="og:description"   content="Phần trước: [Lập trình thi đấu cơ bản] Phần 3: Kiểm tra và soát lỗi bài làm
+
+Như vậy là sau 4 bài trước của series Lập trình thi đấu cơ bản, chúng ..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[Lập trình thi đấu cơ bản] Phần cuối: Kinh nghiệm khi thi cử</a>
+</div>
+                <h1 class="content-title">[Lập trình thi đấu cơ bản] Phần cuối: Kinh nghiệm khi thi cử</h1>
+                <h2 class="content-author">Đăng bởi Nam Phương Đại Hiệp lúc 05 Sep 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-3-kiem-tra-va-soat-loi">[Lập trình thi đấu cơ bản] Phần 3: Kiểm tra và soát lỗi bài làm</a></em></p>
+
+<p>Như vậy là sau 4 bài trước của series Lập trình thi đấu cơ bản, chúng ta đã phần nào hiểu rõ những khái niệm, những nguyên tắc đơn giản nhất để bước chân vào “giang hồ”. Chúng mình rất muốn chia sẻ với các bạn nhiều hơn nữa, tuy nhiên do thời gian có hạn và phải gánh thêm nhiều series khác, do đó Cowboy Coder xin tạm kết thúc series “Lập trình thi đấu cơ bản” ở bài này.</p>
+
+<p>Ngay từ đầu, đối tượng hướng đến của series này chính đó là các bạn học sinh, sinh viên. Các bạn là những người có nhiều cơ hội được tham gia thi thố, cọ sát. Và hơn cả là những kì thi quan trọng có thể ảnh hưởng đến cả tương lai của các bạn như kì thi học sinh giỏi quốc gia chẳng hạn. Vì vậy, ở bài này chúng ta sẽ bàn về những kinh nghiệm khi thi cử. Để làm sao tối đa hóa khả năng bản thân, cũng như đạt những kết quả như mong muốn.</p>
+
+<h1 id="trước-khi-thi">Trước khi thi</h1>
+
+<p><img src="/img/uploads/0401.jpg" alt="undefined" /></p>
+
+<p>Chuẩn bị luôn là bước quan trọng nhất. Nếu bạn muốn có một kết quả tốt thì bạn phải có một bước chuẩn bị kĩ càng. Tuy nhiên, việc chuẩn bị là cả một quá trình, chứ không phải trong một vài ngày là đủ. Đừng bao giờ dành những ngày cuối cùng trước khi thi của mình để nhồi nhét, để cố ôn tập bất kì thứ gì. Bời vì kiến thức ở môn tin học và trong lập trình thi đấu có đặc thù của nó. Là một môn đề cao khả năng tư duy, mà tư duy thì phải cần có thời gian rèn giũa mới phát triển được. Do đó, việc học và training của bạn là cả một quá trình dài đã qua. Đừng vì lo sợ thiếu sót kiến thức mà lao đầu vào cày cuốc, việc đó chỉ khiến bạn thêm bối rối và phát hiện thêm nhiều lỗ hổng của mình mà thôi. Còn nếu thật sự kiến thức bạn quá thiếu sót, kiểu như chưa biết gì thì… thôi cứ YOLO đi. Vì vài ngày ngắn ngủi cũng chẳng giúp bạn hơn được ai cả. Thay vào đó, hãy thư giản, nghe nhạc, xem phim hay chơi game chẳng hạn. Và điều quan trọng nhất vẫn là sức khỏe. Hãy giữ cho mình một tinh thần sảng khoái và tràn đầy sức sống trước khi bước vào bất kì một cuộc thi nào.</p>
+
+<h1 id="trong-kì-thi">Trong kì thi</h1>
+
+<p><img src="/img/uploads/0402.jpg" alt="undefined" /></p>
+
+<p>Bình tĩnh là điều quan trọng nhất trong các kì thi. Nếu không giữ được bình tĩnh thì mọi thứ gần như tan vỡ. Vì vậy, tập giữ bình tĩnh, không lo lắng trong kì thi là một điều quan trọng. Ngoài ra, mình cũng xin liệt kê một số thói quen mà mình thấy là những người “pro” trong lập trình thi đấu thường có:</p>
+
+<ul>
+  <li>Test máy kĩ, hãy làm những điều quen thuộc như với máy tính của bạn vậy. Hãy xem đó như làm quen với không khí còn bỡ ngỡ khi vừa bước vào phòng thi.</li>
+  <li>Hãy giải lao vài phút khi lâm vào thế bí. Với những bài tập dạng “thách đấu” trong kì thi thì việc đôi lúc lâm vào thế bí là một chuyện hết sức bình thường. Khi ấy, đừng cố bám theo những dữ kiện đã làm mình rơi vào chân tường nữa. Mà hãy cho mình vài phút giải lao (xin ra ngoài hóng gió, hay uống nước chẳng hạn, …). Và sau đó bắt đầu suy nghĩ lại từ đầu, theo kinh nghiệm của nhiều người đúc kết được thì đó là cách hiệu quả nhất để gỡ rối.</li>
+  <li>Vét cạn: Luôn giữ càng nhiều điểm càng tốt. Để chắc chắn, hãy viết solution cho từng subtask và với nhiều điều kiện của test khác nhau hãy cho chạy từng subtask một để chắc ăn nhất. Ví dụ như thế này chẳng hạn:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">if</span> <span class="p">(</span><span class="n">N</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">)</span> <span class="n">sol_subtask1</span><span class="p">();</span>
+<span class="k">else</span> <span class="n">sol_subtask2</span><span class="p">();</span></code></pre></figure>
+
+<ul>
+  <li>Tham lam: Đôi khi với những bài quá khó. Bạn đã cố thử mọi cách cũng như vét cạn hết các subtask nhỏ, nhưng còn subtask còn lại thì có vẻ không khả thi. Lúc đó, phương pháp tham lam chính là lúc cần lên tiếng. Trong nhiều cuộc thi, phương pháp tham lam của ai khoan ngoan hơn là cách duy nhất để phân định thứ hạng, khi những subtask dễ còn lại hầu như ai cũng giải được. Vì vậy, tại sao không thử một cách tham lam đơn giản mà bạn có thể nghĩ ra, biết đâu bạn sẽ gặp may mắn thì sao.</li>
+  <li>Phân thời gian hợp lí: Như đã nói ở các bài trước vì sao cần phải phân chia thời gian. Ở đây mình chỉ nhắc lại rằng nó là một điều cốt yếu cho thành bại của cả một bài thi.</li>
+  <li>Bài dễ làm trước, bài khó làm sau: Điều này thì trước khi thi chắc có lẽ bạn sẽ được dặn dò khá nhiều lần. Lí do của nó chắc ai cũng biết, tuy nhiên lại có một số thành phần khá hổ báo, vừa bắt đầu đã solo với những bài khó. Mình xin nhắc lại, điều đó hoàn toàn không khoa học, trừ khi bạn là những ACMer ngoại hạng kiểu như Petr hay tourist, chứ nếu không thì thôi, pleaseee… hãy đọc đề kĩ và làm bài dễ trước. Đó mới là cách tốt nhất cho chúng ta.</li>
+</ul>
+
+<h1 id="sau-khi-thi">Sau khi thi</h1>
+
+<p><img src="/img/uploads/0403.jpg" alt="undefined" /></p>
+
+<p>Đây là lúc yolo được rồi. Bạn có một thời gian rãnh làm mọi điều bạn muốn trong lúc chờ đợi kết quả. Nhưng mà, mình khuyên các bạn nên làm một cái gì đó có ích một chút, chứ đừng ngồi chờ kết quả cả tuần, cả tháng. Vì kết quả là do người khác quyết định chứ không phải bạn, dù bạn có cầu nguyện hay làm gì đi nữa thì cũng chẳng có tác dụng gì cả. :)</p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/competitive-programming">competitive-programming</a>
+    
+        <a class="tag-list-item" href="/tags/cp">cp</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/c-co-ban-phan-21-lap-trinh-huong-doi-tuong-object-oriented-programming" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [C++ Cơ bản] Phần 21: Lập trình hướng đối tượng - Object Oriented Programming</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-22-class-va-object" class="prev-next-link">[C++ Cơ bản] Phần 22: Class và Object <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-cuoi-kinh-nghiem-khi-thi-cu" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

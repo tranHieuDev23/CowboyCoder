@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[Lập trình thi đấu cơ bản] Phần 2: Giải một bài toán như thế nào?</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [Lập trình thi đấu cơ bản] Phần 1: Học như thế nào để thi đấu?
+
+Như chúng ta đã biết, mục tiêu của lập trình thi đấu chính là giải nhữn..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[Lập trình thi đấu cơ bản] Phần 2: Giải một bài toán như thế nào?"/> 
+    <meta property="og:image"   content="/img/uploads/comp.png"/> 
+    <meta property="og:description"   content="Phần trước: [Lập trình thi đấu cơ bản] Phần 1: Học như thế nào để thi đấu?
+
+Như chúng ta đã biết, mục tiêu của lập trình thi đấu chính là giải nhữn..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[Lập trình thi đấu cơ bản] Phần 2: Giải một bài toán như thế nào?</a>
+</div>
+                <h1 class="content-title">[Lập trình thi đấu cơ bản] Phần 2: Giải một bài toán như thế nào?</h1>
+                <h2 class="content-author">Đăng bởi Nam Phương Đại Hiệp lúc 27 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-1-hoc-nhu-the-nao-de-thi-dau">[Lập trình thi đấu cơ bản] Phần 1: Học như thế nào để thi đấu?</a></em></p>
+
+<p>Như chúng ta đã biết, mục tiêu của lập trình thi đấu chính là giải những bài toán được đưa ra một cách hoàn hảo nhất. Vì vậy hôm nay mình sẽ nói về những nguyên tắc cơ bản khi giải một bài toán trong lập trình thi đấu.</p>
+
+<h1 id="hiểu-và-nắm-rõ-bài-toán-được-đưa-ra">Hiểu và nắm rõ bài toán được đưa ra</h1>
+
+<p>Thông thường, một bài toán trong lập trình sẽ được chia ra thành một số phần như sau:</p>
+
+<ul>
+  <li>Background: Đây thường là một đoạn văn được đưa vào để cho bài toán thêm màu mè và cũng thường chả liên quan tới bài toán, nhưng đôi khi chúng lại là nguyên nhân chính khiến cho người đọc bị nhiễu thông tin, hay hiểu sai đề. Do đó, bạn cần tỉnh táo để tóm tắt và nắm bắt chính xác cái mà đề bài yêu cầu ta phải làm.</li>
+  <li>Yêu cầu đề bài: Đây là phần chúng ta nên tập trung quan tâm nhiều nhất. Bời vì nó chính là cái chúng ta cần giải quyết trong những phút tiếp theo. Thông thường đề bài sẽ chia phần này với phần background ở trên thành những phần riêng biệt để thí sinh dễ phân biệt. Tuy nhiên, người ta cũng có thể đưa ra yêu cầu một cách gián tiếp. Khi đó, những yêu cầu được ẩn dưới câu chuyện được đưa ra và ta phải tinh ý để không bỏ sót một chi tiết nào trong đó.</li>
+  <li>Dữ liệu vào/ra: Là phần rất quan trọng. Chúng cho ta biết dữ liệu vào được bố trí như thế nào và phải xuất ra kết quả ra sao mới đúng. Và thêm nữa đó là giới hạn hoặc mô tả các subtask của dữ liệu vào để ta biết cần phải giải quyết bằng cách nào là hợp lí.</li>
+  <li>Ví dụ: Đây sẽ là phần ta hay nghiên cứu nhất trên đề. Nó là minh họa cho bài toán, cho yêu cầu đặt ra. Cho nên, hiểu rõ các ví dụ, cũng như giải thích được chúng là một lợi thế rất lớn.</li>
+</ul>
+
+<p>Bạn có thể xem một bài toán mẫu ở đây: <a href="http://vn.spoj.com/problems/QBSELECT/">http://vn.spoj.com/problems/QBSELECT/</a></p>
+
+<h1 id="triển-khai-các-ý-tưởng">Triển khai các ý tưởng</h1>
+
+<p>Công việc tiếp theo sau khi đã hiểu được bài toán muốn nói gì chắc chắn là phải bắt tay vào việc nghĩ bài.</p>
+
+<p>Đầu tiên, ta phải nhận xét được bài toán đề ra có những đặc điểm gì và chia chúng ra thành những bài toán nhỏ. Giai đoạn này phần nhiều dựa vào kinh nghiệm cũng như sự nhạy bén của bạn. Vì suy nghĩ đúng hướng thì sẽ tiết kiệm được rất nhiều thời gian cũng như trở ngại khi bắt đầu code. Do đó, bạn nên cố gắng làm càng nhiều bài tập càng tốt và rút được càng nhiều kinh nghiệm từ chúng.</p>
+
+<p>Một điều phải nhớ, đó là thuật toán bạn đưa ra phải chạy tốt trong thời gian cho phép. Vì máy tính hiện đại có thể chạy được tầm khoảng 100000000 (\( 10 ^ 8 \)) phép tính trên một giây, nên những thuật toán \( O(N^2) \) với \( N \) khoảng 1000000 (\( 10 ^ 5 \)) là không chấp nhận được, phải tìm thuật toán có thời gian chạy từ \( O(NlogN) \) trở xuống là hợp lí. Tương tự như vậy, hãy ước lượng cho đúng thuật toán của mình để có thể ăn được thật nhiều test. Vì độ phức tạp tính toán là một vấn đề phức tạp, nên chúng ta sẽ không bàn hơn ở đây.</p>
+
+<p><img src="/img/uploads/0202.jpg" alt="undefined" /></p>
+
+<h1 id="coding">Coding</h1>
+
+<p>Vâng, đây có lẽ vừa là phần hứng thú nhất cũng là phần khó chịu nhất. Bạn phải code thật không ngoan và khoa học nếu không muốn dính phải bug và ngồi loay hoay để debug. Tuy nhiên nói vậy chứ trong khi code khó lòng có ai đủ tỉnh táo để làm một phát ăn ngay được. Do đó, có một số số nguyên tắc để giúp code của bạn trong sáng và dễ “gỡ bug” hơn:</p>
+
+<ul>
+  <li>Đặt tên biến, function theo một hệ thống nhất định: Hãy cố gắng để quản lí các biến, function của mình một cách hiệu quả. Sao cho để nhìn vào chúng, bạn biết được chúng có chức năng gì cũng như giá trị của nó. Đừng bao giờ đặt tên xong mà chúng ta không biết chúng là gì. Điều đó thật sự tệ hại.</li>
+  <li>Hiểu rõ những gì mình đã code, đang code và sắp code. Ví dụ, khi đang code function <code class="highlighter-rouge">solve()</code> thì hãy suy nghĩ về function <code class="highlighter-rouge">output()</code>. Phải làm sao để chúng đồng nhất và kết quả được lưu như thế nào để lúc xuất ra được hiệu quả.</li>
+  <li>Hiểu rõ những cấu trúc mình đang sử dụng: Điều này khá quan trọng nhất là với những bạn hay code bằng C++. C++ cung cấp khá nhiều cấu trúc dữ liệu trừu tượng, do đó đôi khi lúc sử dụng chúng chúng ta tạo ra bug mà không hề hay biết. Và những cấu trúc đó thì lại vô cùng khó debug. Nên tốt nhất ta phải hiều những gì ta đang làm là chắc ăn nhất.</li>
+  <li>Sử dụng comment hợp lí: Comment là một công cụ giúp người lập trình chú thích lại những dòng code của mình. Vì vậy, hãy sử dụng chúng hợp lí thay vì lạm dụng chúng.</li>
+  <li>Phong cách code khoa học: Không cần phải nói nhiều, hãy nhìn hai đoạn code có cùng một chức năng dưới đây thì các bạn sẽ hiểu vì sao cần có điều này.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">freopen</span><span class="p">(</span><span class="s">"in.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">,</span> <span class="n">stdin</span><span class="p">);</span>
+  
+  <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+      <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
+  
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">100</span><span class="p">][</span><span class="mi">100</span><span class="p">],</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//global variable
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">freopen</span><span class="p">(</span><span class="s">"in.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span> <span class="c1">//input data
+</span>  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span><span class="c1">//input data, too
+</span>  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="c1">//iterate through matrix
+</span>  <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span> <span class="n">ans</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ans</span><span class="p">;</span><span class="c1">//find max: if ans less than a[i][j], ans will be a[i][j].
+</span><span class="p">}</span></code></pre></figure>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/competive-programing">competive-programing</a>
+    
+        <a class="tag-list-item" href="/tags/cp">cp</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/lam-sao-de-khong-thi-tot-ma-van-song" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> Làm sao để không thi tốt mà vẫn sống</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/spoj/spoj-bytesh1-filchs-dilemna" class="prev-next-link">[SPOJ] BYTESH1 - Filchs Dilemna <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/lap-trinh-thi-dau-co-ban-phan-2-giai-mot-bai-toan-nhu-the-nao" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

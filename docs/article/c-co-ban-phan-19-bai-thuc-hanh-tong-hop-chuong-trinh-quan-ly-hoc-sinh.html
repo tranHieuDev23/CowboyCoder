@@ -1,0 +1,864 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <script type="text/javascript" async src="https://use.fontawesome.com/d96de7908c.js"></script>
+    <!-- Post Page Title -->
+    <title>[C++ Cơ bản] Phần 19: Bài thực hành tổng hợp - Chương trình quản lý học sinh</title>
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet" type="text/css">
+
+<!-- Stylesheet of the page -->
+<link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="/css/jumbotron.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/sidebar.css" type="text/css" />
+<link rel="stylesheet" href="/css/social-icon-button.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css"/>
+<link rel="stylesheet" href="/css/navbar-hover-dropdown.css" type="text/css" />
+<link rel="stylesheet" href="/css/label.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview.css" type="text/css" />
+<link rel="stylesheet" href="/css/post-preview-side.css" type="text/css" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">        
+    <link rel="stylesheet" href="/css/breadcrumb.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tag_list.css" type="text/css" />
+    <link rel="stylesheet" href="/css/prev-next.css" type="text/css" />
+    <link rel="stylesheet" href="/css/share-box.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/youtube-video.css" type="text/css" />
+
+    <!-- SEO -->
+    <meta name="description" content="Phần trước: [C++ Cơ bản] Phần 18: Cấu trúc dữ liệu - struct và class
+
+Học hành là phải vừa “học” lại vừa “hành”. Trong bài viết này và bài viết sau..."/>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type"   content="article"/> 
+    <meta property="og:title"   content="[C++ Cơ bản] Phần 19: Bài thực hành tổng hợp - Chương trình quản lý học sinh"/> 
+    <meta property="og:image"   content="/img/uploads/C++ Cơ bản - Thumbnail.jpg"/> 
+    <meta property="og:description"   content="Phần trước: [C++ Cơ bản] Phần 18: Cấu trúc dữ liệu - struct và class
+
+Học hành là phải vừa “học” lại vừa “hành”. Trong bài viết này và bài viết sau..."/> 
+    <meta property="fb:app_id" content="155198375049942" />
+
+    <!-- MathLab -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=500534520394032&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://cowboycoder.tech">Cowboy Coder</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/spoj" data-animations="none none none none">SPOJ</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/codeforces" data-animations="none none none none">Codeforces</a>
+</li>
+                
+                    <li class="dropdown">
+
+<a class="navbar-button dropdown-toggle" data-hover="dropdown" href="/categories/article" data-animations="none none none none">Bài viết</a>
+</li>
+                
+                <li><a href="/tag">Tag</a></li>
+                <li><a href="/about">About us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Cowboy Coder</h1>
+        <h2>To code like a Cowboy!</h2>
+    </div>
+</div>
+    <!-- Jumbotron -->
+
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="breadcrumb">
+    
+    
+    
+
+    <a class="breadcrumb-home" href="/">Home</a>
+    
+        <span class="fa fa-angle-right"></span>
+        
+        <a class="breadcrumb-category" href="/categories/article">Bài viết</a> 
+    
+    <span class="fa fa-angle-right"></span>
+    <a class="breadcrumb-post" href="#">[C++ Cơ bản] Phần 19: Bài thực hành tổng hợp - Chương trình quản lý học sinh</a>
+</div>
+                <h1 class="content-title">[C++ Cơ bản] Phần 19: Bài thực hành tổng hợp - Chương trình quản lý học sinh</h1>
+                <h2 class="content-author">Đăng bởi Admin Tổng Quản lúc 31 Aug 2017</h2>
+                <div class="content">
+                    <p><em>Phần trước: <a href="http://cowboycoder.tech/article/c-co-ban-phan-18-cau-truc-du-lieu-struct-va-class">[C++ Cơ bản] Phần 18: Cấu trúc dữ liệu - struct và class</a></em></p>
+
+<p>Học hành là phải vừa “học” lại vừa “hành”. Trong bài viết này và bài viết sau, chúng ta sẽ tổng hợp lại các kiến thức đã học vào trong một bài viết thực hành lớn - phần mềm quản lý học sinh. Sau khi hoàn thành xong bài thực hành này, bạn có thể đem sản phẩm vào sử dụng trong thực tế - vẫn còn xa lắm mới tới được một chương trình với giao diện đẹp đẽ, nhưng cũng khá tốt rồi.</p>
+
+<h1 id="yêu-cầu-của-bài-thực-hành">Yêu cầu của bài thực hành</h1>
+
+<p>Trong bài viết này, chúng ta sẽ viết một chương trình quản lý học sinh có các khả năng sau:</p>
+
+<ul>
+  <li>Đọc và lưu trữ dữ liệu của học sinh từ một file text. Thông tin của học sinh bao gồm tên, lớp, địa chỉ và điểm số 3 môn Toán, Văn, Anh.</li>
+  <li>Cho phép thực hiện các hành động thêm học sinh mới và chỉnh sửa hoặc xóa học sinh cũ.</li>
+  <li>Cho phép liệt kê tất cả học sinh, hoặc lọc học sinh theo tên, lớp, địa chỉ hoặc điểm số.</li>
+</ul>
+
+<p>Khi ta chạy chương trình quản lý học sinh, phần mềm sẽ yêu cầu ta lựa chọn mở một file cũ, hoặc tạo một file mới, hoặc kết thúc chương trình bằng cách nhập lệnh vào màn hình console.</p>
+
+<p>Khi ta đã mở file hoặc tạo file, chương trình sẽ cho phép người dùng in ra toàn bộ học sinh, lọc lấy một số học sinh, thêm, chỉnh sửa, xóa thông tin học sinh, hoặc kết thúc công việc và đóng file.</p>
+
+<p>Khi lọc học sinh theo thông tin dạng chữ, ta sẽ lấy các học sinh có thông tin trùng với giá trị nhập vào. Khi lọc theo thông tin dạng số, ta có thể lựa chọn lấy các giá trị bằng, lớn hơn, nhỏ hơn,…</p>
+
+<p>Các bạn có thể download chương trình đã hoàn thành tại <a href="https://github.com/cowboycodervn/Basic-CPP---Exercise-1/raw/master/StudentManager.exe">đây</a> để chạy thử.</p>
+
+<p>Ok, với các thông tin đã có, chúng ta sẽ bắt tay vào thực hành!</p>
+
+<h1 id="cấu-trúc-dữ-liệu-student">Cấu trúc dữ liệu <code class="highlighter-rouge">Student</code></h1>
+<p>Để có thể lưu trữ dữ liệu của học sinh, ta cần có cấu trúc dữ liệu để biểu diễn học sinh. Ta sẽ sử dụng <code class="highlighter-rouge">struct</code> để tạo ra kiểu dữ liệu <code class="highlighter-rouge">Student</code> bao gồm các biến</p>
+<ul>
+  <li><code class="highlighter-rouge">string name</code> - Tên của học sinh</li>
+  <li><code class="highlighter-rouge">string inClass</code> - Lớp của học sinh. Ta sử dụng <code class="highlighter-rouge">inClass</code> thay vì <code class="highlighter-rouge">class</code>, do <code class="highlighter-rouge">class</code> là từ khóa của C++.</li>
+  <li><code class="highlighter-rouge">string address</code> - Địa chỉ</li>
+  <li><code class="highlighter-rouge">double math</code>, <code class="highlighter-rouge">literature</code>, <code class="highlighter-rouge">english</code> - Điểm số 3 bộ môn Toán, Văn, Anh
+Hãy nhớ khai báo sử dụng thư viện <code class="highlighter-rouge">string</code> trước khi sử dụng class <code class="highlighter-rouge">string</code>.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">struct</span> <span class="n">Student</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">name</span><span class="p">,</span> <span class="n">inClass</span><span class="p">,</span> <span class="n">address</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">math</span><span class="p">,</span> <span class="n">literature</span><span class="p">,</span> <span class="n">english</span><span class="p">;</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>Sau khi ta đã có cấu trúc dữ liệu <code class="highlighter-rouge">Student</code>, ta có thể khai báo một mảng <code class="highlighter-rouge">Student</code> để lưu trữ các học sinh đang được xử lý. Ở đây ta gọi mảng <code class="highlighter-rouge">Student</code> là <code class="highlighter-rouge">allStudent[]</code> với \( 10 ^ 5 \) phần tử.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">Student</span> <span class="n">allStudent</span><span class="p">[</span><span class="mi">100000</span><span class="p">];</span></code></pre></figure>
+
+<p>Ta cũng cần một biến <code class="highlighter-rouge">int number</code>, là số lượng học sinh đang được xử lý. Các học sinh được đọc ra từ file sẽ được lưu trữ trong các phần tử mảng <code class="highlighter-rouge">allStudent[]</code>, từ 1 tới <code class="highlighter-rouge">number</code>.</p>
+
+<h1 id="cấu-trúc-của-file-đầu-vào">Cấu trúc của file đầu vào.</h1>
+
+<p>Ta cần phải quy định bố cục nội dung của file đầu vào, để chương trình có thể xử lý được file. Dưới đây là bố cục được sử dụng trong bài viết.</p>
+
+<ul>
+  <li>Dòng đầu tiên chứa một số kiểu <code class="highlighter-rouge">int</code>, là số lượng học sinh được lưu trữ trong file.</li>
+  <li>Các nhóm dòng tiếp theo lưu trữ thông tin về học sinh. Trong mỗi nhóm dòng, mỗi dòng lần lượt sẽ là giá trị của các biến <code class="highlighter-rouge">name</code>, <code class="highlighter-rouge">inClass</code>, <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">math</code>, <code class="highlighter-rouge">literature</code> và <code class="highlighter-rouge">english</code> của học sinh.</li>
+  <li>Do khi ta đọc vào một <code class="highlighter-rouge">string</code>, C++ lấy các kí tự dấu cách làm ngắt từ, nên các string kí tự có nhiều từ sẽ bị cắt ra làm nhiều <code class="highlighter-rouge">string</code>. Để giải quyết vần đề này, ta sẽ lưu lại vào file các dấu cách trong các giá trị string bằng kí tự <code class="highlighter-rouge">$</code> (Ví dụ <code class="highlighter-rouge">Trần$Minh$Hiếu</code> thay vì <code class="highlighter-rouge">Trần Minh Hiếu</code>).</li>
+</ul>
+
+<p>Ví dụ về một file đúng chuẩn</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+Trần$Minh$Hiếu
+KT22
+The$Internet
+8.0
+5.0
+7.0
+</code></pre></div></div>
+
+<h1 id="biểu-diễn-bố-cục-của-chương-trình-trong-hàm-main">Biểu diễn bố cục của chương trình trong hàm main</h1>
+
+<p>Đầu tiên, vì chương trình chạy liên tục cho tới khi ta ra lệnh dừng, nên ta sẽ đặt tất cả nội dung của chương trình trong một vòng lặp vô hạn, chỉ được thoát ra khi ta ra lệnh.</p>
+
+<p>Chương trình của chúng ta có 2 trạng thái - khi chưa mở file nào ra, và khi đã mở file để chỉnh sửa. Ta sẽ quy định trạng thái của chương trình bằng biến <code class="highlighter-rouge">bool</code> global <code class="highlighter-rouge">isEditing</code> - <code class="highlighter-rouge">true</code> nếu chương trình đang chỉnh sửa file, <code class="highlighter-rouge">false</code> nếu ngược lại.</p>
+
+<p>Khi chưa mở file nào ra, ta có 3 lựa chọn là tạo file mới, mở file cũ, hoặc kết thúc chương trình. Ta sẽ yêu cầu người dùng nhập vào số 1, 2 hoặc 0, tương ứng với lệnh cần thực hiện.</p>
+
+<p><img src="/img/uploads/cpp-cơ-bản-19-1.jpg" alt="undefined" /></p>
+
+<p>Vấn đề nảy sinh ra: Làm sao để chắc chắn người dùng sẽ nhập vào đúng 3 giá trị này? Ta sẽ viết một hàm <code class="highlighter-rouge">getIntRange()</code>, bắt người dùng phải nhập vào một giá trị int cho tới khi giá trị này nằm đúng trong khoảng đã cho. Vòng lặp vô hạn sẽ có tác dụng ở đây:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">getIntRange</span><span class="p">(</span><span class="kt">int</span> <span class="n">low</span><span class="p">,</span> <span class="kt">int</span> <span class="n">high</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">input</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">input</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">input</span> <span class="o">&lt;</span> <span class="n">low</span> <span class="o">||</span> <span class="n">input</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">)</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Gia tri khong hop le, xin hay nhap lai!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="k">else</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">input</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Khi đó ta sẽ biểu diễn trạng thái lúc chưa chỉnh sửa file nào như sau:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">input</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isEditing</span><span class="p">)</span> <span class="c1">// Nếu như chưa có file nào được mở
+</span>        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hien chua co file nao duoc mo, ban muon lam gi?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1: Tao file moi</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2: Mo file cu</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"0: Ket thuc chuong trinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+
+            <span class="n">input</span> <span class="o">=</span> <span class="n">getIntRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+            <span class="k">switch</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">case</span> <span class="mi">1</span><span class="p">:</span> <span class="c1">// Tạo file mới
+</span>                    <span class="n">newFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">2</span><span class="p">:</span> <span class="c1">// Mở file cũ
+</span>                    <span class="n">openFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">0</span><span class="p">:</span> <span class="c1">// Kết thúc chương trình
+</span>                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span></code></pre></figure>
+
+<p>Các chương trình con <code class="highlighter-rouge">newFile()</code> và <code class="highlighter-rouge">openFile()</code> sẽ được chúng ta thêm vào về sau.</p>
+
+<p>Khi chương trình đang mở file để chỉnh sửa, ta cũng sẽ sử dụng cấu trúc tương tự để rẽ hướng chương trình:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ban muon lam gi voi file?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1: In ra tat ca hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2: Loc hoc sinh theo thong tin</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"3: Them hoc sinh moi</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"4: Chinh sua thong tin hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"5: Xoa thong tin hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"6: Luu</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"7: Dong file hien tai</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+
+            <span class="n">input</span> <span class="o">=</span> <span class="n">getIntRange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+
+            <span class="k">switch</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">case</span> <span class="mi">1</span><span class="p">:</span> <span class="c1">// In ra tất cả học sinh
+</span>                    <span class="n">printAllStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">2</span><span class="p">:</span> <span class="c1">// Lọc học sinh theo thông tin
+</span>                    <span class="n">searchStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">3</span><span class="p">:</span> <span class="c1">// Thêm học sinh mới
+</span>                    <span class="n">addStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">4</span><span class="p">:</span> <span class="c1">// Chỉnh sửa thông tin học sinh
+</span>                    <span class="n">editStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">5</span><span class="p">:</span> <span class="c1">// Xóa thông tin học sinh
+</span>                    <span class="n">deleteStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">6</span><span class="p">:</span> <span class="c1">// Lưu
+</span>                    <span class="n">saveFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">7</span><span class="p">:</span>
+                    <span class="n">exitFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-19-2.jpg" alt="undefined" /></p>
+
+<p>Toàn bộ chương trình con <code class="highlighter-rouge">main()</code> sẽ có bố cục như sau</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">input</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isEditing</span><span class="p">)</span> <span class="c1">// Nếu như chưa có file nào được mở
+</span>        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hien chua co file nao duoc mo, ban muon lam gi?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1: Tao file moi</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2: Mo file cu</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"0: Ket thuc chuong trinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+
+            <span class="n">input</span> <span class="o">=</span> <span class="n">getIntRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+            <span class="k">switch</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">case</span> <span class="mi">1</span><span class="p">:</span> <span class="c1">// Tạo file mới
+</span>                    <span class="n">newFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">2</span><span class="p">:</span> <span class="c1">// Mở file cũ
+</span>                    <span class="n">openFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">0</span><span class="p">:</span> <span class="c1">// Kết thúc chương trình
+</span>                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ban muon lam gi voi file?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1: In ra tat ca hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"2: Loc hoc sinh theo thong tin</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"3: Them hoc sinh moi</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"4: Chinh sua thong tin hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"5: Xoa thong tin hoc sinh</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"6: Luu</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"7: Dong file hien tai</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+
+            <span class="n">input</span> <span class="o">=</span> <span class="n">getIntRange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+
+            <span class="k">switch</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">case</span> <span class="mi">1</span><span class="p">:</span> <span class="c1">// In ra tất cả học sinh
+</span>                    <span class="n">printAllStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">2</span><span class="p">:</span> <span class="c1">// Lọc học sinh theo thông tin
+</span>                    <span class="n">searchStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">3</span><span class="p">:</span> <span class="c1">// Thêm học sinh mới
+</span>                    <span class="n">addStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">4</span><span class="p">:</span> <span class="c1">// Chỉnh sửa thông tin học sinh
+</span>                    <span class="n">editStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">5</span><span class="p">:</span> <span class="c1">// Xóa thông tin học sinh
+</span>                    <span class="n">deleteStudent</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">6</span><span class="p">:</span> <span class="c1">// Lưu
+</span>                    <span class="n">saveFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+
+                <span class="k">case</span> <span class="mi">7</span><span class="p">:</span>
+                    <span class="n">exitFile</span><span class="p">();</span>
+                    <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="tạo-file-mới">Tạo file mới</h1>
+
+<p>Như trong các chương trình soạn thảo văn bản hay vẽ tranh, chương trình đều cung cấp cho chúng ta khả năng lưu vào file đang mở, hoặc lưu vào một file mới. Ta sẽ cần phải lưu lại tên của file đang mở, để tiện dùng sau này.</p>
+
+<p>Do hàm <code class="highlighter-rouge">ofstream.open()</code> chỉ chấp nhận kiểu biểu diễn string bằng mảng <code class="highlighter-rouge">char</code> mà không chấp nhận class <code class="highlighter-rouge">string</code>, nên ta sẽ tạo một biến global kiểu mảng <code class="highlighter-rouge">char</code> <code class="highlighter-rouge">currentFile[100]</code> để lưu tên file.</p>
+
+<p>Khi ta ra lệnh tạo file mới, thực chất ta chỉ cần làm ba việc: gán giá trị <code class="highlighter-rouge">number = 0</code> (tức là chưa có một học sinh nào trong danh sách cả), gán <code class="highlighter-rouge">currentFile[]</code> thành string rỗng (dữ liệu chưa được lưu vào file nào) và chuyển trạng thái <code class="highlighter-rouge">isEditing</code> thành <code class="highlighter-rouge">true</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">newFile</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Chưa có học sinh nào trong danh sách
+</span>    <span class="n">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// File chưa được lưu, do đó không có tên file
+</span>    <span class="n">strcpy</span><span class="p">(</span><span class="n">currentFile</span><span class="p">,</span> <span class="s">""</span><span class="p">);</span>
+    <span class="c1">// Thông báo đã có file đang được chỉnh sửa
+</span>    <span class="n">isEditing</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="đọc-dữ-liệu-từ-file">Đọc dữ liệu từ file</h1>
+
+<p>Do dữ liệu trong file mã hóa các dấu cách, nên ta cần phải giải mã chúng khi đọc file.</p>
+
+<p>Ta sẽ viết hai hàm <code class="highlighter-rouge">decode()</code> và <code class="highlighter-rouge">encode()</code> để giải mã và mã hóa string - chỉ cần duyệt qua toàn bộ string, và thay các kí tự <code class="highlighter-rouge">$</code> bằng dấu cách.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">string</span> <span class="nf">decode</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">'$'</span><span class="p">)</span>
+            <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="sc">' '</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">string</span> <span class="nf">encode</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">' '</span><span class="p">)</span>
+            <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'$'</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Ok, có mã hóa và giải mã rồi, giờ ta sẽ bắt tay vào viết hàm <code class="highlighter-rouge">void openFile()</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">char</span> <span class="n">currentFile</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<span class="kt">void</span> <span class="nf">openFile</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Lưu tên file lại để dùng về sau
+</span>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap vao ten file: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">currentFile</span><span class="p">;</span>
+
+    <span class="c1">// Mở file
+</span>    <span class="n">ifstream</span> <span class="n">input</span><span class="p">;</span>
+    <span class="n">input</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">currentFile</span><span class="p">);</span></code></pre></figure>
+
+<p>Sau khi đã mở file ra, ta sẽ đọc file theo đúng bố cục đã trình bày ở trên.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="c1">// Đọc dữ liệu
+</span>    <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">number</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">number</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">);</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span><span class="p">);</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span><span class="p">);</span>
+
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">math</span><span class="p">;</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">literature</span><span class="p">;</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">english</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>Cuối cùng, ta đóng stream input lại, và chuyển trạng thái <code class="highlighter-rouge">isEditing</code> thành <code class="highlighter-rouge">true</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="c1">// Đóng file
+</span>    <span class="n">input</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+
+    <span class="c1">// Thông báo đã có file đang được chỉnh sửa
+</span>    <span class="n">isEditing</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Toàn bộ nội dung của chương trình con <code class="highlighter-rouge">openFile()</code> như sau:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">openFile</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Lưu tên file lại để dùng về sau
+</span>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap vao ten file: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">currentFile</span><span class="p">;</span>
+
+    <span class="c1">// Mở file
+</span>    <span class="n">ifstream</span> <span class="n">input</span><span class="p">;</span>
+    <span class="n">input</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">currentFile</span><span class="p">);</span>
+
+    <span class="c1">// Đọc dữ liệu
+</span>    <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">number</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">number</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">);</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">inClass</span><span class="p">);</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span><span class="p">;</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">address</span><span class="p">);</span>
+
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">math</span><span class="p">;</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">literature</span><span class="p">;</span>
+        <span class="n">input</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">english</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Đóng file
+</span>    <span class="n">input</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+
+    <span class="c1">// Thông báo đã có file đang được chỉnh sửa
+</span>    <span class="n">isEditing</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="thêm-học-sinh-và-chỉnh-sửa-thông-tin">Thêm học sinh và chỉnh sửa thông tin</h1>
+
+<p>Quá trình thêm học sinh bao gồm việc nhập thông tin học sinh mới vào danh sách.</p>
+
+<p>Quá trình chỉnh sửa thông tin học sinh bao gồm việc chỉ định học sinh nào sẽ bị chỉnh sửa, và nhập thông tin mới trong học sinh.</p>
+
+<p>Vậy nên chả có lý do gì ta lại không dùng chung một chương trình con để nhập dữ liệu chung cho hai thao tác này cả. Việc thêm học sinh thì cũng chỉ là việc chỉnh sửa học sinh thứ <code class="highlighter-rouge">number + 1</code> thôi mà :)) Cụ thể ở đây ta sẽ viết một hàm <code class="highlighter-rouge">inputStudentInfo(int id)</code>, cho phép nhập dữ liệu để lưu trữ vào phần tử vị trí <code class="highlighter-rouge">id</code> của mảng <code class="highlighter-rouge">allStudent[]</code>.</p>
+
+<p>Ở trên chúng ta được biết rằng C++ sử dụng kí tự dấu cách để phân cách <code class="highlighter-rouge">string</code>, nên ta phải tránh việc lưu tên học sinh có dấu cách bằng việc mã hóa. Nhưng khi đưa tới người dùng sử dụng, ta lại nhất thiết cần phải có dấu cách để có thể nhập thông tin trực quan.</p>
+
+<p>Để giải quyết vấn đề này, ta sẽ sử dụng hàm <code class="highlighter-rouge">getline()</code> của thư viện <code class="highlighter-rouge">fstream</code>. Hàm này nhận hai tham số, một luồng input để lấy dữ liệu và một biến kiểu class <code class="highlighter-rouge">string</code>, và hàm này sẽ đọc nốt tất cả thông tin còn lại trên dòng của input để gán vào string. Lệnh</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span></code></pre></figure>
+
+<p>có nghĩa là ta sẽ nhập hết dữ liệu còn lại trên dòng hiện tại ở <code class="highlighter-rouge">cin</code>, và gán vào biến <code class="highlighter-rouge">s</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">inputStudentInfo</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">temp</span><span class="p">;</span> <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">temp</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ten cua hoc sinh?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">name</span><span class="p">);</span></code></pre></figure>
+
+<p>Tại sao ta lại cần phải đọc vào biến <code class="highlighter-rouge">temp</code> trước? Vì ở trên dòng input cuối cùng, trước dòng có tên học sinh, vẫn còn một kí hiệu xuống dòng <code class="highlighter-rouge">'\n'</code> nữa. Ta phải thêm một dòng <code class="highlighter-rouge">getline()</code> vào <code class="highlighter-rouge">temp</code> để quét nốt dòng này, trước khi xuống tới tên. Đối với lớp và địa chỉ thì lại không cần nữa, vì các dòng <code class="highlighter-rouge">getline()</code> đã lấy hết dòng trước hộ rồi.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">inClass</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Dia chi?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">address</span><span class="p">);</span></code></pre></figure>
+
+<p>Cuối cùng, ta nhập vào điểm 3 môn như bình thường.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Toan?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">math</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Van?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">literature</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Anh?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">english</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Toàn bộ nội dung hàm <code class="highlighter-rouge">inputStudentInfo()</code> như sau:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">inputStudentInfo</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">temp</span><span class="p">;</span> <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">temp</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ten cua hoc sinh?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">name</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Lop?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">inClass</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Dia chi?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">address</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Toan?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">math</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Van?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">literature</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Diem mon Anh?</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">id</span><span class="p">].</span><span class="n">english</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="/img/uploads/cpp-cơ-bản-19-3.jpg" alt="undefined" /></p>
+
+<p>Sau khi đã có hàm này, ta chỉ cần viết hai hàm <code class="highlighter-rouge">addNewStudent()</code> và <code class="highlighter-rouge">editStudent()</code> rất ngắn gọn. Chú ý <code class="highlighter-rouge">editStudent()</code> còn có một đoạn kiểm tra xem mã số học sinh nhập vào có hợp lệ hay không.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">addStudent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">number</span> <span class="o">++</span><span class="p">;</span>
+    <span class="n">inputStudentInfo</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">editStudent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap ma so hoc sinh: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">id</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="n">number</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ma so hoc sinh khong hop le!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">inputStudentInfo</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="xóa-thông-tin-học-sinh">Xóa thông tin học sinh</h1>
+
+<p>Hàm xóa thông tin học sinh ta viết trong <code class="highlighter-rouge">main()</code> là <code class="highlighter-rouge">deleteStudent()</code>. Để xóa thông tin học sinh, ta cần phải nhập vào mã số học sinh cần xóa. Đoạn này giống như với <code class="highlighter-rouge">editStudent()</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">deleteStudent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap ma so hoc sinh: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">id</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="n">number</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ma so hoc sinh khong hop le!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>Khi đã có mã số học sinh cần xóa hợp lệ, ta sẽ xóa thông tin của học sinh đó đi, bằng cách dồn các học sinh ở sau về phía trước, gán đè lên giá trị của người bị xóa.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="c1">// Đẩy các học sinh phía sau về đúng chỗ
+</span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">number</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="n">number</span> <span class="o">--</span><span class="p">;</span> <span class="c1">// Bớt đi một học sinh
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Toàn bộ nội dung của hàm <code class="highlighter-rouge">deleteStudent()</code> như sau</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">deleteStudent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hay nhap ma so hoc sinh: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">id</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="n">number</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Ma so hoc sinh khong hop le!</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Đẩy các học sinh phía sau về đúng chỗ
+</span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">number</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span>
+        <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">allStudent</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="n">number</span> <span class="o">--</span><span class="p">;</span> <span class="c1">// Bớt đi một học sinh
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Ok, chúng ta đã hoàn thành xong việc thêm, sửa và xóa thông tin học sinh. Bài thực hành sẽ tiếp tục ở phần sau, với việc tìm kiếm học sinh theo thông tin, và lưu lại dữ liệu lên file.</p>
+
+<p><em>Phần sau: <a href="http://cowboycoder.tech/article/c-co-ban-phan-20-bai-thuc-hanh-tong-hop-chuong-trinh-quan-ly-hoc-sinh-tiep">[C++ Cơ bản] Phần 20: Bài thực hành tổng hợp - Chương trình quản lý học sinh (tiếp)</a></em></p>
+
+
+                </div>
+
+                <div class="tag-list">
+    
+        <a class="tag-list-item" href="/tags/cpp-cơ-bản">cpp-cơ-bản</a>
+    
+        <a class="tag-list-item" href="/tags/programming">programming</a>
+    
+</div>
+
+                <div class="share-box">
+    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+                <div class="prev-next">
+    <div class="prev-next-item previous">
+        
+            <a href="/article/lap-trinh-thi-dau-co-ban-phan-3-kiem-tra-va-soat-loi" class="prev-next-link"><span class="glyphicon glyphicon-menu-left"></span> [Lập trình thi đấu cơ bản] Phần 3: Kiểm tra và soát lỗi bài làm</a>
+         
+    </div>
+    <div class="prev-next-item next">    
+        
+            <a href="/article/c-co-ban-phan-20-bai-thuc-hanh-tong-hop-chuong-trinh-quan-ly-hoc-sinh-tiep" class="prev-next-link">[C++ Cơ bản] Phần 20: Bài thực hành tổng hợp - Chương trình quản lý học sinh (tiếp) <span class="glyphicon glyphicon-menu-right"></span></a>
+        
+    </div>
+</div>
+                <div style="margin-bottom:5rem">
+                    <div class="fb-comments" data-href="https://cowboycoder.tech/article/c-co-ban-phan-19-bai-thuc-hanh-tong-hop-chuong-trinh-quan-ly-hoc-sinh" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <aside>
+    <div class="aside-section">
+        <div class="seach-box">
+    <form class="aside-form" action="/search" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-box" placeholder="Tìm kiếm..." name="query" />
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search-submit"/>
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Follow us on Facebook!</span>
+</div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/cowboycoding" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true"></div>
+    </div>
+
+    <div class="aside-section">
+        <div class="label-custom">
+    <span class="label-custom-text">Bài viết gần đây</span>
+</div>
+        
+        <div class="recent">
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-catgo-cat-go">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] - catgo.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-catgo-cat-go">
+                <h4 class="post-preview-side-title">[SPOJ] CATGO - Cắt gỗ</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">06 Jan 2018</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/CATGO/ Đề bài: Giới hạn Thời gian: 0.1s Bộ nhớ: 1536MB Mã...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-traka-traka">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] traka.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-traka-traka">
+                <h4 class="post-preview-side-title">[SPOJ] TRAKA - TRAKA</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">31 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/TRAKA/ Đề bài: Có N người thợ, M chiếc xe. Người thứ...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-vosnet-social-network">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj] vosnet.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-vosnet-social-network">
+                <h4 class="post-preview-side-title">[SPOJ] VOSNET - Social Network</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">23 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài: http://vnoi.info/problems/show/VOSNET/ Đề bài: Social Network - Một cụm từ chắc ai trong...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/spoj/spoj-computer-may-tinh">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/[spoj]-computer.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/spoj/spoj-computer-may-tinh">
+                <h4 class="post-preview-side-title">[SPOJ] COMPUTER - Máy tính</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">14 Oct 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Link đề bài : http://vnoi.info/problems/show/COMPUTER/ Đề bài: Công ty phần mềm XYZ mới mua x...</span>
+    </div>
+</div>
+    
+        <div class="post-preview-side panel panel-default">
+    <div class="post-preview-side-header">
+        <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+            <div class="img-responsive-16by9">
+                <img class="post-preview-side-img" src="/img/uploads/C++ Co ban - Thumbnail.jpg"/>
+            </div>
+        </a>
+        <div class="post-preview-side-foreground"></div>
+        <div class="post-preview-side-metadata">
+            <a href="/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">
+                <h4 class="post-preview-side-title">[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</h4>
+            </a>
+            <h5 class="post-preview-side-subtitle">13 Sep 2017</h5>
+        </div>
+    </div>
+    <div class="post-preview-side-body">
+        <span class="post-preview-side-text">Phần trước: [C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++. Vậy...</span>
+    </div>
+</div>
+    
+</div>
+    </div>
+</aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    <div class="container">
+        <h2 id="footer-contact-us">Contact us</h2> 
+        <p><span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://www.facebook.com/cowboycoding" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#3b5998;"></i>
+        <i class="fa fa-facebook fa-stack" style="color:white;"></i>
+    </a>
+</span> 
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="https://github.com/cowboycodervn" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:#333;"></i>
+        <i class="fa fa-github fa-stack" style="color:white;"></i>
+    </a>
+</span>
+        <span class="social-icon-button">
+    <a class="fa-stack fa-2x" href="mailto:cowboycodervn@gmail.com" target="_blank">
+        <i class="fa fa-square fa-stack-2x" style="color:red;"></i>
+        <i class="fa fa-envelope fa-stack" style="color:white;"></i>
+    </a>
+</span> <p/>
+        <p class="footer-paragraph">&copy; 2017 Cowboy Coder</p>
+        <p class="footer-paragraph">Hosted by GitHub Page. Powered by Jekyll.</p>
+    </div>
+</footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="/js/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Make all links in content target _blank -->
+    <script src="/js/blog_content.js"></script>
+    
+</body>
+
+</html>

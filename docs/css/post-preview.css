@@ -1,0 +1,70 @@
+/* Styling for post preview box */
+
+.post-preview-header {
+  position: relative;
+}
+
+.post-preview-foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  display: none;
+}
+
+.post-preview-img {
+  width: 100%;
+}
+
+.post-preview-metadata {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 14px 20px 12px 20px;
+  width: 90%;
+  max-height: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+.post-preview-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.post-preview-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+}
+
+.post-preview-body {
+  width: 90%;
+  padding: 14px 20px 12px 20px;
+  overflow-wrap: break-word;
+}
+
+.post-preview-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .post-preview-foreground {
+    display: block;
+  }
+
+  .post-preview-metadata {
+    background: transparent;
+  }
+
+  .post-preview-body {
+    width: 100%;
+  }
+
+  .post-preview-title, .post-preview-subtitle {
+    color: #ffc40d;
+  }
+}
