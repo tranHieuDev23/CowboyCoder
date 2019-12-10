@@ -53,7 +53,7 @@ C\+\+ cung cấp thư viện `fstream` dành cho việc nhập - xuất với fi
 
 Để xử lý file với C\+\+, ta cần phải khai báo sử dụng hai thư viện `iostream` và `fstream`
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 \#include <fstream>
 {% endhighlight %}
@@ -64,7 +64,7 @@ Trước khi đọc hoặc viết một file bất kì, ta phải khai báo file
 
 Việc khai báo file stream mới cũng giống như khai báo một biến mới - ở đây ta đặt tên biến file stream là `myFile`:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 fstream myFile;
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ Sau đó, ta cần gọi lệnh `open()` của đối tượng `fstream`, để 
 
 Cú pháp của lệnh `open()` là:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 stream_variable.open(const char \*filename, ios::openmode mode);
 {% endhighlight %}
 
@@ -114,13 +114,13 @@ stream_variable.open(const char \*filename, ios::openmode mode);
 
 Ví dụ: Mở file `myFile.txt` ra để viết bằng luồng `myFile` ở trên, và nếu file đõ đã tồn tại thì xóa nội dung của nó đi:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 myFile.open("myFile.txt", ios::out | ios:: trunc);
 {% endhighlight %}
 
 Một ví dụ khác: Mở file `myFile.txt` ra để đọc và viết cùng lúc:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 myFile.open("myFile.txt", ios::in | ios::out);
 {% endhighlight %}
 
@@ -136,7 +136,7 @@ Do đó nếu không có nhu cầu đặc biệt, ta có thể bỏ qua giá tr�
 
 Ví dụ: Mở file `myFile.txt` để đọc bằng input file stream `myFile`
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 ifstream myFile;
 myFile.open("myFile.txt");
 {% endhighlight %}
@@ -149,7 +149,7 @@ Nếu như luồng đang được chỉ địng tới một file nào đó mà c
 
 Ví dụ: Đọc một số từ file `INPUT.TXT`, và in số đó ra file `OUTPUT.TXT`
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 \#include <fstream>
 
@@ -172,7 +172,7 @@ Khi một chương trình C\+\+ kết thúc, nó sẽ tự động giải phóng
 
 Như trong ví dụ trên, để đóng một file lại, ta sử dụng cú pháp
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 stream_variable.close();
 {% endhighlight %}
 
@@ -187,7 +187,7 @@ Class `istream` cung cấp lệnh `seekg` ("seek get") để di chuyển con tr�
 
 Ví dụ:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 // Di chuyển tới byte thứ n của fileObject
 fileObject.seekg( n );
 
@@ -211,7 +211,7 @@ Class `ofstream` cũng cung cấp lệnh `seekp` ("seek put") với cú pháp t�
 
 Cú pháp của `freopen` là:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 freopen(const char \*filename, const char \*mode, FILE \*stream);
 {% endhighlight %}
 
@@ -255,7 +255,7 @@ Sau khi gọi lệnh này với `stdin` hoặc `stdout`, ta có thể đọc và
 
 Ví dụ: Khi áp dụng vào chương trình ở trên:
 
-{% highlight c\+\+ %}
+{% highlight c++ %}
 \#include <iostream>
 \#include <stdio.h>
 
