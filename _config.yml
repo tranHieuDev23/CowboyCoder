@@ -29,6 +29,7 @@ markdown: kramdown
 theme: minima
 plugins_dir:
   - jekyll-paginate-v2
+  - jekyll-sitemap
 future: true
 destination: "docs"
 
