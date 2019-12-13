@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <generator uri="http://jekyllrb.com" version="3.5.0">Jekyll</generator>
-<link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
-<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-<updated>2019-12-13T09:12:48+07:00</updated>
-<id>http://localhost:4000/</id>
+<link href="https://cowboycoder.tech/feed.xml" rel="self" type="application/atom+xml" />
+<link href="https://cowboycoder.tech/" rel="alternate" type="text/html" />
+<updated>2019-12-13T09:19:36+07:00</updated>
+<id>https://cowboycoder.tech/</id>
 <subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </subtitle>
 <entry>
 <title>[SPOJ] CATGO - Cắt gỗ</title>
-<link href="http://localhost:4000/spoj/spoj-catgo-cat-go" rel="alternate" type="text/html" title="[SPOJ] CATGO - Cắt gỗ" />
+<link href="https://cowboycoder.tech/spoj/spoj-catgo-cat-go" rel="alternate" type="text/html" title="[SPOJ] CATGO - Cắt gỗ" />
 <published>2018-01-06T19:55:26+07:00</published>
 <updated>2018-01-06T19:55:26+07:00</updated>
-<id>http://localhost:4000/spoj/spoj-catgo-cat-go</id>
-<content type="html" xml:base="http://localhost:4000/spoj/spoj-catgo-cat-go">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemscatgo&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/CATGO/&quot;&gt;http://vnoi.info/problems/CATGO/&lt;/a&gt;&lt;/h1&gt;
+<id>https://cowboycoder.tech/spoj/spoj-catgo-cat-go</id>
+<content type="html" xml:base="https://cowboycoder.tech/spoj/spoj-catgo-cat-go">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemscatgo&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/CATGO/&quot;&gt;http://vnoi.info/problems/CATGO/&lt;/a&gt;&lt;/h1&gt;
 
 &lt;h1 id=&quot;đề-bài&quot;&gt;Đề bài:&lt;/h1&gt;
 &lt;p&gt;Giới hạn
@@ -73,11 +73,11 @@ Kết quả
 </entry>
 <entry>
 <title>[SPOJ] TRAKA - TRAKA</title>
-<link href="http://localhost:4000/spoj/spoj-traka-traka" rel="alternate" type="text/html" title="[SPOJ] TRAKA - TRAKA" />
+<link href="https://cowboycoder.tech/spoj/spoj-traka-traka" rel="alternate" type="text/html" title="[SPOJ] TRAKA - TRAKA" />
 <published>2017-10-31T01:38:52+07:00</published>
 <updated>2017-10-31T01:38:52+07:00</updated>
-<id>http://localhost:4000/spoj/spoj-traka-traka</id>
-<content type="html" xml:base="http://localhost:4000/spoj/spoj-traka-traka">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemsshowtraka&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/show/TRAKA/&quot;&gt;http://vnoi.info/problems/show/TRAKA/&lt;/a&gt;&lt;/h1&gt;
+<id>https://cowboycoder.tech/spoj/spoj-traka-traka</id>
+<content type="html" xml:base="https://cowboycoder.tech/spoj/spoj-traka-traka">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemsshowtraka&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/show/TRAKA/&quot;&gt;http://vnoi.info/problems/show/TRAKA/&lt;/a&gt;&lt;/h1&gt;
 
 &lt;h1 id=&quot;đề-bài&quot;&gt;Đề bài:&lt;/h1&gt;
 
@@ -128,11 +128,11 @@ Output:
 </entry>
 <entry>
 <title>[SPOJ] VOSNET - Social Network</title>
-<link href="http://localhost:4000/spoj/spoj-vosnet-social-network" rel="alternate" type="text/html" title="[SPOJ] VOSNET - Social Network" />
+<link href="https://cowboycoder.tech/spoj/spoj-vosnet-social-network" rel="alternate" type="text/html" title="[SPOJ] VOSNET - Social Network" />
 <published>2017-10-23T23:35:50+07:00</published>
 <updated>2017-10-23T23:35:50+07:00</updated>
-<id>http://localhost:4000/spoj/spoj-vosnet-social-network</id>
-<content type="html" xml:base="http://localhost:4000/spoj/spoj-vosnet-social-network">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemsshowvosnet&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/show/VOSNET/&quot;&gt;http://vnoi.info/problems/show/VOSNET/&lt;/a&gt;&lt;/h1&gt;
+<id>https://cowboycoder.tech/spoj/spoj-vosnet-social-network</id>
+<content type="html" xml:base="https://cowboycoder.tech/spoj/spoj-vosnet-social-network">&lt;h1 id=&quot;link-đề-bài-httpvnoiinfoproblemsshowvosnet&quot;&gt;Link đề bài: &lt;a href=&quot;http://vnoi.info/problems/show/VOSNET/&quot;&gt;http://vnoi.info/problems/show/VOSNET/&lt;/a&gt;&lt;/h1&gt;
 
 &lt;h1 id=&quot;đề-bài&quot;&gt;Đề bài:&lt;/h1&gt;
 
@@ -198,11 +198,11 @@ Output:
 </entry>
 <entry>
 <title>[SPOJ] COMPUTER - Máy tính</title>
-<link href="http://localhost:4000/spoj/spoj-computer-may-tinh" rel="alternate" type="text/html" title="[SPOJ] COMPUTER - Máy tính" />
+<link href="https://cowboycoder.tech/spoj/spoj-computer-may-tinh" rel="alternate" type="text/html" title="[SPOJ] COMPUTER - Máy tính" />
 <published>2017-10-14T09:52:05+07:00</published>
 <updated>2017-10-14T09:52:05+07:00</updated>
-<id>http://localhost:4000/spoj/spoj-computer-may-tinh</id>
-<content type="html" xml:base="http://localhost:4000/spoj/spoj-computer-may-tinh">&lt;h2 id=&quot;link-đề-bài--httpvnoiinfoproblemsshowcomputer&quot;&gt;Link đề bài : &lt;a href=&quot;http://vnoi.info/problems/show/COMPUTER/&quot;&gt;http://vnoi.info/problems/show/COMPUTER/&lt;/a&gt;&lt;/h2&gt;
+<id>https://cowboycoder.tech/spoj/spoj-computer-may-tinh</id>
+<content type="html" xml:base="https://cowboycoder.tech/spoj/spoj-computer-may-tinh">&lt;h2 id=&quot;link-đề-bài--httpvnoiinfoproblemsshowcomputer&quot;&gt;Link đề bài : &lt;a href=&quot;http://vnoi.info/problems/show/COMPUTER/&quot;&gt;http://vnoi.info/problems/show/COMPUTER/&lt;/a&gt;&lt;/h2&gt;
 
 &lt;h2 id=&quot;đề-bài&quot;&gt;Đề bài:&lt;/h2&gt;
 &lt;p&gt;Công ty phần mềm XYZ mới mua x máy tính để bàn và y máy tính xách tay. Giá một chiếc máy tính để bàn là a đôla còn giá một chiếc máy tính xách tay là b đôla. Để tránh sự thắc mắc giữa các phòng ban, Tổng giám đốc đã đưa ra cách phân bổ các máy tính này về n phòng ban như sau:&lt;/p&gt;
@@ -247,11 +247,11 @@ Kết quả:
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)" />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 28: Áp dụng C++ vào lập trình thực tế (phần cuối)" />
 <published>2017-09-13T20:20:54+07:00</published>
 <updated>2017-09-13T20:20:54+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c&quot;&gt;[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-27-ap-dung-c-vao-lap-trinh-thuc-te-phan-cuoi">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c&quot;&gt;[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Vậy là sau một chặng đường dài, chúng ta cuối cùng cũng đã đi đến cuối chặng đường học tập về ngôn ngữ C++ rồi, yeah :v&lt;/em&gt;&lt;/p&gt;
 
@@ -304,11 +304,11 @@ hiểu, để đưa những kiến thức ở trong series bài viết này vào
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++.</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++." />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 27: Template. Thư viện template chuẩn của C++." />
 <published>2017-09-11T20:11:39+07:00</published>
 <updated>2017-09-11T20:11:39+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui&quot;&gt;[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-27-template-thu-vien-template-chuan-cua-c">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui&quot;&gt;[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Giả sử ta muốn tạo ra một hàm lấy max của hai số nguyên, ta sẽ viết như sau&lt;/p&gt;
 
@@ -440,11 +440,11 @@ template &amp;lt;typename T, int size&amp;gt; class Example
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui" />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 26: Bài thực hành - Game đố vui" />
 <published>2017-09-10T14:35:26+07:00</published>
 <updated>2017-09-10T14:35:26+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong&quot;&gt;[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-26-bai-thuc-hanh-game-do-vui">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong&quot;&gt;[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Chào mừng các bạn đến với chương trình Ai là Cốt đơ trên trang Cowboy Coder. Để có thể giành được giải thưởng 100 triệu cái hắt hơi của chương trình, các bạn sẽ phải trả lời một vài câu hỏi. Các câu hỏi sẽ có 3 dạng: Câu hỏi trắc nghiệm, Câu hỏi đúng sai và Câu hỏi nhập số. Nào, hãy cùng nhau bắt đầu chương trình!&lt;/em&gt;&lt;/p&gt;
 
@@ -777,11 +777,11 @@ for (int i = 1; i &amp;lt;= n; i ++)
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-25-abstract-class-class-truu-tuong" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng" />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 25: Abstract class - Class trừu tượng" />
 <published>2017-09-09T07:16:12+07:00</published>
 <updated>2017-09-09T07:16:12+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-25-abstract-class-class-truu-tuong</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-25-abstract-class-class-truu-tuong">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu&quot;&gt;[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-25-abstract-class-class-truu-tuong">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu&quot;&gt;[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Ở trong các bài viết trước về tính thừa kế và overload, chúng ta có nói đến ví dụ về class &lt;code class=&quot;highlighter-rouge&quot;&gt;Shape&lt;/code&gt; và &lt;code class=&quot;highlighter-rouge&quot;&gt;Rectangle&lt;/code&gt;. Class &lt;code class=&quot;highlighter-rouge&quot;&gt;Shape&lt;/code&gt; có một chương trình con là &lt;code class=&quot;highlighter-rouge&quot;&gt;printArea()&lt;/code&gt;, cho phép chương trình in ra diện tích của hình đang được biểu diễn bởi object. Tuy nhiên chi tiết hình được biểu diễn như thế nào, phải tới subclass &lt;code class=&quot;highlighter-rouge&quot;&gt;Rectangle&lt;/code&gt; mới có. Nếu ta gọi &lt;code class=&quot;highlighter-rouge&quot;&gt;printArea()&lt;/code&gt; ở &lt;code class=&quot;highlighter-rouge&quot;&gt;Shape&lt;/code&gt;, ta chỉ in ra kết quả là &lt;code class=&quot;highlighter-rouge&quot;&gt;No data&lt;/code&gt;.&lt;/p&gt;
 
@@ -990,11 +990,11 @@ int n = 3; /&lt;/em&gt; Số lượng phần tử trong mảng */&lt;/p&gt;
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử" />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 24: Overload - Viết đè chương trình con và toán tử" />
 <published>2017-09-08T21:26:14+07:00</published>
 <updated>2017-09-08T21:26:14+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass&quot;&gt;[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-24-overload-viet-de-chuong-trinh-con-va-toan-tu">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass&quot;&gt;[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Chúng ta đều biết hai kiểu dữ liệu số nguyên &lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt; và &lt;code class=&quot;highlighter-rouge&quot;&gt;long long int&lt;/code&gt; đều có giới hạn về khoảng biểu diễn. Sẽ xảy ra trường hợp ta cần phải tự triển khai một kiểu dữ liệu số riêng để vượt qua các giới hạn ấy. Ý tưởng là tạo một class biểu diễn số bằng một string các kí tự chữ số. Vậy làm thế nào để có thể viết toán tử cộng trừ nhân chia cho class mới này?&lt;/p&gt;
 
@@ -1166,11 +1166,11 @@ class BigInteger
 </entry>
 <entry>
 <title>[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)</title>
-<link href="http://localhost:4000/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)" />
+<link href="https://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass" rel="alternate" type="text/html" title="[C++ Cơ bản] Phần 23: Tính thừa kế - Class con (subclass)" />
 <published>2017-09-07T19:47:07+07:00</published>
 <updated>2017-09-07T19:47:07+07:00</updated>
-<id>http://localhost:4000/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass</id>
-<content type="html" xml:base="http://localhost:4000/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object&quot;&gt;[C++ Cơ bản] Phần 22: Class và Object&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>https://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass</id>
+<content type="html" xml:base="https://cowboycoder.tech/article/c-co-ban-phan-23-tinh-thua-ke-class-con-subclass">&lt;p&gt;&lt;em&gt;Phần trước: &lt;a href=&quot;http://cowboycoder.tech/article/c-co-ban-phan-22-class-va-object&quot;&gt;[C++ Cơ bản] Phần 22: Class và Object&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Tính thừa kết giúp chúng ta tiết kiệm công sức viết code, bằng cách để cho các class con (subclass) thừa hưởng các tính chất của class cha (superclass). Trong bài viết này chúng ta sẽ tìm hiểu về cách triển khai tính thừa kế trong C++.&lt;/p&gt;
 
