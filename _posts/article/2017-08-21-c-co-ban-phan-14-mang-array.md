@@ -1,13 +1,14 @@
 ---
-title: '[C++ Cơ bản] Phần 14: Mảng - Array'
+title: "[C++ Cơ bản] Phần 14: Mảng - Array"
 author: Admin Tổng Quản
 date: 2017-08-22T14:25:31.000Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 13: Vòng lặp](http://cowboycoder.tech/article/c-co-ban-phan-13-vong-lap)*
+
+_Phần trước: [\[C++ Cơ bản\] Phần 13: Vòng lặp](http://cowboycoder.vercel.app/article/c-co-ban-phan-13-vong-lap)_
 
 Trong phần trước, chúng ta đã đặt ra bài toán Lưu trữ thông tin cá nhân của người dân thành phố Hà Nội, và đúc kết ra rằng phải sử dụng các vòng lặp mới có thể duyệt qua và xử lý hết số lượng thông tin như vậy.
 
@@ -15,7 +16,7 @@ Tương tự, ta cũng không thể tự tay tạo ra từng biến để lưu t
 
 # Định nghĩa mảng
 
-Mảng (array) là một cấu trúc dữ liệu có kích cỡ cố định, dùng để lưu trữ nhiều đối tượng có cùng kiểu dữ liệu. Thay vì phải tạo ra từng biến ```person1```, ```person2```, ```person3```, vân vân, ta chỉ cần tạo ra một mảng ```people``` và truy cập vào từng phần tử ```people[0]```, ```people[1]```, ```people[2]```,…
+Mảng (array) là một cấu trúc dữ liệu có kích cỡ cố định, dùng để lưu trữ nhiều đối tượng có cùng kiểu dữ liệu. Thay vì phải tạo ra từng biến `person1`, `person2`, `person3`, vân vân, ta chỉ cần tạo ra một mảng `people` và truy cập vào từng phần tử `people[0]`, `people[1]`, `people[2]`,…
 
 Các biến trong array được lưu trữ tại các địa chỉ ô nhớ liên tiếp - phần tử đầu tiên ở vị trí đầu tiên, phần tử thứ hai ở vị trí thứ hai,… Thông tin này sẽ có ích khi ta học tới con trỏ bộ nhớ, còn giờ tạm thời hãy ghi nhớ lại điều đó đã.
 
@@ -27,8 +28,8 @@ Ví dụ:
 
 {% highlight c++ %}
 int array1[100];
-int x, array2[100]; /* có thể khai báo mảng cùng với các biến khác */
-int arrayTwoD[100][100]; /* mảng hai chiều */
+int x, array2[100]; /_ có thể khai báo mảng cùng với các biến khác _/
+int arrayTwoD[100][100]; /_ mảng hai chiều _/
 
 {% endhighlight %}
 
@@ -41,13 +42,13 @@ Chiều của mảng là gì? Ta có thể hình dung mảng nhiều chiều là
 Ví dụ
 
 {% highlight c++ %}
-array1[0] = 0; /* đặt phần tử đầu tiên của mảng array1 bằng 0 */
-array2[4] ++; /* tăng phần tử thứ 5 của mảng array2 lên 1 */
-cout << arrayTwoD[2][3]; /* in ra phần tử ở ví trí (2, 3) của mảng hai chiều arrayTwoD */
+array1[0] = 0; /_ đặt phần tử đầu tiên của mảng array1 bằng 0 _/
+array2[4] ++; /_ tăng phần tử thứ 5 của mảng array2 lên 1 _/
+cout << arrayTwoD[2][3]; /_ in ra phần tử ở ví trí (2, 3) của mảng hai chiều arrayTwoD _/
 
 {% endhighlight %}
 
-Chỉ số của các phần tử trong mảng bắt đầu từ số 0 - một mảng có ```n``` phần tử sẽ có các chỉ số 0, 1, 2,… tới ```n - 1```. Để thuận tiện hơn, ta sẽ hình dung chỉ số của phần tử là số phần tử nằm giữa phần tử đó, với phần tử đầu tiên.
+Chỉ số của các phần tử trong mảng bắt đầu từ số 0 - một mảng có `n` phần tử sẽ có các chỉ số 0, 1, 2,… tới `n - 1`. Để thuận tiện hơn, ta sẽ hình dung chỉ số của phần tử là số phần tử nằm giữa phần tử đó, với phần tử đầu tiên.
 
 # Khởi tạo giá trị cho phần tử của mảng
 
@@ -62,7 +63,7 @@ double arr[5] = {1, 2.0, 3.0, 3.14, 2.23};
 Ta cũng có thể khai báo mảng mà không có số lượng phần tử, nếu như ta đã khởi tạo giá trị cho các phần tử trong mảng. Khi đó số lượng phần tử của mảng sẽ bằng số lượng giá trị đã được khởi tạo.
 
 {% highlight c++ %}
-double arr[] = {1, 2.0, 3.0, 3.14, 2.23}; /* mảng có 5 phần tử */
+double arr[] = {1, 2.0, 3.0, 3.14, 2.23}; /_ mảng có 5 phần tử _/
 
 {% endhighlight %}
 
@@ -79,7 +80,7 @@ int arr[][] = {
 
 Quy hoạch động (Dynamic Programming, gọi tắt là DP) là một phương pháp giải quyết các vấn đề trong toán học, tin học và kinh tế, bằng cách chia nhỏ vấn đề ra và tính toán các kết quả của trường hợp lớn hơn bằng kết quả của các trường hợp nhỏ hơn. Mảng là một công cụ đắc lực để giải các bài toán DP, và ta sẽ áp dụng nó ở trong ví dụ kế tiếp.
 
-*Các bạn cũng có thể tìm kiếm các bài toán quy hoạch động khác thông qua tag [dp](http://cowboycoder.tech/tags/dp) trên trang Cowboy Coder.*
+_Các bạn cũng có thể tìm kiếm các bài toán quy hoạch động khác thông qua tag [dp](http://cowboycoder.vercel.app/tags/dp) trên trang Cowboy Coder._
 
 ## Đề bài
 
@@ -89,13 +90,13 @@ Bài toán này còn được gọi là bài toán dãy con tăng dài nhất (L
 
 **Input**
 
-Đọc từ file ```INPUT.TXT```. Dòng đầu tiên của file là một số \\(n\\) - số lượng phần tử của dãy số \\(A\\).
+Đọc từ file `INPUT.TXT`. Dòng đầu tiên của file là một số \\(n\\) - số lượng phần tử của dãy số \\(A\\).
 Dòng tiếp theo có \\(n\\) số nguyên là các phần tử của dãy số \\(A\\).
-\\(n \le 10 ^ 3 \\), các số thuộc dãy \\(A\\) thuộc kiểu ```int```.
+\\(n \le 10 ^ 3 \\), các số thuộc dãy \\(A\\) thuộc kiểu `int`.
 
 **Output**
 
-Viết ra file ```OUTPUT.TXT``` một số nguyên duy nhất là số lượng phần tử lớn nhất tìm được.
+Viết ra file `OUTPUT.TXT` một số nguyên duy nhất là số lượng phần tử lớn nhất tìm được.
 
 **Ví dụ**
 
@@ -115,16 +116,17 @@ OUTPUT.TXT
 Ta định nghĩa hàm số \\( f(i) \\) là số lượng phần tử lớn nhất có thể lựa chọn được, nếu ta lấy phần tử thứ \\( i \\) là phần tử cuối cùng được chọn. Kết quả của bài toán sẽ là giá trị lớn nhất của các \\( f(x) \\) từ 1 tới n.
 
 Khi ta lấy phần tử thứ \\( x \\) làm phần tử cuối cùng, có hai trường hợp xảy ra
-* Nếu chỉ có phần tử \\(x\\) được chọn, độ dài của dãy sẽ là 1
-* Nếu như có phần tử \\(y\\) được chọn ở vị trí áp chót trước phần tử \\(x\\), độ dài của dãy \\(x\\) sẽ bằng \\(f(y) + 1\\) (do có thêm phần tử \\(x\\))
+
+-   Nếu chỉ có phần tử \\(x\\) được chọn, độ dài của dãy sẽ là 1
+-   Nếu như có phần tử \\(y\\) được chọn ở vị trí áp chót trước phần tử \\(x\\), độ dài của dãy \\(x\\) sẽ bằng \\(f(y) + 1\\) (do có thêm phần tử \\(x\\))
 
 Vậy với mỗi phần tử \\( x \\), ta đặt \\( f(x) = 1 \\), và duyệt qua các phần tử \\( i \\) từ 1 tới \\( x - 1 \\). Nếu \\( a[i] < a[x] \\) và \\( f(i) + 1 > f(x) \\), ta cập nhật giá trị của \\( f(x) \\) bằng giá trị mới.
 
 {% highlight c++ %}
 f[x] = 1;
 for (int i = 1; i < x; i ++)
-        if (a[i] < a[x] && f[i] + 1 > f[x])
-            f[x] = f[i] + 1;
+if (a[i] < a[x] && f[i] + 1 > f[x])
+f[x] = f[i] + 1;
 {% endhighlight %}
 
 ## Code mẫu
@@ -138,9 +140,9 @@ int n, a[1003], f[1003], answer = 0;
 
 int main()
 {
-    // Mở file input và output
-    ifstream input; input.open("INPUT.TXT");
-    ofstream output; output.open("OUTPUT.TXT");
+// Mở file input và output
+ifstream input; input.open("INPUT.TXT");
+ofstream output; output.open("OUTPUT.TXT");
 
     // Đọc vào dữ liệu đề bài
     input >> n;
@@ -163,9 +165,10 @@ int main()
     // In ra đáp án
     output << answer;
     return 0;
+
 }
 {% endhighlight %}
 
 Bài toán này còn có cách giải nhanh hơn, nhưng trong khuôn khổ của bài viết này, chúng ta sẽ chỉ tìm hiểu cách làm này.
 
-*Phần sau: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.tech/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)*
+_Phần sau: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.vercel.app/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)_

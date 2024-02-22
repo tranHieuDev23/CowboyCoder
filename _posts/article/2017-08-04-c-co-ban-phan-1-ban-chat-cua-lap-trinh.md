@@ -1,17 +1,18 @@
 ---
-title: '[C++ Cơ bản] Phần 1: Bản chất của lập trình'
+title: "[C++ Cơ bản] Phần 1: Bản chất của lập trình"
 author: Admin Tổng Quản
 date: 2017-08-04T06:38:22.100Z
 thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 0: Giới thiệu series bài viết](http://cowboycoder.tech/article/c-co-ban-phan-0-gioi-thieu-series-bai-viet)*
+
+_Phần trước: [\[C++ Cơ bản\] Phần 0: Giới thiệu series bài viết](http://cowboycoder.vercel.app/article/c-co-ban-phan-0-gioi-thieu-series-bai-viet)_
 
 Trước khi bắt đầu vào nội dung chính của series, mình muốn
-nói qua một chút về bản chất của công việc lập trình, hay cụ thể hơn là *Làm thế nào mà máy tính của bạn hiểu được
-chương trình của bạn*.
+nói qua một chút về bản chất của công việc lập trình, hay cụ thể hơn là _Làm thế nào mà máy tính của bạn hiểu được
+chương trình của bạn_.
 
 Câu trả lời ngắn: Chương trình máy tính đưa ra chỉ thị để
 máy tính của bạn làm việc. Câu trả lời này đúng, nhưng nếu chỉ tới đó thôi thì
@@ -43,8 +44,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!";
-    return 0;
+cout << "Hello World!";
+return 0;
 }
 {% endhighlight %}
 
@@ -146,7 +147,7 @@ từ ngôn ngữ máy sang binary code.
 
 Điều thú vị của quá trình này là nó đảm bảo rằng **công việc lập trình sẽ không bao giờ biến mất, ngay kể cả khi chúng ta có những trí tuệ nhân tạo có khả năng viết thuật toán tốt hơn con người**. Ngay kể cả khi điều đó xảy ra, mọi thứ cũng chỉ giống như khi chúng ta di chuyển từ ngôn ngữ bậc thấp lên ngôn ngữ bậc cao - con người vẫn sẽ là tác nhân giải thích và quyết định chức năng của phần mềm, dù cho là bằng ngôn ngữ lập trình hay bằng ngôn ngữ con người đi chăng nữa.
 
-*Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
-và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)*
+_Bài viết có dựa vào nguồn tham khảo tại [http://www.codeconquest.com/what-is-coding/how-does-coding-work/](http://www.codeconquest.com/what-is-coding/how-does-coding-work/)
+và [https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/](https://stackoverflow.blog/2015/07/29/why-are-there-so-many-programming-languages/)_
 
-*Phần sau: [\[C++ Cơ bản\] Phần 2: Giới thiệu về C++](http://cowboycoder.tech/article/c-co-ban-phan-2-gioi-thieu-ve-c)*
+_Phần sau: [\[C++ Cơ bản\] Phần 2: Giới thiệu về C++](http://cowboycoder.vercel.app/article/c-co-ban-phan-2-gioi-thieu-ve-c)_

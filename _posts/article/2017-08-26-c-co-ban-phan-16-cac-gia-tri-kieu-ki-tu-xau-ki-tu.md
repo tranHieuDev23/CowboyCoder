@@ -1,27 +1,28 @@
 ---
-title: '[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự.'
+title: "[C++ Cơ bản] Phần 16: Các giá trị kiểu kí tự. Xâu kí tự."
 author: Admin Tổng Quản
 date: 2017-08-26T06:55:43.940Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.tech/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)*
 
-# Biểu diễn giá trị kiểu ```char```
+_Phần trước: [\[C++ Cơ bản\] Phần 15: Các giá trị kiểu số. Thư viện toán học cmath.](http://cowboycoder.vercel.app/article/c-co-ban-phan-15-cac-gia-tri-kieu-so-thu-vien-toan-hoc-lesscmathgreater)_
 
-Các giá trị kiểu ```char``` sẽ được đặt trong dấu ngoặc đơn ```''```. Nếu như giá trị kiểu char có tiền tố ```L```, giá trị đó thuộc kiểu ```wchar_t```. Nếu không có thì giá trị mặc định thuộc kiểu ```char```.
+# Biểu diễn giá trị kiểu `char`
 
-Bên trong ngoặc đơn có thể là kí tự được biểu diễn (ví dụ ```'x'```), một kí tự đặc biệt (ví dụ ```'\n'```), hoặc một kí tự thuộc chuẩn UCS (mà bạn tạm thời chưa cần phải quan tâm vội).
+Các giá trị kiểu `char` sẽ được đặt trong dấu ngoặc đơn `''`. Nếu như giá trị kiểu char có tiền tố `L`, giá trị đó thuộc kiểu `wchar_t`. Nếu không có thì giá trị mặc định thuộc kiểu `char`.
+
+Bên trong ngoặc đơn có thể là kí tự được biểu diễn (ví dụ `'x'`), một kí tự đặc biệt (ví dụ `'\n'`), hoặc một kí tự thuộc chuẩn UCS (mà bạn tạm thời chưa cần phải quan tâm vội).
 
 ## Kí tự đặc biệt
 
-Muốn thể hiện kí tự thường thì sử dụng ```''```. Vậy nếu muốn thể hiện kí tự ngoặc đơn ```'``` thì làm như thế nào?
+Muốn thể hiện kí tự thường thì sử dụng `''`. Vậy nếu muốn thể hiện kí tự ngoặc đơn `'` thì làm như thế nào?
 
 ![undefined](/img/uploads/cpp-cơ-bản-2-1.jpg)
 
-Để thể hiện một số kí tự đặc biệt, ta sử dụng escape sequence - dịch thô ra là "dãy kí tự thoát", nhưng ở đây sẽ sử dụng cách gọi gốc. Escape sequence bắt đầu bằng kí tự ```\```, tiếp theo là một hoặc nhiều kí tự khác. Các escape sequence mang ý nghĩa đặc biệt.
+Để thể hiện một số kí tự đặc biệt, ta sử dụng escape sequence - dịch thô ra là "dãy kí tự thoát", nhưng ở đây sẽ sử dụng cách gọi gốc. Escape sequence bắt đầu bằng kí tự `\`, tiếp theo là một hoặc nhiều kí tự khác. Các escape sequence mang ý nghĩa đặc biệt.
 
 Ví dụ cho một số escape sequence:
 
@@ -56,17 +57,17 @@ Ví dụ cho một số escape sequence:
     </tr>
 </table>
 
-# ```endl``` và ```'\n'```
+# `endl` và `'\n'`
 
-*"Khoan khoan khoan, sao lại có thêm một kí tự xuống dòng ở kia?"*
+_"Khoan khoan khoan, sao lại có thêm một kí tự xuống dòng ở kia?"_
 
-Tuy cùng có khả năng xuống dòng cho output, tuy nhiên ```endl``` và ```'\n'``` lại có chức năng khác nhau.
+Tuy cùng có khả năng xuống dòng cho output, tuy nhiên `endl` và `'\n'` lại có chức năng khác nhau.
 
-```endl``` khi được đẩy vào output sẽ output ra kí tự xuống dòng (```'\n'```) và giải phóng buffer (flush).
+`endl` khi được đẩy vào output sẽ output ra kí tự xuống dòng (`'\n'`) và giải phóng buffer (flush).
 
-```'\n'``` thì chỉ là kí tự xuống dòng.
+`'\n'` thì chỉ là kí tự xuống dòng.
 
-Trong lập trình thi đấu, việc flush buffer nhiều cũng sẽ làm giảm tốc độ của chương trình đi. Vậy nên đối với các bạn tham gia lập trình thi đấu, mình khuyến cáo sử dụng ```'\n'``` thay cho ```endl```.
+Trong lập trình thi đấu, việc flush buffer nhiều cũng sẽ làm giảm tốc độ của chương trình đi. Vậy nên đối với các bạn tham gia lập trình thi đấu, mình khuyến cáo sử dụng `'\n'` thay cho `endl`.
 
 Ví dụ:
 
@@ -78,8 +79,8 @@ using namespace std;
 int main()
 
 {
-    cout << 10 << '\n' << 20;
-    return 0;
+cout << 10 << '\n' << 20;
+return 0;
 }
 {% endhighlight %}
 
@@ -94,15 +95,15 @@ Output
 
 String hay còn gọi là xâu kí tự, chuỗi kí tự, vân vân… là một tập hợp kí tự. Chúng hình thành nên câu, từ, đoạn văn, vân vân…
 
-Để biểu diễn một string, ta đặt một chuỗi kí tự trong ngoặc kép ```""```. Dòng chữ ```"Hello world!"``` mặc định của chương trình CodeBlocks cũng là một string.
+Để biểu diễn một string, ta đặt một chuỗi kí tự trong ngoặc kép `""`. Dòng chữ `"Hello world!"` mặc định của chương trình CodeBlocks cũng là một string.
 
-C++ hỗ trợ hai phương pháp biểu diễn dữ liệu string - phương pháp biểu diễn bằng mảng ```char``` của C, và class ```string``` mới trong C++.
+C++ hỗ trợ hai phương pháp biểu diễn dữ liệu string - phương pháp biểu diễn bằng mảng `char` của C, và class `string` mới trong C++.
 
 # Phương pháp mảng char
 
-Ngôn ngữ C sử dụng mảng các giá trị kiểu ```char``` để biểu diễn một string. Mảng này bao gồm các kí tự của string, cộng thêm với một kí tự kết thúc null ```'\0'```.
+Ngôn ngữ C sử dụng mảng các giá trị kiểu `char` để biểu diễn một string. Mảng này bao gồm các kí tự của string, cộng thêm với một kí tự kết thúc null `'\0'`.
 
-Ví dụ: Ta có thể khai báo string ```hello``` như sau
+Ví dụ: Ta có thể khai báo string `hello` như sau
 
 {% highlight c++ %}
 char hello[] = "Hello World";
@@ -114,13 +115,13 @@ Việc khai báo này cũng tương đương với đoạn code sau:
 char hello[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '\0'};
 {% endhighlight %}
 
-Ta có thể in ra string ```hello``` bằng các lệnh in dữ liệu thông thường.
+Ta có thể in ra string `hello` bằng các lệnh in dữ liệu thông thường.
 
 {% highlight c++ %}
 cout << hello;
 {% endhighlight %}
 
-C++ cung cấp thư viện ```cstring``` để thực hiện các thao tác phức tạp hơn với kiểu dữ liệu string được biểu diễn bằng mảng ```char```. Một số hàm quan trọng của thư viện này là:
+C++ cung cấp thư viện `cstring` để thực hiện các thao tác phức tạp hơn với kiểu dữ liệu string được biểu diễn bằng mảng `char`. Một số hàm quan trọng của thư viện này là:
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -153,20 +154,20 @@ C++ cung cấp thư viện ```cstring``` để thực hiện các thao tác ph�
     </tr>
 </table>
 
-**Chú ý:** Một string ```s1``` được gọi là bé hơn string ```s2```, nếu như kí tự đầu tiên khác nhau giữa hai string từ trái qua ở string ```s1``` có giá trị nhỏ hơn ở string ```s2``` - hiểu nôm na thì ```s1``` có thứ tự trong từ điển đứng trước ```s2```.
+**Chú ý:** Một string `s1` được gọi là bé hơn string `s2`, nếu như kí tự đầu tiên khác nhau giữa hai string từ trái qua ở string `s1` có giá trị nhỏ hơn ở string `s2` - hiểu nôm na thì `s1` có thứ tự trong từ điển đứng trước `s2`.
 
 Ví dụ:
 
-* String ```"abcabc"``` có thứ tự từ điển đứng trước ```"acb"```
-* String ```"abc"``` có thứ tự từ điển đứng trước ```"abcabc"``` Chi tiết đầy đủ về các hàm của thư viện này có thể được tìm thấy ở đây.
+-   String `"abcabc"` có thứ tự từ điển đứng trước `"acb"`
+-   String `"abc"` có thứ tự từ điển đứng trước `"abcabc"` Chi tiết đầy đủ về các hàm của thư viện này có thể được tìm thấy ở đây.
 
 Class string
 
-C++ cũng cung cấp class/kiểu dữ liệu ```string``` để quản lý xâu kí tự. Để sử dụng class này, ta cần phải khai báo thư viện ```string```.
+C++ cũng cung cấp class/kiểu dữ liệu `string` để quản lý xâu kí tự. Để sử dụng class này, ta cần phải khai báo thư viện `string`.
 
-Ưu điểm của class ```string``` là khả năng sử dụng các toán tử - ta có thể sử dụng toán tử ```+``` để ghép hai string lại với nhau, hay sử dụng các toán tử so sánh để so sánh các đối tượng string với nhau, thay vì phải sử dụng hàm như phương pháp mảng ```char```.
+Ưu điểm của class `string` là khả năng sử dụng các toán tử - ta có thể sử dụng toán tử `+` để ghép hai string lại với nhau, hay sử dụng các toán tử so sánh để so sánh các đối tượng string với nhau, thay vì phải sử dụng hàm như phương pháp mảng `char`.
 
-```string``` ngang hàng với kiểu dữ liệu xâu kí tự mảng ```char``` về nhiều mặt - giá trị của hai kiểu dữ liệu có thể được gán cho nhau, và chúng có thể được đặt chung trong một phép toán. Chú ý rằng mảng ```char``` không thể được áp dụng các toán tử với nhau như ```string```, mà phải có giá trị kiểu string trong phép toán.
+`string` ngang hàng với kiểu dữ liệu xâu kí tự mảng `char` về nhiều mặt - giá trị của hai kiểu dữ liệu có thể được gán cho nhau, và chúng có thể được đặt chung trong một phép toán. Chú ý rằng mảng `char` không thể được áp dụng các toán tử với nhau như `string`, mà phải có giá trị kiểu string trong phép toán.
 
 Ví dụ: Chương trình sau đây yêu cầu bạn nhập tên của mình vào, và in ra một câu chào hỏi.
 
@@ -179,19 +180,19 @@ using namespace std;
 int main()
 
 {
-    cout << "Hay nhap ten cua ban: ";
-    string name;
-    cin >> name;
-    cout << "Xin chao " + name << "!";
-    return 0;
+cout << "Hay nhap ten cua ban: ";
+string name;
+cin >> name;
+cout << "Xin chao " + name << "!";
+return 0;
 }
 {% endhighlight %}
 
-Để truy cập vào kí tự của một đối tượng class ```string```, ta cũng sử dụng ngoặc vuông như đối với mảng ```char```. Ví dụ ```ViDu[3]``` là kí tự thứ 4 của string ```ViDu```.
+Để truy cập vào kí tự của một đối tượng class `string`, ta cũng sử dụng ngoặc vuông như đối với mảng `char`. Ví dụ `ViDu[3]` là kí tự thứ 4 của string `ViDu`.
 
-Thư viện ```cstring``` không thể áp dụng lên các đối tượng class ```string```, thay vào đó bản thân đối tượng ```string``` có những hàm để hỗ trợ cho chính bản thân mình.
+Thư viện `cstring` không thể áp dụng lên các đối tượng class `string`, thay vào đó bản thân đối tượng `string` có những hàm để hỗ trợ cho chính bản thân mình.
 
-Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọng của ```string``` bao gồm:
+Lấy ví dụ với biến `string s = "Hello"`, một số hàm quan trọng của `string` bao gồm:
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -221,9 +222,8 @@ Lấy ví dụ với biến ```string s = "Hello"```, một số hàm quan trọ
     </tr>
 </table>
 
-Các bạn có thể tham khảo danh sách đẩy đủ các hàm của class ```string``` trên trang [C++ Reference](http://www.cplusplus.com/reference/string/string/).
+Các bạn có thể tham khảo danh sách đẩy đủ các hàm của class `string` trên trang [C++ Reference](http://www.cplusplus.com/reference/string/string/).
 
 Chú ý: Kiến thức về class, object và lập trình hướng đối tượng sẽ được giải thích rõ ràng trong các bài viết sau.
 
-*Phần sau: [\[C++ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.tech/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)*
-
+_Phần sau: [\[C++ Cơ bản\] Phần 17: Tham chiếu và con trỏ. Tác dụng của con trỏ.](http://cowboycoder.vercel.app/article/c-co-ban-phan-17-tham-chieu-va-con-tro-tac-dung-cua-con-tro)_

@@ -1,13 +1,14 @@
 ---
-title: '[C++ Cơ bản] Phần 8: Input và Output (tiếp)'
+title: "[C++ Cơ bản] Phần 8: Input và Output (tiếp)"
 author: Admin Tổng Quản
 date: 2017-08-10T09:45:29.641Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C\+\+ Cơ bản\] Phần 7: Input - Output](http://cowboycoder.tech/article/c-co-ban-phan-6-input-output)*
+
+_Phần trước: [\[C\+\+ Cơ bản\] Phần 7: Input - Output](http://cowboycoder.vercel.app/article/c-co-ban-phan-6-input-output)_
 
 Trong phần trước, chúng ta đã nói về các đọc và viết ra màn hình console. Bài viết này sẽ nói về việc đọc và viết từ file.
 
@@ -21,8 +22,8 @@ Mỗi file và folder đều có một địa chỉ xác định, địa chỉ n
 
 Đường dẫn có hai dạng: Đường dẫn tuyệt đối (absolute) và tương đối (relative)
 
-* Đường dẫn tuyệt đối sẽ chỉ định tới một địa chỉ cố định. Ví dụ: `C:\\user\\docs\\Letter.txt` sẽ chỉ định tới file `Letter.text`, nằm trong thư mục `docs` của thư mục `user`, trong ổ `C`. Đường dẫn tuyệt đối bắt buộc phải có tên của ổ đĩa hoặc thư mục gốc (root).
-* Đường dẫn tương đối sẽ chỉ định tới một địa chỉ tương đối so với file của chương trình. Ví dụ: Chương trình được đặt trong thư mục `C:\\Program Files\\My Program`. Khi đó thay vì sử dụng đường dẫn tuyệt đối để truy cập vào file ở địa chỉ `C:\\Program Files\\My Program\\Stuff\\xyz.txt`, ta chỉ sử dụng đường dẫn tương đối `Stuff\\xyz.txt`.
+-   Đường dẫn tuyệt đối sẽ chỉ định tới một địa chỉ cố định. Ví dụ: `C:\\user\\docs\\Letter.txt` sẽ chỉ định tới file `Letter.text`, nằm trong thư mục `docs` của thư mục `user`, trong ổ `C`. Đường dẫn tuyệt đối bắt buộc phải có tên của ổ đĩa hoặc thư mục gốc (root).
+-   Đường dẫn tương đối sẽ chỉ định tới một địa chỉ tương đối so với file của chương trình. Ví dụ: Chương trình được đặt trong thư mục `C:\\Program Files\\My Program`. Khi đó thay vì sử dụng đường dẫn tuyệt đối để truy cập vào file ở địa chỉ `C:\\Program Files\\My Program\\Stuff\\xyz.txt`, ta chỉ sử dụng đường dẫn tương đối `Stuff\\xyz.txt`.
 
 Bản thân tên của một file cũng là đường dẫn tương đối của nó, so với thư mục chứa nó.
 
@@ -78,8 +79,8 @@ Cú pháp của lệnh `open()` là:
 stream_variable.open(const char \*filename, ios::openmode mode);
 {% endhighlight %}
 
-* `filename` là file path của file mục tiêu. Biến này có kiểu dữ liệu `const char \*`, là kiểu dữ liệu con trỏ cố định chỉ tới một biến kiểu `char`. Phần nội dung về biến cố định (hằng số) và con trỏ sẽ được nói tới một bài viết khác. Hiện tại, ta sẽ sử dụng địa chỉ của file nằm trong ngoặc kép (`""`) như là địa chỉ của file.
-* `mode` là một giá trị kiểu bitmask không bắt buộc. Nó cho phép người dùng cài đặt chế độ mở file. Các giá trị có thể thiết lập là:
+-   `filename` là file path của file mục tiêu. Biến này có kiểu dữ liệu `const char \*`, là kiểu dữ liệu con trỏ cố định chỉ tới một biến kiểu `char`. Phần nội dung về biến cố định (hằng số) và con trỏ sẽ được nói tới một bài viết khác. Hiện tại, ta sẽ sử dụng địa chỉ của file nằm trong ngoặc kép (`""`) như là địa chỉ của file.
+-   `mode` là một giá trị kiểu bitmask không bắt buộc. Nó cho phép người dùng cài đặt chế độ mở file. Các giá trị có thể thiết lập là:
 
 <table class="table table-striped table-bordered">
 <tr>
@@ -128,9 +129,9 @@ Cả hai đoạn code này sẽ mở ra file `myFile.txt` ở trong thư mục c
 
 Chú ý: `mode` là giá trị không bắt buộc phải có.
 
-* Đối với các biến dạng `fstream`, `mode` được đặt mặc định bằng `ios::in | ios::out`.
-* Đối với các biến dạng `ofstream`, `mode` được đặt mặc định là `ios::out`.
-* Đối với các biến dạng `ifstream`, `mode` được đặt mặc định bằng `ios::in`.
+-   Đối với các biến dạng `fstream`, `mode` được đặt mặc định bằng `ios::in | ios::out`.
+-   Đối với các biến dạng `ofstream`, `mode` được đặt mặc định là `ios::out`.
+-   Đối với các biến dạng `ifstream`, `mode` được đặt mặc định bằng `ios::in`.
 
 Do đó nếu không có nhu cầu đặc biệt, ta có thể bỏ qua giá trị của `mode`.
 
@@ -182,8 +183,8 @@ Class `istream` cung cấp lệnh `seekg` ("seek get") để di chuyển con tr�
 
     luồng.seekg(long long int pos, ios_base::seekdir way);
 
-* `pos` là số byte cần di chuyển.
-* `way` là một giá trị không bắt buộc, chỉ định địa điểm bắt đầu di chuyển. Giá trị phù hợp của way là `ios::beg` (từ điểm bắt đầu của luồng/file, mặc định), `ios::cur` (từ vị trí hiện tại) và `ios::end` (từ điểm kết thúc của luồng/file).
+-   `pos` là số byte cần di chuyển.
+-   `way` là một giá trị không bắt buộc, chỉ định địa điểm bắt đầu di chuyển. Giá trị phù hợp của way là `ios::beg` (từ điểm bắt đầu của luồng/file, mặc định), `ios::cur` (từ vị trí hiện tại) và `ios::end` (từ điểm kết thúc của luồng/file).
 
 Ví dụ:
 
@@ -215,8 +216,8 @@ Cú pháp của `freopen` là:
 freopen(const char \*filename, const char \*mode, FILE \*stream);
 {% endhighlight %}
 
-* `filename` là địa chỉ của file mục tiêu. Giá trị này thuộc kiểu `const char \*`, giống như `filename` trong hàm `open` của `fstream`.
-* `mode` là chế độ mở file. Các giá trị phù hợp ở đây là:
+-   `filename` là địa chỉ của file mục tiêu. Giá trị này thuộc kiểu `const char \*`, giống như `filename` trong hàm `open` của `fstream`.
+-   `mode` là chế độ mở file. Các giá trị phù hợp ở đây là:
 
 <table class="table table-striped table-bordered">
 <tr>
@@ -249,7 +250,7 @@ freopen(const char \*filename, const char \*mode, FILE \*stream);
 </tr>
 </table>
 
-* `stream` là luồng dữ liệu cần chuyển. Giá trị ở đây có thể là `stdin` (luồng vào chuẩn) hoặc `stdout` (luồng ra chuẩn), hoặc các luồng vào và luồng ra khác.
+-   `stream` là luồng dữ liệu cần chuyển. Giá trị ở đây có thể là `stdin` (luồng vào chuẩn) hoặc `stdout` (luồng ra chuẩn), hoặc các luồng vào và luồng ra khác.
 
 Sau khi gọi lệnh này với `stdin` hoặc `stdout`, ta có thể đọc và viết với file bằng luồng `cin` và `cout` sẵn có.
 
@@ -272,4 +273,4 @@ return 0;
 }
 {% endhighlight %}
 
-*Phần sau: [\[C\+\+ Cơ bản\] Phần 9: Toán tử](http://cowboycoder.tech/article/c-co-ban-phan-9-toan-tu)*
+_Phần sau: [\[C\+\+ Cơ bản\] Phần 9: Toán tử](http://cowboycoder.vercel.app/article/c-co-ban-phan-9-toan-tu)_

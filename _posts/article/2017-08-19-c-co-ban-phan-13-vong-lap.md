@@ -1,13 +1,14 @@
 ---
-title: '[C++ Cơ bản] Phần 13: Vòng lặp'
+title: "[C++ Cơ bản] Phần 13: Vòng lặp"
 author: Admin Tổng Quản
 date: 2017-08-19T12:00:00.888Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C\+\+ Cơ bản\] Phần 12: Câu lệnh điều kiện](http://cowboycoder.tech/article/c-co-ban-phan-12-cau-lenh-dieu-kien)*
+
+_Phần trước: [\[C\+\+ Cơ bản\] Phần 12: Câu lệnh điều kiện](http://cowboycoder.vercel.app/article/c-co-ban-phan-12-cau-lenh-dieu-kien)_
 
 Bài toán được đặt ra: Hãy viết các số từ 1 tới 5.
 
@@ -34,9 +35,9 @@ Vòng lặp `for` có cú pháp
 
 Chương trình sẽ thực hiện vòng lặp `for` theo thứ tự sau:
 
-* Đầu tiên, lệnh khởi tạo sẽ được gọi. Thường đây là nơi để ta khai báo các giá trị được sử dụng trong vòng lặp - ví dụ như một biến `int` có chức năng đếm số lần lặp, nhằm kết thúc vòng lặp sau một số lần nhất định.
-* Tiếp theo, nếu điều kiện kiểm tra được thỏa mãn, phần nội dung thực hiện sẽ được triển khai. Nếu như không, vòng lặp sẽ được kết thúc. Ví dụ về điều kiện triển khai là việc biến đếm số lần lặp nhỏ hơn một số lần nhất định.
-* Sau khi phần nội dung thực hiện xong một lần, lệnh biến đổi sẽ được triển khai. Điều kiện kiểm tra sẽ lại được kiểm tra, và vòng lặp sẽ tiếp tục nếu như điều kiện vẫn còn đúng. Lệnh biến đổi có thể là việc tăng giá trị của biến đếm, thay đổi điều kiện trong vòng lặp, vân vân…
+-   Đầu tiên, lệnh khởi tạo sẽ được gọi. Thường đây là nơi để ta khai báo các giá trị được sử dụng trong vòng lặp - ví dụ như một biến `int` có chức năng đếm số lần lặp, nhằm kết thúc vòng lặp sau một số lần nhất định.
+-   Tiếp theo, nếu điều kiện kiểm tra được thỏa mãn, phần nội dung thực hiện sẽ được triển khai. Nếu như không, vòng lặp sẽ được kết thúc. Ví dụ về điều kiện triển khai là việc biến đếm số lần lặp nhỏ hơn một số lần nhất định.
+-   Sau khi phần nội dung thực hiện xong một lần, lệnh biến đổi sẽ được triển khai. Điều kiện kiểm tra sẽ lại được kiểm tra, và vòng lặp sẽ tiếp tục nếu như điều kiện vẫn còn đúng. Lệnh biến đổi có thể là việc tăng giá trị của biến đếm, thay đổi điều kiện trong vòng lặp, vân vân…
 
 Nếu như phần nội dung chỉ bao gồm một lệnh, ta không cần phải sử dụng ngoặc nhọn, giống như đối với từ khóa `if`.
 
@@ -76,8 +77,8 @@ Khi tham gia lập trình nhiều, các bạn có thể sẽ thắc mắc tại 
 
 Giả sử bạn muốn in ra bảng cửu chương. Ta sẽ cần phải thực hiện hai vòng lặp lồng nhau:
 
-* Đầu tiên, ta duyệt thừa số đầu tiên từ 1 tới 9
-* Với mỗi thừa số được duyệt, ta phải duyệt thừa số thứ 2 cũng từ 1 tới 9, và in ra tích của chúng.
+-   Đầu tiên, ta duyệt thừa số đầu tiên từ 1 tới 9
+-   Với mỗi thừa số được duyệt, ta phải duyệt thừa số thứ 2 cũng từ 1 tới 9, và in ra tích của chúng.
 
 Cũng giống như các lệnh if có thể lồng vào nhau, các vòng lặp nói chung cũng có thể được lồng vào nhau. Chương trình in ra bảng cửu chương sẽ như sau:
 
@@ -218,7 +219,7 @@ Nếu như điều kiện kiểm tra của vòng lặp quá phức tạp và b�
         …;
     }
 
-Về mặt tiêu cực, nếu bạn không yêu cầu vòng lặp vô hạn, chương trình của bạn sẽ đơn giản dừng lại ở đó và không chạy tiếp được nữa ¯\\*(ツ)*/¯.
+Về mặt tiêu cực, nếu bạn không yêu cầu vòng lặp vô hạn, chương trình của bạn sẽ đơn giản dừng lại ở đó và không chạy tiếp được nữa ¯\\_(ツ)_/¯.
 
 # Điều khiển vòng lặp
 
@@ -309,4 +310,4 @@ return 0;
 }
 {% endhighlight %}
 
-*Phần sau: [\[C\+\+ Cơ bản\] Phần 14: Mảng - Array](http://cowboycoder.tech/article/c-co-ban-phan-14-mang-array)*
+_Phần sau: [\[C\+\+ Cơ bản\] Phần 14: Mảng - Array](http://cowboycoder.vercel.app/article/c-co-ban-phan-14-mang-array)_

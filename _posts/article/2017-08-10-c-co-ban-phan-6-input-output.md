@@ -1,30 +1,31 @@
 ---
-title: '[C++ Cơ bản] Phần 7: Input - Output'
+title: "[C++ Cơ bản] Phần 7: Input - Output"
 author: Admin Tổng Quản
 date: 2017-08-10T02:48:49.357Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.tech/article/c-co-ban-phan-6-bien-global-va-bien-local)*
 
-Nhập và xuất là hai yếu tố vô cùng cơ bản của một chương trình. Trong những bài viết trước của C++ Cơ bản, chúng ta đã sử dụng ```cout``` để in thông tin ra màn hình console. Bài viết này và bài viết sau sẽ dành ra để giải thích cụ thể về input và output trong C++.
+_Phần trước: [\[C++ Cơ bản\] Phần 6: Biến global và biến local](http://cowboycoder.vercel.app/article/c-co-ban-phan-6-bien-global-va-bien-local)_
 
-# Tóm tắt nhanh về thư viện ```stdio.h``` của C
+Nhập và xuất là hai yếu tố vô cùng cơ bản của một chương trình. Trong những bài viết trước của C++ Cơ bản, chúng ta đã sử dụng `cout` để in thông tin ra màn hình console. Bài viết này và bài viết sau sẽ dành ra để giải thích cụ thể về input và output trong C++.
 
-Thư viện ```stdio.h``` và các hàm ```scanf()```, ```printf()``` là phương pháp input - output tiêu chuẩn của C. C++ thừa hưởng tất cả các tài nguyên của C, do đó chúng cũng có thể được sử dụng trong C++. Tuy nhiên series bài viết này sẽ không đi sâu vào thư viện này vì:
+# Tóm tắt nhanh về thư viện `stdio.h` của C
 
-* Cú pháp của các hàm ```scanf()``` và ```printf()``` phức tạp hơn so với ```cin``` và ```cout``` của C++.
-* ```cin``` và ```cout``` là phương pháp input và output chuẩn của C++.
+Thư viện `stdio.h` và các hàm `scanf()`, `printf()` là phương pháp input - output tiêu chuẩn của C. C++ thừa hưởng tất cả các tài nguyên của C, do đó chúng cũng có thể được sử dụng trong C++. Tuy nhiên series bài viết này sẽ không đi sâu vào thư viện này vì:
 
-Bạn có thể nghe nói rằng ```cin``` và ```cout``` chậm hơn ```scanf()``` và ```printf()```. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện ```stdio.h``` để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này **có thể tạm bỏ qua được**, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
+-   Cú pháp của các hàm `scanf()` và `printf()` phức tạp hơn so với `cin` và `cout` của C++.
+-   `cin` và `cout` là phương pháp input và output chuẩn của C++.
+
+Bạn có thể nghe nói rằng `cin` và `cout` chậm hơn `scanf()` và `printf()`. [Điều này là đúng](http://codeforces.com/blog/entry/5217), bởi vì chúng phải đồng bộ hóa luồng nhập xuất với thư viện `stdio.h` để chương trình có thể sử dụng cả hai thư viện của C và C++. Tuy nhiên trong áp dụng thực tế, chênh lệch này **có thể tạm bỏ qua được**, trừ khi bạn thật sự cần tốc độ xử lý cao (như khi lập trình thi đấu). Khi đó bạn có thể tắt đồng bộ hóa bằng việc sử dụng lệnh:
 
 ```
 iostream::sync_with_stdio(false);
 ```
 
-Lưu ý rằng kể cả sau khi áp dụng ```iostream::sync_with_stdio(false)```, tốc độ của ```cin/cout``` vẫn có thể chậm hơn đáng kể so với ```scanf()/printf()``` trên một số bộ dịch, nhưng nhìn chung thì điều này không quá ảnh hưởng tới việc lập trình thi đấu. Mục đích chính của các kì thi phần lớn là để kiểm tra kĩ năng thuật toán, cho dù kĩ năng tối ưu hóa vẫn là hết sức quan trọng.
+Lưu ý rằng kể cả sau khi áp dụng `iostream::sync_with_stdio(false)`, tốc độ của `cin/cout` vẫn có thể chậm hơn đáng kể so với `scanf()/printf()` trên một số bộ dịch, nhưng nhìn chung thì điều này không quá ảnh hưởng tới việc lập trình thi đấu. Mục đích chính của các kì thi phần lớn là để kiểm tra kĩ năng thuật toán, cho dù kĩ năng tối ưu hóa vẫn là hết sức quan trọng.
 
 # Các thư viện nhập/xuất của C++
 
@@ -63,11 +64,11 @@ Chú ý không cần sử dụng dấu chấm phẩy.
 
 Buffer là một vùng nhớ tạm thời của hệ thống, dành cho việc tạm thời lưu trữ dữ liệu của chương trình trước khi di chuyển tới một vùng khác. Đối với input và output, buffer giống như việc lưu trữ tất cả các nội dung cần được nhập và xuất, trước khi được nhập vào hoặc xả ra.
 
-# ```cout```
+# `cout`
 
-```cout``` là một đối tượng thuộc class ```ostream```. ```cout``` được kết nối với các đối tượng đầu ra tiêu chuẩn, ví dụ như màn hình console của hệ điều hành. Ta sử dụng ```cout``` với toán tử chèn dữ liệu vào stream (stream insertion) ```<<``` (hai dấu nhỏ hơn).
+`cout` là một đối tượng thuộc class `ostream`. `cout` được kết nối với các đối tượng đầu ra tiêu chuẩn, ví dụ như màn hình console của hệ điều hành. Ta sử dụng `cout` với toán tử chèn dữ liệu vào stream (stream insertion) `<<` (hai dấu nhỏ hơn).
 
-**Chú ý:** Ở đây mình có nói tới class ```ostream```. Class và các nội dung của lập trình hướng đối tượng sẽ được giới thiệu kĩ hơn ở các bài sau. Hiện tại, hãy tạm hiểu class là một kiểu dữ liệu được người dùng định nghĩa, khác với các kiểu dữ liệu nguyên thủy như ```int```, ```float```, ```double```, vv...
+**Chú ý:** Ở đây mình có nói tới class `ostream`. Class và các nội dung của lập trình hướng đối tượng sẽ được giới thiệu kĩ hơn ở các bài sau. Hiện tại, hãy tạm hiểu class là một kiểu dữ liệu được người dùng định nghĩa, khác với các kiểu dữ liệu nguyên thủy như `int`, `float`, `double`, vv...
 
 Ví dụ:
 
@@ -75,26 +76,27 @@ Ví dụ:
 #include <iostream>
 
 using namespace std;
- 
+
 int main( ) {
-   cout << "Xin chào " << "Việt Nam" << endl;
+cout << "Xin chào " << "Việt Nam" << endl;
 }
 {% endhighlight %}
 
 Output:
+
 ```
 Xin chào Việt Nam
 ```
 
-Toán tử ```<<``` có thể được sử dụng nhiều lần trong một câu lệnh ```cout```, như ở ví dụ trên.
+Toán tử `<<` có thể được sử dụng nhiều lần trong một câu lệnh `cout`, như ở ví dụ trên.
 
-C++ cho phép người dùng in ra các giá trị thuộc các kiểu dữ liệu có sẵn ```int```, ```float```, ```double```, ```char```, ```string``` và các giá trị con trỏ.
+C++ cho phép người dùng in ra các giá trị thuộc các kiểu dữ liệu có sẵn `int`, `float`, `double`, `char`, `string` và các giá trị con trỏ.
 
-```cout``` là phương pháp output có sử dụng buffer.
+`cout` là phương pháp output có sử dụng buffer.
 
-# ```cin```
+# `cin`
 
-```cin``` là một đối tượng thuộc class ```istream```. ```cin``` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng ```cin``` với toán tử lấy dữ liệu từ stream (stream extraction) ```>>``` (hai dấu lớn hơn).
+`cin` là một đối tượng thuộc class `istream`. `cin` được kết nối với các đối tượng đầu vào tiêu chuẩn, ví dụ như bàn phím. Ta sử dụng `cin` với toán tử lấy dữ liệu từ stream (stream extraction) `>>` (hai dấu lớn hơn).
 
 Ví dụ: chương trình sau sẽ yêu cầu bạn nhập vào một số, và in ra số bạn đã nhập vào.
 
@@ -105,27 +107,25 @@ using namespace std;
 int number;
 int main()
 {
-    cout << "Nhap vao mot so: ";
-    cin >> number;
-    cout << "So ban nhap vao la: " << number;
-    return 0;
+cout << "Nhap vao mot so: ";
+cin >> number;
+cout << "So ban nhap vao la: " << number;
+return 0;
 }
 {% endhighlight %}
 
 Bộ dịch C++ sẽ tự động nhận ra kiểu dữ liệu của biến được đặt sau toán tử, và lựa chọn phương pháp nhập dữ liệu phù hợp với kiểu dữ liệu đó.
 
-Toán tử ```>>``` cũng có thể được sử dụng nhiều lần trong một câu lệnh.
+Toán tử `>>` cũng có thể được sử dụng nhiều lần trong một câu lệnh.
 
-```cin``` là phương pháp input có sử dụng buffer.
+`cin` là phương pháp input có sử dụng buffer.
 
-# ```cerr``` và ```clog```
+# `cerr` và `clog`
 
-```cerr``` và ```clog``` là hai đối tượng của class ```ostream``` giống như ```cout```. Về mặc định, chúng cũng được kết nối với các đối tượng đầu ra tiêu chuẩn như ```cout```, và cũng sử dụng chung toán tử ```<<``` như ```cout```.
+`cerr` và `clog` là hai đối tượng của class `ostream` giống như `cout`. Về mặc định, chúng cũng được kết nối với các đối tượng đầu ra tiêu chuẩn như `cout`, và cũng sử dụng chung toán tử `<<` như `cout`.
 
-Điểm khác biệt giữa ```cerr``` và ```clog``` là ```cerr``` không được buffer, còn ```clog``` thì có. Điều này có nghĩa là tất cả nội dung của ```cerr``` sẽ được in ra ngay lập tức, trong khi ```clog``` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
+Điểm khác biệt giữa `cerr` và `clog` là `cerr` không được buffer, còn `clog` thì có. Điều này có nghĩa là tất cả nội dung của `cerr` sẽ được in ra ngay lập tức, trong khi `clog` sẽ được lưu trữ lại cho tới khi buffer đầy hoặc được giải phóng (do người dùng tự giải phóng, khi có dữ liệu xuất ra mới và cần in ra dữ liệu cũ, hoặc khi chương trình kết thúc).
 
-```cerr``` và ```clog``` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (```cout```) ra riêng với các thông báo lỗi (```cerr``` và ```clog```) để quan sát riêng rẽ.
+`cerr` và `clog` được sử dụng nhiều vào việc in ra các thông báo lỗi. Khi xây dựng các dự án lớn với C++, chúng sẽ trở nên vô cùng quan trọng, vì ta có thể thay đổi luồng ra của output (`cout`) ra riêng với các thông báo lỗi (`cerr` và `clog`) để quan sát riêng rẽ.
 
-*Phần sau: [\[C++ Cơ bản\] Phần 8: Input và Output \(tiếp\)](http://cowboycoder.tech/article/c-co-ban-phan-8-input-va-output-tiep)*
-
-
+_Phần sau: [\[C++ Cơ bản\] Phần 8: Input và Output \(tiếp\)](http://cowboycoder.vercel.app/article/c-co-ban-phan-8-input-va-output-tiep)_

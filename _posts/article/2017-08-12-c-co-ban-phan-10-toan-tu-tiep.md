@@ -1,19 +1,20 @@
 ---
-title: '[C++ Cơ bản] Phần 10: Toán tử (tiếp)'
+title: "[C++ Cơ bản] Phần 10: Toán tử (tiếp)"
 author: Admin Tổng Quản
 date: 2017-08-12T03:18:10.370Z
 thumbnail: /img/uploads/C++ Cơ bản - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*Phần trước: [\[C++ Cơ bản\] Phần 9: Toán tử](http://cowboycoder.tech/article/c-co-ban-phan-9-toan-tu)*
+
+_Phần trước: [\[C++ Cơ bản\] Phần 9: Toán tử](http://cowboycoder.vercel.app/article/c-co-ban-phan-9-toan-tu)_
 
 # Toán tử trên bit
 
 Như đã giải thích trong các phần trước, dữ liệu trên máy tính được lưu trữ dưới dạng dãy bit nhị phân. Các toán tử trên bit cho phép người dùng có thể thực hiện thay đổi trực tiếp trên dãy bit của giá trị.
 
-Trong các ví dụ sau đây, ta sử dụng hai biến ```int x = 12``` và ```int y = 6```. Để dễ quan sát, dãy bit biểu diễn của hai giá trị này sẽ được rút ngắn lại thành ```1100``` và ```110```.
+Trong các ví dụ sau đây, ta sử dụng hai biến `int x = 12` và `int y = 6`. Để dễ quan sát, dãy bit biểu diễn của hai giá trị này sẽ được rút ngắn lại thành `1100` và `110`.
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -57,15 +58,15 @@ Trong các ví dụ sau đây, ta sử dụng hai biến ```int x = 12``` và ``
 
 Các phép tính trên bit có vẻ rất lạ đời và không giống như những phép toán phổ thông, nhưng chúng lại rất quan trọng trong lập trình thực tế vì một vài lý do sau:
 
-* Thứ nhất, các dãy bit có thể được sử dụng để lưu trữ các giá trị cài đặt. Một giá trị ```int``` có tất cả 32 bit, điều này có nghĩa là ta có thể lưu trữ giá trị của 32 giá trị ```true/false``` khác nhau, thay vì sử dụng nhiều giá trị ```bool```. Vì lý do đó, các dãy bit có thể được truyền vào các hàm và chương trình con để tùy chỉnh cho hàm và chương trình con đó. Lệnh ```fstream.open()``` được đề cập trong các bài trước sử dụng mode là một giá trị bitmask, sử dụng phép toán bit để cài đặt cho hàm.
-* Thứ hai, các phép toán trên bit có vận tốc cao hơn rất nhiều so với các phép toán bình thường - do chúng trực tiếp xử lý trên bit, thay vì đi qua các bước trung gian. Các phép tính ```<<``` và ```>>``` có thể được sử dụng thay thế phép nhân lũy thừa của 2 và chia lũy thừa của 2 (bạn đọc tự chứng minh tính đúng đắn ở đây). Nếu ta muốn xét một số là số lẻ hay số chẵn, thay vì kiểm tra bằng phép toán ```x % 2 == 0``` (phép tính mod là một trong những phép tính chậm nhất của chương trình), ta có thể kiểm tra ```x & 1 == 0```. Nếu bạn tham gia lập trình thi đấu, tốc độ là một yếu tố vô cùng quan trọng.
-* Thứ ba, các bài tập về bit cũng là một trong những dạng bài tập thường thấy của lập trình thi đấu.
+-   Thứ nhất, các dãy bit có thể được sử dụng để lưu trữ các giá trị cài đặt. Một giá trị `int` có tất cả 32 bit, điều này có nghĩa là ta có thể lưu trữ giá trị của 32 giá trị `true/false` khác nhau, thay vì sử dụng nhiều giá trị `bool`. Vì lý do đó, các dãy bit có thể được truyền vào các hàm và chương trình con để tùy chỉnh cho hàm và chương trình con đó. Lệnh `fstream.open()` được đề cập trong các bài trước sử dụng mode là một giá trị bitmask, sử dụng phép toán bit để cài đặt cho hàm.
+-   Thứ hai, các phép toán trên bit có vận tốc cao hơn rất nhiều so với các phép toán bình thường - do chúng trực tiếp xử lý trên bit, thay vì đi qua các bước trung gian. Các phép tính `<<` và `>>` có thể được sử dụng thay thế phép nhân lũy thừa của 2 và chia lũy thừa của 2 (bạn đọc tự chứng minh tính đúng đắn ở đây). Nếu ta muốn xét một số là số lẻ hay số chẵn, thay vì kiểm tra bằng phép toán `x % 2 == 0` (phép tính mod là một trong những phép tính chậm nhất của chương trình), ta có thể kiểm tra `x & 1 == 0`. Nếu bạn tham gia lập trình thi đấu, tốc độ là một yếu tố vô cùng quan trọng.
+-   Thứ ba, các bài tập về bit cũng là một trong những dạng bài tập thường thấy của lập trình thi đấu.
 
 # Toán tử gán
 
 Các phép gán cho phép ta đặt giá trị cho biến.
 
-Với giá trị ```x = 10```, ta có các phép gán sau:
+Với giá trị `x = 10`, ta có các phép gán sau:
 
 <table class="table table-striped table-bordered">
     <tr>
@@ -94,7 +95,7 @@ Với giá trị ```x = 10```, ta có các phép gán sau:
 
 Ngoài các loại toán tử được liệt kê ở trên, ta còn một số toán tử đặc biệt:
 
-* ```sizeof()```: Trả lại kích cỡ của giá trị bên trong ngoặc, tính theo byte. Ví dụ:
+-   `sizeof()`: Trả lại kích cỡ của giá trị bên trong ngoặc, tính theo byte. Ví dụ:
 
 {% highlight c++ %}
 int a;
@@ -106,7 +107,8 @@ Output:
 ```
 4
 ```
-* ```giá_trị_bool? x : y```: Nếu như giá trị ```bool``` trước dấu hỏi là ```true```, toán tử này trả lại giá trị thứ nhất. Nếu là ```false```, trả lại giá trị thứ hai. Ví dụ
+
+-   `giá_trị_bool? x : y`: Nếu như giá trị `bool` trước dấu hỏi là `true`, toán tử này trả lại giá trị thứ nhất. Nếu là `false`, trả lại giá trị thứ hai. Ví dụ
 
 {% highlight c++ %}
 int a = 10;
@@ -119,11 +121,11 @@ Output:
 Bigger
 ```
 
-* ```,```: Cho phép thực hiện một loạt các biểu thức trong cùng một câu lệnh, theo đúng thứ tự được liệt kê. Giá trị của cả nhóm biểu thức sẽ bằng giá trị của biểu thức cuối cùng. Ví dụ:
+-   `,`: Cho phép thực hiện một loạt các biểu thức trong cùng một câu lệnh, theo đúng thứ tự được liệt kê. Giá trị của cả nhóm biểu thức sẽ bằng giá trị của biểu thức cuối cùng. Ví dụ:
 
 {% highlight c++ %}
 int a = 10;
-cout << (a *= 2, a ++, a -= 3);
+cout << (a \*= 2, a ++, a -= 3);
 {% endhighlight %}
 
 Output
@@ -132,27 +134,26 @@ Output
 18
 ```
 
-* ```.``` và ```->```: Cho phép truy cập vào các yếu tố của cấu trúc dữ liệu và class. Sẽ được giải thích trong các bài viết sau.
-* ```&```: Khi được đặt trước một biến, ```&``` trở thành toán tử địa chỉ, trả lại địa chỉ của ô bộ nhớ (con trỏ) của biến.
-* ```*```: Khi được đặt trước một biến con trỏ, ```*``` trở thành toán tử địa chỉ, trả lại giá trị trong ô bộ nhớ đó. Hai toán tử con trỏ sẽ được giải thích trong các bài viết sau.
+-   `.` và `->`: Cho phép truy cập vào các yếu tố của cấu trúc dữ liệu và class. Sẽ được giải thích trong các bài viết sau.
+-   `&`: Khi được đặt trước một biến, `&` trở thành toán tử địa chỉ, trả lại địa chỉ của ô bộ nhớ (con trỏ) của biến.
+-   `*`: Khi được đặt trước một biến con trỏ, `*` trở thành toán tử địa chỉ, trả lại giá trị trong ô bộ nhớ đó. Hai toán tử con trỏ sẽ được giải thích trong các bài viết sau.
 
 # Thứ tự tính toán
 
 Giống như trong môn toán có thứ tự thực hiện phép tính, các toán tử trong C++ cũng có thứ tự thi hành.
 
-Các toán tử toán bình thường sẽ thực hiện đúng theo thứ tự trong toán học bình thường (nhân chia trước, công trừ sau). 
+Các toán tử toán bình thường sẽ thực hiện đúng theo thứ tự trong toán học bình thường (nhân chia trước, công trừ sau).
 
-Phép tính ```%``` sẽ ngang hàng với phép nhân chia.
+Phép tính `%` sẽ ngang hàng với phép nhân chia.
 
-Phép toán ```++``` và ```--``` được đặt trước giá trị sẽ được thực hiện trước mọi phép toán khác.
+Phép toán `++` và `--` được đặt trước giá trị sẽ được thực hiện trước mọi phép toán khác.
 
-Các phép toán con trỏ, ```sizeof()```, các phép NOT sẽ được thực hiện sau ```++``` và ```--```, nhưng trước các phép toán bình thường.
+Các phép toán con trỏ, `sizeof()`, các phép NOT sẽ được thực hiện sau `++` và `--`, nhưng trước các phép toán bình thường.
 
 Các phép toán bit và logic sẽ thực hiện sau phép toán thường.
 
-```,``` sẽ được thực hiện sau mỗi phép toán nó phân cách.
+`,` sẽ được thực hiện sau mỗi phép toán nó phân cách.
 
-```++``` và ```--``` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
+`++` và `--` được đặt sau giá trị sẽ được thực hiện sau khi dòng lệnh kết thúc.
 
-*Phần sau: [\[C++ Cơ bản\] Phần 11: Hàm - Chương trình con](http://cowboycoder.tech/article/c-co-ban-phan-11-ham-chuong-trinh-con)*
-
+_Phần sau: [\[C++ Cơ bản\] Phần 11: Hàm - Chương trình con](http://cowboycoder.vercel.app/article/c-co-ban-phan-11-ham-chuong-trinh-con)_

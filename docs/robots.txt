@@ -1,1 +1,1 @@
-Sitemap: https://cowboycoder.tech/sitemap.xml
+Sitemap: https://cowboycoder.vercel.app/sitemap.xml

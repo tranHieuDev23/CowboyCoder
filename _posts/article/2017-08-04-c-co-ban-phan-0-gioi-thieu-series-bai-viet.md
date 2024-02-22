@@ -1,24 +1,25 @@
 ---
-title: '[C++ Cơ bản] Phần 0: Giới thiệu series bài viết'
+title: "[C++ Cơ bản] Phần 0: Giới thiệu series bài viết"
 author: Admin Tổng Quản
 date: 2017-08-04T06:12:08.833Z
 thumbnail: /img/uploads/C++ Co ban - Thumbnail.jpg
 tags:
-  - cpp-cơ-bản
-  - programming
+    - cpp-cơ-bản
+    - programming
 ---
-*“Từ IOI 2019 là sẽ
-không được sử dụng Pascal rồi, phải làm sao đây??”*
 
-*“Đăng ký nhập học Công
-nghệ thông tin rồi, nhưng không biết tí gì về lập trình cả, phải làm sao đây??”*
+_“Từ IOI 2019 là sẽ
+không được sử dụng Pascal rồi, phải làm sao đây??”_
+
+_“Đăng ký nhập học Công
+nghệ thông tin rồi, nhưng không biết tí gì về lập trình cả, phải làm sao đây??”_
 
 Thì tiếp thu cái mới chứ sao.
 
 Đó là bản chất của ngành Công nghệ thông tin rồi - công nghệ
 luôn thay đổi và bạn phải liên tục đón nhận cái mới để không trở nên lỗi thời.
 
-*“Nhưng giờ phải bắt đầu từ đâu?”*
+_“Nhưng giờ phải bắt đầu từ đâu?”_
 
 Bài viết này là bài viết đầu tiên trong series C\+\+ Cơ bản, với
 mục đích hỗ trợ các bạn nắm được những kiến thức nền tảng của một trong những
@@ -26,16 +27,16 @@ ngôn ngữ lập trình được sử dụng nhiều nhất trên thế giới.
 những người chưa có kiến thức về lập trình, hoặc có một chút ít kinh nghiệm với
 lập trình máy tính. Qua series này, các bạn sẽ học được:
 
-* C\+\+ là gì và có ứng dụng như thế nào.
-* Cách viết một chương trình C\+\+ cơ bản.
-* Thư viện chuẩn của C\+\+ (STL) là gì? Một số template quan trọng của STL.
-* Lập trình hướng đối tượng là gì? Làm sao để lập trình hướng đối tượng với C\+\+?
-* Ứng dụng C\+\+ vào lập trình ứng dụng thực tế.
+-   C\+\+ là gì và có ứng dụng như thế nào.
+-   Cách viết một chương trình C\+\+ cơ bản.
+-   Thư viện chuẩn của C\+\+ (STL) là gì? Một số template quan trọng của STL.
+-   Lập trình hướng đối tượng là gì? Làm sao để lập trình hướng đối tượng với C\+\+?
+-   Ứng dụng C\+\+ vào lập trình ứng dụng thực tế.
 
 Tuy tác giả bài viết đã cố gắng hết sức, song vẫn có thể có
 nhiều thiếu sót, hy vọng sẽ nhận được sự đóng góp của bạn đọc để các bài viết của
 mình trở nên chất lượng và hữu dụng hơn cho mọi người. :)
 
-*Series bài viết có tham khảo nội dung từ trang [tutorialspoint.com](https://tutorialspoint.com) và Wikipedia.*
+_Series bài viết có tham khảo nội dung từ trang [tutorialspoint.com](https://tutorialspoint.com) và Wikipedia._
 
-*Phần sau: [\[C++ Cơ bản\] Phần 1: Bản chất của lập trình](http://cowboycoder.tech/article/c-co-ban-phan-1-ban-chat-cua-lap-trinh)*
+_Phần sau: [\[C++ Cơ bản\] Phần 1: Bản chất của lập trình](http://cowboycoder.vercel.app/article/c-co-ban-phan-1-ban-chat-cua-lap-trinh)_
